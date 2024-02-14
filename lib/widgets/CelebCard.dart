@@ -19,7 +19,7 @@ class celebCard extends StatelessWidget{
               width: 400,
               height: 60,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(15)),
+                  borderRadius: BorderRadius.all(Radius.circular(8)),
                   color: Colors.deepPurpleAccent.shade700,
                   boxShadow: [BoxShadow( blurRadius: 10),BoxShadow(color: Colors.black87, blurRadius: 15)]
               ),
