@@ -37,14 +37,14 @@ class personality_card extends StatelessWidget {
             ),
           ),
           width: w * 0.9,
-          height: h * 0.35,
+          height: h * 0.32,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               const SizedBox(height: 20),
               Container(
                 margin: const EdgeInsets.all(10),
-                height: 80,
+                height: 50,
                 child: Text(
                   body[1] ?? '', // Null check for body[1]
                   style: const TextStyle(
@@ -64,7 +64,7 @@ class personality_card extends StatelessWidget {
                   color: Colors.white70,
                 ),
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 40),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: Text(
