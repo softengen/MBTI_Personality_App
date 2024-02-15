@@ -79,6 +79,21 @@ flutter:
       fonts:
         - asset: assets/fonts/AstroSpace-eZ2Bg.ttf
 
+    - family: Astro Space
+      fonts:
+        - asset: assets/fonts/AstroSpace-eZ2Bg.ttf
+
+    - family: UbuntuMono
+      fonts:
+        - asset: fonts/UbuntuMono-Bold.ttf
+        - asset: fonts/UbuntuMono-BoldItalic.ttf
+        - asset: fonts/UbuntuMono-Italic.ttf
+        - asset: fonts/UbuntuMono-Regular.ttf
+
+    - family: ProtestRiot
+      fonts:
+          - asset: fonts/ProtestRiot-Regular.ttf
+
     - family: Egypt
       fonts:
         - asset: assets/fonts/EgyptienneZierinitialien-Rpj6.ttf
