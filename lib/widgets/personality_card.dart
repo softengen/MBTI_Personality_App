@@ -44,7 +44,7 @@ class personality_card extends StatelessWidget {
               const SizedBox(height: 20),
               Container(
                 margin: const EdgeInsets.all(10),
-                height: 80,
+                height: 50,
                 child: Text(
                   body[1] ?? '', // Null check for body[1]
                   style: const TextStyle(
