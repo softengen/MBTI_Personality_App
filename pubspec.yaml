@@ -85,18 +85,18 @@ flutter:
 
     - family: UbuntuMono
       fonts:
-        - asset: fonts/UbuntuMono-Bold.ttf
-        - asset: fonts/UbuntuMono-BoldItalic.ttf
-        - asset: fonts/UbuntuMono-Italic.ttf
-        - asset: fonts/UbuntuMono-Regular.ttf
+        - asset: assets/fonts/UbuntuMono-Bold.ttf
+        - asset: assets/fonts/UbuntuMono-BoldItalic.ttf
+        - asset: assets/fonts/UbuntuMono-Italic.ttf
+        - asset: assets/fonts/UbuntuMono-Regular.ttf
 
     - family: ProtestRiot
       fonts:
-          - asset: fonts/ProtestRiot-Regular.ttf
+          - asset: assets/fonts/ProtestRiot-Regular.ttf
 
     - family: PlayfairDisplay
       fonts:
-        - asset: fonts/PlayfairDisplay-Black.ttf
+        - asset: assets/fonts/PlayfairDisplay-Black.ttf
 
     - family: Egypt
       fonts:
