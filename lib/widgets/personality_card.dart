@@ -11,8 +11,8 @@ class personality_card extends StatelessWidget {
     double w = MediaQuery.of(context).size.width;
     double h = MediaQuery.of(context).size.height;
 
-    Color gradientColor1 = Colors.deepPurpleAccent[900] ?? Colors.deepPurple; // Null check
-    Color gradientColor2 = Colors.deepPurpleAccent[100] ?? Colors.deepPurple; // Null check
+    Color gradientColor1 = Colors.deepPurple[700] ?? Colors.deepPurple; // Null check
+    Color gradientColor2 = Colors.deepPurpleAccent[200] ?? Colors.deepPurple; // Null check
 
     return Material(
       child: InkWell(
@@ -37,7 +37,7 @@ class personality_card extends StatelessWidget {
             ),
           ),
           width: w * 0.9,
-          height: h * 0.37,
+          height: h * 0.35,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
@@ -61,7 +61,7 @@ class personality_card extends StatelessWidget {
                   fontFamily: "Roboto",
                   fontWeight: FontWeight.bold,
                   fontSize: 24,
-                  color: Colors.white54,
+                  color: Colors.white70,
                 ),
               ),
               const SizedBox(height: 20),
