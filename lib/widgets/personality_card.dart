@@ -11,7 +11,7 @@ class personality_card extends StatelessWidget {
     double w = MediaQuery.of(context).size.width;
     double h = MediaQuery.of(context).size.height;
 
-    Color gradientColor1 = Colors.deepPurple[700] ?? Colors.deepPurple; // Null check
+    Color gradientColor1 = Colors.deepPurple[800] ?? Colors.deepPurple; // Null check
     Color gradientColor2 = Colors.deepPurpleAccent[200] ?? Colors.deepPurple; // Null check
 
     return Material(
