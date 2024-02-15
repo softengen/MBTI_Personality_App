@@ -94,6 +94,10 @@ flutter:
       fonts:
           - asset: fonts/ProtestRiot-Regular.ttf
 
+    - family: PlayfairDisplay
+      fonts:
+        - asset: fonts/PlayfairDisplay-Black.ttf
+
     - family: Egypt
       fonts:
         - asset: assets/fonts/EgyptienneZierinitialien-Rpj6.ttf
