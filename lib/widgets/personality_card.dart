@@ -37,7 +37,7 @@ class personality_card extends StatelessWidget {
             ),
           ),
           width: w * 0.9,
-          height: h * 0.4,
+          height: h * 0.35,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
