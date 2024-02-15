@@ -11,6 +11,9 @@ class personality_card extends StatelessWidget {
     double w = MediaQuery.of(context).size.width;
     double h = MediaQuery.of(context).size.height;
 
+    Color gradientColor1 = Colors.deepPurpleAccent[900] ?? Colors.deepPurple; // Null check
+    Color gradientColor2 = Colors.deepPurpleAccent[100] ?? Colors.deepPurple; // Null check
+
     return Material(
       child: InkWell(
         onTap: callBack,
@@ -26,7 +29,12 @@ class personality_card extends StatelessWidget {
                 offset: const Offset(0, 3),
               ),
             ],
-            color: Colors.white,
+            gradient: LinearGradient(
+              colors: [
+                gradientColor1,
+                gradientColor2,
+              ],
+            ),
           ),
           width: w * 0.9,
           height: h * 0.4,
@@ -38,34 +46,34 @@ class personality_card extends StatelessWidget {
                 margin: const EdgeInsets.all(10),
                 height: 80,
                 child: Text(
-                  body[1],
+                  body[1] ?? '', // Null check for body[1]
                   style: const TextStyle(
-                    fontFamily: "ProtestRiot", // Example custom font
+                    fontFamily: "ProtestRiot",
                     fontSize: 37,
                     fontWeight: FontWeight.bold,
-                    color: Colors.black,
+                    color: Colors.white,
                   ),
                 ),
               ),
               Text(
-                "(${body[0]})",
+                "(${body[0]})" ?? '', // Null check for body[0]
                 style: const TextStyle(
                   fontFamily: "Roboto",
-                  fontWeight: FontWeight.bold,// Example custom font
+                  fontWeight: FontWeight.bold,
                   fontSize: 24,
-                  color: Colors.indigo,
+                  color: Colors.white54,
                 ),
               ),
               const SizedBox(height: 20),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: Text(
-                  body[2],
+                  body[2] ?? '', // Null check for body[2]
                   style: const TextStyle(
-                    fontFamily: 'UbuntuMono', // Example custom font
+                    fontFamily: 'UbuntuMono',
                     fontSize: 19,
                     fontWeight: FontWeight.bold,
-                    color: Colors.black,
+                    color: Colors.white,
                   ),
                   textAlign: TextAlign.center,
                 ),
