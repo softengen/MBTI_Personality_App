@@ -1,9 +1,5 @@
 import 'package:baje_project/personalityPage.dart';
-import 'package:baje_project/resultPage.dart';
-import 'package:baje_project/testPage.dart';
 import 'package:flutter/material.dart';
-
-
 
 void main() {
   runApp(const MyApp());
@@ -39,7 +35,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.deepPurple,
 
       ),
-      home: MyHomePage(),
+      home: const MyHomePage(),
     );
   }
 }

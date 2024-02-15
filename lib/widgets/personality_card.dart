@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 
-class personality_card extends StatelessWidget{
+class personality_card extends StatelessWidget {
   final List body;
   final VoidCallback callBack;
+
   const personality_card({required this.body, required this.callBack});
 
   @override
   Widget build(BuildContext context) {
-    print(body);
-
-    // these two line for accessing screen real size
     double w = MediaQuery.of(context).size.width;
     double h = MediaQuery.of(context).size.height;
 
@@ -17,39 +15,66 @@ class personality_card extends StatelessWidget{
       child: InkWell(
         onTap: callBack,
         child: Container(
-          margin: const EdgeInsets.all(7),
-          decoration: const BoxDecoration(
-            borderRadius: BorderRadius.all(Radius.circular(9)),
-            // boxShadow: [BoxShadow(blurRadius: 0,spreadRadius: 0)],
-            color: Color(0xFF258654),
+          margin: const EdgeInsets.all(16),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(12),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.grey.withOpacity(0.5),
+                spreadRadius: 3,
+                blurRadius: 7,
+                offset: const Offset(0, 3),
+              ),
+            ],
+            color: Colors.white,
           ),
-          width: 380,
-          height: 300,
+          width: w * 0.9,
+          height: h * 0.4,
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              const SizedBox(height: 40,),
+              const SizedBox(height: 20),
               Container(
                 margin: const EdgeInsets.all(10),
-                height: 60,
-                child: Text(body[1],
-                  style: const TextStyle(fontFamily: "Open Sans", fontSize: 45,color: Colors.white),),
+                height: 80,
+                child: Text(
+                  body[1],
+                  style: const TextStyle(
+                    fontFamily: "ProtestRiot", // Example custom font
+                    fontSize: 37,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                  ),
+                ),
               ),
-              Padding(
-                padding: const EdgeInsets.only(bottom: 20),
-                child: Text(("(${body[0]})"), style: const TextStyle(fontFamily: "Cameo Antique", fontSize: 30, color: Colors.white),),
+              Text(
+                "(${body[0]})",
+                style: const TextStyle(
+                  fontFamily: "Roboto",
+                  fontWeight: FontWeight.bold,// Example custom font
+                  fontSize: 24,
+                  color: Colors.indigo,
+                ),
               ),
-              const SizedBox(height: 25,),
+              const SizedBox(height: 20),
               Padding(
-                padding: const EdgeInsets.only(left: 20, right: 20,),
-                child: Text(body[2],
-                  style: const TextStyle(fontFamily: "Take Coffee", fontSize: 16, color: Colors.white54),
-                  textAlign: TextAlign.center,),
-              )
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                child: Text(
+                  body[2],
+                  style: const TextStyle(
+                    fontFamily: 'UbuntuMono', // Example custom font
+                    fontSize: 19,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+              const Spacer(),
             ],
           ),
         ),
       ),
     );
   }
-
 }

@@ -51,7 +51,7 @@ class LinearChart extends StatelessWidget{
                 height: 20,
                 decoration: BoxDecoration(color: color1,
                     borderRadius: BorderRadius.only(topLeft:Radius.circular(rnd),bottomLeft:Radius.circular(rnd)),
-                    boxShadow: [const BoxShadow(blurRadius: 10,blurStyle: BlurStyle.outer)]
+                    boxShadow: const [BoxShadow(blurRadius: 10,blurStyle: BlurStyle.outer)]
                 ),
 
               ),
@@ -60,7 +60,7 @@ class LinearChart extends StatelessWidget{
                 height: 20,
                 decoration: BoxDecoration(color: color2,
                     borderRadius: BorderRadius.only(topRight:Radius.circular(rnd),bottomRight:Radius.circular(rnd)),
-                    boxShadow: [const BoxShadow(blurRadius: 10,blurStyle: BlurStyle.outer)]
+                    boxShadow: const [BoxShadow(blurRadius: 10,blurStyle: BlurStyle.outer)]
 
                 ),
               ),
@@ -90,7 +90,7 @@ class LinearChart extends StatelessWidget{
                 height: 20,
                 decoration: BoxDecoration(color: color3,
                     borderRadius: BorderRadius.only(topLeft:Radius.circular(rnd),bottomLeft:Radius.circular(rnd)),
-                    boxShadow: [const BoxShadow(blurRadius: 10,blurStyle: BlurStyle.outer)]
+                    boxShadow: const [BoxShadow(blurRadius: 10,blurStyle: BlurStyle.outer)]
                 ),
               ),
               Container(
@@ -98,7 +98,7 @@ class LinearChart extends StatelessWidget{
                 height: 20,
                 decoration: BoxDecoration(color: color4,
                     borderRadius: BorderRadius.only(topRight:Radius.circular(rnd),bottomRight:Radius.circular(rnd)),
-                    boxShadow: [const BoxShadow(blurRadius: 10,blurStyle: BlurStyle.outer)]
+                    boxShadow: const [BoxShadow(blurRadius: 10,blurStyle: BlurStyle.outer)]
                 ),
               ),
               const SizedBox(width: 15,),
@@ -127,7 +127,7 @@ class LinearChart extends StatelessWidget{
                 height: 20,
                 decoration: BoxDecoration(color: color5,
                     borderRadius: BorderRadius.only(topLeft:Radius.circular(rnd),bottomLeft:Radius.circular(rnd)),
-                    boxShadow: [const BoxShadow(blurRadius: 10,blurStyle: BlurStyle.outer)]
+                    boxShadow: const [BoxShadow(blurRadius: 10,blurStyle: BlurStyle.outer)]
                 ),
               ),
               Container(
@@ -135,7 +135,7 @@ class LinearChart extends StatelessWidget{
                 height: 20,
                 decoration: BoxDecoration(color: color6,
                     borderRadius: BorderRadius.only(topRight:Radius.circular(rnd),bottomRight:Radius.circular(rnd)),
-                    boxShadow: [const BoxShadow(blurRadius: 10,blurStyle: BlurStyle.outer)]
+                    boxShadow: const [BoxShadow(blurRadius: 10,blurStyle: BlurStyle.outer)]
                 ),
               ),
               const SizedBox(width: 15,),
@@ -164,7 +164,7 @@ class LinearChart extends StatelessWidget{
                 height: 20,
                 decoration: BoxDecoration(color: color7,
                     borderRadius: BorderRadius.only(topLeft:Radius.circular(rnd),bottomLeft:Radius.circular(rnd)),
-                    boxShadow: [const BoxShadow(blurRadius: 10,blurStyle: BlurStyle.outer)]
+                    boxShadow: const [BoxShadow(blurRadius: 10,blurStyle: BlurStyle.outer)]
                 ),
               ),
               Container(
@@ -172,7 +172,7 @@ class LinearChart extends StatelessWidget{
                 height: 20,
                 decoration: BoxDecoration(color: color8,
                     borderRadius: BorderRadius.only(topRight:Radius.circular(rnd),bottomRight:Radius.circular(rnd)),
-                    boxShadow: [const BoxShadow(blurRadius: 10,blurStyle: BlurStyle.outer)]
+                    boxShadow: const [BoxShadow(blurRadius: 10,blurStyle: BlurStyle.outer)]
                 ),
               ),
               const SizedBox(width: 15,),
