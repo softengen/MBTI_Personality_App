@@ -23,7 +23,7 @@ class personality_card extends StatelessWidget {
             borderRadius: BorderRadius.circular(12),
             boxShadow: [
               BoxShadow(
-                color: Colors.grey.withOpacity(0.5),
+                color: Colors.black.withOpacity(0.5),
                 spreadRadius: 3,
                 blurRadius: 7,
                 offset: const Offset(0, 3),
@@ -37,7 +37,7 @@ class personality_card extends StatelessWidget {
             ),
           ),
           width: w * 0.9,
-          height: h * 0.32,
+          height: 280,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
