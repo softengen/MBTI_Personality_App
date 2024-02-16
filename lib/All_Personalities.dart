@@ -272,6 +272,7 @@ class _INTJState extends State<INTJ> {
 
 
 
+
 class INTP extends StatefulWidget{
 
   @override
