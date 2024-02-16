@@ -1,21 +1,20 @@
 import 'package:baje_project/famousPeople.dart';
 import 'package:baje_project/personalityPage.dart';
 import 'package:baje_project/testPage.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class NavBar extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-    TextStyle navtext = TextStyle(fontWeight: FontWeight.bold, fontSize: 15);
+    TextStyle navtext = const TextStyle(fontWeight: FontWeight.bold, fontSize: 15);
     return Drawer(
       child: ListView(
         padding: EdgeInsets.zero,
         children: [
           UserAccountsDrawerHeader(
-            accountName: Text("Bangla Vai",style: navtext),
-            accountEmail: Text("Banglavai@fertech.bd",style: navtext,),
+            accountName: Text("Softengen",style: navtext),
+            accountEmail: Text("softengenauthor@gmail.com",style: navtext),
             currentAccountPicture: CircleAvatar(
               child: ClipOval(
                 child: Image.asset(
@@ -24,11 +23,9 @@ class NavBar extends StatelessWidget{
                   height: 95,
                   fit: BoxFit.cover,
                 ),
-
-
               ),
             ),
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Colors.deepPurple,
               image: DecorationImage(
                 image: AssetImage("assets/images/bricks.jpg"),
@@ -37,29 +34,27 @@ class NavBar extends StatelessWidget{
             ),
         ),
           ListTile(
-            leading: Icon(Icons.text_snippet_outlined),
-            title: Text("Test Again",style: TextStyle(fontWeight: FontWeight.bold),),
+            leading: const Icon(Icons.text_snippet_outlined),
+            title: const Text("Test Again",style: TextStyle(fontWeight: FontWeight.bold),),
             onTap: ()=> Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>testPage())),
           ),
-          Divider(),
+          const Divider(thickness: 1),
           ListTile(
-            leading: Icon(Icons.pages_rounded),
-            title: Text("Personalities",style: TextStyle(fontWeight: FontWeight.bold),),
+            leading: const Icon(Icons.pages_rounded),
+            title: const Text("Personalities",style: TextStyle(fontWeight: FontWeight.bold),),
             onTap: ()=> Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>personalityPage())),
           ),
           ListTile(
-            leading: Icon(Icons.star),
-            title: Text("Famous People",style: TextStyle(fontWeight: FontWeight.bold),),
+            leading: const Icon(Icons.star),
+            title: const Text("Famous People",style: TextStyle(fontWeight: FontWeight.bold),),
             onTap: ()=> Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>famousPeoplePage())),
           ),
-          Divider(thickness: 1),
+          const Divider(thickness: 1),
           ListTile(
-            leading: Icon(Icons.exit_to_app_rounded),
-            title: Text("Exit",style: TextStyle(fontWeight: FontWeight.bold),),
+            leading: const Icon(Icons.exit_to_app_rounded),
+            title: const Text("Exit",style: TextStyle(fontWeight: FontWeight.bold),),
             onTap: ()=> null,
           )
-
-
         ]
       ),
     );

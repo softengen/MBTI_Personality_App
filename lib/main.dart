@@ -1,3 +1,4 @@
+import 'package:baje_project/login_screen.dart';
 import 'package:baje_project/personalityPage.dart';
 import 'package:flutter/material.dart';
 
@@ -54,6 +55,6 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
 
-    return personalityPage();
+    return LoginPage();
   }
 }
