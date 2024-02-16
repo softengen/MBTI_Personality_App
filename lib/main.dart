@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
           bodyLarge: TextStyle(
               fontSize: 20,
               fontFamily: "Comforta",
-            fontWeight: FontWeight.w200
+            fontWeight: FontWeight.w400
           )
         ),
         primarySwatch: Colors.deepPurple,

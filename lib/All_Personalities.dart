@@ -21,6 +21,9 @@ final Map body ={
 
 };
 
+Color gradientColor1 = Colors.deepPurpleAccent[900] ?? Colors.deepPurple; // Null check
+Color gradientColor2 = Colors.deepPurpleAccent[200] ?? Colors.deepPurple; // Null check
+
 class INTJ extends StatefulWidget{
 
   @override
@@ -59,10 +62,21 @@ class _INTJState extends State<INTJ> {
       "focus on logic and efficiency can sometimes overshadow emotional needs. Open communication and conscious effort "
       "to express affection are crucial to ensuring their children feel loved and supported.";
 
+  String relation = "INTJs can be fulfilling partners due to their loyalty, supportive nature, and intellectual depth. However, their emotional reserve and preference for logic can create challenges. Open communication, empathy, and a willingness to adapt are essential for building strong and lasting connections with INTJs."
+  "\n\nStrengths:"
+  "\nLoyal and Committed: Once they find someone they connect with, INTJs form strong and lasting bonds. They demonstrate commitment through practical actions, intellectual stimulation, and unwavering support for their loved ones' goals."
+  "\nGood Communicators: Their direct and honest communication style, while sometimes blunt, ensures clarity and minimizes misunderstandings. They also excel at explaining complex ideas logically."
+  "\nSupportive and Encouraging: While not traditionally emotionally expressive, INTJs show their care through actions and intellectual support. They encourage their partners to grow, learn, and achieve their ambitions."
+  "\n\nChallenges:"
+  "\nEmotional Expression and Needs: Their reserved nature can make it difficult for partners to understand their emotional needs and desires. Open communication and expressing emotions constructively are key."
+  "\nFlexibility and Compromise: Their strong convictions and adherence to logic can make compromise challenging. Willingness to consider other perspectives and adapt to situations is crucial."
+  "\nConflict Resolution: Their dislike for emotional expression can lead to avoiding conflict or addressing issues indirectly. Learning healthy conflict resolution skills can benefit their relationships.";
+
   String body_text = "INTJs, also known as Masterminds, are brilliant strategists with a sharp intellect "
       "and a drive to achieve ambitious goals. They are independent thinkers, fiercely logical, and value "
       "efficiency and competence above all else. INTJs prefer deep, meaningful conversations and can find "
       "themselves easily bored by small talk.";
+
 
 
 
@@ -74,9 +88,10 @@ class _INTJState extends State<INTJ> {
 
   }
 
-  void summary(){
+  void Relation(){
     setState(() {
-      headline = "Summary";
+      headline = "Romantic Relationship";
+      body_text = relation;
     });
 
   }
@@ -173,6 +188,14 @@ class _INTJState extends State<INTJ> {
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
+                      ElevatedButton(onPressed: Friendship, child: Text("Friendship"),
+                        style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
+                        ),
+                      ),
+                      ElevatedButton(onPressed: Parenthood, child: Text("Parenthood"),
+                        style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
+                        ),
+                      ),
                       ElevatedButton(onPressed: strength, child: Text("Strength"),
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
@@ -181,12 +204,7 @@ class _INTJState extends State<INTJ> {
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
-
-                      ElevatedButton(onPressed: Friendship, child: Text("Friendship"),
-                        style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
-                        ),
-                      ),
-                      ElevatedButton(onPressed: Parenthood, child: Text("Parenthood"),
+                      ElevatedButton(onPressed: Relation, child: Text("Relationship"),
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
@@ -208,7 +226,7 @@ class _INTJState extends State<INTJ> {
 
                         Padding(
                           padding: const EdgeInsets.only(bottom: 10, top: 20),
-                          child: Center(child: Text(headline, style: Theme.of(context).textTheme.displayLarge!.copyWith(fontSize: 40, color: Colors.white))),
+                          child: Center(child: Text(headline, style: Theme.of(context).textTheme.displayLarge!.copyWith(fontSize: 40, color: Colors.white), textAlign: TextAlign.center,)),
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
@@ -266,6 +284,16 @@ class _INTPState extends State<INTP> {
       "They value open communication, honesty, and respect for individuality. "
       "However, they may struggle to express affection openly and may need to consciously work on understanding and validating their children's emotional needs.";
 
+  String relation = "INTPs can be engaging and loyal partners who offer intellectual stimulation and a unique perspective. However, their emotional reserve and dislike for routine can create challenges. Open communication, understanding their personality preferences, and a willingness to compromise are essential for building strong and lasting connections with INTPs."
+  "\n\nStrengths:"
+  "\nIntellectual Companionship: They value intelligent conversations and enjoy stimulating discussions with partners who can engage in deep thinking and explore complex ideas."
+  "\nLoyalty and Supportive Nature: Once they commit to a relationship, INTPs are loyal and supportive partners. They offer intellectual stimulation, encouragement, and unwavering support for their loved ones' goals."
+  "\nRespect for Individuality: Their independent nature translates into respect for their partner's autonomy and individuality. They appreciate and encourage individuality within the relationship."
+  "\n\nChallenges:"
+  "\nEmotional Vulnerability and Expression: Their reserved nature can make it difficult for partners to understand their emotions and needs. Open communication and learning to express feelings constructively are crucial."
+  "\nPractical Responsibilities: Their dislike for mundane tasks can lead to neglecting shared responsibilities. Finding a balance between intellectual pursuits and practical needs is important."
+  "\nConflict Resolution: Their avoidance of conflict can lead to unresolved issues or emotional distance. Learning healthy communication and conflict resolution skills can strengthen their relationships.";
+
   String body_text = "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
       "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
       "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
@@ -281,9 +309,10 @@ class _INTPState extends State<INTP> {
 
   }
 
-  void summary(){
+  void Relation(){
     setState(() {
-      headline = "Summary";
+      headline = "Romantic Relationship";
+      body_text = relation;
     });
 
   }
@@ -343,12 +372,24 @@ class _INTPState extends State<INTP> {
                     child: Container(
                       margin: EdgeInsets.all(11),
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(Radius.circular(20)),
-                        boxShadow: [BoxShadow(blurRadius: 10,spreadRadius: 5)],
-                        color: Colors.deepPurple.shade700,
+                        borderRadius: BorderRadius.circular(15),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(.9),
+                            spreadRadius: 3,
+                            blurRadius: 7,
+                            offset: const Offset(2, 5),
+                          ),
+                        ],
+                        gradient: LinearGradient(
+                          colors: [
+                            gradientColor1,
+                            gradientColor2,
+                          ],
+                        ),
                       ),
                       width: 380,
-                      height: 275,
+                      height: 250,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -357,9 +398,19 @@ class _INTPState extends State<INTP> {
                             margin: EdgeInsets.only(bottom: 10),
                             height: 60,
                             child: Text(body["INTP"][0],
-                              style: TextStyle(fontFamily: "Open Shadow", fontSize: 45,color: Colors.white),),
+                              style: const TextStyle(
+                                fontFamily: "ProtestRiot",
+                                fontSize: 45,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),),
                           ),
-                          Text(("(INTP)"), style: TextStyle(fontFamily: "Cameo Antique", fontSize: 30, color: Colors.white),),
+                          Text(("(INTP)"), style: const TextStyle(
+                            fontFamily: "Roboto",
+                            fontWeight: FontWeight.bold,
+                            fontSize: 30,
+                            color: Colors.white70,
+                          ),),
 
                         ],
                       ),
@@ -386,12 +437,15 @@ class _INTPState extends State<INTP> {
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
-
                       ElevatedButton(onPressed: Friendship, child: Text("Friendship"),
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
                       ElevatedButton(onPressed: Parenthood, child: Text("Parenthood"),
+                        style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
+                        ),
+                      ),
+                      ElevatedButton(onPressed: Relation, child: Text("Relationship"),
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
@@ -413,7 +467,7 @@ class _INTPState extends State<INTP> {
 
                         Padding(
                           padding: const EdgeInsets.only(bottom: 10, top: 20),
-                          child: Center(child: Text(headline, style: Theme.of(context).textTheme.displayLarge!.copyWith(fontSize: 40, color: Colors.white))),
+                          child: Center(child: Text(headline, style: Theme.of(context).textTheme.displayLarge!.copyWith(fontSize: 40, color: Colors.white),textAlign: TextAlign.center)),
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
@@ -456,9 +510,10 @@ class _ENTJState extends State<ENTJ> {
 
   }
 
-  void summary(){
+  void Relation(){
     setState(() {
-      headline = "Summary";
+      headline = "Romantic Relationship";
+   
     });
 
   }
@@ -568,15 +623,15 @@ class _ENTJState extends State<ENTJ> {
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
-                      ElevatedButton(onPressed: summary, child: Text("Workplace Habits"),
-                        style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
-                        ),
-                      ),
                       ElevatedButton(onPressed: Friendship, child: Text("Friendship"),
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
                       ElevatedButton(onPressed: Parenthood, child: Text("Parenthood"),
+                        style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
+                        ),
+                      ),
+                      ElevatedButton(onPressed: Relation, child: Text("Relationship"),
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
@@ -598,7 +653,7 @@ class _ENTJState extends State<ENTJ> {
 
                         Padding(
                           padding: const EdgeInsets.only(bottom: 10, top: 20),
-                          child: Center(child: Text(headline, style: Theme.of(context).textTheme.displayLarge!.copyWith(fontSize: 40, color: Colors.white))),
+                          child: Center(child: Text(headline, style: Theme.of(context).textTheme.displayLarge!.copyWith(fontSize: 40, color: Colors.white),textAlign: TextAlign.center)),
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
@@ -641,9 +696,10 @@ class _ENTPState extends State<ENTP> {
 
   }
 
-  void summary(){
+  void Relation(){
     setState(() {
-      headline = "Summary";
+      headline = "Romantic Relationship";
+   
     });
 
   }
@@ -753,15 +809,15 @@ class _ENTPState extends State<ENTP> {
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
-                      ElevatedButton(onPressed: summary, child: Text("Workplace Habits"),
-                        style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
-                        ),
-                      ),
                       ElevatedButton(onPressed: Friendship, child: Text("Friendship"),
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
                       ElevatedButton(onPressed: Parenthood, child: Text("Parenthood"),
+                        style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
+                        ),
+                      ),
+                      ElevatedButton(onPressed: Relation, child: Text("Relationship"),
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
@@ -783,7 +839,7 @@ class _ENTPState extends State<ENTP> {
 
                         Padding(
                           padding: const EdgeInsets.only(bottom: 10, top: 20),
-                          child: Center(child: Text(headline, style: Theme.of(context).textTheme.displayLarge!.copyWith(fontSize: 40, color: Colors.white))),
+                          child: Center(child: Text(headline, style: Theme.of(context).textTheme.displayLarge!.copyWith(fontSize: 40, color: Colors.white),textAlign: TextAlign.center)),
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
@@ -826,9 +882,10 @@ class _INFJState extends State<INFJ> {
 
   }
 
-  void summary(){
+  void Relation(){
     setState(() {
-      headline = "Summary";
+      headline = "Romantic Relationship";
+   
     });
 
   }
@@ -938,15 +995,15 @@ class _INFJState extends State<INFJ> {
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
-                      ElevatedButton(onPressed: summary, child: Text("Workplace Habits"),
-                        style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
-                        ),
-                      ),
                       ElevatedButton(onPressed: Friendship, child: Text("Friendship"),
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
                       ElevatedButton(onPressed: Parenthood, child: Text("Parenthood"),
+                        style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
+                        ),
+                      ),
+                      ElevatedButton(onPressed: Relation, child: Text("Relationship"),
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
@@ -968,7 +1025,7 @@ class _INFJState extends State<INFJ> {
 
                         Padding(
                           padding: const EdgeInsets.only(bottom: 10, top: 20),
-                          child: Center(child: Text(headline, style: Theme.of(context).textTheme.displayLarge!.copyWith(fontSize: 40, color: Colors.white))),
+                          child: Center(child: Text(headline, style: Theme.of(context).textTheme.displayLarge!.copyWith(fontSize: 40, color: Colors.white),textAlign: TextAlign.center)),
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
@@ -1010,9 +1067,10 @@ class _INFPState extends State<INFP> {
 
   }
 
-  void summary(){
+  void Relation(){
     setState(() {
-      headline = "Summary";
+      headline = "Romantic Relationship";
+   
     });
 
   }
@@ -1122,15 +1180,15 @@ class _INFPState extends State<INFP> {
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
-                      ElevatedButton(onPressed: summary, child: Text("Workplace Habits"),
-                        style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
-                        ),
-                      ),
                       ElevatedButton(onPressed: Friendship, child: Text("Friendship"),
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
                       ElevatedButton(onPressed: Parenthood, child: Text("Parenthood"),
+                        style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
+                        ),
+                      ),
+                      ElevatedButton(onPressed: Relation, child: Text("Relationship"),
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
@@ -1152,7 +1210,7 @@ class _INFPState extends State<INFP> {
 
                         Padding(
                           padding: const EdgeInsets.only(bottom: 10, top: 20),
-                          child: Center(child: Text(headline, style: Theme.of(context).textTheme.displayLarge!.copyWith(fontSize: 40, color: Colors.white))),
+                          child: Center(child: Text(headline, style: Theme.of(context).textTheme.displayLarge!.copyWith(fontSize: 40, color: Colors.white),textAlign: TextAlign.center)),
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
@@ -1195,9 +1253,10 @@ class _ENFJState extends State<ENFJ> {
 
   }
 
-  void summary(){
+  void Relation(){
     setState(() {
-      headline = "Summary";
+      headline = "Romantic Relationship";
+   
     });
 
   }
@@ -1307,15 +1366,15 @@ class _ENFJState extends State<ENFJ> {
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
-                      ElevatedButton(onPressed: summary, child: Text("Workplace Habits"),
-                        style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
-                        ),
-                      ),
                       ElevatedButton(onPressed: Friendship, child: Text("Friendship"),
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
                       ElevatedButton(onPressed: Parenthood, child: Text("Parenthood"),
+                        style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
+                        ),
+                      ),
+                      ElevatedButton(onPressed: Relation, child: Text("Relationship"),
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
@@ -1337,7 +1396,7 @@ class _ENFJState extends State<ENFJ> {
 
                         Padding(
                           padding: const EdgeInsets.only(bottom: 10, top: 20),
-                          child: Center(child: Text(headline, style: Theme.of(context).textTheme.displayLarge!.copyWith(fontSize: 40, color: Colors.white))),
+                          child: Center(child: Text(headline, style: Theme.of(context).textTheme.displayLarge!.copyWith(fontSize: 40, color: Colors.white),textAlign: TextAlign.center)),
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
@@ -1380,9 +1439,10 @@ class _ENFPState extends State<ENFP> {
 
   }
 
-  void summary(){
+  void Relation(){
     setState(() {
-      headline = "Summary";
+      headline = "Romantic Relationship";
+   
     });
 
   }
@@ -1492,15 +1552,15 @@ class _ENFPState extends State<ENFP> {
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
-                      ElevatedButton(onPressed: summary, child: Text("Workplace Habits"),
-                        style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
-                        ),
-                      ),
                       ElevatedButton(onPressed: Friendship, child: Text("Friendship"),
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
                       ElevatedButton(onPressed: Parenthood, child: Text("Parenthood"),
+                        style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
+                        ),
+                      ),
+                      ElevatedButton(onPressed: Relation, child: Text("Relationship"),
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
@@ -1522,7 +1582,7 @@ class _ENFPState extends State<ENFP> {
 
                         Padding(
                           padding: const EdgeInsets.only(bottom: 10, top: 20),
-                          child: Center(child: Text(headline, style: Theme.of(context).textTheme.displayLarge!.copyWith(fontSize: 40, color: Colors.white))),
+                          child: Center(child: Text(headline, style: Theme.of(context).textTheme.displayLarge!.copyWith(fontSize: 40, color: Colors.white),textAlign: TextAlign.center)),
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
@@ -1565,9 +1625,10 @@ class _ISTJState extends State<ISTJ> {
 
   }
 
-  void summary(){
+  void Relation(){
     setState(() {
-      headline = "Summary";
+      headline = "Romantic Relationship";
+   
     });
 
   }
@@ -1677,15 +1738,15 @@ class _ISTJState extends State<ISTJ> {
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
-                      ElevatedButton(onPressed: summary, child: Text("Workplace Habits"),
-                        style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
-                        ),
-                      ),
                       ElevatedButton(onPressed: Friendship, child: Text("Friendship"),
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
                       ElevatedButton(onPressed: Parenthood, child: Text("Parenthood"),
+                        style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
+                        ),
+                      ),
+                      ElevatedButton(onPressed: Relation, child: Text("Relationship"),
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
@@ -1707,7 +1768,7 @@ class _ISTJState extends State<ISTJ> {
 
                         Padding(
                           padding: const EdgeInsets.only(bottom: 10, top: 20),
-                          child: Center(child: Text(headline, style: Theme.of(context).textTheme.displayLarge!.copyWith(fontSize: 40, color: Colors.white))),
+                          child: Center(child: Text(headline, style: Theme.of(context).textTheme.displayLarge!.copyWith(fontSize: 40, color: Colors.white),textAlign: TextAlign.center)),
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
@@ -1749,9 +1810,10 @@ class _ISFJState extends State<ISFJ> {
 
   }
 
-  void summary(){
+  void Relation(){
     setState(() {
-      headline = "Summary";
+      headline = "Romantic Relationship";
+   
     });
 
   }
@@ -1861,15 +1923,15 @@ class _ISFJState extends State<ISFJ> {
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
-                      ElevatedButton(onPressed: summary, child: Text("Workplace Habits"),
-                        style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
-                        ),
-                      ),
                       ElevatedButton(onPressed: Friendship, child: Text("Friendship"),
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
                       ElevatedButton(onPressed: Parenthood, child: Text("Parenthood"),
+                        style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
+                        ),
+                      ),
+                      ElevatedButton(onPressed: Relation, child: Text("Relationship"),
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
@@ -1891,7 +1953,7 @@ class _ISFJState extends State<ISFJ> {
 
                         Padding(
                           padding: const EdgeInsets.only(bottom: 10, top: 20),
-                          child: Center(child: Text(headline, style: Theme.of(context).textTheme.displayLarge!.copyWith(fontSize: 40, color: Colors.white))),
+                          child: Center(child: Text(headline, style: Theme.of(context).textTheme.displayLarge!.copyWith(fontSize: 40, color: Colors.white),textAlign: TextAlign.center)),
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
@@ -1934,9 +1996,10 @@ class _ESTJState extends State<ESTJ> {
 
   }
 
-  void summary(){
+  void Relation(){
     setState(() {
-      headline = "Summary";
+      headline = "Romantic Relationship";
+   
     });
 
   }
@@ -2046,15 +2109,15 @@ class _ESTJState extends State<ESTJ> {
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
-                      ElevatedButton(onPressed: summary, child: Text("Workplace Habits"),
-                        style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
-                        ),
-                      ),
                       ElevatedButton(onPressed: Friendship, child: Text("Friendship"),
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
                       ElevatedButton(onPressed: Parenthood, child: Text("Parenthood"),
+                        style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
+                        ),
+                      ),
+                      ElevatedButton(onPressed: Relation, child: Text("Relationship"),
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
@@ -2076,7 +2139,7 @@ class _ESTJState extends State<ESTJ> {
 
                         Padding(
                           padding: const EdgeInsets.only(bottom: 10, top: 20),
-                          child: Center(child: Text(headline, style: Theme.of(context).textTheme.displayLarge!.copyWith(fontSize: 40, color: Colors.white))),
+                          child: Center(child: Text(headline, style: Theme.of(context).textTheme.displayLarge!.copyWith(fontSize: 40, color: Colors.white),textAlign: TextAlign.center)),
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
@@ -2119,9 +2182,10 @@ class _ESFJState extends State<ESFJ> {
 
   }
 
-  void summary(){
+  void Relation(){
     setState(() {
-      headline = "Summary";
+      headline = "Romantic Relationship";
+   
     });
 
   }
@@ -2231,15 +2295,15 @@ class _ESFJState extends State<ESFJ> {
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
-                      ElevatedButton(onPressed: summary, child: Text("Workplace Habits"),
-                        style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
-                        ),
-                      ),
                       ElevatedButton(onPressed: Friendship, child: Text("Friendship"),
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
                       ElevatedButton(onPressed: Parenthood, child: Text("Parenthood"),
+                        style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
+                        ),
+                      ),
+                      ElevatedButton(onPressed: Relation, child: Text("Relationship"),
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
@@ -2261,7 +2325,7 @@ class _ESFJState extends State<ESFJ> {
 
                         Padding(
                           padding: const EdgeInsets.only(bottom: 10, top: 20),
-                          child: Center(child: Text(headline, style: Theme.of(context).textTheme.displayLarge!.copyWith(fontSize: 40, color: Colors.white))),
+                          child: Center(child: Text(headline, style: Theme.of(context).textTheme.displayLarge!.copyWith(fontSize: 40, color: Colors.white),textAlign: TextAlign.center)),
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
@@ -2304,9 +2368,10 @@ class _ISTPState extends State<ISTP> {
 
   }
 
-  void summary(){
+  void Relation(){
     setState(() {
-      headline = "Summary";
+      headline = "Romantic Relationship";
+   
     });
 
   }
@@ -2416,15 +2481,15 @@ class _ISTPState extends State<ISTP> {
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
-                      ElevatedButton(onPressed: summary, child: Text("Workplace Habits"),
-                        style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
-                        ),
-                      ),
                       ElevatedButton(onPressed: Friendship, child: Text("Friendship"),
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
                       ElevatedButton(onPressed: Parenthood, child: Text("Parenthood"),
+                        style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
+                        ),
+                      ),
+                      ElevatedButton(onPressed: Relation, child: Text("Relationship"),
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
@@ -2446,7 +2511,7 @@ class _ISTPState extends State<ISTP> {
 
                         Padding(
                           padding: const EdgeInsets.only(bottom: 10, top: 20),
-                          child: Center(child: Text(headline, style: Theme.of(context).textTheme.displayLarge!.copyWith(fontSize: 40, color: Colors.white))),
+                          child: Center(child: Text(headline, style: Theme.of(context).textTheme.displayLarge!.copyWith(fontSize: 40, color: Colors.white),textAlign: TextAlign.center)),
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
@@ -2488,9 +2553,10 @@ class _ISFPState extends State<ISFP> {
 
   }
 
-  void summary(){
+  void Relation(){
     setState(() {
-      headline = "Summary";
+      headline = "Romantic Relationship";
+   
     });
 
   }
@@ -2600,15 +2666,15 @@ class _ISFPState extends State<ISFP> {
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
-                      ElevatedButton(onPressed: summary, child: Text("Workplace Habits"),
-                        style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
-                        ),
-                      ),
                       ElevatedButton(onPressed: Friendship, child: Text("Friendship"),
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
                       ElevatedButton(onPressed: Parenthood, child: Text("Parenthood"),
+                        style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
+                        ),
+                      ),
+                      ElevatedButton(onPressed: Relation, child: Text("Relationship"),
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
@@ -2630,7 +2696,7 @@ class _ISFPState extends State<ISFP> {
 
                         Padding(
                           padding: const EdgeInsets.only(bottom: 10, top: 20),
-                          child: Center(child: Text(headline, style: Theme.of(context).textTheme.displayLarge!.copyWith(fontSize: 40, color: Colors.white))),
+                          child: Center(child: Text(headline, style: Theme.of(context).textTheme.displayLarge!.copyWith(fontSize: 40, color: Colors.white),textAlign: TextAlign.center)),
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
@@ -2673,9 +2739,10 @@ class _ESTPState extends State<ESTP> {
 
   }
 
-  void summary(){
+  void Relation(){
     setState(() {
-      headline = "Summary";
+      headline = "Romantic Relationship";
+   
     });
 
   }
@@ -2785,15 +2852,15 @@ class _ESTPState extends State<ESTP> {
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
-                      ElevatedButton(onPressed: summary, child: Text("Workplace Habits"),
-                        style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
-                        ),
-                      ),
                       ElevatedButton(onPressed: Friendship, child: Text("Friendship"),
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
                       ElevatedButton(onPressed: Parenthood, child: Text("Parenthood"),
+                        style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
+                        ),
+                      ),
+                      ElevatedButton(onPressed: Relation, child: Text("Relationship"),
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
@@ -2815,7 +2882,7 @@ class _ESTPState extends State<ESTP> {
 
                         Padding(
                           padding: const EdgeInsets.only(bottom: 10, top: 20),
-                          child: Center(child: Text(headline, style: Theme.of(context).textTheme.displayLarge!.copyWith(fontSize: 40, color: Colors.white))),
+                          child: Center(child: Text(headline, style: Theme.of(context).textTheme.displayLarge!.copyWith(fontSize: 40, color: Colors.white),textAlign: TextAlign.center)),
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
@@ -2858,9 +2925,10 @@ class _ESFPState extends State<ESFP> {
 
   }
 
-  void summary(){
+  void Relation(){
     setState(() {
-      headline = "Summary";
+      headline = "Romantic Relationship";
+   
     });
 
   }
@@ -2970,15 +3038,15 @@ class _ESFPState extends State<ESFP> {
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
-                      ElevatedButton(onPressed: summary, child: Text("Workplace Habits"),
-                        style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
-                        ),
-                      ),
                       ElevatedButton(onPressed: Friendship, child: Text("Friendship"),
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
                       ElevatedButton(onPressed: Parenthood, child: Text("Parenthood"),
+                        style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
+                        ),
+                      ),
+                      ElevatedButton(onPressed: Relation, child: Text("Relationship"),
                         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)))
                         ),
                       ),
@@ -3000,7 +3068,7 @@ class _ESFPState extends State<ESFP> {
 
                         Padding(
                           padding: const EdgeInsets.only(bottom: 10, top: 20),
-                          child: Center(child: Text(headline, style: Theme.of(context).textTheme.displayLarge!.copyWith(fontSize: 40, color: Colors.white))),
+                          child: Center(child: Text(headline, style: Theme.of(context).textTheme.displayLarge!.copyWith(fontSize: 40, color: Colors.white),textAlign: TextAlign.center)),
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),

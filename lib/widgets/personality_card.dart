@@ -20,13 +20,13 @@ class personality_card extends StatelessWidget {
         child: Container(
           margin: const EdgeInsets.all(16),
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(12),
+            borderRadius: BorderRadius.circular(15),
             boxShadow: [
               BoxShadow(
-                color: Colors.black.withOpacity(0.5),
+                color: Colors.black.withOpacity(.9),
                 spreadRadius: 3,
                 blurRadius: 7,
-                offset: const Offset(0, 3),
+                offset: const Offset(2, 5),
               ),
             ],
             gradient: LinearGradient(
