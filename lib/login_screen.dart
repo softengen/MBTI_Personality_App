@@ -23,7 +23,7 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-            'Login Page',
+          'Login Page',
           style: TextStyle(
             fontSize: 28,
             fontWeight: FontWeight.bold,
