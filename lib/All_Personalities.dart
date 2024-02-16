@@ -153,12 +153,24 @@ class _INTJState extends State<INTJ> {
                     child: Container(
                       margin: EdgeInsets.all(11),
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(Radius.circular(20)),
-                        boxShadow: [BoxShadow(blurRadius: 10,spreadRadius: 5)],
-                        color: Colors.deepPurple.shade700,
+                        borderRadius: BorderRadius.circular(15),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(.9),
+                            spreadRadius: 3,
+                            blurRadius: 7,
+                            offset: const Offset(2, 5),
+                          ),
+                        ],
+                        gradient: LinearGradient(
+                          colors: [
+                            gradientColor1,
+                            gradientColor2,
+                          ],
+                        ),
                       ),
                       width: 380,
-                      height: 270,
+                      height: 250,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -167,9 +179,19 @@ class _INTJState extends State<INTJ> {
                             margin: EdgeInsets.only(bottom: 10),
                             height: 60,
                             child: Text(body["INTJ"][0],
-                              style: TextStyle(fontFamily: "Open Shadow", fontSize: 45,color: Colors.white),),
+                              style: const TextStyle(
+                                fontFamily: "ProtestRiot",
+                                fontSize: 45,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),),
                           ),
-                          Text(("(INTJ)"), style: TextStyle(fontFamily: "Cameo Antique", fontSize: 30, color: Colors.white),),
+                          Text(("(INTJ)"), style: const TextStyle(
+                            fontFamily: "Roboto",
+                            fontWeight: FontWeight.bold,
+                            fontSize: 30,
+                            color: Colors.white70,
+                          ),),
 
                         ],
                       ),
@@ -580,12 +602,24 @@ class _ENTJState extends State<ENTJ> {
                     child: Container(
                       margin: EdgeInsets.all(11),
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(Radius.circular(20)),
-                        boxShadow: [BoxShadow(blurRadius: 10,spreadRadius: 5)],
-                        color: Colors.deepPurple.shade700,
+                        borderRadius: BorderRadius.circular(15),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(.9),
+                            spreadRadius: 3,
+                            blurRadius: 7,
+                            offset: const Offset(2, 5),
+                          ),
+                        ],
+                        gradient: LinearGradient(
+                          colors: [
+                            gradientColor1,
+                            gradientColor2,
+                          ],
+                        ),
                       ),
                       width: 380,
-                      height: 270,
+                      height: 250,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -594,9 +628,19 @@ class _ENTJState extends State<ENTJ> {
                             margin: EdgeInsets.only(bottom: 10),
                             height: 60,
                             child: Text(card[1],
-                              style: TextStyle(fontFamily: "Open Shadow", fontSize: 45,color: Colors.white),),
+                              style: const TextStyle(
+                                fontFamily: "ProtestRiot",
+                                fontSize: 45,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),),
                           ),
-                          Text(("(${card[0]})"), style: TextStyle(fontFamily: "Cameo Antique", fontSize: 30, color: Colors.white),),
+                          Text(("(${card[0]})"), style: const TextStyle(
+                            fontFamily: "Roboto",
+                            fontWeight: FontWeight.bold,
+                            fontSize: 30,
+                            color: Colors.white70,
+                          ),),
 
                         ],
                       ),
@@ -766,12 +810,24 @@ class _ENTPState extends State<ENTP> {
                     child: Container(
                       margin: EdgeInsets.all(11),
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(Radius.circular(20)),
-                        boxShadow: [BoxShadow(blurRadius: 10,spreadRadius: 5)],
-                        color: Colors.deepPurple.shade700,
+                        borderRadius: BorderRadius.circular(15),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(.9),
+                            spreadRadius: 3,
+                            blurRadius: 7,
+                            offset: const Offset(2, 5),
+                          ),
+                        ],
+                        gradient: LinearGradient(
+                          colors: [
+                            gradientColor1,
+                            gradientColor2,
+                          ],
+                        ),
                       ),
                       width: 380,
-                      height: 270,
+                      height: 250,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -780,9 +836,19 @@ class _ENTPState extends State<ENTP> {
                             margin: EdgeInsets.only(bottom: 10),
                             height: 60,
                             child: Text(card[1],
-                              style: TextStyle(fontFamily: "Open Shadow", fontSize: 45,color: Colors.white),),
+                              style: const TextStyle(
+                                fontFamily: "ProtestRiot",
+                                fontSize: 45,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),),
                           ),
-                          Text(("(${card[0]})"), style: TextStyle(fontFamily: "Cameo Antique", fontSize: 30, color: Colors.white),),
+                          Text(("(${card[0]})"), style: const TextStyle(
+                            fontFamily: "Roboto",
+                            fontWeight: FontWeight.bold,
+                            fontSize: 30,
+                            color: Colors.white70,
+                          ),),
 
                         ],
                       ),
@@ -952,12 +1018,24 @@ class _INFJState extends State<INFJ> {
                     child: Container(
                       margin: EdgeInsets.all(11),
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(Radius.circular(20)),
-                        boxShadow: [BoxShadow(blurRadius: 10,spreadRadius: 5)],
-                        color: Colors.deepPurple.shade700,
+                        borderRadius: BorderRadius.circular(15),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(.9),
+                            spreadRadius: 3,
+                            blurRadius: 7,
+                            offset: const Offset(2, 5),
+                          ),
+                        ],
+                        gradient: LinearGradient(
+                          colors: [
+                            gradientColor1,
+                            gradientColor2,
+                          ],
+                        ),
                       ),
                       width: 380,
-                      height: 270,
+                      height: 250,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -966,9 +1044,19 @@ class _INFJState extends State<INFJ> {
                             margin: EdgeInsets.only(bottom: 10),
                             height: 60,
                             child: Text(card[1],
-                              style: TextStyle(fontFamily: "Open Shadow", fontSize: 45,color: Colors.white),),
+                              style: const TextStyle(
+                                fontFamily: "ProtestRiot",
+                                fontSize: 45,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),),
                           ),
-                          Text(("(${card[0]})"), style: TextStyle(fontFamily: "Cameo Antique", fontSize: 30, color: Colors.white),),
+                          Text(("(${card[0]})"), style: const TextStyle(
+                            fontFamily: "Roboto",
+                            fontWeight: FontWeight.bold,
+                            fontSize: 30,
+                            color: Colors.white70,
+                          ),),
 
                         ],
                       ),
@@ -1137,12 +1225,24 @@ class _INFPState extends State<INFP> {
                     child: Container(
                       margin: EdgeInsets.all(11),
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(Radius.circular(20)),
-                        boxShadow: [BoxShadow(blurRadius: 10,spreadRadius: 5)],
-                        color: Colors.deepPurple.shade700,
+                        borderRadius: BorderRadius.circular(15),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(.9),
+                            spreadRadius: 3,
+                            blurRadius: 7,
+                            offset: const Offset(2, 5),
+                          ),
+                        ],
+                        gradient: LinearGradient(
+                          colors: [
+                            gradientColor1,
+                            gradientColor2,
+                          ],
+                        ),
                       ),
                       width: 380,
-                      height: 270,
+                      height: 250,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -1151,9 +1251,19 @@ class _INFPState extends State<INFP> {
                             margin: EdgeInsets.only(bottom: 10),
                             height: 60,
                             child: Text(card[1],
-                              style: TextStyle(fontFamily: "Open Shadow", fontSize: 45,color: Colors.white),),
+                              style: const TextStyle(
+                                fontFamily: "ProtestRiot",
+                                fontSize: 45,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),),
                           ),
-                          Text(("(${card[0]})"), style: TextStyle(fontFamily: "Cameo Antique", fontSize: 30, color: Colors.white),),
+                          Text(("(${card[0]})"), style: const TextStyle(
+                            fontFamily: "Roboto",
+                            fontWeight: FontWeight.bold,
+                            fontSize: 30,
+                            color: Colors.white70,
+                          ),),
 
                         ],
                       ),
@@ -1323,12 +1433,24 @@ class _ENFJState extends State<ENFJ> {
                     child: Container(
                       margin: EdgeInsets.all(11),
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(Radius.circular(20)),
-                        boxShadow: [BoxShadow(blurRadius: 10,spreadRadius: 5)],
-                        color: Colors.deepPurple.shade700,
+                        borderRadius: BorderRadius.circular(15),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(.9),
+                            spreadRadius: 3,
+                            blurRadius: 7,
+                            offset: const Offset(2, 5),
+                          ),
+                        ],
+                        gradient: LinearGradient(
+                          colors: [
+                            gradientColor1,
+                            gradientColor2,
+                          ],
+                        ),
                       ),
                       width: 380,
-                      height: 270,
+                      height: 250,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -1337,9 +1459,19 @@ class _ENFJState extends State<ENFJ> {
                             margin: EdgeInsets.only(bottom: 10),
                             height: 60,
                             child: Text(card[1],
-                              style: TextStyle(fontFamily: "Open Shadow", fontSize: 45,color: Colors.white),),
+                              style: const TextStyle(
+                                fontFamily: "ProtestRiot",
+                                fontSize: 45,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),),
                           ),
-                          Text(("(${card[0]})"), style: TextStyle(fontFamily: "Cameo Antique", fontSize: 30, color: Colors.white),),
+                          Text(("(${card[0]})"), style: const TextStyle(
+                            fontFamily: "Roboto",
+                            fontWeight: FontWeight.bold,
+                            fontSize: 30,
+                            color: Colors.white70,
+                          ),),
 
                         ],
                       ),
@@ -1509,12 +1641,24 @@ class _ENFPState extends State<ENFP> {
                     child: Container(
                       margin: EdgeInsets.all(11),
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(Radius.circular(20)),
-                        boxShadow: [BoxShadow(blurRadius: 10,spreadRadius: 5)],
-                        color: Colors.deepPurple.shade700,
+                        borderRadius: BorderRadius.circular(15),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(.9),
+                            spreadRadius: 3,
+                            blurRadius: 7,
+                            offset: const Offset(2, 5),
+                          ),
+                        ],
+                        gradient: LinearGradient(
+                          colors: [
+                            gradientColor1,
+                            gradientColor2,
+                          ],
+                        ),
                       ),
                       width: 380,
-                      height: 270,
+                      height: 250,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -1523,9 +1667,19 @@ class _ENFPState extends State<ENFP> {
                             margin: EdgeInsets.only(bottom: 10),
                             height: 60,
                             child: Text(card[1],
-                              style: TextStyle(fontFamily: "Open Shadow", fontSize: 45,color: Colors.white),),
+                              style: const TextStyle(
+                                fontFamily: "ProtestRiot",
+                                fontSize: 45,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),),
                           ),
-                          Text(("(${card[0]})"), style: TextStyle(fontFamily: "Cameo Antique", fontSize: 30, color: Colors.white),),
+                          Text(("(${card[0]})"), style: const TextStyle(
+                            fontFamily: "Roboto",
+                            fontWeight: FontWeight.bold,
+                            fontSize: 30,
+                            color: Colors.white70,
+                          ),),
 
                         ],
                       ),
@@ -1695,12 +1849,24 @@ class _ISTJState extends State<ISTJ> {
                     child: Container(
                       margin: EdgeInsets.all(11),
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(Radius.circular(20)),
-                        boxShadow: [BoxShadow(blurRadius: 10,spreadRadius: 5)],
-                        color: Colors.deepPurple.shade700,
+                        borderRadius: BorderRadius.circular(15),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(.9),
+                            spreadRadius: 3,
+                            blurRadius: 7,
+                            offset: const Offset(2, 5),
+                          ),
+                        ],
+                        gradient: LinearGradient(
+                          colors: [
+                            gradientColor1,
+                            gradientColor2,
+                          ],
+                        ),
                       ),
                       width: 380,
-                      height: 270,
+                      height: 250,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -1709,9 +1875,19 @@ class _ISTJState extends State<ISTJ> {
                             margin: EdgeInsets.only(bottom: 10),
                             height: 60,
                             child: Text(card[1],
-                              style: TextStyle(fontFamily: "Open Shadow", fontSize: 45,color: Colors.white),),
+                              style: const TextStyle(
+                                fontFamily: "ProtestRiot",
+                                fontSize: 45,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),),
                           ),
-                          Text(("(${card[0]})"), style: TextStyle(fontFamily: "Cameo Antique", fontSize: 30, color: Colors.white),),
+                          Text(("(${card[0]})"), style: const TextStyle(
+                            fontFamily: "Roboto",
+                            fontWeight: FontWeight.bold,
+                            fontSize: 30,
+                            color: Colors.white70,
+                          ),),
 
                         ],
                       ),
@@ -1880,12 +2056,24 @@ class _ISFJState extends State<ISFJ> {
                     child: Container(
                       margin: EdgeInsets.all(11),
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(Radius.circular(20)),
-                        boxShadow: [BoxShadow(blurRadius: 10,spreadRadius: 5)],
-                        color: Colors.deepPurple.shade700,
+                        borderRadius: BorderRadius.circular(15),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(.9),
+                            spreadRadius: 3,
+                            blurRadius: 7,
+                            offset: const Offset(2, 5),
+                          ),
+                        ],
+                        gradient: LinearGradient(
+                          colors: [
+                            gradientColor1,
+                            gradientColor2,
+                          ],
+                        ),
                       ),
                       width: 380,
-                      height: 270,
+                      height: 250,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -1894,9 +2082,19 @@ class _ISFJState extends State<ISFJ> {
                             margin: EdgeInsets.only(bottom: 10),
                             height: 60,
                             child: Text(card[1],
-                              style: TextStyle(fontFamily: "Open Shadow", fontSize: 45,color: Colors.white),),
+                              style: const TextStyle(
+                                fontFamily: "ProtestRiot",
+                                fontSize: 45,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),),
                           ),
-                          Text(("(${card[0]})"), style: TextStyle(fontFamily: "Cameo Antique", fontSize: 30, color: Colors.white),),
+                          Text(("(${card[0]})"), style: const TextStyle(
+                            fontFamily: "Roboto",
+                            fontWeight: FontWeight.bold,
+                            fontSize: 30,
+                            color: Colors.white70,
+                          ),),
 
                         ],
                       ),
@@ -2066,12 +2264,24 @@ class _ESTJState extends State<ESTJ> {
                     child: Container(
                       margin: EdgeInsets.all(11),
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(Radius.circular(20)),
-                        boxShadow: [BoxShadow(blurRadius: 10,spreadRadius: 5)],
-                        color: Colors.deepPurple.shade700,
+                        borderRadius: BorderRadius.circular(15),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(.9),
+                            spreadRadius: 3,
+                            blurRadius: 7,
+                            offset: const Offset(2, 5),
+                          ),
+                        ],
+                        gradient: LinearGradient(
+                          colors: [
+                            gradientColor1,
+                            gradientColor2,
+                          ],
+                        ),
                       ),
                       width: 380,
-                      height: 270,
+                      height: 250,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -2080,9 +2290,19 @@ class _ESTJState extends State<ESTJ> {
                             margin: EdgeInsets.only(bottom: 10),
                             height: 60,
                             child: Text(card[1],
-                              style: TextStyle(fontFamily: "Open Shadow", fontSize: 45,color: Colors.white),),
+                              style: const TextStyle(
+                                fontFamily: "ProtestRiot",
+                                fontSize: 45,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),),
                           ),
-                          Text(("(${card[0]})"), style: TextStyle(fontFamily: "Cameo Antique", fontSize: 30, color: Colors.white),),
+                          Text(("(${card[0]})"), style: const TextStyle(
+                            fontFamily: "Roboto",
+                            fontWeight: FontWeight.bold,
+                            fontSize: 30,
+                            color: Colors.white70,
+                          ),),
 
                         ],
                       ),
@@ -2252,12 +2472,24 @@ class _ESFJState extends State<ESFJ> {
                     child: Container(
                       margin: EdgeInsets.all(11),
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(Radius.circular(20)),
-                        boxShadow: [BoxShadow(blurRadius: 10,spreadRadius: 5)],
-                        color: Colors.deepPurple.shade700,
+                        borderRadius: BorderRadius.circular(15),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(.9),
+                            spreadRadius: 3,
+                            blurRadius: 7,
+                            offset: const Offset(2, 5),
+                          ),
+                        ],
+                        gradient: LinearGradient(
+                          colors: [
+                            gradientColor1,
+                            gradientColor2,
+                          ],
+                        ),
                       ),
                       width: 380,
-                      height: 270,
+                      height: 250,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -2266,9 +2498,19 @@ class _ESFJState extends State<ESFJ> {
                             margin: EdgeInsets.only(bottom: 10),
                             height: 60,
                             child: Text(card[1],
-                              style: TextStyle(fontFamily: "Open Shadow", fontSize: 45,color: Colors.white),),
+                              style: const TextStyle(
+                                fontFamily: "ProtestRiot",
+                                fontSize: 45,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),),
                           ),
-                          Text(("(${card[0]})"), style: TextStyle(fontFamily: "Cameo Antique", fontSize: 30, color: Colors.white),),
+                          Text(("(${card[0]})"), style: const TextStyle(
+                            fontFamily: "Roboto",
+                            fontWeight: FontWeight.bold,
+                            fontSize: 30,
+                            color: Colors.white70,
+                          ),),
 
                         ],
                       ),
@@ -2438,12 +2680,24 @@ class _ISTPState extends State<ISTP> {
                     child: Container(
                       margin: EdgeInsets.all(11),
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(Radius.circular(20)),
-                        boxShadow: [BoxShadow(blurRadius: 10,spreadRadius: 5)],
-                        color: Colors.deepPurple.shade700,
+                        borderRadius: BorderRadius.circular(15),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(.9),
+                            spreadRadius: 3,
+                            blurRadius: 7,
+                            offset: const Offset(2, 5),
+                          ),
+                        ],
+                        gradient: LinearGradient(
+                          colors: [
+                            gradientColor1,
+                            gradientColor2,
+                          ],
+                        ),
                       ),
                       width: 380,
-                      height: 270,
+                      height: 250,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -2452,9 +2706,19 @@ class _ISTPState extends State<ISTP> {
                             margin: EdgeInsets.only(bottom: 10),
                             height: 60,
                             child: Text(card[1],
-                              style: TextStyle(fontFamily: "Open Shadow", fontSize: 45,color: Colors.white),),
+                              style: const TextStyle(
+                                fontFamily: "ProtestRiot",
+                                fontSize: 45,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),),
                           ),
-                          Text(("(${card[0]})"), style: TextStyle(fontFamily: "Cameo Antique", fontSize: 30, color: Colors.white),),
+                          Text(("(${card[0]})"), style: const TextStyle(
+                            fontFamily: "Roboto",
+                            fontWeight: FontWeight.bold,
+                            fontSize: 30,
+                            color: Colors.white70,
+                          ),),
 
                         ],
                       ),
@@ -2623,12 +2887,24 @@ class _ISFPState extends State<ISFP> {
                     child: Container(
                       margin: EdgeInsets.all(11),
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(Radius.circular(20)),
-                        boxShadow: [BoxShadow(blurRadius: 10,spreadRadius: 5)],
-                        color: Colors.deepPurple.shade700,
+                        borderRadius: BorderRadius.circular(15),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(.9),
+                            spreadRadius: 3,
+                            blurRadius: 7,
+                            offset: const Offset(2, 5),
+                          ),
+                        ],
+                        gradient: LinearGradient(
+                          colors: [
+                            gradientColor1,
+                            gradientColor2,
+                          ],
+                        ),
                       ),
                       width: 380,
-                      height: 270,
+                      height: 250,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -2637,9 +2913,19 @@ class _ISFPState extends State<ISFP> {
                             margin: EdgeInsets.only(bottom: 10),
                             height: 60,
                             child: Text(card[1],
-                              style: TextStyle(fontFamily: "Open Shadow", fontSize: 45,color: Colors.white),),
+                              style: const TextStyle(
+                                fontFamily: "ProtestRiot",
+                                fontSize: 45,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),),
                           ),
-                          Text(("(${card[0]})"), style: TextStyle(fontFamily: "Cameo Antique", fontSize: 30, color: Colors.white),),
+                          Text(("(${card[0]})"), style: const TextStyle(
+                            fontFamily: "Roboto",
+                            fontWeight: FontWeight.bold,
+                            fontSize: 30,
+                            color: Colors.white70,
+                          ),),
 
                         ],
                       ),
@@ -2809,12 +3095,24 @@ class _ESTPState extends State<ESTP> {
                     child: Container(
                       margin: EdgeInsets.all(11),
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(Radius.circular(20)),
-                        boxShadow: [BoxShadow(blurRadius: 10,spreadRadius: 5)],
-                        color: Colors.deepPurple.shade700,
+                        borderRadius: BorderRadius.circular(15),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(.9),
+                            spreadRadius: 3,
+                            blurRadius: 7,
+                            offset: const Offset(2, 5),
+                          ),
+                        ],
+                        gradient: LinearGradient(
+                          colors: [
+                            gradientColor1,
+                            gradientColor2,
+                          ],
+                        ),
                       ),
                       width: 380,
-                      height: 270,
+                      height: 250,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -2823,9 +3121,19 @@ class _ESTPState extends State<ESTP> {
                             margin: EdgeInsets.only(bottom: 10),
                             height: 60,
                             child: Text(card[1],
-                              style: TextStyle(fontFamily: "Open Shadow", fontSize: 45,color: Colors.white),),
+                              style: const TextStyle(
+                                fontFamily: "ProtestRiot",
+                                fontSize: 45,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),),
                           ),
-                          Text(("(${card[0]})"), style: TextStyle(fontFamily: "Cameo Antique", fontSize: 30, color: Colors.white),),
+                          Text(("(${card[0]})"), style: const TextStyle(
+                            fontFamily: "Roboto",
+                            fontWeight: FontWeight.bold,
+                            fontSize: 30,
+                            color: Colors.white70,
+                          ),),
 
                         ],
                       ),
@@ -2995,12 +3303,24 @@ class _ESFPState extends State<ESFP> {
                     child: Container(
                       margin: EdgeInsets.all(11),
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(Radius.circular(20)),
-                        boxShadow: [BoxShadow(blurRadius: 10,spreadRadius: 5)],
-                        color: Colors.deepPurple.shade700,
+                        borderRadius: BorderRadius.circular(15),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(.9),
+                            spreadRadius: 3,
+                            blurRadius: 7,
+                            offset: const Offset(2, 5),
+                          ),
+                        ],
+                        gradient: LinearGradient(
+                          colors: [
+                            gradientColor1,
+                            gradientColor2,
+                          ],
+                        ),
                       ),
                       width: 380,
-                      height: 270,
+                      height: 250,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -3009,9 +3329,19 @@ class _ESFPState extends State<ESFP> {
                             margin: EdgeInsets.only(bottom: 10),
                             height: 60,
                             child: Text(card[1],
-                              style: TextStyle(fontFamily: "Open Shadow", fontSize: 45,color: Colors.white),),
+                              style: const TextStyle(
+                                fontFamily: "ProtestRiot",
+                                fontSize: 45,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),),
                           ),
-                          Text(("(${card[0]})"), style: TextStyle(fontFamily: "Cameo Antique", fontSize: 30, color: Colors.white),),
+                          Text(("(${card[0]})"), style: const TextStyle(
+                            fontFamily: "Roboto",
+                            fontWeight: FontWeight.bold,
+                            fontSize: 30,
+                            color: Colors.white70,
+                          ),),
 
                         ],
                       ),
