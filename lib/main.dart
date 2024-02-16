@@ -1,3 +1,4 @@
+import 'package:baje_project/login_screen.dart';
 import 'package:baje_project/personalityPage.dart';
 import 'package:flutter/material.dart';
 
@@ -17,23 +18,19 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         textTheme: const TextTheme(
             displayLarge: TextStyle(
-              fontSize: 50,
-              fontWeight: FontWeight.bold,
-              fontFamily: "Astro Space",
-              color: Colors.black87),
+                fontSize: 50,
+                fontWeight: FontWeight.bold,
+                fontFamily: "Astro Space",
+                color: Colors.black87),
             bodyMedium: TextStyle(
-              fontSize: 18,
-              fontFamily: "Times New Roman",
-              color: Colors.black87
-        ),
-          bodyLarge: TextStyle(
-              fontSize: 20,
-              fontFamily: "Comforta",
-            fontWeight: FontWeight.w400
-          )
-        ),
+                fontSize: 18,
+                fontFamily: "Times New Roman",
+                color: Colors.black87),
+            bodyLarge: TextStyle(
+                fontSize: 20,
+                fontFamily: "Comforta",
+                fontWeight: FontWeight.w400)),
         primarySwatch: Colors.deepPurple,
-
       ),
       home: const MyHomePage(),
     );
@@ -41,19 +38,17 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, });
-
+  const MyHomePage({
+    super.key,
+  });
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
-
 class _MyHomePageState extends State<MyHomePage> {
-
   @override
   Widget build(BuildContext context) {
-
-    return personalityPage();
+    return LoginPage();
   }
 }
