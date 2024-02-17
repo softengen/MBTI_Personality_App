@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
@@ -22,14 +24,14 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          'Login Page',
-          style: TextStyle(
-            fontSize: 28,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-        centerTitle: true,
+        // title: const Text(
+        //   'Login Page',
+        //   style: TextStyle(
+        //     fontSize: 28,
+        //     fontWeight: FontWeight.bold,
+        //   ),
+        // ),
+        // centerTitle: true,
         // titleSpacing: -10,
       ),
       body: Padding(
@@ -38,7 +40,7 @@ class _LoginPageState extends State<LoginPage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const FlutterLogo(size: 100),
-            const SizedBox(height: 20),
+            const SizedBox(height: 60),
             TextField(
               controller: _usernameController,
               decoration: const InputDecoration(
@@ -62,10 +64,11 @@ class _LoginPageState extends State<LoginPage> {
                 String username = _usernameController.text;
                 String password = _passwordController.text;
 
-                // Add your authentication logic
-                // For now, let's just print the username and password
-                print('Username: $username');
-                print('Password: $password');
+                // here authentication logic will be added
+                // For now, let's just print the username and password on the console
+
+                log('Username: $username');
+                log('Password: $password');
               },
               child: const Text('Login'),
             ),
