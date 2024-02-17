@@ -45,6 +45,10 @@ class _LoginPageState extends State<LoginPage> {
               controller: _usernameController,
               decoration: const InputDecoration(
                 labelText: 'Username',
+                labelStyle: TextStyle(
+                  fontFamily: 'UbuntuMono',
+                  fontWeight: FontWeight.bold
+                ),
                 icon: Icon(Icons.person),
               ),
             ),
@@ -53,24 +57,48 @@ class _LoginPageState extends State<LoginPage> {
               controller: _passwordController,
               decoration: const InputDecoration(
                 labelText: 'Password',
+                labelStyle: TextStyle(
+                  fontFamily: 'UbuntuMono',
+                  fontWeight: FontWeight.bold,
+                ),
                 icon: Icon(Icons.lock),
               ),
               obscureText: true,
             ),
-            const SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {
-                // Add your login logic here
-                String username = _usernameController.text;
-                String password = _passwordController.text;
+            const SizedBox(height: 40),
+            Container(
+              height: 60,
+              width: 190,
+              child: ElevatedButton(
+                onPressed: () {
+                  // Add your login logic here
+                  String username = _usernameController.text;
+                  String password = _passwordController.text;
 
-                // here authentication logic will be added
-                // For now, let's just print the username and password on the console
+                  // here authentication logic will be added later
+                  // For now, let's just print the username and password on the console
 
-                log('Username: $username');
-                log('Password: $password');
-              },
-              child: const Text('Login'),
+                  log('Username: $username');
+                  log('Password: $password');
+                },
+                child: const Text(
+                    'LOGIN',
+                  style: TextStyle(
+                    fontSize: 28,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: 'UbuntuMono',
+                  ),
+                ),
+                // design of elevated button
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.white,
+                  onPrimary: Colors.deepPurple,
+                  elevation: 5,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(6)),
+                  // padding: EdgeInsets.all(1),
+                ),
+              ),
             ),
           ],
         ),
