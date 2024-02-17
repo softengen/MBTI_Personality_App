@@ -40,7 +40,10 @@ class _LoginPageState extends State<LoginPage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const FlutterLogo(size: 100),
+            
             const SizedBox(height: 60),
+            const SizedBox(height: 40),
+
             TextField(
               controller: _usernameController,
               decoration: const InputDecoration(
@@ -50,6 +53,7 @@ class _LoginPageState extends State<LoginPage> {
                   fontWeight: FontWeight.bold
                 ),
                 icon: Icon(Icons.person),
+
               ),
             ),
             const SizedBox(height: 10),
