@@ -1,6 +1,6 @@
-import 'package:baje_project/All_Personalities.dart';
-import 'package:baje_project/Texts.dart';
-import 'package:baje_project/widgets/chart.dart';
+import 'package:mbti_app/All_Personalities.dart';
+import 'package:mbti_app/Texts.dart';
+import 'package:mbti_app/widgets/chart.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

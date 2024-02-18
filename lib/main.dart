@@ -1,5 +1,5 @@
-import 'package:baje_project/login_screen.dart';
-import 'package:baje_project/personalityPage.dart';
+import 'package:mbti_app/login_screen.dart';
+import 'package:mbti_app/personalityPage.dart';
 import 'package:flutter/material.dart';
 
 void main() {

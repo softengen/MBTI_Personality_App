@@ -1,6 +1,6 @@
 
-import 'package:baje_project/resultPage.dart';
-import 'package:baje_project/widgets/multiple_choice.dart';
+import 'package:mbti_app/resultPage.dart';
+import 'package:mbti_app/widgets/multiple_choice.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'Texts.dart';

@@ -1,5 +1,5 @@
-import 'package:baje_project/NavBar.dart';
-import 'package:baje_project/widgets/CelebCard.dart';
+import 'package:mbti_app/NavBar.dart';
+import 'package:mbti_app/widgets/CelebCard.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
