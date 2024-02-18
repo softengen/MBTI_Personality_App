@@ -23,7 +23,6 @@ class personalityPage extends StatelessWidget{
     "ISFP" : ["Artist","Artistic and sensitive, they have a strong appreciation for aesthetics and value individual expression.",ISFP()],
     "ESTP" : ["Dynamo","Energetic and spontaneous, they thrive in dynamic environments and enjoy taking risks for excitement.",ESTP()],
     "ESFP" : ["Performer","Outgoing and playful, they are natural entertainers who bring energy and enthusiasm to social settings.",ESFP()],
-
   };
 
   final List<Hero> widgets = [];
