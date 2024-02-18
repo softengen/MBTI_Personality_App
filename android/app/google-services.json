@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "690493485282",
+    "project_id": "mbti-softengen",
+    "storage_bucket": "mbti-softengen.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:690493485282:android:237e415917ac8755b4aebb",
+        "android_client_info": {
+          "package_name": "com.example.mbti_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBW7FTGxv9k0fK8thvo54ITMIDh1UaBsE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
