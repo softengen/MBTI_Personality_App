@@ -1,6 +1,6 @@
-import 'package:baje_project/famousPeople.dart';
-import 'package:baje_project/personalityPage.dart';
-import 'package:baje_project/testPage.dart';
+import 'package:mbti_app/famousPeople.dart';
+import 'package:mbti_app/personalityPage.dart';
+import 'package:mbti_app/testPage.dart';
 import 'package:flutter/material.dart';
 
 class NavBar extends StatelessWidget {
