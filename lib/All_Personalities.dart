@@ -62,15 +62,18 @@ class _INTJState extends State<INTJ> {
       "focus on logic and efficiency can sometimes overshadow emotional needs. Open communication and conscious effort "
       "to express affection are crucial to ensuring their children feel loved and supported.";
 
-  String relation = "INTJs can be fulfilling partners due to their loyalty, supportive nature, and intellectual depth. However, their emotional reserve and preference for logic can create challenges. Open communication, empathy, and a willingness to adapt are essential for building strong and lasting connections with INTJs."
-  "\n\nStrengths:"
-  "\nLoyal and Committed: Once they find someone they connect with, INTJs form strong and lasting bonds. They demonstrate commitment through practical actions, intellectual stimulation, and unwavering support for their loved ones' goals."
-  "\nGood Communicators: Their direct and honest communication style, while sometimes blunt, ensures clarity and minimizes misunderstandings. They also excel at explaining complex ideas logically."
-  "\nSupportive and Encouraging: While not traditionally emotionally expressive, INTJs show their care through actions and intellectual support. They encourage their partners to grow, learn, and achieve their ambitions."
-  "\n\nChallenges:"
-  "\nEmotional Expression and Needs: Their reserved nature can make it difficult for partners to understand their emotional needs and desires. Open communication and expressing emotions constructively are key."
-  "\nFlexibility and Compromise: Their strong convictions and adherence to logic can make compromise challenging. Willingness to consider other perspectives and adapt to situations is crucial."
-  "\nConflict Resolution: Their dislike for emotional expression can lead to avoiding conflict or addressing issues indirectly. Learning healthy conflict resolution skills can benefit their relationships.";
+  String relation = "Key Points for INTJ Relationships:"
+  "\n\nOpen communication: Express emotions constructively and actively listen to your partner's needs."
+  "\n\nEmotional understanding: Make an effort to connect with your partner on an emotional level and show appreciation for their feelings."
+  "\n\nFlexibility and compromise: Be willing to consider other perspectives and adapt to different preferences without sacrificing your core values."
+  "\n\nBalance logic and emotion: Embrace both intellectual connection and emotional intimacy for a fulfilling relationship."
+  "\n\n\nCompatible Types:"
+  "\n\nINTP: Share logical thinking, intellectual curiosity, and value for autonomy. Both appreciate deep conversations and independent exploration, but might need to work on emotional expression."
+  "\n\nENFP: Balance INTJ's logic with visionary idealism and emotional warmth. ENFPs bring creativity, enthusiasm, and a focus on possibilities, helping INTJs connect with their emotional side."
+  "\n\nINFJ: Share introspective nature, complex thinking, and value for meaningful connections. Both prioritize authenticity and understanding hidden meanings, but might need to address potential conflict avoidance."
+  "\n\nENFJ: Share strategic thinking and goal-oriented nature, but ENFJs bring warmth and social engagement, encouraging INTJs to connect with others."
+  "\n\nISTJ: Share practicality, organization, and respect for logic. ISTJs offer grounding and stability, while INTJs provide innovative ideas and strategic vision."
+  "\n\nISTP: Both value independence, logical problem-solving, and efficiency. ISTPs bring a spontaneous and action-oriented approach, balancing INTJ's focus on planning.";
 
   String body_text = "INTJs, also known as Masterminds, are brilliant strategists with a sharp intellect "
       "and a drive to achieve ambitious goals. They are independent thinkers, fiercely logical, and value "
@@ -270,7 +273,7 @@ class _INTJState extends State<INTJ> {
   }
 }
 
-//Hacker
+
 
 class INTP extends StatefulWidget{
 
@@ -306,15 +309,18 @@ class _INTPState extends State<INTP> {
       "They value open communication, honesty, and respect for individuality. "
       "However, they may struggle to express affection openly and may need to consciously work on understanding and validating their children's emotional needs.";
 
-  String relation = "INTPs can be engaging and loyal partners who offer intellectual stimulation and a unique perspective. However, their emotional reserve and dislike for routine can create challenges. Open communication, understanding their personality preferences, and a willingness to compromise are essential for building strong and lasting connections with INTPs."
-  "\n\nStrengths:"
-  "\nIntellectual Companionship: They value intelligent conversations and enjoy stimulating discussions with partners who can engage in deep thinking and explore complex ideas."
-  "\nLoyalty and Supportive Nature: Once they commit to a relationship, INTPs are loyal and supportive partners. They offer intellectual stimulation, encouragement, and unwavering support for their loved ones' goals."
-  "\nRespect for Individuality: Their independent nature translates into respect for their partner's autonomy and individuality. They appreciate and encourage individuality within the relationship."
-  "\n\nChallenges:"
-  "\nEmotional Vulnerability and Expression: Their reserved nature can make it difficult for partners to understand their emotions and needs. Open communication and learning to express feelings constructively are crucial."
-  "\nPractical Responsibilities: Their dislike for mundane tasks can lead to neglecting shared responsibilities. Finding a balance between intellectual pursuits and practical needs is important."
-  "\nConflict Resolution: Their avoidance of conflict can lead to unresolved issues or emotional distance. Learning healthy communication and conflict resolution skills can strengthen their relationships.";
+  String relation = "Key Points for INTP Relationships:"
+  "\n\nOpen communication: Express emotions constructively and actively listen to your partner's needs."
+  "\n\nEmotional understanding: Make an effort to connect with your partner on an emotional level and show appreciation for their feelings."
+  "\n\nBalancing logic and emotions: While valuing intellectual connection, embrace emotional intimacy for a fulfilling relationship."
+  "\n\nPrioritizing shared experiences: Engage in activities that connect you emotionally and foster deeper understanding."
+  "\n\n\nCompatible Types:"
+  "\n\nINTJ: Share an analytical mind, value for logic, and independent nature. Both enjoy deep intellectual conversations and exploring complex ideas, but need to work on emotional expression."
+  "\n\nENFP: Balance INTP's logic with creativity, enthusiasm, and emotional warmth. ENFPs bring new perspectives, spontaneity, and help INTPs connect with their feelings."
+  "\n\nNFJ: Share introspective nature, complex thinking, and value for meaningful connections. Both prioritize authenticity and understanding hidden meanings, but need to address potential conflict avoidance."
+  "\n\nENTP: Share intellectual curiosity, openness to new ideas, and enjoyment of debate. ENTPs bring an extraverted energy and encourage INTPs to engage socially."
+  "\n\nISTP: Value independence, logical problem-solving, and efficiency. ISTPs offer a practical and action-oriented approach, complementing INTPs' theoretical thinking."
+  "\n\nISFP: Appreciate authenticity, creativity, and individual expression. ISFPs bring emotional sensitivity and artistic expression, encouraging INTPs to connect with their emotions through shared experiences.";
 
   String body_text = "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
       "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
@@ -521,13 +527,55 @@ class ENTJ extends StatefulWidget{
 }
 
 class _ENTJState extends State<ENTJ> {
-  List<int?> values = [null];
+    String headline ="Overview";
+  String overview_body = "ENTJs, also known as Commanders, are natural-born leaders with a vision for the future "
+      "and a drive to achieve their goals. They are charismatic, confident, and strategic, with a strong sense of "
+      "purpose and a knack for motivating others. ENTJs value efficiency, logic, and order, and are always looking "
+      "for ways to improve and optimize.";
 
-  String headline ="Summary";
+  String strength_text = "Visionary Leaders: ENTJs have a clear vision for the future and are able to inspire and motivate others to follow their lead. They are strategic thinkers who can see the big picture and develop plans to achieve their goals."
+    "\n\nDecisive and Action-Oriented: ENTJs are not afraid to make decisions and take action. They are confident in their abilities and are not afraid to take risks."
+    "\n\nEfficient and Organized: ENTJs value efficiency and order. They are good at managing their time and resources and are always looking for ways to improve their systems."
+    "\n\nCharismatic and Persuasive: ENTJs are charismatic and persuasive. They are able to connect with others and get them excited about their ideas."
+    "\n\nLogical and Analytical: ENTJs are logical and analytical. They are able to see the big picture and make decisions based on facts and data.";
+
+  String weakness_text = "Stubborn and Opinionated: ENTJs can be stubborn and opinionated. They are not always open to feedback and can be dismissive of other people's ideas."
+    "\n\nInsensitive and Blunt: ENTJs can be insensitive and blunt. They may not always consider the feelings of others and can be direct to the point of rudeness."
+    "\n\nOverly Critical: ENTJs can be overly critical. They may have high standards for themselves and others and can be quick to point out mistakes."
+    "\n\nImpatient and Demanding: ENTJs can be impatient and demanding. They may expect others to keep up with their pace and may be frustrated by those who do not."
+    "\n\nWorkaholics: ENTJs can be workaholics. They may put their work above their personal relationships and may neglect their own needs.";
+
+  String friend_text = "ENTJs value friends who are intelligent, ambitious, and supportive. "
+      "\n\nThey enjoy deep conversations and challenging debates. "
+      "They are loyal and supportive friends, but they can also be demanding and critical.";
+
+  String parent_text = "ENTJ parents are demanding but supportive. "
+      "\n\nThey set high standards for their children and expect them to work hard. They are also very involved in their children's lives and are always looking for ways to help them succeed.";
+
+  String relation = "Key Points for ENTJ Relationships:"
+    "\n\nEmotional understanding: Make an effort to connect with your partner on an emotional level and be receptive to their feelings."
+    "\n\nFlexibility and compromise: Be willing to consider other perspectives and adapt to different preferences without sacrificing your core values."
+    "\n\nHealthy communication: Express your thoughts and needs assertively but respectfully, actively listen to your partner, and work through conflicts constructively."
+    "\n\nBalancing control and collaboration: Delegate tasks effectively, appreciate others' contributions, and foster a team spirit within the relationship."
+    "\n\n\nCompatible Types:"
+    "\n\nINTJ: Share strategic thinking, goal-oriented nature, and intellectual depth. Both value efficiency, logic, and achieving ambitious goals. However, both might need to work on expressing emotions openly."
+    "\n\nINFJ: Balance ENTJ's directness with their visionary idealism and emotional intelligence. INFJs offer deeper emotional connection, shared values, and intuitive understanding, but conflict resolution might require effort."
+    "\n\nENFP: Provide intellectual stimulation, enthusiasm, and a focus on possibilities, balancing ENTJ's decisiveness. ENFPs encourage flexibility and new perspectives, but emotional expression and understanding each other's needs remain crucial."
+    "\n\nENTP: Share intellectual curiosity, debate enjoyment, and a drive for innovation. ENTPs bring an extraverted energy, encouraging ENTJs to socialize and consider different viewpoints."
+    "\n\nISTJ: Appreciate structure, organization, and practical action. ISTJs offer grounding, stability, and reliable support, while ENTJs provide vision and strategic planning. However, ENTJs might need to adjust their domineering tendencies."
+    "\n\nESTP: Share decisiveness, action-orientation, and a love for challenges. ESTPs bring spontaneity, adaptability, and a fun-loving spirit, encouraging ENTJs to loosen up and enjoy the moment. Balancing assertiveness and respect is key.";
+
+  String body_text = "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
+      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
+      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
+      "conversations to small talk and often find themselves lost in thought.";
+
+
 
   void overview(){
     setState(() {
       headline = "Overview";
+      body_text = overview_body;
     });
 
   }
@@ -535,7 +583,7 @@ class _ENTJState extends State<ENTJ> {
   void Relation(){
     setState(() {
       headline = "Romantic Relationship";
-   
+      body_text = relation;
     });
 
   }
@@ -543,6 +591,7 @@ class _ENTJState extends State<ENTJ> {
   void strength(){
     setState(() {
       headline = "Strength";
+      body_text = strength_text;
     });
 
   }
@@ -550,12 +599,14 @@ class _ENTJState extends State<ENTJ> {
   void weakness() {
     setState(() {
       headline = "Weakness";
+      body_text = weakness_text;
     });
   }
 
   void Friendship(){
     setState(() {
       headline = "Friendship";
+      body_text = friend_text;
     });
 
   }
@@ -563,24 +614,14 @@ class _ENTJState extends State<ENTJ> {
   void Parenthood(){
     setState(() {
       headline = "Parenthood";
+      body_text = parent_text;
     });
 
   }
 
+
   @override
   Widget build(BuildContext context) {
-    String Summary_body = "Entrepreneurs always have an impact on their immediate surroundings – "
-        "the best way to spot them at a party is to look for the whirling eddy of people flitting "
-        "about them as they move from group to group. Laughing and entertaining with a blunt and "
-        "earthy humor, Entrepreneur personalities love to be the center of attention. If an audience "
-        "member is asked to come on stage, Entrepreneurs volunteer – or volunteer a shy friend."
-        "\n\nTheory, abstract concepts and plodding discussions about global issues and their implications "
-        "don’t keep Entrepreneurs interested for long. Entrepreneurs keep their conversation energetic, "
-        "with a good dose of intelligence, but they like to talk about what is – or better yet, to just "
-        "go out and do it. Entrepreneurs leap before they look, fixing their mistakes as they go, "
-        "rather than sitting idle, preparing contingencies and escape clauses.";
-
-    List card = ["ENTJ" ,"Entertainer","Supportive and sociable, they thrive on nurturing relationships and creating a harmonious environment."];
 
     Color bgColor = Colors.deepPurple;
 
@@ -627,7 +668,7 @@ class _ENTJState extends State<ENTJ> {
                           Container(
                             margin: EdgeInsets.only(bottom: 10),
                             height: 60,
-                            child: Text(card[1],
+                            child: Text(body["ENTJ"][0],
                               style: const TextStyle(
                                 fontFamily: "ProtestRiot",
                                 fontSize: 45,
@@ -635,7 +676,7 @@ class _ENTJState extends State<ENTJ> {
                                 color: Colors.white,
                               ),),
                           ),
-                          Text(("(${card[0]})"), style: const TextStyle(
+                          Text(("(ENTJ)"), style: const TextStyle(
                             fontFamily: "Roboto",
                             fontWeight: FontWeight.bold,
                             fontSize: 30,
@@ -701,7 +742,7 @@ class _ENTJState extends State<ENTJ> {
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
-                          child: Text(Summary_body,
+                          child: Text(body_text,
                             style: Theme.of(context).textTheme.bodyLarge!.copyWith(color: Colors.white),
                           ),
                         ),
@@ -729,13 +770,54 @@ class ENTP extends StatefulWidget{
 }
 
 class _ENTPState extends State<ENTP> {
-  List<int?> values = [null];
+    String headline ="Overview";
+  String overview_body = "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
+      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
+      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
+      "conversations to small talk and often find themselves lost in thought.";
 
-  String headline ="Summary";
+  String strength_text = "Intellectual Brilliance: INTPs have a remarkable capacity for logical reasoning, pattern recognition, and problem-solving. They are often drawn to science, mathematics, philosophy, and other fields that require analytical thinking."
+      "\n\nCreative Problem-Solvers: Their unconventional approach and ability to see things from multiple angles allow them to generate innovative solutions to challenging problems."
+      "\n\nIndependent Thinkers: INTPs are not easily swayed by popular opinion or authority. They question everything, seeking to form their own logical conclusions based on evidence and reason."
+      "\n\nAdaptable Learners: They are eager to learn new things and continuously expand their knowledge base. Their curiosity and open-mindedness make them adaptable to change and new information."
+      "\n\nHonest and Direct: INTPs value truth and authenticity above social niceties. They are straightforward in their communication, often preferring blunt honesty over sugarcoating.";
+
+  String weakness_text = "Social Awkwardness: INTPs can struggle with social interactions and small talk, preferring solitude and intellectual pursuits. They may come across as aloof or detached in social settings."
+  "\n\nOverthinking and Procrastination: Their tendency to analyze everything from every angle can lead to overthinking, indecisiveness, and procrastination. They may struggle to make decisions or take action until they have considered all possible outcomes."
+  "\n\nInsensitivity: Their focus on logic and rationality can sometimes make them insensitive to others' feelings and emotions. They may unintentionally hurt others with their bluntness or lack of tact."
+  "\n\nDisregard for Rules and Routine: INTPs often chafe against rules and structures that they deem unnecessary or inefficient. They may resist authority and prefer to set their own schedules and priorities."
+  "\n\nDifficulty Expressing Emotions: While they experience deep emotions, INTPs often struggle to articulate and express them outwardly. This can lead to misunderstandings in relationships and difficulty connecting with others on an emotional level.";
+
+  String friend_text = "INTPs seek authenticity and intellectual stimulation in their friendships. "
+      "\n\nThey value friends who share their interests, challenge their thinking, and respect their need for independence. "
+      "They gravitate towards deep, meaningful conversations over superficial social activities. While they may have a small circle of close friends, they are fiercely loyal and supportive within it.";
+
+  String parent_text = "INTP parents prioritize fostering their children's intellectual curiosity, critical thinking skills, and independence. "
+      "\n\nThey create a stimulating environment for learning and encourage their children to explore their interests. "
+      "They value open communication, honesty, and respect for individuality. "
+      "However, they may struggle to express affection openly and may need to consciously work on understanding and validating their children's emotional needs.";
+
+  String relation = "INTPs can be engaging and loyal partners who offer intellectual stimulation and a unique perspective. However, their emotional reserve and dislike for routine can create challenges. Open communication, understanding their personality preferences, and a willingness to compromise are essential for building strong and lasting connections with INTPs."
+  "\n\nStrengths:"
+  "\nIntellectual Companionship: They value intelligent conversations and enjoy stimulating discussions with partners who can engage in deep thinking and explore complex ideas."
+  "\nLoyalty and Supportive Nature: Once they commit to a relationship, INTPs are loyal and supportive partners. They offer intellectual stimulation, encouragement, and unwavering support for their loved ones' goals."
+  "\nRespect for Individuality: Their independent nature translates into respect for their partner's autonomy and individuality. They appreciate and encourage individuality within the relationship."
+  "\n\nChallenges:"
+  "\nEmotional Vulnerability and Expression: Their reserved nature can make it difficult for partners to understand their emotions and needs. Open communication and learning to express feelings constructively are crucial."
+  "\nPractical Responsibilities: Their dislike for mundane tasks can lead to neglecting shared responsibilities. Finding a balance between intellectual pursuits and practical needs is important."
+  "\nConflict Resolution: Their avoidance of conflict can lead to unresolved issues or emotional distance. Learning healthy communication and conflict resolution skills can strengthen their relationships.";
+
+  String body_text = "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
+      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
+      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
+      "conversations to small talk and often find themselves lost in thought.";
+
+
 
   void overview(){
     setState(() {
       headline = "Overview";
+      body_text = overview_body;
     });
 
   }
@@ -743,7 +825,7 @@ class _ENTPState extends State<ENTP> {
   void Relation(){
     setState(() {
       headline = "Romantic Relationship";
-   
+      body_text = relation;
     });
 
   }
@@ -751,6 +833,7 @@ class _ENTPState extends State<ENTP> {
   void strength(){
     setState(() {
       headline = "Strength";
+      body_text = strength_text;
     });
 
   }
@@ -758,12 +841,14 @@ class _ENTPState extends State<ENTP> {
   void weakness() {
     setState(() {
       headline = "Weakness";
+      body_text = weakness_text;
     });
   }
 
   void Friendship(){
     setState(() {
       headline = "Friendship";
+      body_text = friend_text;
     });
 
   }
@@ -771,13 +856,15 @@ class _ENTPState extends State<ENTP> {
   void Parenthood(){
     setState(() {
       headline = "Parenthood";
+      body_text = parent_text;
     });
 
   }
 
+
   @override
   Widget build(BuildContext context) {
-    String Summary_body = "Entrepreneurs always have an impact on their immediate surroundings – "
+    String body_text = "Entrepreneurs always have an impact on their immediate surroundings – "
         "the best way to spot them at a party is to look for the whirling eddy of people flitting "
         "about them as they move from group to group. Laughing and entertaining with a blunt and "
         "earthy humor, Entrepreneur personalities love to be the center of attention. If an audience "
@@ -909,7 +996,7 @@ class _ENTPState extends State<ENTP> {
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
-                          child: Text(Summary_body,
+                          child: Text(body_text,
                             style: Theme.of(context).textTheme.bodyLarge!.copyWith(color: Colors.white),
                           ),
                         ),
@@ -937,13 +1024,54 @@ class INFJ extends StatefulWidget{
 }
 
 class _INFJState extends State<INFJ> {
-  List<int?> values = [null];
+    String headline ="Overview";
+  String overview_body = "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
+      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
+      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
+      "conversations to small talk and often find themselves lost in thought.";
 
-  String headline ="Summary";
+  String strength_text = "Intellectual Brilliance: INTPs have a remarkable capacity for logical reasoning, pattern recognition, and problem-solving. They are often drawn to science, mathematics, philosophy, and other fields that require analytical thinking."
+      "\n\nCreative Problem-Solvers: Their unconventional approach and ability to see things from multiple angles allow them to generate innovative solutions to challenging problems."
+      "\n\nIndependent Thinkers: INTPs are not easily swayed by popular opinion or authority. They question everything, seeking to form their own logical conclusions based on evidence and reason."
+      "\n\nAdaptable Learners: They are eager to learn new things and continuously expand their knowledge base. Their curiosity and open-mindedness make them adaptable to change and new information."
+      "\n\nHonest and Direct: INTPs value truth and authenticity above social niceties. They are straightforward in their communication, often preferring blunt honesty over sugarcoating.";
+
+  String weakness_text = "Social Awkwardness: INTPs can struggle with social interactions and small talk, preferring solitude and intellectual pursuits. They may come across as aloof or detached in social settings."
+  "\n\nOverthinking and Procrastination: Their tendency to analyze everything from every angle can lead to overthinking, indecisiveness, and procrastination. They may struggle to make decisions or take action until they have considered all possible outcomes."
+  "\n\nInsensitivity: Their focus on logic and rationality can sometimes make them insensitive to others' feelings and emotions. They may unintentionally hurt others with their bluntness or lack of tact."
+  "\n\nDisregard for Rules and Routine: INTPs often chafe against rules and structures that they deem unnecessary or inefficient. They may resist authority and prefer to set their own schedules and priorities."
+  "\n\nDifficulty Expressing Emotions: While they experience deep emotions, INTPs often struggle to articulate and express them outwardly. This can lead to misunderstandings in relationships and difficulty connecting with others on an emotional level.";
+
+  String friend_text = "INTPs seek authenticity and intellectual stimulation in their friendships. "
+      "\n\nThey value friends who share their interests, challenge their thinking, and respect their need for independence. "
+      "They gravitate towards deep, meaningful conversations over superficial social activities. While they may have a small circle of close friends, they are fiercely loyal and supportive within it.";
+
+  String parent_text = "INTP parents prioritize fostering their children's intellectual curiosity, critical thinking skills, and independence. "
+      "\n\nThey create a stimulating environment for learning and encourage their children to explore their interests. "
+      "They value open communication, honesty, and respect for individuality. "
+      "However, they may struggle to express affection openly and may need to consciously work on understanding and validating their children's emotional needs.";
+
+  String relation = "INTPs can be engaging and loyal partners who offer intellectual stimulation and a unique perspective. However, their emotional reserve and dislike for routine can create challenges. Open communication, understanding their personality preferences, and a willingness to compromise are essential for building strong and lasting connections with INTPs."
+  "\n\nStrengths:"
+  "\nIntellectual Companionship: They value intelligent conversations and enjoy stimulating discussions with partners who can engage in deep thinking and explore complex ideas."
+  "\nLoyalty and Supportive Nature: Once they commit to a relationship, INTPs are loyal and supportive partners. They offer intellectual stimulation, encouragement, and unwavering support for their loved ones' goals."
+  "\nRespect for Individuality: Their independent nature translates into respect for their partner's autonomy and individuality. They appreciate and encourage individuality within the relationship."
+  "\n\nChallenges:"
+  "\nEmotional Vulnerability and Expression: Their reserved nature can make it difficult for partners to understand their emotions and needs. Open communication and learning to express feelings constructively are crucial."
+  "\nPractical Responsibilities: Their dislike for mundane tasks can lead to neglecting shared responsibilities. Finding a balance between intellectual pursuits and practical needs is important."
+  "\nConflict Resolution: Their avoidance of conflict can lead to unresolved issues or emotional distance. Learning healthy communication and conflict resolution skills can strengthen their relationships.";
+
+  String body_text = "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
+      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
+      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
+      "conversations to small talk and often find themselves lost in thought.";
+
+
 
   void overview(){
     setState(() {
       headline = "Overview";
+      body_text = overview_body;
     });
 
   }
@@ -951,7 +1079,7 @@ class _INFJState extends State<INFJ> {
   void Relation(){
     setState(() {
       headline = "Romantic Relationship";
-   
+      body_text = relation;
     });
 
   }
@@ -959,6 +1087,7 @@ class _INFJState extends State<INFJ> {
   void strength(){
     setState(() {
       headline = "Strength";
+      body_text = strength_text;
     });
 
   }
@@ -966,12 +1095,14 @@ class _INFJState extends State<INFJ> {
   void weakness() {
     setState(() {
       headline = "Weakness";
+      body_text = weakness_text;
     });
   }
 
   void Friendship(){
     setState(() {
       headline = "Friendship";
+      body_text = friend_text;
     });
 
   }
@@ -979,13 +1110,15 @@ class _INFJState extends State<INFJ> {
   void Parenthood(){
     setState(() {
       headline = "Parenthood";
+      body_text = parent_text;
     });
 
   }
 
+
   @override
   Widget build(BuildContext context) {
-    String Summary_body = "Entrepreneurs always have an impact on their immediate surroundings – "
+    String body_text = "Entrepreneurs always have an impact on their immediate surroundings – "
         "the best way to spot them at a party is to look for the whirling eddy of people flitting "
         "about them as they move from group to group. Laughing and entertaining with a blunt and "
         "earthy humor, Entrepreneur personalities love to be the center of attention. If an audience "
@@ -1117,7 +1250,7 @@ class _INFJState extends State<INFJ> {
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
-                          child: Text(Summary_body,
+                          child: Text(body_text,
                             style: Theme.of(context).textTheme.bodyLarge!.copyWith(color: Colors.white),
                           ),
                         ),
@@ -1144,13 +1277,54 @@ class INFP extends StatefulWidget{
 }
 
 class _INFPState extends State<INFP> {
-  List<int?> values = [null];
+    String headline ="Overview";
+  String overview_body = "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
+      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
+      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
+      "conversations to small talk and often find themselves lost in thought.";
 
-  String headline ="Summary";
+  String strength_text = "Intellectual Brilliance: INTPs have a remarkable capacity for logical reasoning, pattern recognition, and problem-solving. They are often drawn to science, mathematics, philosophy, and other fields that require analytical thinking."
+      "\n\nCreative Problem-Solvers: Their unconventional approach and ability to see things from multiple angles allow them to generate innovative solutions to challenging problems."
+      "\n\nIndependent Thinkers: INTPs are not easily swayed by popular opinion or authority. They question everything, seeking to form their own logical conclusions based on evidence and reason."
+      "\n\nAdaptable Learners: They are eager to learn new things and continuously expand their knowledge base. Their curiosity and open-mindedness make them adaptable to change and new information."
+      "\n\nHonest and Direct: INTPs value truth and authenticity above social niceties. They are straightforward in their communication, often preferring blunt honesty over sugarcoating.";
+
+  String weakness_text = "Social Awkwardness: INTPs can struggle with social interactions and small talk, preferring solitude and intellectual pursuits. They may come across as aloof or detached in social settings."
+  "\n\nOverthinking and Procrastination: Their tendency to analyze everything from every angle can lead to overthinking, indecisiveness, and procrastination. They may struggle to make decisions or take action until they have considered all possible outcomes."
+  "\n\nInsensitivity: Their focus on logic and rationality can sometimes make them insensitive to others' feelings and emotions. They may unintentionally hurt others with their bluntness or lack of tact."
+  "\n\nDisregard for Rules and Routine: INTPs often chafe against rules and structures that they deem unnecessary or inefficient. They may resist authority and prefer to set their own schedules and priorities."
+  "\n\nDifficulty Expressing Emotions: While they experience deep emotions, INTPs often struggle to articulate and express them outwardly. This can lead to misunderstandings in relationships and difficulty connecting with others on an emotional level.";
+
+  String friend_text = "INTPs seek authenticity and intellectual stimulation in their friendships. "
+      "\n\nThey value friends who share their interests, challenge their thinking, and respect their need for independence. "
+      "They gravitate towards deep, meaningful conversations over superficial social activities. While they may have a small circle of close friends, they are fiercely loyal and supportive within it.";
+
+  String parent_text = "INTP parents prioritize fostering their children's intellectual curiosity, critical thinking skills, and independence. "
+      "\n\nThey create a stimulating environment for learning and encourage their children to explore their interests. "
+      "They value open communication, honesty, and respect for individuality. "
+      "However, they may struggle to express affection openly and may need to consciously work on understanding and validating their children's emotional needs.";
+
+  String relation = "INTPs can be engaging and loyal partners who offer intellectual stimulation and a unique perspective. However, their emotional reserve and dislike for routine can create challenges. Open communication, understanding their personality preferences, and a willingness to compromise are essential for building strong and lasting connections with INTPs."
+  "\n\nStrengths:"
+  "\nIntellectual Companionship: They value intelligent conversations and enjoy stimulating discussions with partners who can engage in deep thinking and explore complex ideas."
+  "\nLoyalty and Supportive Nature: Once they commit to a relationship, INTPs are loyal and supportive partners. They offer intellectual stimulation, encouragement, and unwavering support for their loved ones' goals."
+  "\nRespect for Individuality: Their independent nature translates into respect for their partner's autonomy and individuality. They appreciate and encourage individuality within the relationship."
+  "\n\nChallenges:"
+  "\nEmotional Vulnerability and Expression: Their reserved nature can make it difficult for partners to understand their emotions and needs. Open communication and learning to express feelings constructively are crucial."
+  "\nPractical Responsibilities: Their dislike for mundane tasks can lead to neglecting shared responsibilities. Finding a balance between intellectual pursuits and practical needs is important."
+  "\nConflict Resolution: Their avoidance of conflict can lead to unresolved issues or emotional distance. Learning healthy communication and conflict resolution skills can strengthen their relationships.";
+
+  String body_text = "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
+      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
+      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
+      "conversations to small talk and often find themselves lost in thought.";
+
+
 
   void overview(){
     setState(() {
       headline = "Overview";
+      body_text = overview_body;
     });
 
   }
@@ -1158,7 +1332,7 @@ class _INFPState extends State<INFP> {
   void Relation(){
     setState(() {
       headline = "Romantic Relationship";
-   
+      body_text = relation;
     });
 
   }
@@ -1166,6 +1340,7 @@ class _INFPState extends State<INFP> {
   void strength(){
     setState(() {
       headline = "Strength";
+      body_text = strength_text;
     });
 
   }
@@ -1173,12 +1348,14 @@ class _INFPState extends State<INFP> {
   void weakness() {
     setState(() {
       headline = "Weakness";
+      body_text = weakness_text;
     });
   }
 
   void Friendship(){
     setState(() {
       headline = "Friendship";
+      body_text = friend_text;
     });
 
   }
@@ -1186,13 +1363,15 @@ class _INFPState extends State<INFP> {
   void Parenthood(){
     setState(() {
       headline = "Parenthood";
+      body_text = parent_text;
     });
 
   }
 
+
   @override
   Widget build(BuildContext context) {
-    String Summary_body = "Entrepreneurs always have an impact on their immediate surroundings – "
+    String body_text = "Entrepreneurs always have an impact on their immediate surroundings – "
         "the best way to spot them at a party is to look for the whirling eddy of people flitting "
         "about them as they move from group to group. Laughing and entertaining with a blunt and "
         "earthy humor, Entrepreneur personalities love to be the center of attention. If an audience "
@@ -1324,7 +1503,7 @@ class _INFPState extends State<INFP> {
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
-                          child: Text(Summary_body,
+                          child: Text(body_text,
                             style: Theme.of(context).textTheme.bodyLarge!.copyWith(color: Colors.white),
                           ),
                         ),
@@ -1352,13 +1531,54 @@ class ENFJ extends StatefulWidget{
 }
 
 class _ENFJState extends State<ENFJ> {
-  List<int?> values = [null];
+    String headline ="Overview";
+  String overview_body = "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
+      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
+      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
+      "conversations to small talk and often find themselves lost in thought.";
 
-  String headline ="Summary";
+  String strength_text = "Intellectual Brilliance: INTPs have a remarkable capacity for logical reasoning, pattern recognition, and problem-solving. They are often drawn to science, mathematics, philosophy, and other fields that require analytical thinking."
+      "\n\nCreative Problem-Solvers: Their unconventional approach and ability to see things from multiple angles allow them to generate innovative solutions to challenging problems."
+      "\n\nIndependent Thinkers: INTPs are not easily swayed by popular opinion or authority. They question everything, seeking to form their own logical conclusions based on evidence and reason."
+      "\n\nAdaptable Learners: They are eager to learn new things and continuously expand their knowledge base. Their curiosity and open-mindedness make them adaptable to change and new information."
+      "\n\nHonest and Direct: INTPs value truth and authenticity above social niceties. They are straightforward in their communication, often preferring blunt honesty over sugarcoating.";
+
+  String weakness_text = "Social Awkwardness: INTPs can struggle with social interactions and small talk, preferring solitude and intellectual pursuits. They may come across as aloof or detached in social settings."
+  "\n\nOverthinking and Procrastination: Their tendency to analyze everything from every angle can lead to overthinking, indecisiveness, and procrastination. They may struggle to make decisions or take action until they have considered all possible outcomes."
+  "\n\nInsensitivity: Their focus on logic and rationality can sometimes make them insensitive to others' feelings and emotions. They may unintentionally hurt others with their bluntness or lack of tact."
+  "\n\nDisregard for Rules and Routine: INTPs often chafe against rules and structures that they deem unnecessary or inefficient. They may resist authority and prefer to set their own schedules and priorities."
+  "\n\nDifficulty Expressing Emotions: While they experience deep emotions, INTPs often struggle to articulate and express them outwardly. This can lead to misunderstandings in relationships and difficulty connecting with others on an emotional level.";
+
+  String friend_text = "INTPs seek authenticity and intellectual stimulation in their friendships. "
+      "\n\nThey value friends who share their interests, challenge their thinking, and respect their need for independence. "
+      "They gravitate towards deep, meaningful conversations over superficial social activities. While they may have a small circle of close friends, they are fiercely loyal and supportive within it.";
+
+  String parent_text = "INTP parents prioritize fostering their children's intellectual curiosity, critical thinking skills, and independence. "
+      "\n\nThey create a stimulating environment for learning and encourage their children to explore their interests. "
+      "They value open communication, honesty, and respect for individuality. "
+      "However, they may struggle to express affection openly and may need to consciously work on understanding and validating their children's emotional needs.";
+
+  String relation = "INTPs can be engaging and loyal partners who offer intellectual stimulation and a unique perspective. However, their emotional reserve and dislike for routine can create challenges. Open communication, understanding their personality preferences, and a willingness to compromise are essential for building strong and lasting connections with INTPs."
+  "\n\nStrengths:"
+  "\nIntellectual Companionship: They value intelligent conversations and enjoy stimulating discussions with partners who can engage in deep thinking and explore complex ideas."
+  "\nLoyalty and Supportive Nature: Once they commit to a relationship, INTPs are loyal and supportive partners. They offer intellectual stimulation, encouragement, and unwavering support for their loved ones' goals."
+  "\nRespect for Individuality: Their independent nature translates into respect for their partner's autonomy and individuality. They appreciate and encourage individuality within the relationship."
+  "\n\nChallenges:"
+  "\nEmotional Vulnerability and Expression: Their reserved nature can make it difficult for partners to understand their emotions and needs. Open communication and learning to express feelings constructively are crucial."
+  "\nPractical Responsibilities: Their dislike for mundane tasks can lead to neglecting shared responsibilities. Finding a balance between intellectual pursuits and practical needs is important."
+  "\nConflict Resolution: Their avoidance of conflict can lead to unresolved issues or emotional distance. Learning healthy communication and conflict resolution skills can strengthen their relationships.";
+
+  String body_text = "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
+      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
+      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
+      "conversations to small talk and often find themselves lost in thought.";
+
+
 
   void overview(){
     setState(() {
       headline = "Overview";
+      body_text = overview_body;
     });
 
   }
@@ -1366,7 +1586,7 @@ class _ENFJState extends State<ENFJ> {
   void Relation(){
     setState(() {
       headline = "Romantic Relationship";
-   
+      body_text = relation;
     });
 
   }
@@ -1374,6 +1594,7 @@ class _ENFJState extends State<ENFJ> {
   void strength(){
     setState(() {
       headline = "Strength";
+      body_text = strength_text;
     });
 
   }
@@ -1381,12 +1602,14 @@ class _ENFJState extends State<ENFJ> {
   void weakness() {
     setState(() {
       headline = "Weakness";
+      body_text = weakness_text;
     });
   }
 
   void Friendship(){
     setState(() {
       headline = "Friendship";
+      body_text = friend_text;
     });
 
   }
@@ -1394,13 +1617,15 @@ class _ENFJState extends State<ENFJ> {
   void Parenthood(){
     setState(() {
       headline = "Parenthood";
+      body_text = parent_text;
     });
 
   }
 
+
   @override
   Widget build(BuildContext context) {
-    String Summary_body = "Entrepreneurs always have an impact on their immediate surroundings – "
+    String body_text = "Entrepreneurs always have an impact on their immediate surroundings – "
         "the best way to spot them at a party is to look for the whirling eddy of people flitting "
         "about them as they move from group to group. Laughing and entertaining with a blunt and "
         "earthy humor, Entrepreneur personalities love to be the center of attention. If an audience "
@@ -1532,7 +1757,7 @@ class _ENFJState extends State<ENFJ> {
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
-                          child: Text(Summary_body,
+                          child: Text(body_text,
                             style: Theme.of(context).textTheme.bodyLarge!.copyWith(color: Colors.white),
                           ),
                         ),
@@ -1560,13 +1785,54 @@ class ENFP extends StatefulWidget{
 }
 
 class _ENFPState extends State<ENFP> {
-  List<int?> values = [null];
+    String headline ="Overview";
+  String overview_body = "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
+      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
+      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
+      "conversations to small talk and often find themselves lost in thought.";
 
-  String headline ="Summary";
+  String strength_text = "Intellectual Brilliance: INTPs have a remarkable capacity for logical reasoning, pattern recognition, and problem-solving. They are often drawn to science, mathematics, philosophy, and other fields that require analytical thinking."
+      "\n\nCreative Problem-Solvers: Their unconventional approach and ability to see things from multiple angles allow them to generate innovative solutions to challenging problems."
+      "\n\nIndependent Thinkers: INTPs are not easily swayed by popular opinion or authority. They question everything, seeking to form their own logical conclusions based on evidence and reason."
+      "\n\nAdaptable Learners: They are eager to learn new things and continuously expand their knowledge base. Their curiosity and open-mindedness make them adaptable to change and new information."
+      "\n\nHonest and Direct: INTPs value truth and authenticity above social niceties. They are straightforward in their communication, often preferring blunt honesty over sugarcoating.";
+
+  String weakness_text = "Social Awkwardness: INTPs can struggle with social interactions and small talk, preferring solitude and intellectual pursuits. They may come across as aloof or detached in social settings."
+  "\n\nOverthinking and Procrastination: Their tendency to analyze everything from every angle can lead to overthinking, indecisiveness, and procrastination. They may struggle to make decisions or take action until they have considered all possible outcomes."
+  "\n\nInsensitivity: Their focus on logic and rationality can sometimes make them insensitive to others' feelings and emotions. They may unintentionally hurt others with their bluntness or lack of tact."
+  "\n\nDisregard for Rules and Routine: INTPs often chafe against rules and structures that they deem unnecessary or inefficient. They may resist authority and prefer to set their own schedules and priorities."
+  "\n\nDifficulty Expressing Emotions: While they experience deep emotions, INTPs often struggle to articulate and express them outwardly. This can lead to misunderstandings in relationships and difficulty connecting with others on an emotional level.";
+
+  String friend_text = "INTPs seek authenticity and intellectual stimulation in their friendships. "
+      "\n\nThey value friends who share their interests, challenge their thinking, and respect their need for independence. "
+      "They gravitate towards deep, meaningful conversations over superficial social activities. While they may have a small circle of close friends, they are fiercely loyal and supportive within it.";
+
+  String parent_text = "INTP parents prioritize fostering their children's intellectual curiosity, critical thinking skills, and independence. "
+      "\n\nThey create a stimulating environment for learning and encourage their children to explore their interests. "
+      "They value open communication, honesty, and respect for individuality. "
+      "However, they may struggle to express affection openly and may need to consciously work on understanding and validating their children's emotional needs.";
+
+  String relation = "INTPs can be engaging and loyal partners who offer intellectual stimulation and a unique perspective. However, their emotional reserve and dislike for routine can create challenges. Open communication, understanding their personality preferences, and a willingness to compromise are essential for building strong and lasting connections with INTPs."
+  "\n\nStrengths:"
+  "\nIntellectual Companionship: They value intelligent conversations and enjoy stimulating discussions with partners who can engage in deep thinking and explore complex ideas."
+  "\nLoyalty and Supportive Nature: Once they commit to a relationship, INTPs are loyal and supportive partners. They offer intellectual stimulation, encouragement, and unwavering support for their loved ones' goals."
+  "\nRespect for Individuality: Their independent nature translates into respect for their partner's autonomy and individuality. They appreciate and encourage individuality within the relationship."
+  "\n\nChallenges:"
+  "\nEmotional Vulnerability and Expression: Their reserved nature can make it difficult for partners to understand their emotions and needs. Open communication and learning to express feelings constructively are crucial."
+  "\nPractical Responsibilities: Their dislike for mundane tasks can lead to neglecting shared responsibilities. Finding a balance between intellectual pursuits and practical needs is important."
+  "\nConflict Resolution: Their avoidance of conflict can lead to unresolved issues or emotional distance. Learning healthy communication and conflict resolution skills can strengthen their relationships.";
+
+  String body_text = "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
+      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
+      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
+      "conversations to small talk and often find themselves lost in thought.";
+
+
 
   void overview(){
     setState(() {
       headline = "Overview";
+      body_text = overview_body;
     });
 
   }
@@ -1574,7 +1840,7 @@ class _ENFPState extends State<ENFP> {
   void Relation(){
     setState(() {
       headline = "Romantic Relationship";
-   
+      body_text = relation;
     });
 
   }
@@ -1582,6 +1848,7 @@ class _ENFPState extends State<ENFP> {
   void strength(){
     setState(() {
       headline = "Strength";
+      body_text = strength_text;
     });
 
   }
@@ -1589,12 +1856,14 @@ class _ENFPState extends State<ENFP> {
   void weakness() {
     setState(() {
       headline = "Weakness";
+      body_text = weakness_text;
     });
   }
 
   void Friendship(){
     setState(() {
       headline = "Friendship";
+      body_text = friend_text;
     });
 
   }
@@ -1602,13 +1871,15 @@ class _ENFPState extends State<ENFP> {
   void Parenthood(){
     setState(() {
       headline = "Parenthood";
+      body_text = parent_text;
     });
 
   }
 
+
   @override
   Widget build(BuildContext context) {
-    String Summary_body = "Entrepreneurs always have an impact on their immediate surroundings – "
+    String body_text = "Entrepreneurs always have an impact on their immediate surroundings – "
         "the best way to spot them at a party is to look for the whirling eddy of people flitting "
         "about them as they move from group to group. Laughing and entertaining with a blunt and "
         "earthy humor, Entrepreneur personalities love to be the center of attention. If an audience "
@@ -1740,7 +2011,7 @@ class _ENFPState extends State<ENFP> {
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
-                          child: Text(Summary_body,
+                          child: Text(body_text,
                             style: Theme.of(context).textTheme.bodyLarge!.copyWith(color: Colors.white),
                           ),
                         ),
@@ -1768,13 +2039,54 @@ class ISTJ extends StatefulWidget{
 }
 
 class _ISTJState extends State<ISTJ> {
-  List<int?> values = [null];
+    String headline ="Overview";
+  String overview_body = "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
+      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
+      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
+      "conversations to small talk and often find themselves lost in thought.";
 
-  String headline ="Summary";
+  String strength_text = "Intellectual Brilliance: INTPs have a remarkable capacity for logical reasoning, pattern recognition, and problem-solving. They are often drawn to science, mathematics, philosophy, and other fields that require analytical thinking."
+      "\n\nCreative Problem-Solvers: Their unconventional approach and ability to see things from multiple angles allow them to generate innovative solutions to challenging problems."
+      "\n\nIndependent Thinkers: INTPs are not easily swayed by popular opinion or authority. They question everything, seeking to form their own logical conclusions based on evidence and reason."
+      "\n\nAdaptable Learners: They are eager to learn new things and continuously expand their knowledge base. Their curiosity and open-mindedness make them adaptable to change and new information."
+      "\n\nHonest and Direct: INTPs value truth and authenticity above social niceties. They are straightforward in their communication, often preferring blunt honesty over sugarcoating.";
+
+  String weakness_text = "Social Awkwardness: INTPs can struggle with social interactions and small talk, preferring solitude and intellectual pursuits. They may come across as aloof or detached in social settings."
+  "\n\nOverthinking and Procrastination: Their tendency to analyze everything from every angle can lead to overthinking, indecisiveness, and procrastination. They may struggle to make decisions or take action until they have considered all possible outcomes."
+  "\n\nInsensitivity: Their focus on logic and rationality can sometimes make them insensitive to others' feelings and emotions. They may unintentionally hurt others with their bluntness or lack of tact."
+  "\n\nDisregard for Rules and Routine: INTPs often chafe against rules and structures that they deem unnecessary or inefficient. They may resist authority and prefer to set their own schedules and priorities."
+  "\n\nDifficulty Expressing Emotions: While they experience deep emotions, INTPs often struggle to articulate and express them outwardly. This can lead to misunderstandings in relationships and difficulty connecting with others on an emotional level.";
+
+  String friend_text = "INTPs seek authenticity and intellectual stimulation in their friendships. "
+      "\n\nThey value friends who share their interests, challenge their thinking, and respect their need for independence. "
+      "They gravitate towards deep, meaningful conversations over superficial social activities. While they may have a small circle of close friends, they are fiercely loyal and supportive within it.";
+
+  String parent_text = "INTP parents prioritize fostering their children's intellectual curiosity, critical thinking skills, and independence. "
+      "\n\nThey create a stimulating environment for learning and encourage their children to explore their interests. "
+      "They value open communication, honesty, and respect for individuality. "
+      "However, they may struggle to express affection openly and may need to consciously work on understanding and validating their children's emotional needs.";
+
+  String relation = "INTPs can be engaging and loyal partners who offer intellectual stimulation and a unique perspective. However, their emotional reserve and dislike for routine can create challenges. Open communication, understanding their personality preferences, and a willingness to compromise are essential for building strong and lasting connections with INTPs."
+  "\n\nStrengths:"
+  "\nIntellectual Companionship: They value intelligent conversations and enjoy stimulating discussions with partners who can engage in deep thinking and explore complex ideas."
+  "\nLoyalty and Supportive Nature: Once they commit to a relationship, INTPs are loyal and supportive partners. They offer intellectual stimulation, encouragement, and unwavering support for their loved ones' goals."
+  "\nRespect for Individuality: Their independent nature translates into respect for their partner's autonomy and individuality. They appreciate and encourage individuality within the relationship."
+  "\n\nChallenges:"
+  "\nEmotional Vulnerability and Expression: Their reserved nature can make it difficult for partners to understand their emotions and needs. Open communication and learning to express feelings constructively are crucial."
+  "\nPractical Responsibilities: Their dislike for mundane tasks can lead to neglecting shared responsibilities. Finding a balance between intellectual pursuits and practical needs is important."
+  "\nConflict Resolution: Their avoidance of conflict can lead to unresolved issues or emotional distance. Learning healthy communication and conflict resolution skills can strengthen their relationships.";
+
+  String body_text = "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
+      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
+      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
+      "conversations to small talk and often find themselves lost in thought.";
+
+
 
   void overview(){
     setState(() {
       headline = "Overview";
+      body_text = overview_body;
     });
 
   }
@@ -1782,7 +2094,7 @@ class _ISTJState extends State<ISTJ> {
   void Relation(){
     setState(() {
       headline = "Romantic Relationship";
-   
+      body_text = relation;
     });
 
   }
@@ -1790,6 +2102,7 @@ class _ISTJState extends State<ISTJ> {
   void strength(){
     setState(() {
       headline = "Strength";
+      body_text = strength_text;
     });
 
   }
@@ -1797,12 +2110,14 @@ class _ISTJState extends State<ISTJ> {
   void weakness() {
     setState(() {
       headline = "Weakness";
+      body_text = weakness_text;
     });
   }
 
   void Friendship(){
     setState(() {
       headline = "Friendship";
+      body_text = friend_text;
     });
 
   }
@@ -1810,13 +2125,15 @@ class _ISTJState extends State<ISTJ> {
   void Parenthood(){
     setState(() {
       headline = "Parenthood";
+      body_text = parent_text;
     });
 
   }
 
+
   @override
   Widget build(BuildContext context) {
-    String Summary_body = "Entrepreneurs always have an impact on their immediate surroundings – "
+    String body_text = "Entrepreneurs always have an impact on their immediate surroundings – "
         "the best way to spot them at a party is to look for the whirling eddy of people flitting "
         "about them as they move from group to group. Laughing and entertaining with a blunt and "
         "earthy humor, Entrepreneur personalities love to be the center of attention. If an audience "
@@ -1948,7 +2265,7 @@ class _ISTJState extends State<ISTJ> {
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
-                          child: Text(Summary_body,
+                          child: Text(body_text,
                             style: Theme.of(context).textTheme.bodyLarge!.copyWith(color: Colors.white),
                           ),
                         ),
@@ -1975,13 +2292,54 @@ class ISFJ extends StatefulWidget{
 }
 
 class _ISFJState extends State<ISFJ> {
-  List<int?> values = [null];
+    String headline ="Overview";
+  String overview_body = "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
+      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
+      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
+      "conversations to small talk and often find themselves lost in thought.";
 
-  String headline ="Summary";
+  String strength_text = "Intellectual Brilliance: INTPs have a remarkable capacity for logical reasoning, pattern recognition, and problem-solving. They are often drawn to science, mathematics, philosophy, and other fields that require analytical thinking."
+      "\n\nCreative Problem-Solvers: Their unconventional approach and ability to see things from multiple angles allow them to generate innovative solutions to challenging problems."
+      "\n\nIndependent Thinkers: INTPs are not easily swayed by popular opinion or authority. They question everything, seeking to form their own logical conclusions based on evidence and reason."
+      "\n\nAdaptable Learners: They are eager to learn new things and continuously expand their knowledge base. Their curiosity and open-mindedness make them adaptable to change and new information."
+      "\n\nHonest and Direct: INTPs value truth and authenticity above social niceties. They are straightforward in their communication, often preferring blunt honesty over sugarcoating.";
+
+  String weakness_text = "Social Awkwardness: INTPs can struggle with social interactions and small talk, preferring solitude and intellectual pursuits. They may come across as aloof or detached in social settings."
+  "\n\nOverthinking and Procrastination: Their tendency to analyze everything from every angle can lead to overthinking, indecisiveness, and procrastination. They may struggle to make decisions or take action until they have considered all possible outcomes."
+  "\n\nInsensitivity: Their focus on logic and rationality can sometimes make them insensitive to others' feelings and emotions. They may unintentionally hurt others with their bluntness or lack of tact."
+  "\n\nDisregard for Rules and Routine: INTPs often chafe against rules and structures that they deem unnecessary or inefficient. They may resist authority and prefer to set their own schedules and priorities."
+  "\n\nDifficulty Expressing Emotions: While they experience deep emotions, INTPs often struggle to articulate and express them outwardly. This can lead to misunderstandings in relationships and difficulty connecting with others on an emotional level.";
+
+  String friend_text = "INTPs seek authenticity and intellectual stimulation in their friendships. "
+      "\n\nThey value friends who share their interests, challenge their thinking, and respect their need for independence. "
+      "They gravitate towards deep, meaningful conversations over superficial social activities. While they may have a small circle of close friends, they are fiercely loyal and supportive within it.";
+
+  String parent_text = "INTP parents prioritize fostering their children's intellectual curiosity, critical thinking skills, and independence. "
+      "\n\nThey create a stimulating environment for learning and encourage their children to explore their interests. "
+      "They value open communication, honesty, and respect for individuality. "
+      "However, they may struggle to express affection openly and may need to consciously work on understanding and validating their children's emotional needs.";
+
+  String relation = "INTPs can be engaging and loyal partners who offer intellectual stimulation and a unique perspective. However, their emotional reserve and dislike for routine can create challenges. Open communication, understanding their personality preferences, and a willingness to compromise are essential for building strong and lasting connections with INTPs."
+  "\n\nStrengths:"
+  "\nIntellectual Companionship: They value intelligent conversations and enjoy stimulating discussions with partners who can engage in deep thinking and explore complex ideas."
+  "\nLoyalty and Supportive Nature: Once they commit to a relationship, INTPs are loyal and supportive partners. They offer intellectual stimulation, encouragement, and unwavering support for their loved ones' goals."
+  "\nRespect for Individuality: Their independent nature translates into respect for their partner's autonomy and individuality. They appreciate and encourage individuality within the relationship."
+  "\n\nChallenges:"
+  "\nEmotional Vulnerability and Expression: Their reserved nature can make it difficult for partners to understand their emotions and needs. Open communication and learning to express feelings constructively are crucial."
+  "\nPractical Responsibilities: Their dislike for mundane tasks can lead to neglecting shared responsibilities. Finding a balance between intellectual pursuits and practical needs is important."
+  "\nConflict Resolution: Their avoidance of conflict can lead to unresolved issues or emotional distance. Learning healthy communication and conflict resolution skills can strengthen their relationships.";
+
+  String body_text = "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
+      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
+      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
+      "conversations to small talk and often find themselves lost in thought.";
+
+
 
   void overview(){
     setState(() {
       headline = "Overview";
+      body_text = overview_body;
     });
 
   }
@@ -1989,7 +2347,7 @@ class _ISFJState extends State<ISFJ> {
   void Relation(){
     setState(() {
       headline = "Romantic Relationship";
-   
+      body_text = relation;
     });
 
   }
@@ -1997,6 +2355,7 @@ class _ISFJState extends State<ISFJ> {
   void strength(){
     setState(() {
       headline = "Strength";
+      body_text = strength_text;
     });
 
   }
@@ -2004,12 +2363,14 @@ class _ISFJState extends State<ISFJ> {
   void weakness() {
     setState(() {
       headline = "Weakness";
+      body_text = weakness_text;
     });
   }
 
   void Friendship(){
     setState(() {
       headline = "Friendship";
+      body_text = friend_text;
     });
 
   }
@@ -2017,13 +2378,15 @@ class _ISFJState extends State<ISFJ> {
   void Parenthood(){
     setState(() {
       headline = "Parenthood";
+      body_text = parent_text;
     });
 
   }
 
+
   @override
   Widget build(BuildContext context) {
-    String Summary_body = "Entrepreneurs always have an impact on their immediate surroundings – "
+    String body_text = "Entrepreneurs always have an impact on their immediate surroundings – "
         "the best way to spot them at a party is to look for the whirling eddy of people flitting "
         "about them as they move from group to group. Laughing and entertaining with a blunt and "
         "earthy humor, Entrepreneur personalities love to be the center of attention. If an audience "
@@ -2155,7 +2518,7 @@ class _ISFJState extends State<ISFJ> {
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
-                          child: Text(Summary_body,
+                          child: Text(body_text,
                             style: Theme.of(context).textTheme.bodyLarge!.copyWith(color: Colors.white),
                           ),
                         ),
@@ -2183,13 +2546,54 @@ class ESTJ extends StatefulWidget{
 }
 
 class _ESTJState extends State<ESTJ> {
-  List<int?> values = [null];
+    String headline ="Overview";
+  String overview_body = "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
+      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
+      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
+      "conversations to small talk and often find themselves lost in thought.";
 
-  String headline ="Summary";
+  String strength_text = "Intellectual Brilliance: INTPs have a remarkable capacity for logical reasoning, pattern recognition, and problem-solving. They are often drawn to science, mathematics, philosophy, and other fields that require analytical thinking."
+      "\n\nCreative Problem-Solvers: Their unconventional approach and ability to see things from multiple angles allow them to generate innovative solutions to challenging problems."
+      "\n\nIndependent Thinkers: INTPs are not easily swayed by popular opinion or authority. They question everything, seeking to form their own logical conclusions based on evidence and reason."
+      "\n\nAdaptable Learners: They are eager to learn new things and continuously expand their knowledge base. Their curiosity and open-mindedness make them adaptable to change and new information."
+      "\n\nHonest and Direct: INTPs value truth and authenticity above social niceties. They are straightforward in their communication, often preferring blunt honesty over sugarcoating.";
+
+  String weakness_text = "Social Awkwardness: INTPs can struggle with social interactions and small talk, preferring solitude and intellectual pursuits. They may come across as aloof or detached in social settings."
+  "\n\nOverthinking and Procrastination: Their tendency to analyze everything from every angle can lead to overthinking, indecisiveness, and procrastination. They may struggle to make decisions or take action until they have considered all possible outcomes."
+  "\n\nInsensitivity: Their focus on logic and rationality can sometimes make them insensitive to others' feelings and emotions. They may unintentionally hurt others with their bluntness or lack of tact."
+  "\n\nDisregard for Rules and Routine: INTPs often chafe against rules and structures that they deem unnecessary or inefficient. They may resist authority and prefer to set their own schedules and priorities."
+  "\n\nDifficulty Expressing Emotions: While they experience deep emotions, INTPs often struggle to articulate and express them outwardly. This can lead to misunderstandings in relationships and difficulty connecting with others on an emotional level.";
+
+  String friend_text = "INTPs seek authenticity and intellectual stimulation in their friendships. "
+      "\n\nThey value friends who share their interests, challenge their thinking, and respect their need for independence. "
+      "They gravitate towards deep, meaningful conversations over superficial social activities. While they may have a small circle of close friends, they are fiercely loyal and supportive within it.";
+
+  String parent_text = "INTP parents prioritize fostering their children's intellectual curiosity, critical thinking skills, and independence. "
+      "\n\nThey create a stimulating environment for learning and encourage their children to explore their interests. "
+      "They value open communication, honesty, and respect for individuality. "
+      "However, they may struggle to express affection openly and may need to consciously work on understanding and validating their children's emotional needs.";
+
+  String relation = "INTPs can be engaging and loyal partners who offer intellectual stimulation and a unique perspective. However, their emotional reserve and dislike for routine can create challenges. Open communication, understanding their personality preferences, and a willingness to compromise are essential for building strong and lasting connections with INTPs."
+  "\n\nStrengths:"
+  "\nIntellectual Companionship: They value intelligent conversations and enjoy stimulating discussions with partners who can engage in deep thinking and explore complex ideas."
+  "\nLoyalty and Supportive Nature: Once they commit to a relationship, INTPs are loyal and supportive partners. They offer intellectual stimulation, encouragement, and unwavering support for their loved ones' goals."
+  "\nRespect for Individuality: Their independent nature translates into respect for their partner's autonomy and individuality. They appreciate and encourage individuality within the relationship."
+  "\n\nChallenges:"
+  "\nEmotional Vulnerability and Expression: Their reserved nature can make it difficult for partners to understand their emotions and needs. Open communication and learning to express feelings constructively are crucial."
+  "\nPractical Responsibilities: Their dislike for mundane tasks can lead to neglecting shared responsibilities. Finding a balance between intellectual pursuits and practical needs is important."
+  "\nConflict Resolution: Their avoidance of conflict can lead to unresolved issues or emotional distance. Learning healthy communication and conflict resolution skills can strengthen their relationships.";
+
+  String body_text = "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
+      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
+      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
+      "conversations to small talk and often find themselves lost in thought.";
+
+
 
   void overview(){
     setState(() {
       headline = "Overview";
+      body_text = overview_body;
     });
 
   }
@@ -2197,7 +2601,7 @@ class _ESTJState extends State<ESTJ> {
   void Relation(){
     setState(() {
       headline = "Romantic Relationship";
-   
+      body_text = relation;
     });
 
   }
@@ -2205,6 +2609,7 @@ class _ESTJState extends State<ESTJ> {
   void strength(){
     setState(() {
       headline = "Strength";
+      body_text = strength_text;
     });
 
   }
@@ -2212,12 +2617,14 @@ class _ESTJState extends State<ESTJ> {
   void weakness() {
     setState(() {
       headline = "Weakness";
+      body_text = weakness_text;
     });
   }
 
   void Friendship(){
     setState(() {
       headline = "Friendship";
+      body_text = friend_text;
     });
 
   }
@@ -2225,13 +2632,15 @@ class _ESTJState extends State<ESTJ> {
   void Parenthood(){
     setState(() {
       headline = "Parenthood";
+      body_text = parent_text;
     });
 
   }
 
+
   @override
   Widget build(BuildContext context) {
-    String Summary_body = "Entrepreneurs always have an impact on their immediate surroundings – "
+    String body_text = "Entrepreneurs always have an impact on their immediate surroundings – "
         "the best way to spot them at a party is to look for the whirling eddy of people flitting "
         "about them as they move from group to group. Laughing and entertaining with a blunt and "
         "earthy humor, Entrepreneur personalities love to be the center of attention. If an audience "
@@ -2363,7 +2772,7 @@ class _ESTJState extends State<ESTJ> {
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
-                          child: Text(Summary_body,
+                          child: Text(body_text,
                             style: Theme.of(context).textTheme.bodyLarge!.copyWith(color: Colors.white),
                           ),
                         ),
@@ -2391,13 +2800,54 @@ class ESFJ extends StatefulWidget{
 }
 
 class _ESFJState extends State<ESFJ> {
-  List<int?> values = [null];
+    String headline ="Overview";
+  String overview_body = "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
+      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
+      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
+      "conversations to small talk and often find themselves lost in thought.";
 
-  String headline ="Summary";
+  String strength_text = "Intellectual Brilliance: INTPs have a remarkable capacity for logical reasoning, pattern recognition, and problem-solving. They are often drawn to science, mathematics, philosophy, and other fields that require analytical thinking."
+      "\n\nCreative Problem-Solvers: Their unconventional approach and ability to see things from multiple angles allow them to generate innovative solutions to challenging problems."
+      "\n\nIndependent Thinkers: INTPs are not easily swayed by popular opinion or authority. They question everything, seeking to form their own logical conclusions based on evidence and reason."
+      "\n\nAdaptable Learners: They are eager to learn new things and continuously expand their knowledge base. Their curiosity and open-mindedness make them adaptable to change and new information."
+      "\n\nHonest and Direct: INTPs value truth and authenticity above social niceties. They are straightforward in their communication, often preferring blunt honesty over sugarcoating.";
+
+  String weakness_text = "Social Awkwardness: INTPs can struggle with social interactions and small talk, preferring solitude and intellectual pursuits. They may come across as aloof or detached in social settings."
+  "\n\nOverthinking and Procrastination: Their tendency to analyze everything from every angle can lead to overthinking, indecisiveness, and procrastination. They may struggle to make decisions or take action until they have considered all possible outcomes."
+  "\n\nInsensitivity: Their focus on logic and rationality can sometimes make them insensitive to others' feelings and emotions. They may unintentionally hurt others with their bluntness or lack of tact."
+  "\n\nDisregard for Rules and Routine: INTPs often chafe against rules and structures that they deem unnecessary or inefficient. They may resist authority and prefer to set their own schedules and priorities."
+  "\n\nDifficulty Expressing Emotions: While they experience deep emotions, INTPs often struggle to articulate and express them outwardly. This can lead to misunderstandings in relationships and difficulty connecting with others on an emotional level.";
+
+  String friend_text = "INTPs seek authenticity and intellectual stimulation in their friendships. "
+      "\n\nThey value friends who share their interests, challenge their thinking, and respect their need for independence. "
+      "They gravitate towards deep, meaningful conversations over superficial social activities. While they may have a small circle of close friends, they are fiercely loyal and supportive within it.";
+
+  String parent_text = "INTP parents prioritize fostering their children's intellectual curiosity, critical thinking skills, and independence. "
+      "\n\nThey create a stimulating environment for learning and encourage their children to explore their interests. "
+      "They value open communication, honesty, and respect for individuality. "
+      "However, they may struggle to express affection openly and may need to consciously work on understanding and validating their children's emotional needs.";
+
+  String relation = "INTPs can be engaging and loyal partners who offer intellectual stimulation and a unique perspective. However, their emotional reserve and dislike for routine can create challenges. Open communication, understanding their personality preferences, and a willingness to compromise are essential for building strong and lasting connections with INTPs."
+  "\n\nStrengths:"
+  "\nIntellectual Companionship: They value intelligent conversations and enjoy stimulating discussions with partners who can engage in deep thinking and explore complex ideas."
+  "\nLoyalty and Supportive Nature: Once they commit to a relationship, INTPs are loyal and supportive partners. They offer intellectual stimulation, encouragement, and unwavering support for their loved ones' goals."
+  "\nRespect for Individuality: Their independent nature translates into respect for their partner's autonomy and individuality. They appreciate and encourage individuality within the relationship."
+  "\n\nChallenges:"
+  "\nEmotional Vulnerability and Expression: Their reserved nature can make it difficult for partners to understand their emotions and needs. Open communication and learning to express feelings constructively are crucial."
+  "\nPractical Responsibilities: Their dislike for mundane tasks can lead to neglecting shared responsibilities. Finding a balance between intellectual pursuits and practical needs is important."
+  "\nConflict Resolution: Their avoidance of conflict can lead to unresolved issues or emotional distance. Learning healthy communication and conflict resolution skills can strengthen their relationships.";
+
+  String body_text = "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
+      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
+      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
+      "conversations to small talk and often find themselves lost in thought.";
+
+
 
   void overview(){
     setState(() {
       headline = "Overview";
+      body_text = overview_body;
     });
 
   }
@@ -2405,7 +2855,7 @@ class _ESFJState extends State<ESFJ> {
   void Relation(){
     setState(() {
       headline = "Romantic Relationship";
-   
+      body_text = relation;
     });
 
   }
@@ -2413,6 +2863,7 @@ class _ESFJState extends State<ESFJ> {
   void strength(){
     setState(() {
       headline = "Strength";
+      body_text = strength_text;
     });
 
   }
@@ -2420,12 +2871,14 @@ class _ESFJState extends State<ESFJ> {
   void weakness() {
     setState(() {
       headline = "Weakness";
+      body_text = weakness_text;
     });
   }
 
   void Friendship(){
     setState(() {
       headline = "Friendship";
+      body_text = friend_text;
     });
 
   }
@@ -2433,13 +2886,15 @@ class _ESFJState extends State<ESFJ> {
   void Parenthood(){
     setState(() {
       headline = "Parenthood";
+      body_text = parent_text;
     });
 
   }
 
+
   @override
   Widget build(BuildContext context) {
-    String Summary_body = "Entrepreneurs always have an impact on their immediate surroundings – "
+    String body_text = "Entrepreneurs always have an impact on their immediate surroundings – "
         "the best way to spot them at a party is to look for the whirling eddy of people flitting "
         "about them as they move from group to group. Laughing and entertaining with a blunt and "
         "earthy humor, Entrepreneur personalities love to be the center of attention. If an audience "
@@ -2571,7 +3026,7 @@ class _ESFJState extends State<ESFJ> {
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
-                          child: Text(Summary_body,
+                          child: Text(body_text,
                             style: Theme.of(context).textTheme.bodyLarge!.copyWith(color: Colors.white),
                           ),
                         ),
@@ -2599,13 +3054,54 @@ class ISTP extends StatefulWidget{
 }
 
 class _ISTPState extends State<ISTP> {
-  List<int?> values = [null];
+    String headline ="Overview";
+  String overview_body = "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
+      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
+      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
+      "conversations to small talk and often find themselves lost in thought.";
 
-  String headline ="Summary";
+  String strength_text = "Intellectual Brilliance: INTPs have a remarkable capacity for logical reasoning, pattern recognition, and problem-solving. They are often drawn to science, mathematics, philosophy, and other fields that require analytical thinking."
+      "\n\nCreative Problem-Solvers: Their unconventional approach and ability to see things from multiple angles allow them to generate innovative solutions to challenging problems."
+      "\n\nIndependent Thinkers: INTPs are not easily swayed by popular opinion or authority. They question everything, seeking to form their own logical conclusions based on evidence and reason."
+      "\n\nAdaptable Learners: They are eager to learn new things and continuously expand their knowledge base. Their curiosity and open-mindedness make them adaptable to change and new information."
+      "\n\nHonest and Direct: INTPs value truth and authenticity above social niceties. They are straightforward in their communication, often preferring blunt honesty over sugarcoating.";
+
+  String weakness_text = "Social Awkwardness: INTPs can struggle with social interactions and small talk, preferring solitude and intellectual pursuits. They may come across as aloof or detached in social settings."
+  "\n\nOverthinking and Procrastination: Their tendency to analyze everything from every angle can lead to overthinking, indecisiveness, and procrastination. They may struggle to make decisions or take action until they have considered all possible outcomes."
+  "\n\nInsensitivity: Their focus on logic and rationality can sometimes make them insensitive to others' feelings and emotions. They may unintentionally hurt others with their bluntness or lack of tact."
+  "\n\nDisregard for Rules and Routine: INTPs often chafe against rules and structures that they deem unnecessary or inefficient. They may resist authority and prefer to set their own schedules and priorities."
+  "\n\nDifficulty Expressing Emotions: While they experience deep emotions, INTPs often struggle to articulate and express them outwardly. This can lead to misunderstandings in relationships and difficulty connecting with others on an emotional level.";
+
+  String friend_text = "INTPs seek authenticity and intellectual stimulation in their friendships. "
+      "\n\nThey value friends who share their interests, challenge their thinking, and respect their need for independence. "
+      "They gravitate towards deep, meaningful conversations over superficial social activities. While they may have a small circle of close friends, they are fiercely loyal and supportive within it.";
+
+  String parent_text = "INTP parents prioritize fostering their children's intellectual curiosity, critical thinking skills, and independence. "
+      "\n\nThey create a stimulating environment for learning and encourage their children to explore their interests. "
+      "They value open communication, honesty, and respect for individuality. "
+      "However, they may struggle to express affection openly and may need to consciously work on understanding and validating their children's emotional needs.";
+
+  String relation = "INTPs can be engaging and loyal partners who offer intellectual stimulation and a unique perspective. However, their emotional reserve and dislike for routine can create challenges. Open communication, understanding their personality preferences, and a willingness to compromise are essential for building strong and lasting connections with INTPs."
+  "\n\nStrengths:"
+  "\nIntellectual Companionship: They value intelligent conversations and enjoy stimulating discussions with partners who can engage in deep thinking and explore complex ideas."
+  "\nLoyalty and Supportive Nature: Once they commit to a relationship, INTPs are loyal and supportive partners. They offer intellectual stimulation, encouragement, and unwavering support for their loved ones' goals."
+  "\nRespect for Individuality: Their independent nature translates into respect for their partner's autonomy and individuality. They appreciate and encourage individuality within the relationship."
+  "\n\nChallenges:"
+  "\nEmotional Vulnerability and Expression: Their reserved nature can make it difficult for partners to understand their emotions and needs. Open communication and learning to express feelings constructively are crucial."
+  "\nPractical Responsibilities: Their dislike for mundane tasks can lead to neglecting shared responsibilities. Finding a balance between intellectual pursuits and practical needs is important."
+  "\nConflict Resolution: Their avoidance of conflict can lead to unresolved issues or emotional distance. Learning healthy communication and conflict resolution skills can strengthen their relationships.";
+
+  String body_text = "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
+      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
+      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
+      "conversations to small talk and often find themselves lost in thought.";
+
+
 
   void overview(){
     setState(() {
       headline = "Overview";
+      body_text = overview_body;
     });
 
   }
@@ -2613,7 +3109,7 @@ class _ISTPState extends State<ISTP> {
   void Relation(){
     setState(() {
       headline = "Romantic Relationship";
-   
+      body_text = relation;
     });
 
   }
@@ -2621,6 +3117,7 @@ class _ISTPState extends State<ISTP> {
   void strength(){
     setState(() {
       headline = "Strength";
+      body_text = strength_text;
     });
 
   }
@@ -2628,12 +3125,14 @@ class _ISTPState extends State<ISTP> {
   void weakness() {
     setState(() {
       headline = "Weakness";
+      body_text = weakness_text;
     });
   }
 
   void Friendship(){
     setState(() {
       headline = "Friendship";
+      body_text = friend_text;
     });
 
   }
@@ -2641,13 +3140,15 @@ class _ISTPState extends State<ISTP> {
   void Parenthood(){
     setState(() {
       headline = "Parenthood";
+      body_text = parent_text;
     });
 
   }
 
+
   @override
   Widget build(BuildContext context) {
-    String Summary_body = "Entrepreneurs always have an impact on their immediate surroundings – "
+    String body_text = "Entrepreneurs always have an impact on their immediate surroundings – "
         "the best way to spot them at a party is to look for the whirling eddy of people flitting "
         "about them as they move from group to group. Laughing and entertaining with a blunt and "
         "earthy humor, Entrepreneur personalities love to be the center of attention. If an audience "
@@ -2779,7 +3280,7 @@ class _ISTPState extends State<ISTP> {
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
-                          child: Text(Summary_body,
+                          child: Text(body_text,
                             style: Theme.of(context).textTheme.bodyLarge!.copyWith(color: Colors.white),
                           ),
                         ),
@@ -2806,13 +3307,54 @@ class ISFP extends StatefulWidget{
 }
 
 class _ISFPState extends State<ISFP> {
-  List<int?> values = [null];
+    String headline ="Overview";
+  String overview_body = "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
+      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
+      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
+      "conversations to small talk and often find themselves lost in thought.";
 
-  String headline ="Summary";
+  String strength_text = "Intellectual Brilliance: INTPs have a remarkable capacity for logical reasoning, pattern recognition, and problem-solving. They are often drawn to science, mathematics, philosophy, and other fields that require analytical thinking."
+      "\n\nCreative Problem-Solvers: Their unconventional approach and ability to see things from multiple angles allow them to generate innovative solutions to challenging problems."
+      "\n\nIndependent Thinkers: INTPs are not easily swayed by popular opinion or authority. They question everything, seeking to form their own logical conclusions based on evidence and reason."
+      "\n\nAdaptable Learners: They are eager to learn new things and continuously expand their knowledge base. Their curiosity and open-mindedness make them adaptable to change and new information."
+      "\n\nHonest and Direct: INTPs value truth and authenticity above social niceties. They are straightforward in their communication, often preferring blunt honesty over sugarcoating.";
+
+  String weakness_text = "Social Awkwardness: INTPs can struggle with social interactions and small talk, preferring solitude and intellectual pursuits. They may come across as aloof or detached in social settings."
+  "\n\nOverthinking and Procrastination: Their tendency to analyze everything from every angle can lead to overthinking, indecisiveness, and procrastination. They may struggle to make decisions or take action until they have considered all possible outcomes."
+  "\n\nInsensitivity: Their focus on logic and rationality can sometimes make them insensitive to others' feelings and emotions. They may unintentionally hurt others with their bluntness or lack of tact."
+  "\n\nDisregard for Rules and Routine: INTPs often chafe against rules and structures that they deem unnecessary or inefficient. They may resist authority and prefer to set their own schedules and priorities."
+  "\n\nDifficulty Expressing Emotions: While they experience deep emotions, INTPs often struggle to articulate and express them outwardly. This can lead to misunderstandings in relationships and difficulty connecting with others on an emotional level.";
+
+  String friend_text = "INTPs seek authenticity and intellectual stimulation in their friendships. "
+      "\n\nThey value friends who share their interests, challenge their thinking, and respect their need for independence. "
+      "They gravitate towards deep, meaningful conversations over superficial social activities. While they may have a small circle of close friends, they are fiercely loyal and supportive within it.";
+
+  String parent_text = "INTP parents prioritize fostering their children's intellectual curiosity, critical thinking skills, and independence. "
+      "\n\nThey create a stimulating environment for learning and encourage their children to explore their interests. "
+      "They value open communication, honesty, and respect for individuality. "
+      "However, they may struggle to express affection openly and may need to consciously work on understanding and validating their children's emotional needs.";
+
+  String relation = "INTPs can be engaging and loyal partners who offer intellectual stimulation and a unique perspective. However, their emotional reserve and dislike for routine can create challenges. Open communication, understanding their personality preferences, and a willingness to compromise are essential for building strong and lasting connections with INTPs."
+  "\n\nStrengths:"
+  "\nIntellectual Companionship: They value intelligent conversations and enjoy stimulating discussions with partners who can engage in deep thinking and explore complex ideas."
+  "\nLoyalty and Supportive Nature: Once they commit to a relationship, INTPs are loyal and supportive partners. They offer intellectual stimulation, encouragement, and unwavering support for their loved ones' goals."
+  "\nRespect for Individuality: Their independent nature translates into respect for their partner's autonomy and individuality. They appreciate and encourage individuality within the relationship."
+  "\n\nChallenges:"
+  "\nEmotional Vulnerability and Expression: Their reserved nature can make it difficult for partners to understand their emotions and needs. Open communication and learning to express feelings constructively are crucial."
+  "\nPractical Responsibilities: Their dislike for mundane tasks can lead to neglecting shared responsibilities. Finding a balance between intellectual pursuits and practical needs is important."
+  "\nConflict Resolution: Their avoidance of conflict can lead to unresolved issues or emotional distance. Learning healthy communication and conflict resolution skills can strengthen their relationships.";
+
+  String body_text = "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
+      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
+      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
+      "conversations to small talk and often find themselves lost in thought.";
+
+
 
   void overview(){
     setState(() {
       headline = "Overview";
+      body_text = overview_body;
     });
 
   }
@@ -2820,7 +3362,7 @@ class _ISFPState extends State<ISFP> {
   void Relation(){
     setState(() {
       headline = "Romantic Relationship";
-   
+      body_text = relation;
     });
 
   }
@@ -2828,6 +3370,7 @@ class _ISFPState extends State<ISFP> {
   void strength(){
     setState(() {
       headline = "Strength";
+      body_text = strength_text;
     });
 
   }
@@ -2835,12 +3378,14 @@ class _ISFPState extends State<ISFP> {
   void weakness() {
     setState(() {
       headline = "Weakness";
+      body_text = weakness_text;
     });
   }
 
   void Friendship(){
     setState(() {
       headline = "Friendship";
+      body_text = friend_text;
     });
 
   }
@@ -2848,13 +3393,15 @@ class _ISFPState extends State<ISFP> {
   void Parenthood(){
     setState(() {
       headline = "Parenthood";
+      body_text = parent_text;
     });
 
   }
 
+
   @override
   Widget build(BuildContext context) {
-    String Summary_body = "Entrepreneurs always have an impact on their immediate surroundings – "
+    String body_text = "Entrepreneurs always have an impact on their immediate surroundings – "
         "the best way to spot them at a party is to look for the whirling eddy of people flitting "
         "about them as they move from group to group. Laughing and entertaining with a blunt and "
         "earthy humor, Entrepreneur personalities love to be the center of attention. If an audience "
@@ -2986,7 +3533,7 @@ class _ISFPState extends State<ISFP> {
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
-                          child: Text(Summary_body,
+                          child: Text(body_text,
                             style: Theme.of(context).textTheme.bodyLarge!.copyWith(color: Colors.white),
                           ),
                         ),
@@ -3014,13 +3561,54 @@ class ESTP extends StatefulWidget{
 }
 
 class _ESTPState extends State<ESTP> {
-  List<int?> values = [null];
+    String headline ="Overview";
+  String overview_body = "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
+      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
+      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
+      "conversations to small talk and often find themselves lost in thought.";
 
-  String headline ="Summary";
+  String strength_text = "Intellectual Brilliance: INTPs have a remarkable capacity for logical reasoning, pattern recognition, and problem-solving. They are often drawn to science, mathematics, philosophy, and other fields that require analytical thinking."
+      "\n\nCreative Problem-Solvers: Their unconventional approach and ability to see things from multiple angles allow them to generate innovative solutions to challenging problems."
+      "\n\nIndependent Thinkers: INTPs are not easily swayed by popular opinion or authority. They question everything, seeking to form their own logical conclusions based on evidence and reason."
+      "\n\nAdaptable Learners: They are eager to learn new things and continuously expand their knowledge base. Their curiosity and open-mindedness make them adaptable to change and new information."
+      "\n\nHonest and Direct: INTPs value truth and authenticity above social niceties. They are straightforward in their communication, often preferring blunt honesty over sugarcoating.";
+
+  String weakness_text = "Social Awkwardness: INTPs can struggle with social interactions and small talk, preferring solitude and intellectual pursuits. They may come across as aloof or detached in social settings."
+  "\n\nOverthinking and Procrastination: Their tendency to analyze everything from every angle can lead to overthinking, indecisiveness, and procrastination. They may struggle to make decisions or take action until they have considered all possible outcomes."
+  "\n\nInsensitivity: Their focus on logic and rationality can sometimes make them insensitive to others' feelings and emotions. They may unintentionally hurt others with their bluntness or lack of tact."
+  "\n\nDisregard for Rules and Routine: INTPs often chafe against rules and structures that they deem unnecessary or inefficient. They may resist authority and prefer to set their own schedules and priorities."
+  "\n\nDifficulty Expressing Emotions: While they experience deep emotions, INTPs often struggle to articulate and express them outwardly. This can lead to misunderstandings in relationships and difficulty connecting with others on an emotional level.";
+
+  String friend_text = "INTPs seek authenticity and intellectual stimulation in their friendships. "
+      "\n\nThey value friends who share their interests, challenge their thinking, and respect their need for independence. "
+      "They gravitate towards deep, meaningful conversations over superficial social activities. While they may have a small circle of close friends, they are fiercely loyal and supportive within it.";
+
+  String parent_text = "INTP parents prioritize fostering their children's intellectual curiosity, critical thinking skills, and independence. "
+      "\n\nThey create a stimulating environment for learning and encourage their children to explore their interests. "
+      "They value open communication, honesty, and respect for individuality. "
+      "However, they may struggle to express affection openly and may need to consciously work on understanding and validating their children's emotional needs.";
+
+  String relation = "INTPs can be engaging and loyal partners who offer intellectual stimulation and a unique perspective. However, their emotional reserve and dislike for routine can create challenges. Open communication, understanding their personality preferences, and a willingness to compromise are essential for building strong and lasting connections with INTPs."
+  "\n\nStrengths:"
+  "\nIntellectual Companionship: They value intelligent conversations and enjoy stimulating discussions with partners who can engage in deep thinking and explore complex ideas."
+  "\nLoyalty and Supportive Nature: Once they commit to a relationship, INTPs are loyal and supportive partners. They offer intellectual stimulation, encouragement, and unwavering support for their loved ones' goals."
+  "\nRespect for Individuality: Their independent nature translates into respect for their partner's autonomy and individuality. They appreciate and encourage individuality within the relationship."
+  "\n\nChallenges:"
+  "\nEmotional Vulnerability and Expression: Their reserved nature can make it difficult for partners to understand their emotions and needs. Open communication and learning to express feelings constructively are crucial."
+  "\nPractical Responsibilities: Their dislike for mundane tasks can lead to neglecting shared responsibilities. Finding a balance between intellectual pursuits and practical needs is important."
+  "\nConflict Resolution: Their avoidance of conflict can lead to unresolved issues or emotional distance. Learning healthy communication and conflict resolution skills can strengthen their relationships.";
+
+  String body_text = "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
+      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
+      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
+      "conversations to small talk and often find themselves lost in thought.";
+
+
 
   void overview(){
     setState(() {
       headline = "Overview";
+      body_text = overview_body;
     });
 
   }
@@ -3028,7 +3616,7 @@ class _ESTPState extends State<ESTP> {
   void Relation(){
     setState(() {
       headline = "Romantic Relationship";
-   
+      body_text = relation;
     });
 
   }
@@ -3036,6 +3624,7 @@ class _ESTPState extends State<ESTP> {
   void strength(){
     setState(() {
       headline = "Strength";
+      body_text = strength_text;
     });
 
   }
@@ -3043,12 +3632,14 @@ class _ESTPState extends State<ESTP> {
   void weakness() {
     setState(() {
       headline = "Weakness";
+      body_text = weakness_text;
     });
   }
 
   void Friendship(){
     setState(() {
       headline = "Friendship";
+      body_text = friend_text;
     });
 
   }
@@ -3056,13 +3647,15 @@ class _ESTPState extends State<ESTP> {
   void Parenthood(){
     setState(() {
       headline = "Parenthood";
+      body_text = parent_text;
     });
 
   }
 
+
   @override
   Widget build(BuildContext context) {
-    String Summary_body = "Entrepreneurs always have an impact on their immediate surroundings – "
+    String body_text = "Entrepreneurs always have an impact on their immediate surroundings – "
         "the best way to spot them at a party is to look for the whirling eddy of people flitting "
         "about them as they move from group to group. Laughing and entertaining with a blunt and "
         "earthy humor, Entrepreneur personalities love to be the center of attention. If an audience "
@@ -3194,7 +3787,7 @@ class _ESTPState extends State<ESTP> {
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
-                          child: Text(Summary_body,
+                          child: Text(body_text,
                             style: Theme.of(context).textTheme.bodyLarge!.copyWith(color: Colors.white),
                           ),
                         ),
@@ -3222,13 +3815,54 @@ class ESFP extends StatefulWidget{
 }
 
 class _ESFPState extends State<ESFP> {
-  List<int?> values = [null];
+    String headline ="Overview";
+  String overview_body = "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
+      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
+      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
+      "conversations to small talk and often find themselves lost in thought.";
 
-  String headline ="Summary";
+  String strength_text = "Intellectual Brilliance: INTPs have a remarkable capacity for logical reasoning, pattern recognition, and problem-solving. They are often drawn to science, mathematics, philosophy, and other fields that require analytical thinking."
+      "\n\nCreative Problem-Solvers: Their unconventional approach and ability to see things from multiple angles allow them to generate innovative solutions to challenging problems."
+      "\n\nIndependent Thinkers: INTPs are not easily swayed by popular opinion or authority. They question everything, seeking to form their own logical conclusions based on evidence and reason."
+      "\n\nAdaptable Learners: They are eager to learn new things and continuously expand their knowledge base. Their curiosity and open-mindedness make them adaptable to change and new information."
+      "\n\nHonest and Direct: INTPs value truth and authenticity above social niceties. They are straightforward in their communication, often preferring blunt honesty over sugarcoating.";
+
+  String weakness_text = "Social Awkwardness: INTPs can struggle with social interactions and small talk, preferring solitude and intellectual pursuits. They may come across as aloof or detached in social settings."
+  "\n\nOverthinking and Procrastination: Their tendency to analyze everything from every angle can lead to overthinking, indecisiveness, and procrastination. They may struggle to make decisions or take action until they have considered all possible outcomes."
+  "\n\nInsensitivity: Their focus on logic and rationality can sometimes make them insensitive to others' feelings and emotions. They may unintentionally hurt others with their bluntness or lack of tact."
+  "\n\nDisregard for Rules and Routine: INTPs often chafe against rules and structures that they deem unnecessary or inefficient. They may resist authority and prefer to set their own schedules and priorities."
+  "\n\nDifficulty Expressing Emotions: While they experience deep emotions, INTPs often struggle to articulate and express them outwardly. This can lead to misunderstandings in relationships and difficulty connecting with others on an emotional level.";
+
+  String friend_text = "INTPs seek authenticity and intellectual stimulation in their friendships. "
+      "\n\nThey value friends who share their interests, challenge their thinking, and respect their need for independence. "
+      "They gravitate towards deep, meaningful conversations over superficial social activities. While they may have a small circle of close friends, they are fiercely loyal and supportive within it.";
+
+  String parent_text = "INTP parents prioritize fostering their children's intellectual curiosity, critical thinking skills, and independence. "
+      "\n\nThey create a stimulating environment for learning and encourage their children to explore their interests. "
+      "They value open communication, honesty, and respect for individuality. "
+      "However, they may struggle to express affection openly and may need to consciously work on understanding and validating their children's emotional needs.";
+
+  String relation = "INTPs can be engaging and loyal partners who offer intellectual stimulation and a unique perspective. However, their emotional reserve and dislike for routine can create challenges. Open communication, understanding their personality preferences, and a willingness to compromise are essential for building strong and lasting connections with INTPs."
+  "\n\nStrengths:"
+  "\nIntellectual Companionship: They value intelligent conversations and enjoy stimulating discussions with partners who can engage in deep thinking and explore complex ideas."
+  "\nLoyalty and Supportive Nature: Once they commit to a relationship, INTPs are loyal and supportive partners. They offer intellectual stimulation, encouragement, and unwavering support for their loved ones' goals."
+  "\nRespect for Individuality: Their independent nature translates into respect for their partner's autonomy and individuality. They appreciate and encourage individuality within the relationship."
+  "\n\nChallenges:"
+  "\nEmotional Vulnerability and Expression: Their reserved nature can make it difficult for partners to understand their emotions and needs. Open communication and learning to express feelings constructively are crucial."
+  "\nPractical Responsibilities: Their dislike for mundane tasks can lead to neglecting shared responsibilities. Finding a balance between intellectual pursuits and practical needs is important."
+  "\nConflict Resolution: Their avoidance of conflict can lead to unresolved issues or emotional distance. Learning healthy communication and conflict resolution skills can strengthen their relationships.";
+
+  String body_text = "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
+      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
+      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
+      "conversations to small talk and often find themselves lost in thought.";
+
+
 
   void overview(){
     setState(() {
       headline = "Overview";
+      body_text = overview_body;
     });
 
   }
@@ -3236,7 +3870,7 @@ class _ESFPState extends State<ESFP> {
   void Relation(){
     setState(() {
       headline = "Romantic Relationship";
-   
+      body_text = relation;
     });
 
   }
@@ -3244,6 +3878,7 @@ class _ESFPState extends State<ESFP> {
   void strength(){
     setState(() {
       headline = "Strength";
+      body_text = strength_text;
     });
 
   }
@@ -3251,12 +3886,14 @@ class _ESFPState extends State<ESFP> {
   void weakness() {
     setState(() {
       headline = "Weakness";
+      body_text = weakness_text;
     });
   }
 
   void Friendship(){
     setState(() {
       headline = "Friendship";
+      body_text = friend_text;
     });
 
   }
@@ -3264,13 +3901,15 @@ class _ESFPState extends State<ESFP> {
   void Parenthood(){
     setState(() {
       headline = "Parenthood";
+      body_text = parent_text;
     });
 
   }
 
+
   @override
   Widget build(BuildContext context) {
-    String Summary_body = "Entrepreneurs always have an impact on their immediate surroundings – "
+    String body_text = "Entrepreneurs always have an impact on their immediate surroundings – "
         "the best way to spot them at a party is to look for the whirling eddy of people flitting "
         "about them as they move from group to group. Laughing and entertaining with a blunt and "
         "earthy humor, Entrepreneur personalities love to be the center of attention. If an audience "
@@ -3402,7 +4041,7 @@ class _ESFPState extends State<ESFP> {
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
-                          child: Text(Summary_body,
+                          child: Text(body_text,
                             style: Theme.of(context).textTheme.bodyLarge!.copyWith(color: Colors.white),
                           ),
                         ),
