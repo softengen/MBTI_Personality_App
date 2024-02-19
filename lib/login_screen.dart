@@ -2,6 +2,7 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:mbti_app/personalityPage.dart';
+import 'package:mbti_app/signup.dart';
 
 class MyApp extends StatelessWidget {
   @override
@@ -65,6 +66,9 @@ class _LoginPageState extends State<LoginPage> {
                   obscureText: true,
                 ),
                 const SizedBox(height: 40),
+
+                // < -- Log in button section -- >
+
                 Container(
                   height: 40,
                   width: 120,
@@ -126,6 +130,39 @@ class _LoginPageState extends State<LoginPage> {
                       // padding: EdgeInsets.all(1),
                     ),
                   ),
+
+                ),
+                const SizedBox(height: 20),
+
+                // < -- sign up button section -- >
+
+                Container(
+                  height: 40,
+                  width: 120,
+                  child: ElevatedButton(
+                    onPressed: () {
+                        Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const SignUp()));
+                    },
+                    child: const Text(
+                      'SIGN UP',
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: '',
+                      ),
+                    ),
+                    // design of elevated button
+                    style: ElevatedButton.styleFrom(
+                      elevation: 5,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(6)),
+                      // padding: EdgeInsets.all(1),
+                    ),
+                  ),
+
                 ),
               ],
             ),
