@@ -81,7 +81,7 @@ class _LoginPageState extends State<LoginPage> {
                       log('Password: $password');
 
                       if (username == "admin" && password == "admin") {
-                        Navigator.push(
+                        Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(
                               builder: (context) => personalityPage()),
