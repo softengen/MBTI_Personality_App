@@ -88,6 +88,9 @@ Color gradientColor1 =
 Color gradientColor2 =
     Colors.deepPurpleAccent[200] ?? Colors.deepPurple; // Null check
 
+
+
+
 class INTJ extends StatefulWidget {
   @override
   State<INTJ> createState() => _INTJState();
@@ -211,7 +214,7 @@ class _INTJState extends State<INTJ> {
                         borderRadius: BorderRadius.circular(15),
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.black.withOpacity(.9),
+                            color: Colors.black.withOpacity(.8),
                             spreadRadius: 3,
                             blurRadius: 7,
                             offset: const Offset(2, 5),
@@ -478,7 +481,7 @@ class _INTPState extends State<INTP> {
                         borderRadius: BorderRadius.circular(15),
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.black.withOpacity(.9),
+                            color: Colors.black.withOpacity(.8),
                             spreadRadius: 3,
                             blurRadius: 7,
                             offset: const Offset(2, 5),
@@ -539,22 +542,6 @@ class _INTPState extends State<INTP> {
                                     BorderRadius.all(Radius.circular(20)))),
                       ),
                       ElevatedButton(
-                        onPressed: strength,
-                        child: const Text("Strength"),
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                      ),
-                      ElevatedButton(
-                        onPressed: weakness,
-                        child: const Text("Weakness"),
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                      ),
-                      ElevatedButton(
                         onPressed: Friendship,
                         child: const Text("Friendship"),
                         style: ElevatedButton.styleFrom(
@@ -565,6 +552,22 @@ class _INTPState extends State<INTP> {
                       ElevatedButton(
                         onPressed: Parenthood,
                         child: const Text("Parenthood"),
+                        style: ElevatedButton.styleFrom(
+                            shape: const RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)))),
+                      ),
+                      ElevatedButton(
+                        onPressed: strength,
+                        child: const Text("Strength"),
+                        style: ElevatedButton.styleFrom(
+                            shape: const RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)))),
+                      ),
+                      ElevatedButton(
+                        onPressed: weakness,
+                        child: const Text("Weakness"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
@@ -672,10 +675,10 @@ class _ENTJState extends State<ENTJ> {
       "\n\nESTP: Share decisiveness, action-orientation, and a love for challenges. ESTPs bring spontaneity, adaptability, and a fun-loving spirit, encouraging ENTJs to loosen up and enjoy the moment. Balancing assertiveness and respect is key.";
 
   String body_text =
-      "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
-      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
-      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
-      "conversations to small talk and often find themselves lost in thought.";
+      "ENTJs, also known as Commanders, are natural-born leaders with a vision for the future "
+      "and a drive to achieve their goals. They are charismatic, confident, and strategic, with a strong sense of "
+      "purpose and a knack for motivating others. ENTJs value efficiency, logic, and order, and are always looking "
+      "for ways to improve and optimize.";
 
   void overview() {
     setState(() {
@@ -741,7 +744,7 @@ class _ENTJState extends State<ENTJ> {
                         borderRadius: BorderRadius.circular(15),
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.black.withOpacity(.9),
+                            color: Colors.black.withOpacity(.8),
                             spreadRadius: 3,
                             blurRadius: 7,
                             offset: const Offset(2, 5),
@@ -802,22 +805,6 @@ class _ENTJState extends State<ENTJ> {
                                     BorderRadius.all(Radius.circular(20)))),
                       ),
                       ElevatedButton(
-                        onPressed: strength,
-                        child: const Text("Strength"),
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                      ),
-                      ElevatedButton(
-                        onPressed: weakness,
-                        child: const Text("Weakness"),
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                      ),
-                      ElevatedButton(
                         onPressed: Friendship,
                         child: const Text("Friendship"),
                         style: ElevatedButton.styleFrom(
@@ -828,6 +815,22 @@ class _ENTJState extends State<ENTJ> {
                       ElevatedButton(
                         onPressed: Parenthood,
                         child: const Text("Parenthood"),
+                        style: ElevatedButton.styleFrom(
+                            shape: const RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)))),
+                      ),
+                      ElevatedButton(
+                        onPressed: strength,
+                        child: const Text("Strength"),
+                        style: ElevatedButton.styleFrom(
+                            shape: const RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)))),
+                      ),
+                      ElevatedButton(
+                        onPressed: weakness,
+                        child: const Text("Weakness"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
@@ -894,52 +897,54 @@ class ENTP extends StatefulWidget {
 class _ENTPState extends State<ENTP> {
   String headline = "Overview";
   String overview_body =
-      "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
-      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
-      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
-      "conversations to small talk and often find themselves lost in thought.";
+      "ENTPs, also known as Debaters, are quick-witted, imaginative, and always up for a challenge. "
+      "They are natural-born debaters who love to explore new ideas and possibilities. "
+      "ENTPs value freedom, creativity, and authenticity, and tend to be independent and non-conformist. "
+      "They are always looking for ways to improve the world around them and are not afraid to challenge the status quo.";
 
   String strength_text =
-      "Intellectual Brilliance: INTPs have a remarkable capacity for logical reasoning, pattern recognition, and problem-solving. They are often drawn to science, mathematics, philosophy, and other fields that require analytical thinking."
-      "\n\nCreative Problem-Solvers: Their unconventional approach and ability to see things from multiple angles allow them to generate innovative solutions to challenging problems."
-      "\n\nIndependent Thinkers: INTPs are not easily swayed by popular opinion or authority. They question everything, seeking to form their own logical conclusions based on evidence and reason."
-      "\n\nAdaptable Learners: They are eager to learn new things and continuously expand their knowledge base. Their curiosity and open-mindedness make them adaptable to change and new information."
-      "\n\nHonest and Direct: INTPs value truth and authenticity above social niceties. They are straightforward in their communication, often preferring blunt honesty over sugarcoating.";
+      "Imaginative and Creative: ENTPs are imaginative and creative. They are always coming up with new ideas and ways of doing things. They are also good at seeing the big picture and making connections between seemingly unrelated ideas."
+      "\n\nIntelligent and Witty: ENTPs are intelligent and witty. They are able to see the humor in almost any situation and are good at using their words to entertain and persuade others."
+      "\n\nIndependent and Non-Conformist: ENTPs are independent and non-conformist. They do not like to be told what to do and are always looking for new ways to challenge themselves."
+      "\n\nAdaptable and Flexible: ENTPs are adaptable and flexible. They are able to change their plans quickly and easily and are not afraid to take risks."
+      "\n\nEnthusiastic and Optimistic: ENTPs are enthusiastic and optimistic. They are always looking for the next big thing and are always excited about new possibilities.";
 
   String weakness_text =
-      "Social Awkwardness: INTPs can struggle with social interactions and small talk, preferring solitude and intellectual pursuits. They may come across as aloof or detached in social settings."
-      "\n\nOverthinking and Procrastination: Their tendency to analyze everything from every angle can lead to overthinking, indecisiveness, and procrastination. They may struggle to make decisions or take action until they have considered all possible outcomes."
-      "\n\nInsensitivity: Their focus on logic and rationality can sometimes make them insensitive to others' feelings and emotions. They may unintentionally hurt others with their bluntness or lack of tact."
-      "\n\nDisregard for Rules and Routine: INTPs often chafe against rules and structures that they deem unnecessary or inefficient. They may resist authority and prefer to set their own schedules and priorities."
-      "\n\nDifficulty Expressing Emotions: While they experience deep emotions, INTPs often struggle to articulate and express them outwardly. This can lead to misunderstandings in relationships and difficulty connecting with others on an emotional level.";
+      "Disorganized and Impulsive: ENTPs can be disorganized and impulsive. They may start projects without finishing them and may make decisions without thinking them through."
+      "\n\nArgumentative and Debatative: ENTPs can be argumentative and debatative. They may enjoy arguing for the sake of arguing and may not always be open to other people's ideas."
+      "\n\nInsensitive and Blunt: ENTPs can be insensitive and blunt. They may not always consider the feelings of others and may say things that are hurtful or offensive."
+      "\n\nUnreliable and Flaky: ENTPs can be unreliable and flaky. They may not always follow through on their commitments and may change their plans at the last minute."
+      "\n\nOverly Critical: ENTPs can be overly critical. They may have high standards for themselves and others and may be quick to point out mistakes.";
 
   String friend_text =
-      "INTPs seek authenticity and intellectual stimulation in their friendships. "
-      "\n\nThey value friends who share their interests, challenge their thinking, and respect their need for independence. "
-      "They gravitate towards deep, meaningful conversations over superficial social activities. While they may have a small circle of close friends, they are fiercely loyal and supportive within it.";
+      "ENTPs value friends who are intelligent, challenging, and supportive. "
+      "\n\nThey enjoy deep conversations and lively debates. "
+      "They are loyal and supportive friends, but they can also be demanding and critical.";
 
   String parent_text =
-      "INTP parents prioritize fostering their children's intellectual curiosity, critical thinking skills, and independence. "
-      "\n\nThey create a stimulating environment for learning and encourage their children to explore their interests. "
-      "They value open communication, honesty, and respect for individuality. "
-      "However, they may struggle to express affection openly and may need to consciously work on understanding and validating their children's emotional needs.";
+      "ENTP parents are stimulating and engaging. "
+      "\n\nThey are always looking for new ways to teach and entertain their children. "
+      "They are also very involved in their children's lives and are always looking for ways to help them succeed.";
 
   String relation =
-      "INTPs can be engaging and loyal partners who offer intellectual stimulation and a unique perspective. However, their emotional reserve and dislike for routine can create challenges. Open communication, understanding their personality preferences, and a willingness to compromise are essential for building strong and lasting connections with INTPs."
-      "\n\nStrengths:"
-      "\nIntellectual Companionship: They value intelligent conversations and enjoy stimulating discussions with partners who can engage in deep thinking and explore complex ideas."
-      "\nLoyalty and Supportive Nature: Once they commit to a relationship, INTPs are loyal and supportive partners. They offer intellectual stimulation, encouragement, and unwavering support for their loved ones' goals."
-      "\nRespect for Individuality: Their independent nature translates into respect for their partner's autonomy and individuality. They appreciate and encourage individuality within the relationship."
-      "\n\nChallenges:"
-      "\nEmotional Vulnerability and Expression: Their reserved nature can make it difficult for partners to understand their emotions and needs. Open communication and learning to express feelings constructively are crucial."
-      "\nPractical Responsibilities: Their dislike for mundane tasks can lead to neglecting shared responsibilities. Finding a balance between intellectual pursuits and practical needs is important."
-      "\nConflict Resolution: Their avoidance of conflict can lead to unresolved issues or emotional distance. Learning healthy communication and conflict resolution skills can strengthen their relationships.";
+      "Key Points for ENTP Relationships:"
+      "\n\nEmotional understanding: Make an effort to connect with your partner on an emotional level and be receptive to their feelings."
+      "\n\nCommitment and follow-through: While enjoying novelty, commit to your partner and follow through on responsibilities to build trust and stability."
+      "\n\nHealthy communication: Express your thoughts and needs openly and honestly, but be mindful of your partner's feelings and communication style."
+      "\n\nBalancing intellectual stimulation and emotional connection: Foster deep conversations and intellectual sharing, while also nurturing emotional intimacy and shared experiences."
+      "\n\n\nCompatible Types:"
+      "\n\nINTP: Share intellectual curiosity, love of debate, and an independent spirit. Both enjoy exploring complex ideas and challenging each other's perspectives, but need to work on emotional vulnerability and expressing feelings constructively."
+      "\n\nENFP: Balance ENTP's analytical side with their visionary idealism and enthusiasm. ENFPs bring creativity, emotional warmth, and a focus on possibilities, encouraging ENTPs to connect with their feelings and explore new perspectives."
+      "\n\nINFJ: Share a fascination with complex concepts, introspective nature, and value for authenticity. INFJs offer emotional depth, intuitive understanding, and shared values, but managing potential conflict avoidance and expressing individual needs remain crucial."
+      "\n\nENTJ: Share intellectual energy, strategic thinking, and a drive for innovation. ENTPs bring a playful and adaptable approach, balancing ENTJ's decisiveness and ambition. However, navigating potential power dynamics and respecting each other's communication styles are important."
+      "\n\nESTP: Share a love for action, adventure, and spontaneous fun. ESTPs offer grounding in the present moment, a practical outlook, and a zest for life, encouraging ENTPs to embrace the here and now. Balancing impulsiveness and appreciating different communication styles are key."
+      "\n\nISFP: Offer creative expression, emotional sensitivity, and a focus on enjoying the moment. ISFPs bring a different perspective, encouraging ENTPs to connect with their feelings and appreciate individuality. Balancing intellectual stimulation with emotional connection is crucial.";
 
   String body_text =
-      "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
-      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
-      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
-      "conversations to small talk and often find themselves lost in thought.";
+      "ENTPs, also known as Debaters, are quick-witted, imaginative, and always up for a challenge. "
+      "They are natural-born debaters who love to explore new ideas and possibilities. "
+      "ENTPs value freedom, creativity, and authenticity, and tend to be independent and non-conformist. "
+      "They are always looking for ways to improve the world around them and are not afraid to challenge the status quo.";
 
   void overview() {
     setState(() {
@@ -985,23 +990,6 @@ class _ENTPState extends State<ENTP> {
 
   @override
   Widget build(BuildContext context) {
-    String body_text =
-        "Entrepreneurs always have an impact on their immediate surroundings – "
-        "the best way to spot them at a party is to look for the whirling eddy of people flitting "
-        "about them as they move from group to group. Laughing and entertaining with a blunt and "
-        "earthy humor, Entrepreneur personalities love to be the center of attention. If an audience "
-        "member is asked to come on stage, Entrepreneurs volunteer – or volunteer a shy friend."
-        "\n\nTheory, abstract concepts and plodding discussions about global issues and their implications "
-        "don’t keep Entrepreneurs interested for long. Entrepreneurs keep their conversation energetic, "
-        "with a good dose of intelligence, but they like to talk about what is – or better yet, to just "
-        "go out and do it. Entrepreneurs leap before they look, fixing their mistakes as they go, "
-        "rather than sitting idle, preparing contingencies and escape clauses.";
-
-    List card = [
-      "ESFJ",
-      "Entertainer",
-      "Supportive and sociable, they thrive on nurturing relationships and creating a harmonious environment."
-    ];
 
     Color bgColor = Colors.deepPurple;
 
@@ -1023,7 +1011,7 @@ class _ENTPState extends State<ENTP> {
                         borderRadius: BorderRadius.circular(15),
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.black.withOpacity(.9),
+                            color: Colors.black.withOpacity(.8),
                             spreadRadius: 3,
                             blurRadius: 7,
                             offset: const Offset(2, 5),
@@ -1045,7 +1033,7 @@ class _ENTPState extends State<ENTP> {
                             margin: const EdgeInsets.only(bottom: 10),
                             height: 60,
                             child: Text(
-                              card[1],
+                              body["ENTP"][0],
                               style: const TextStyle(
                                 fontFamily: "ProtestRiot",
                                 fontSize: 45,
@@ -1055,7 +1043,7 @@ class _ENTPState extends State<ENTP> {
                             ),
                           ),
                           Text(
-                            ("(${card[0]})"),
+                            ("(ENTP)"),
                             style: const TextStyle(
                               fontFamily: "Roboto",
                               fontWeight: FontWeight.bold,
@@ -1084,22 +1072,6 @@ class _ENTPState extends State<ENTP> {
                                     BorderRadius.all(Radius.circular(20)))),
                       ),
                       ElevatedButton(
-                        onPressed: strength,
-                        child: const Text("Strength"),
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                      ),
-                      ElevatedButton(
-                        onPressed: weakness,
-                        child: const Text("Weakness"),
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                      ),
-                      ElevatedButton(
                         onPressed: Friendship,
                         child: const Text("Friendship"),
                         style: ElevatedButton.styleFrom(
@@ -1110,6 +1082,22 @@ class _ENTPState extends State<ENTP> {
                       ElevatedButton(
                         onPressed: Parenthood,
                         child: const Text("Parenthood"),
+                        style: ElevatedButton.styleFrom(
+                            shape: const RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)))),
+                      ),
+                      ElevatedButton(
+                        onPressed: strength,
+                        child: const Text("Strength"),
+                        style: ElevatedButton.styleFrom(
+                            shape: const RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)))),
+                      ),
+                      ElevatedButton(
+                        onPressed: weakness,
+                        child: const Text("Weakness"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
@@ -1176,52 +1164,55 @@ class INFJ extends StatefulWidget {
 class _INFJState extends State<INFJ> {
   String headline = "Overview";
   String overview_body =
-      "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
-      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
-      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
-      "conversations to small talk and often find themselves lost in thought.";
+      "INFJs, also known as Advocates, are deeply insightful, idealistic, and driven by a desire to help others. "
+      "They possess a unique ability to understand people's emotions and motivations, often seeing through surface-level interactions "
+      "to the core of someone's being. INFJs are drawn to meaningful connections, complex ideas, and making a positive impact "
+      "on the world.";
 
   String strength_text =
-      "Intellectual Brilliance: INTPs have a remarkable capacity for logical reasoning, pattern recognition, and problem-solving. They are often drawn to science, mathematics, philosophy, and other fields that require analytical thinking."
-      "\n\nCreative Problem-Solvers: Their unconventional approach and ability to see things from multiple angles allow them to generate innovative solutions to challenging problems."
-      "\n\nIndependent Thinkers: INTPs are not easily swayed by popular opinion or authority. They question everything, seeking to form their own logical conclusions based on evidence and reason."
-      "\n\nAdaptable Learners: They are eager to learn new things and continuously expand their knowledge base. Their curiosity and open-mindedness make them adaptable to change and new information."
-      "\n\nHonest and Direct: INTPs value truth and authenticity above social niceties. They are straightforward in their communication, often preferring blunt honesty over sugarcoating.";
+      "Empathetic and Compassionate: INFJs naturally grasp and deeply resonate with the emotions of others. They care deeply about people's well-being and are driven to alleviate suffering and contribute to the betterment of society."
+      "\n\nInsightful and Visionary: Possessing keen intuition and foresight, INFJs can readily perceive unseen connections, patterns, and future possibilities. This allows them to offer unique perspectives and innovative solutions to challenges."
+      "\n\nCreative and Idealistic: Driven by strong values and a desire for positive change, INFJs readily generate creative solutions and envision ideal scenarios for the future. They inspire others with their passion and belief in a better world."
+      "\n\nLoyal and Committed: Once they connect with someone on a deep level, INFJs forge strong and lasting bonds. They are fiercely loyal and supportive, offering unwavering dedication to those they care about."
+      "\n\nIndependent Thinkers: While valuing meaningful connections, INFJs maintain their own sense of individuality and are not easily swayed by popular opinion. They critically evaluate information and form their own informed conclusions.";
 
   String weakness_text =
-      "Social Awkwardness: INTPs can struggle with social interactions and small talk, preferring solitude and intellectual pursuits. They may come across as aloof or detached in social settings."
-      "\n\nOverthinking and Procrastination: Their tendency to analyze everything from every angle can lead to overthinking, indecisiveness, and procrastination. They may struggle to make decisions or take action until they have considered all possible outcomes."
-      "\n\nInsensitivity: Their focus on logic and rationality can sometimes make them insensitive to others' feelings and emotions. They may unintentionally hurt others with their bluntness or lack of tact."
-      "\n\nDisregard for Rules and Routine: INTPs often chafe against rules and structures that they deem unnecessary or inefficient. They may resist authority and prefer to set their own schedules and priorities."
-      "\n\nDifficulty Expressing Emotions: While they experience deep emotions, INTPs often struggle to articulate and express them outwardly. This can lead to misunderstandings in relationships and difficulty connecting with others on an emotional level.";
+      "Overly Sensitive: Their deep empathy can leave them vulnerable to emotional overload, particularly in highly charged environments. They may take on the burdens of others and struggle to separate their own emotions from those around them."
+      "\n\nPerfectionism: Driven by their ideals and high standards, INFJs can become perfectionistic, leading to self-criticism, procrastination, and frustration when things fall short of their expectations."
+      "\n\nDifficulty Saying No: Their desire to help and prioritize others' needs can make it challenging for INFJs to set boundaries and decline requests, potentially leading to personal sacrifices and resentment."
+      "\n\nSocial Introversion: Though capable of deep connections, INFJs often require significant alone time to recharge and process their emotions. This can sometimes present as social awkwardness or shyness in large groups."
+      "\n\nTaking Criticism Personally: Due to their deep investment in their values and ideals, INFJs can take criticism personally, sometimes feeling misunderstood or unfairly judged. Learning to detach and adopt a more objective perspective can be helpful.";
 
   String friend_text =
-      "INTPs seek authenticity and intellectual stimulation in their friendships. "
-      "\n\nThey value friends who share their interests, challenge their thinking, and respect their need for independence. "
-      "They gravitate towards deep, meaningful conversations over superficial social activities. While they may have a small circle of close friends, they are fiercely loyal and supportive within it.";
+      "INFJs value authenticity, meaningful conversations, and genuine connections. "
+      "\n\nThey seek friends who share their depth, idealism, and desire to make a difference. "
+      "While their circle may be small, their friendships are strong and built on mutual understanding and deep trust.";
 
   String parent_text =
-      "INTP parents prioritize fostering their children's intellectual curiosity, critical thinking skills, and independence. "
-      "\n\nThey create a stimulating environment for learning and encourage their children to explore their interests. "
-      "They value open communication, honesty, and respect for individuality. "
-      "However, they may struggle to express affection openly and may need to consciously work on understanding and validating their children's emotional needs.";
+      "INFJs nurture their children with unconditional love, empathy, and encouragement. "
+      "\n\nThey foster their children's individuality, creativity, and critical thinking, while instilling strong values "
+      "and a sense of social responsibility. However, their sensitivity and perfectionism require conscious effort to balance "
+      "with providing space for exploration and independence.";
 
   String relation =
-      "INTPs can be engaging and loyal partners who offer intellectual stimulation and a unique perspective. However, their emotional reserve and dislike for routine can create challenges. Open communication, understanding their personality preferences, and a willingness to compromise are essential for building strong and lasting connections with INTPs."
-      "\n\nStrengths:"
-      "\nIntellectual Companionship: They value intelligent conversations and enjoy stimulating discussions with partners who can engage in deep thinking and explore complex ideas."
-      "\nLoyalty and Supportive Nature: Once they commit to a relationship, INTPs are loyal and supportive partners. They offer intellectual stimulation, encouragement, and unwavering support for their loved ones' goals."
-      "\nRespect for Individuality: Their independent nature translates into respect for their partner's autonomy and individuality. They appreciate and encourage individuality within the relationship."
-      "\n\nChallenges:"
-      "\nEmotional Vulnerability and Expression: Their reserved nature can make it difficult for partners to understand their emotions and needs. Open communication and learning to express feelings constructively are crucial."
-      "\nPractical Responsibilities: Their dislike for mundane tasks can lead to neglecting shared responsibilities. Finding a balance between intellectual pursuits and practical needs is important."
-      "\nConflict Resolution: Their avoidance of conflict can lead to unresolved issues or emotional distance. Learning healthy communication and conflict resolution skills can strengthen their relationships.";
+      "Key Points for INFJ Relationships:"
+      "\n\nHealthy communication: Express your thoughts and needs openly and honestly, while being mindful of your partner's feelings and communication style."
+      "\n\nBalancing idealism and practicality: While pursuing your values, don't neglect practical details and responsibilities within the relationship."
+      "\n\nSetting boundaries: Learn to say no and prioritize your own needs while maintaining healthy connections with your partner."
+      "\n\nEmbracing emotional expression: Share your feelings openly and constructively, and encourage your partner to do the same, for deeper emotional connection."
+      "\n\n\nCompatible Types:"
+      "\n\nINTJ: Share introspective nature, complex thinking, and value for meaningful connections. Both prioritize authenticity and understanding deep motivations, but might need to work on emotional expression and addressing conflict directly."
+      "\n\nENFP: Balance INFJ's introversion with their visionary idealism and emotional warmth. ENFPs bring enthusiasm, optimism, and a focus on possibilities, helping INFJs connect with their emotions and express themselves more openly."
+      "\n\nINFP: Share idealism, empathy, and a desire for authentic connections. Both value creativity, personal growth, and meaningful conversations, but might need to address potential conflict avoidance and practical realities."
+      "\n\nENFJ: Share strong intuition, compassion, and a desire to help others. ENFJs bring extraverted energy and leadership qualities, encouraging INFJs to engage socially and express their ideas confidently."
+      "\n\nISTJ: Provide grounding, stability, and practical support. ISTJs offer structure, reliability, and a different perspective, balancing INFJ's idealism with groundedness. However, INFJs might need to manage potential power dynamics and communication differences."
+      "\n\nISFP: Offer emotional sensitivity, artistic expression, and a focus on personal values. ISFPs bring authenticity, creativity, and a different way of experiencing the world, encouraging INFJs to connect with their emotions and appreciate beauty in everyday life.";
 
   String body_text =
-      "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
-      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
-      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
-      "conversations to small talk and often find themselves lost in thought.";
+      "INFJs, also known as Advocates, are deeply insightful, idealistic, and driven by a desire to help others. "
+      "They possess a unique ability to understand people's emotions and motivations, often seeing through surface-level interactions "
+      "to the core of someone's being. INFJs are drawn to meaningful connections, complex ideas, and making a positive impact "
+      "on the world.";
 
   void overview() {
     setState(() {
@@ -1267,29 +1258,12 @@ class _INFJState extends State<INFJ> {
 
   @override
   Widget build(BuildContext context) {
-    String body_text =
-        "Entrepreneurs always have an impact on their immediate surroundings – "
-        "the best way to spot them at a party is to look for the whirling eddy of people flitting "
-        "about them as they move from group to group. Laughing and entertaining with a blunt and "
-        "earthy humor, Entrepreneur personalities love to be the center of attention. If an audience "
-        "member is asked to come on stage, Entrepreneurs volunteer – or volunteer a shy friend."
-        "\n\nTheory, abstract concepts and plodding discussions about global issues and their implications "
-        "don’t keep Entrepreneurs interested for long. Entrepreneurs keep their conversation energetic, "
-        "with a good dose of intelligence, but they like to talk about what is – or better yet, to just "
-        "go out and do it. Entrepreneurs leap before they look, fixing their mistakes as they go, "
-        "rather than sitting idle, preparing contingencies and escape clauses.";
-
-    List card = [
-      "ESFJ",
-      "Entertainer",
-      "Supportive and sociable, they thrive on nurturing relationships and creating a harmonious environment."
-    ];
 
     Color bgColor = Colors.deepPurple;
 
     return Scaffold(
         appBar: AppBar(
-          title: const Text("ESFJ"),
+          title: const Text("INFJ"),
         ),
         body: SingleChildScrollView(
           child: Column(
@@ -1297,7 +1271,7 @@ class _INFJState extends State<INFJ> {
             children: [
               Material(
                 child: Hero(
-                  tag: "ESFJ",
+                  tag: "INFJ",
                   child: Center(
                     child: Container(
                       margin: const EdgeInsets.all(11),
@@ -1305,7 +1279,7 @@ class _INFJState extends State<INFJ> {
                         borderRadius: BorderRadius.circular(15),
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.black.withOpacity(.9),
+                            color: Colors.black.withOpacity(.8),
                             spreadRadius: 3,
                             blurRadius: 7,
                             offset: const Offset(2, 5),
@@ -1327,7 +1301,7 @@ class _INFJState extends State<INFJ> {
                             margin: const EdgeInsets.only(bottom: 10),
                             height: 60,
                             child: Text(
-                              card[1],
+                              body["INFJ"][0],
                               style: const TextStyle(
                                 fontFamily: "ProtestRiot",
                                 fontSize: 45,
@@ -1337,7 +1311,7 @@ class _INFJState extends State<INFJ> {
                             ),
                           ),
                           Text(
-                            ("(${card[0]})"),
+                            ("(INFJ)"),
                             style: const TextStyle(
                               fontFamily: "Roboto",
                               fontWeight: FontWeight.bold,
@@ -1366,22 +1340,6 @@ class _INFJState extends State<INFJ> {
                                     BorderRadius.all(Radius.circular(20)))),
                       ),
                       ElevatedButton(
-                        onPressed: strength,
-                        child: const Text("Strength"),
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                      ),
-                      ElevatedButton(
-                        onPressed: weakness,
-                        child: const Text("Weakness"),
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                      ),
-                      ElevatedButton(
                         onPressed: Friendship,
                         child: const Text("Friendship"),
                         style: ElevatedButton.styleFrom(
@@ -1392,6 +1350,22 @@ class _INFJState extends State<INFJ> {
                       ElevatedButton(
                         onPressed: Parenthood,
                         child: const Text("Parenthood"),
+                        style: ElevatedButton.styleFrom(
+                            shape: const RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)))),
+                      ),
+                      ElevatedButton(
+                        onPressed: strength,
+                        child: const Text("Strength"),
+                        style: ElevatedButton.styleFrom(
+                            shape: const RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)))),
+                      ),
+                      ElevatedButton(
+                        onPressed: weakness,
+                        child: const Text("Weakness"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
@@ -1587,7 +1561,7 @@ class _INFPState extends State<INFP> {
                         borderRadius: BorderRadius.circular(15),
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.black.withOpacity(.9),
+                            color: Colors.black.withOpacity(.8),
                             spreadRadius: 3,
                             blurRadius: 7,
                             offset: const Offset(2, 5),
@@ -1648,22 +1622,6 @@ class _INFPState extends State<INFP> {
                                     BorderRadius.all(Radius.circular(20)))),
                       ),
                       ElevatedButton(
-                        onPressed: strength,
-                        child: const Text("Strength"),
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                      ),
-                      ElevatedButton(
-                        onPressed: weakness,
-                        child: const Text("Weakness"),
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                      ),
-                      ElevatedButton(
                         onPressed: Friendship,
                         child: const Text("Friendship"),
                         style: ElevatedButton.styleFrom(
@@ -1674,6 +1632,22 @@ class _INFPState extends State<INFP> {
                       ElevatedButton(
                         onPressed: Parenthood,
                         child: const Text("Parenthood"),
+                        style: ElevatedButton.styleFrom(
+                            shape: const RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)))),
+                      ),
+                      ElevatedButton(
+                        onPressed: strength,
+                        child: const Text("Strength"),
+                        style: ElevatedButton.styleFrom(
+                            shape: const RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)))),
+                      ),
+                      ElevatedButton(
+                        onPressed: weakness,
+                        child: const Text("Weakness"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
@@ -1869,7 +1843,7 @@ class _ENFJState extends State<ENFJ> {
                         borderRadius: BorderRadius.circular(15),
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.black.withOpacity(.9),
+                            color: Colors.black.withOpacity(.8),
                             spreadRadius: 3,
                             blurRadius: 7,
                             offset: const Offset(2, 5),
@@ -1930,22 +1904,6 @@ class _ENFJState extends State<ENFJ> {
                                     BorderRadius.all(Radius.circular(20)))),
                       ),
                       ElevatedButton(
-                        onPressed: strength,
-                        child: const Text("Strength"),
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                      ),
-                      ElevatedButton(
-                        onPressed: weakness,
-                        child: const Text("Weakness"),
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                      ),
-                      ElevatedButton(
                         onPressed: Friendship,
                         child: const Text("Friendship"),
                         style: ElevatedButton.styleFrom(
@@ -1956,6 +1914,22 @@ class _ENFJState extends State<ENFJ> {
                       ElevatedButton(
                         onPressed: Parenthood,
                         child: const Text("Parenthood"),
+                        style: ElevatedButton.styleFrom(
+                            shape: const RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)))),
+                      ),
+                      ElevatedButton(
+                        onPressed: strength,
+                        child: const Text("Strength"),
+                        style: ElevatedButton.styleFrom(
+                            shape: const RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)))),
+                      ),
+                      ElevatedButton(
+                        onPressed: weakness,
+                        child: const Text("Weakness"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
@@ -2151,7 +2125,7 @@ class _ENFPState extends State<ENFP> {
                         borderRadius: BorderRadius.circular(15),
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.black.withOpacity(.9),
+                            color: Colors.black.withOpacity(.8),
                             spreadRadius: 3,
                             blurRadius: 7,
                             offset: const Offset(2, 5),
@@ -2212,22 +2186,6 @@ class _ENFPState extends State<ENFP> {
                                     BorderRadius.all(Radius.circular(20)))),
                       ),
                       ElevatedButton(
-                        onPressed: strength,
-                        child: const Text("Strength"),
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                      ),
-                      ElevatedButton(
-                        onPressed: weakness,
-                        child: const Text("Weakness"),
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                      ),
-                      ElevatedButton(
                         onPressed: Friendship,
                         child: const Text("Friendship"),
                         style: ElevatedButton.styleFrom(
@@ -2238,6 +2196,22 @@ class _ENFPState extends State<ENFP> {
                       ElevatedButton(
                         onPressed: Parenthood,
                         child: const Text("Parenthood"),
+                        style: ElevatedButton.styleFrom(
+                            shape: const RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)))),
+                      ),
+                      ElevatedButton(
+                        onPressed: strength,
+                        child: const Text("Strength"),
+                        style: ElevatedButton.styleFrom(
+                            shape: const RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)))),
+                      ),
+                      ElevatedButton(
+                        onPressed: weakness,
+                        child: const Text("Weakness"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
@@ -2433,7 +2407,7 @@ class _ISTJState extends State<ISTJ> {
                         borderRadius: BorderRadius.circular(15),
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.black.withOpacity(.9),
+                            color: Colors.black.withOpacity(.8),
                             spreadRadius: 3,
                             blurRadius: 7,
                             offset: const Offset(2, 5),
@@ -2494,22 +2468,6 @@ class _ISTJState extends State<ISTJ> {
                                     BorderRadius.all(Radius.circular(20)))),
                       ),
                       ElevatedButton(
-                        onPressed: strength,
-                        child: const Text("Strength"),
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                      ),
-                      ElevatedButton(
-                        onPressed: weakness,
-                        child: const Text("Weakness"),
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                      ),
-                      ElevatedButton(
                         onPressed: Friendship,
                         child: const Text("Friendship"),
                         style: ElevatedButton.styleFrom(
@@ -2520,6 +2478,22 @@ class _ISTJState extends State<ISTJ> {
                       ElevatedButton(
                         onPressed: Parenthood,
                         child: const Text("Parenthood"),
+                        style: ElevatedButton.styleFrom(
+                            shape: const RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)))),
+                      ),
+                      ElevatedButton(
+                        onPressed: strength,
+                        child: const Text("Strength"),
+                        style: ElevatedButton.styleFrom(
+                            shape: const RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)))),
+                      ),
+                      ElevatedButton(
+                        onPressed: weakness,
+                        child: const Text("Weakness"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
@@ -2715,7 +2689,7 @@ class _ISFJState extends State<ISFJ> {
                         borderRadius: BorderRadius.circular(15),
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.black.withOpacity(.9),
+                            color: Colors.black.withOpacity(.8),
                             spreadRadius: 3,
                             blurRadius: 7,
                             offset: const Offset(2, 5),
@@ -2776,22 +2750,6 @@ class _ISFJState extends State<ISFJ> {
                                     BorderRadius.all(Radius.circular(20)))),
                       ),
                       ElevatedButton(
-                        onPressed: strength,
-                        child: const Text("Strength"),
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                      ),
-                      ElevatedButton(
-                        onPressed: weakness,
-                        child: const Text("Weakness"),
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                      ),
-                      ElevatedButton(
                         onPressed: Friendship,
                         child: const Text("Friendship"),
                         style: ElevatedButton.styleFrom(
@@ -2802,6 +2760,22 @@ class _ISFJState extends State<ISFJ> {
                       ElevatedButton(
                         onPressed: Parenthood,
                         child: const Text("Parenthood"),
+                        style: ElevatedButton.styleFrom(
+                            shape: const RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)))),
+                      ),
+                      ElevatedButton(
+                        onPressed: strength,
+                        child: const Text("Strength"),
+                        style: ElevatedButton.styleFrom(
+                            shape: const RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)))),
+                      ),
+                      ElevatedButton(
+                        onPressed: weakness,
+                        child: const Text("Weakness"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
@@ -2997,7 +2971,7 @@ class _ESTJState extends State<ESTJ> {
                         borderRadius: BorderRadius.circular(15),
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.black.withOpacity(.9),
+                            color: Colors.black.withOpacity(.8),
                             spreadRadius: 3,
                             blurRadius: 7,
                             offset: const Offset(2, 5),
@@ -3058,22 +3032,6 @@ class _ESTJState extends State<ESTJ> {
                                     BorderRadius.all(Radius.circular(20)))),
                       ),
                       ElevatedButton(
-                        onPressed: strength,
-                        child: const Text("Strength"),
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                      ),
-                      ElevatedButton(
-                        onPressed: weakness,
-                        child: const Text("Weakness"),
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                      ),
-                      ElevatedButton(
                         onPressed: Friendship,
                         child: const Text("Friendship"),
                         style: ElevatedButton.styleFrom(
@@ -3084,6 +3042,22 @@ class _ESTJState extends State<ESTJ> {
                       ElevatedButton(
                         onPressed: Parenthood,
                         child: const Text("Parenthood"),
+                        style: ElevatedButton.styleFrom(
+                            shape: const RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)))),
+                      ),
+                      ElevatedButton(
+                        onPressed: strength,
+                        child: const Text("Strength"),
+                        style: ElevatedButton.styleFrom(
+                            shape: const RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)))),
+                      ),
+                      ElevatedButton(
+                        onPressed: weakness,
+                        child: const Text("Weakness"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
@@ -3279,7 +3253,7 @@ class _ESFJState extends State<ESFJ> {
                         borderRadius: BorderRadius.circular(15),
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.black.withOpacity(.9),
+                            color: Colors.black.withOpacity(.8),
                             spreadRadius: 3,
                             blurRadius: 7,
                             offset: const Offset(2, 5),
@@ -3340,22 +3314,6 @@ class _ESFJState extends State<ESFJ> {
                                     BorderRadius.all(Radius.circular(20)))),
                       ),
                       ElevatedButton(
-                        onPressed: strength,
-                        child: const Text("Strength"),
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                      ),
-                      ElevatedButton(
-                        onPressed: weakness,
-                        child: const Text("Weakness"),
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                      ),
-                      ElevatedButton(
                         onPressed: Friendship,
                         child: const Text("Friendship"),
                         style: ElevatedButton.styleFrom(
@@ -3366,6 +3324,22 @@ class _ESFJState extends State<ESFJ> {
                       ElevatedButton(
                         onPressed: Parenthood,
                         child: const Text("Parenthood"),
+                        style: ElevatedButton.styleFrom(
+                            shape: const RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)))),
+                      ),
+                      ElevatedButton(
+                        onPressed: strength,
+                        child: const Text("Strength"),
+                        style: ElevatedButton.styleFrom(
+                            shape: const RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)))),
+                      ),
+                      ElevatedButton(
+                        onPressed: weakness,
+                        child: const Text("Weakness"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
@@ -3561,7 +3535,7 @@ class _ISTPState extends State<ISTP> {
                         borderRadius: BorderRadius.circular(15),
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.black.withOpacity(.9),
+                            color: Colors.black.withOpacity(.8),
                             spreadRadius: 3,
                             blurRadius: 7,
                             offset: const Offset(2, 5),
@@ -3622,22 +3596,6 @@ class _ISTPState extends State<ISTP> {
                                     BorderRadius.all(Radius.circular(20)))),
                       ),
                       ElevatedButton(
-                        onPressed: strength,
-                        child: const Text("Strength"),
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                      ),
-                      ElevatedButton(
-                        onPressed: weakness,
-                        child: const Text("Weakness"),
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                      ),
-                      ElevatedButton(
                         onPressed: Friendship,
                         child: const Text("Friendship"),
                         style: ElevatedButton.styleFrom(
@@ -3648,6 +3606,22 @@ class _ISTPState extends State<ISTP> {
                       ElevatedButton(
                         onPressed: Parenthood,
                         child: const Text("Parenthood"),
+                        style: ElevatedButton.styleFrom(
+                            shape: const RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)))),
+                      ),
+                      ElevatedButton(
+                        onPressed: strength,
+                        child: const Text("Strength"),
+                        style: ElevatedButton.styleFrom(
+                            shape: const RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)))),
+                      ),
+                      ElevatedButton(
+                        onPressed: weakness,
+                        child: const Text("Weakness"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
@@ -3843,7 +3817,7 @@ class _ISFPState extends State<ISFP> {
                         borderRadius: BorderRadius.circular(15),
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.black.withOpacity(.9),
+                            color: Colors.black.withOpacity(.8),
                             spreadRadius: 3,
                             blurRadius: 7,
                             offset: const Offset(2, 5),
@@ -3904,22 +3878,6 @@ class _ISFPState extends State<ISFP> {
                                     BorderRadius.all(Radius.circular(20)))),
                       ),
                       ElevatedButton(
-                        onPressed: strength,
-                        child: const Text("Strength"),
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                      ),
-                      ElevatedButton(
-                        onPressed: weakness,
-                        child: const Text("Weakness"),
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                      ),
-                      ElevatedButton(
                         onPressed: Friendship,
                         child: const Text("Friendship"),
                         style: ElevatedButton.styleFrom(
@@ -3930,6 +3888,22 @@ class _ISFPState extends State<ISFP> {
                       ElevatedButton(
                         onPressed: Parenthood,
                         child: const Text("Parenthood"),
+                        style: ElevatedButton.styleFrom(
+                            shape: const RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)))),
+                      ),
+                      ElevatedButton(
+                        onPressed: strength,
+                        child: const Text("Strength"),
+                        style: ElevatedButton.styleFrom(
+                            shape: const RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)))),
+                      ),
+                      ElevatedButton(
+                        onPressed: weakness,
+                        child: const Text("Weakness"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
@@ -4125,7 +4099,7 @@ class _ESTPState extends State<ESTP> {
                         borderRadius: BorderRadius.circular(15),
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.black.withOpacity(.9),
+                            color: Colors.black.withOpacity(.8),
                             spreadRadius: 3,
                             blurRadius: 7,
                             offset: const Offset(2, 5),
@@ -4186,22 +4160,6 @@ class _ESTPState extends State<ESTP> {
                                     BorderRadius.all(Radius.circular(20)))),
                       ),
                       ElevatedButton(
-                        onPressed: strength,
-                        child: const Text("Strength"),
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                      ),
-                      ElevatedButton(
-                        onPressed: weakness,
-                        child: const Text("Weakness"),
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                      ),
-                      ElevatedButton(
                         onPressed: Friendship,
                         child: const Text("Friendship"),
                         style: ElevatedButton.styleFrom(
@@ -4212,6 +4170,22 @@ class _ESTPState extends State<ESTP> {
                       ElevatedButton(
                         onPressed: Parenthood,
                         child: const Text("Parenthood"),
+                        style: ElevatedButton.styleFrom(
+                            shape: const RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)))),
+                      ),
+                      ElevatedButton(
+                        onPressed: strength,
+                        child: const Text("Strength"),
+                        style: ElevatedButton.styleFrom(
+                            shape: const RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)))),
+                      ),
+                      ElevatedButton(
+                        onPressed: weakness,
+                        child: const Text("Weakness"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
@@ -4407,7 +4381,7 @@ class _ESFPState extends State<ESFP> {
                         borderRadius: BorderRadius.circular(15),
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.black.withOpacity(.9),
+                            color: Colors.black.withOpacity(.8),
                             spreadRadius: 3,
                             blurRadius: 7,
                             offset: const Offset(2, 5),
@@ -4468,22 +4442,6 @@ class _ESFPState extends State<ESFP> {
                                     BorderRadius.all(Radius.circular(20)))),
                       ),
                       ElevatedButton(
-                        onPressed: strength,
-                        child: const Text("Strength"),
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                      ),
-                      ElevatedButton(
-                        onPressed: weakness,
-                        child: const Text("Weakness"),
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                      ),
-                      ElevatedButton(
                         onPressed: Friendship,
                         child: const Text("Friendship"),
                         style: ElevatedButton.styleFrom(
@@ -4494,6 +4452,22 @@ class _ESFPState extends State<ESFP> {
                       ElevatedButton(
                         onPressed: Parenthood,
                         child: const Text("Parenthood"),
+                        style: ElevatedButton.styleFrom(
+                            shape: const RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)))),
+                      ),
+                      ElevatedButton(
+                        onPressed: strength,
+                        child: const Text("Strength"),
+                        style: ElevatedButton.styleFrom(
+                            shape: const RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)))),
+                      ),
+                      ElevatedButton(
+                        onPressed: weakness,
+                        child: const Text("Weakness"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
