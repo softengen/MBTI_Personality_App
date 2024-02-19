@@ -4,6 +4,8 @@ import 'package:mbti_app/widgets/chart.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'NavBar.dart';
+
 
 class resultPage extends StatelessWidget{
   final List<int> percentage;
@@ -53,41 +55,45 @@ class resultPage extends StatelessWidget{
   Widget build(BuildContext context) {
 
     return Scaffold(
+      drawer: NavBar(),
       appBar: AppBar(),
-      body: Column(
-        children: [
-          Center(child: LinearChart(percentage: percentage, )),
-          Container(
-            height: 310,
-            width: 390,
-            decoration: BoxDecoration(color: Color(0xff352F44),
-                boxShadow: [BoxShadow(blurRadius: 20)],
-                borderRadius: BorderRadius.all(Radius.circular(20) ) ),
-            margin: EdgeInsets.all(15),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                RichText(text: TextSpan(children: [
-                  TextSpan(text : "${body[personality_type][0]}\n",style: TextStyle(fontSize: 45, fontFamily: "Astro Space", color: Colors.deepPurple.shade50),),
-                  TextSpan(text : "(${personality_type})",style: TextStyle(fontSize: 28, fontFamily: "Astro Space", color: Colors.deepPurple.shade50,),),
-                ]),
-                  textAlign: TextAlign.center,
-                ),
+      body: SingleChildScrollView(
+        physics: const BouncingScrollPhysics(),
+        child: Column(
+          children: [
+            Center(child: LinearChart(percentage: percentage, )),
+            Container(
+              height: 310,
+              width: 390,
+              decoration: BoxDecoration(color: Color(0xff352F44),
+                  boxShadow: [BoxShadow(blurRadius: 20)],
+                  borderRadius: BorderRadius.all(Radius.circular(20) ) ),
+              margin: EdgeInsets.all(15),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  RichText(text: TextSpan(children: [
+                    TextSpan(text : "${body[personality_type][0]}\n",style: TextStyle(fontSize: 45, fontFamily: "Astro Space", color: Colors.deepPurple.shade50),),
+                    TextSpan(text : "(${personality_type})",style: TextStyle(fontSize: 28, fontFamily: "Astro Space", color: Colors.deepPurple.shade50,),),
+                  ]),
+                    textAlign: TextAlign.center,
+                  ),
 
-                // SizedBox(height: 20,),
-                Padding(
-                  padding: const EdgeInsets.only(right: 15, left: 15),
-                  child: Text(body[personality_type][1], style: TextStyle(fontFamily: "Comforta", fontSize: 20,color: Colors.white), textAlign: TextAlign.center,),
-                ),
-                TextButton(onPressed: (){
-                  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => goto[personality_type]));
-                },
-                  child: Text("See More",style: TextStyle(fontFamily: "Take Coffee", fontSize: 18,color: Colors.deepPurple.shade100)),)
-              ],
+                  // SizedBox(height: 20,),
+                  Padding(
+                    padding: const EdgeInsets.only(right: 15, left: 15),
+                    child: Text(body[personality_type][1], style: TextStyle(fontFamily: "Comforta", fontSize: 20,color: Colors.white), textAlign: TextAlign.center,),
+                  ),
+                  TextButton(onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => goto[personality_type]));
+                  },
+                    child: Text("See More",style: TextStyle(fontFamily: "Take Coffee", fontSize: 18,color: Colors.deepPurple.shade100)),)
+                ],
+              ),
             ),
-          ),
 
-        ],
+          ],
+        ),
       ),
     );
   }

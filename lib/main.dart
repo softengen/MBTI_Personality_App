@@ -1,6 +1,8 @@
 import 'package:mbti_app/login_screen.dart';
 import 'package:mbti_app/personalityPage.dart';
 import 'package:flutter/material.dart';
+import 'package:mbti_app/resultPage.dart';
+import 'package:mbti_app/testPage.dart';
 
 void main() {
   runApp(const MyApp());
