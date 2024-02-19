@@ -66,8 +66,8 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 const SizedBox(height: 40),
                 Container(
-                  height: 60,
-                  width: 190,
+                  height: 40,
+                  width: 120,
                   child: ElevatedButton(
                     onPressed: () {
                       // Add your login logic here
@@ -111,9 +111,9 @@ class _LoginPageState extends State<LoginPage> {
                     child: const Text(
                       'LOGIN',
                       style: TextStyle(
-                        fontSize: 28,
+                        fontSize: 18,
                         fontWeight: FontWeight.bold,
-                        fontFamily: 'UbuntuMono',
+                        fontFamily: '',
                       ),
                     ),
                     // design of elevated button
