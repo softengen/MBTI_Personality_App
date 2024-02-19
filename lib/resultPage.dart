@@ -1,7 +1,5 @@
 import 'package:mbti_app/All_Personalities.dart';
-import 'package:mbti_app/Texts.dart';
 import 'package:mbti_app/widgets/chart.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'NavBar.dart';
@@ -65,10 +63,10 @@ class resultPage extends StatelessWidget{
             Container(
               height: 310,
               width: 390,
-              decoration: BoxDecoration(color: Color(0xff352F44),
+              decoration: const BoxDecoration(color: Color(0xff352F44),
                   boxShadow: [BoxShadow(blurRadius: 20)],
-                  borderRadius: BorderRadius.all(Radius.circular(20) ) ),
-              margin: EdgeInsets.all(15),
+                  borderRadius: const BorderRadius.all(Radius.circular(20) ) ),
+              margin: const EdgeInsets.all(15),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
@@ -82,7 +80,7 @@ class resultPage extends StatelessWidget{
                   // SizedBox(height: 20,),
                   Padding(
                     padding: const EdgeInsets.only(right: 15, left: 15),
-                    child: Text(body[personality_type][1], style: TextStyle(fontFamily: "Comforta", fontSize: 20,color: Colors.white), textAlign: TextAlign.center,),
+                    child: Text(body[personality_type][1], style: const TextStyle(fontFamily: "Comforta", fontSize: 20,color: Colors.white), textAlign: TextAlign.center,),
                   ),
                   TextButton(onPressed: (){
                     Navigator.push(context, MaterialPageRoute(builder: (context) => goto[personality_type]));
