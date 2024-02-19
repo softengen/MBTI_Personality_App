@@ -66,7 +66,7 @@ class personality_card extends StatelessWidget {
                   color: Colors.white70,
                 ),
               ),
-              const SizedBox(height: 40),
+              const SizedBox(height: 30),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: Text(
