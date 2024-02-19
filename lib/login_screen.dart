@@ -1,6 +1,7 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
+import 'package:mbti_app/personalityPage.dart';
 
 class MyApp extends StatelessWidget {
   @override
@@ -78,6 +79,34 @@ class _LoginPageState extends State<LoginPage> {
 
                       log('Username: $username');
                       log('Password: $password');
+
+                      if (username == "admin" && password == "admin") {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => personalityPage()),
+                        );
+                      } else {
+                        // If login is unsuccessful, show a popup with an error message
+                        showDialog(
+                          context: context,
+                          builder: (BuildContext context) {
+                            return AlertDialog(
+                              title: const Text('Incorrect Password'),
+                              content: const Text(
+                                  'Please check your username and password and try again.'),
+                              actions: [
+                                TextButton(
+                                  onPressed: () {
+                                    Navigator.pop(context); // Close the dialog
+                                  },
+                                  child: const Text('OK'),
+                                ),
+                              ],
+                            );
+                          },
+                        );
+                      }
                     },
                     child: const Text(
                       'LOGIN',
