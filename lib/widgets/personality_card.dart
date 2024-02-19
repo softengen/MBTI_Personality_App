@@ -25,7 +25,7 @@ class personality_card extends StatelessWidget {
             borderRadius: BorderRadius.circular(15),
             boxShadow: [
               BoxShadow(
-                color: Colors.black.withOpacity(.9),
+                color: Colors.black.withOpacity(.8),
                 spreadRadius: 3,
                 blurRadius: 7,
                 offset: const Offset(2, 5),
