@@ -314,7 +314,8 @@ class _INTJState extends State<INTJ> {
                     ],
                   )),
               Container(
-                  margin: const EdgeInsets.only(left: 10, right: 10, bottom: 10),
+                  margin:
+                      const EdgeInsets.only(left: 10, right: 10, bottom: 10),
                   child: Container(
                     margin: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
@@ -580,7 +581,8 @@ class _INTPState extends State<INTP> {
                     ],
                   )),
               Container(
-                  margin: const EdgeInsets.only(left: 10, right: 10, bottom: 10),
+                  margin:
+                      const EdgeInsets.only(left: 10, right: 10, bottom: 10),
                   child: Container(
                     margin: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
@@ -842,7 +844,8 @@ class _ENTJState extends State<ENTJ> {
                     ],
                   )),
               Container(
-                  margin: const EdgeInsets.only(left: 10, right: 10, bottom: 10),
+                  margin:
+                      const EdgeInsets.only(left: 10, right: 10, bottom: 10),
                   child: Container(
                     margin: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
@@ -1123,7 +1126,8 @@ class _ENTPState extends State<ENTP> {
                     ],
                   )),
               Container(
-                  margin: const EdgeInsets.only(left: 10, right: 10, bottom: 10),
+                  margin:
+                      const EdgeInsets.only(left: 10, right: 10, bottom: 10),
                   child: Container(
                     margin: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
@@ -1404,7 +1408,8 @@ class _INFJState extends State<INFJ> {
                     ],
                   )),
               Container(
-                  margin: const EdgeInsets.only(left: 10, right: 10, bottom: 10),
+                  margin:
+                      const EdgeInsets.only(left: 10, right: 10, bottom: 10),
                   child: Container(
                     margin: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
@@ -1685,7 +1690,8 @@ class _INFPState extends State<INFP> {
                     ],
                   )),
               Container(
-                  margin: const EdgeInsets.only(left: 10, right: 10, bottom: 10),
+                  margin:
+                      const EdgeInsets.only(left: 10, right: 10, bottom: 10),
                   child: Container(
                     margin: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
@@ -1966,7 +1972,8 @@ class _ENFJState extends State<ENFJ> {
                     ],
                   )),
               Container(
-                  margin: const EdgeInsets.only(left: 10, right: 10, bottom: 10),
+                  margin:
+                      const EdgeInsets.only(left: 10, right: 10, bottom: 10),
                   child: Container(
                     margin: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
@@ -2247,7 +2254,8 @@ class _ENFPState extends State<ENFP> {
                     ],
                   )),
               Container(
-                  margin: const EdgeInsets.only(left: 10, right: 10, bottom: 10),
+                  margin:
+                      const EdgeInsets.only(left: 10, right: 10, bottom: 10),
                   child: Container(
                     margin: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
@@ -2528,7 +2536,8 @@ class _ISTJState extends State<ISTJ> {
                     ],
                   )),
               Container(
-                  margin: const EdgeInsets.only(left: 10, right: 10, bottom: 10),
+                  margin:
+                      const EdgeInsets.only(left: 10, right: 10, bottom: 10),
                   child: Container(
                     margin: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
@@ -2809,7 +2818,8 @@ class _ISFJState extends State<ISFJ> {
                     ],
                   )),
               Container(
-                  margin: const EdgeInsets.only(left: 10, right: 10, bottom: 10),
+                  margin:
+                      const EdgeInsets.only(left: 10, right: 10, bottom: 10),
                   child: Container(
                     margin: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
@@ -3090,7 +3100,8 @@ class _ESTJState extends State<ESTJ> {
                     ],
                   )),
               Container(
-                  margin: const EdgeInsets.only(left: 10, right: 10, bottom: 10),
+                  margin:
+                      const EdgeInsets.only(left: 10, right: 10, bottom: 10),
                   child: Container(
                     margin: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
@@ -3371,7 +3382,8 @@ class _ESFJState extends State<ESFJ> {
                     ],
                   )),
               Container(
-                  margin: const EdgeInsets.only(left: 10, right: 10, bottom: 10),
+                  margin:
+                      const EdgeInsets.only(left: 10, right: 10, bottom: 10),
                   child: Container(
                     margin: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
@@ -3652,7 +3664,8 @@ class _ISTPState extends State<ISTP> {
                     ],
                   )),
               Container(
-                  margin: const EdgeInsets.only(left: 10, right: 10, bottom: 10),
+                  margin:
+                      const EdgeInsets.only(left: 10, right: 10, bottom: 10),
                   child: Container(
                     margin: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
@@ -3933,7 +3946,8 @@ class _ISFPState extends State<ISFP> {
                     ],
                   )),
               Container(
-                  margin: const EdgeInsets.only(left: 10, right: 10, bottom: 10),
+                  margin:
+                      const EdgeInsets.only(left: 10, right: 10, bottom: 10),
                   child: Container(
                     margin: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
@@ -4214,7 +4228,8 @@ class _ESTPState extends State<ESTP> {
                     ],
                   )),
               Container(
-                  margin: const EdgeInsets.only(left: 10, right: 10, bottom: 10),
+                  margin:
+                      const EdgeInsets.only(left: 10, right: 10, bottom: 10),
                   child: Container(
                     margin: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
@@ -4495,7 +4510,8 @@ class _ESFPState extends State<ESFP> {
                     ],
                   )),
               Container(
-                  margin: const EdgeInsets.only(left: 10, right: 10, bottom: 10),
+                  margin:
+                      const EdgeInsets.only(left: 10, right: 10, bottom: 10),
                   child: Container(
                     margin: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
