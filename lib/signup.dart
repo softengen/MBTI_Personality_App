@@ -1,6 +1,9 @@
+import 'dart:developer';
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:mbti_app/login_screen.dart';
+import 'package:mbti_app/personalityPage.dart';
 import 'package:mbti_app/user_auth/firebase_auth/firebaseAuthServices.dart';
 
 class SignUp extends StatefulWidget {
@@ -11,7 +14,6 @@ class SignUp extends StatefulWidget {
 }
 
 class _SignUpState extends State<SignUp> {
-
   final firebaseAuthService _auth = firebaseAuthService();
 
   TextEditingController _nameController = TextEditingController();
@@ -111,7 +113,7 @@ class _SignUpState extends State<SignUp> {
                             backgroundColor: const Color(0xff4c505b),
                             child: IconButton(
                               color: Colors.white,
-                              onPressed: () {},
+                              onPressed: _signUp,
                               icon: const Icon(Icons.arrow_forward),
                             ),
                           )
@@ -147,12 +149,20 @@ class _SignUpState extends State<SignUp> {
       ),
     );
   }
+
   void _signUp() async {
     String name = _nameController.text;
     String email = _emailController.text;
     String password = _passController.text;
 
-    User ? user = await _auth.signUpwithEmailAndPassword(email, password);
+    User? user = await _auth.signUpwithEmailAndPassword(email, password);
 
+    if (user != null) {
+      log("User successfully created");
+      Navigator.pushReplacement(
+          context, MaterialPageRoute(builder: (context) => personalityPage()));
+    }else{
+      log("some error occurred");
+    }
   }
 }
