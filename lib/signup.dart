@@ -119,7 +119,9 @@ class _SignUpState extends State<SignUp> {
                           )
                         ],
                       ),
+                      const SizedBox(height: 20),
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           TextButton(
                               onPressed: () {
@@ -130,10 +132,10 @@ class _SignUpState extends State<SignUp> {
                                     ));
                               },
                               child: const Text(
-                                'Log In',
+                                'Have an account? Log In',
                                 style: TextStyle(
                                   decoration: TextDecoration.underline,
-                                  fontSize: 18,
+                                  fontSize: 20,
                                   color: Color(0xff4c505b),
                                 ),
                               ))
@@ -159,9 +161,19 @@ class _SignUpState extends State<SignUp> {
 
     if (user != null) {
       log("User successfully created");
+
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('User successfully created'),
+          duration: Duration(seconds: 2), // Adjust the duration as needed
+        ),
+      );
+
       Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => personalityPage()));
-    }else{
+        context,
+        MaterialPageRoute(builder: (context) => LoginPage()),
+      );
+    } else {
       log("some error occurred");
     }
   }

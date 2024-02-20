@@ -1,8 +1,10 @@
 import 'dart:developer';
 
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:mbti_app/personalityPage.dart';
 import 'package:mbti_app/signup.dart';
+import 'package:mbti_app/user_auth/firebase_auth/firebaseAuthServices.dart';
 
 class MyApp extends StatelessWidget {
   @override
@@ -19,8 +21,21 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-  TextEditingController _usernameController = TextEditingController();
-  TextEditingController _passwordController = TextEditingController();
+  // TextEditingController _usernameController = TextEditingController();
+  // TextEditingController _passwordController = TextEditingController();
+
+  final firebaseAuthService _auth = firebaseAuthService();
+
+  TextEditingController _emailController = TextEditingController();
+  TextEditingController _passController = TextEditingController();
+
+  @override
+  void dispose() {
+    _emailController.dispose();
+    _passController.dispose();
+
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -42,11 +57,11 @@ class _LoginPageState extends State<LoginPage> {
                 const SizedBox(height: 60),
                 const SizedBox(height: 40),
                 TextField(
-                  controller: _usernameController,
+                  controller: _emailController,
                   decoration: const InputDecoration(
                     labelText: 'Username',
                     labelStyle: TextStyle(
-                      fontFamily: 'UbuntuMono',
+                      fontFamily: '',
                       fontWeight: FontWeight.bold,
                     ),
                     icon: Icon(Icons.person),
@@ -54,11 +69,11 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 const SizedBox(height: 10),
                 TextField(
-                  controller: _passwordController,
+                  controller: _passController,
                   decoration: const InputDecoration(
                     labelText: 'Password',
                     labelStyle: TextStyle(
-                      fontFamily: 'UbuntuMono',
+                      fontFamily: '',
                       fontWeight: FontWeight.bold,
                     ),
                     icon: Icon(Icons.lock),
@@ -70,105 +85,126 @@ class _LoginPageState extends State<LoginPage> {
                 // < -- Log in button section -- >
 
                 Container(
-                  height: 40,
-                  width: 120,
+                  height: 60,
+                  width: 160,
                   child: ElevatedButton(
-                    onPressed: () {
-                      // Add your login logic here
-                      String username = _usernameController.text;
-                      String password = _passwordController.text;
+                    onPressed: _logIn,
+                    // Add your login logic here
+                    // String email = _emailController.text;
+                    // String password = _passController.text;
 
-                      // here authentication logic will be added later
-                      // For now, let's just print the username and password on the console
+                    // here authentication logic will be added later
+                    // For now, let's just print the username and password on the console
 
-                      log('Username: $username');
-                      log('Password: $password');
+                    // log('Username: $email');
+                    // log('Password: $password');
 
-                      if (username == "admin" && password == "admin") {
-                        Navigator.pushReplacement(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => personalityPage()),
-                        );
-                      } else {
-                        // If login is unsuccessful, show a popup with an error message
-                        showDialog(
-                          context: context,
-                          builder: (BuildContext context) {
-                            return AlertDialog(
-                              title: const Text('Incorrect Password'),
-                              content: const Text(
-                                  'Please check your username and password and try again.'),
-                              actions: [
-                                TextButton(
-                                  onPressed: () {
-                                    Navigator.pop(context); // Close the dialog
-                                  },
-                                  child: const Text('OK'),
-                                ),
-                              ],
-                            );
-                          },
-                        );
-                      }
-                    },
+                    // if (username == "admin" && password == "admin") {
+                    //   Navigator.pushReplacement(
+                    //     context,
+                    //     MaterialPageRoute(
+                    //         builder: (context) => personalityPage()),
+                    //   );
+                    // } else {
+                    //   // If login is unsuccessful, show a popup with an error message
+                    //   showDialog(
+                    //     context: context,
+                    //     builder: (BuildContext context) {
+                    //       return AlertDialog(
+                    //         title: const Text('Incorrect Password'),
+                    //         content: const Text(
+                    //             'Please check your username and password and try again.'),
+                    //         actions: [
+                    //           TextButton(
+                    //             onPressed: () {
+                    //               Navigator.pop(context); // Close the dialog
+                    //             },
+                    //             child: const Text('OK'),
+                    //           ),
+                    //         ],
+                    //       );
+                    //     },
+                    //   );
+                    // }
+
                     child: const Text(
                       'LOGIN',
                       style: TextStyle(
-                        fontSize: 18,
+                        fontSize: 19,
                         fontWeight: FontWeight.bold,
                         fontFamily: '',
+                        color: Colors.black,
                       ),
                     ),
                     // design of elevated button
                     style: ElevatedButton.styleFrom(
                       // primary: Colors.white,
                       // onPrimary: Colors.deepPurple,
-                      elevation: 5,
+                      backgroundColor: Colors.white60,
+                      elevation: 1,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(6)),
                       // padding: EdgeInsets.all(1),
                     ),
                   ),
-
                 ),
                 const SizedBox(height: 20),
 
                 // < -- sign up button section -- >
 
-                Container(
-                  height: 40,
-                  width: 120,
-                  child: ElevatedButton(
-                    onPressed: () {
-                        Navigator.pushReplacement(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const SignUp()));
-                    },
-                    child: const Text(
-                      'SIGN UP',
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                        fontFamily: '',
-                      ),
-                    ),
-                    // design of elevated button
-                    style: ElevatedButton.styleFrom(
-                      elevation: 5,
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(6)),
-                      // padding: EdgeInsets.all(1),
-                    ),
-                  ),
-
-                ),
+                const SizedBox(height: 20),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    TextButton(
+                        onPressed: () {
+                          Navigator.pushReplacement(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const SignUp(),
+                              ));
+                        },
+                        child: const Text(
+                          'Don\'t have an account? Sign Up',
+                          style: TextStyle(
+                            decoration: TextDecoration.underline,
+                            fontSize: 20,
+                            color: Color(0xff4c505b),
+                          ),
+                        ))
+                      ],
+                    )
               ],
             ),
           ),
         ),
       ),
     );
+  }
+
+  void _logIn() async {
+    String email = _emailController.text;
+    String password = _passController.text;
+
+    log('Username: $email');
+    log('Password: $password');
+
+    User? user = await _auth.signInwithEmailAndPassword(email, password);
+
+    if (user != null) {
+      log("User successfully logged in");
+
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('User successfully Login'),
+          duration: Duration(seconds: 2), // Adjust the duration as needed
+        ),
+      );
+
+      Navigator.pushReplacement(
+          context, MaterialPageRoute(builder: (context) => personalityPage()));
+    } else {
+      log("some error occurred");
+    }
   }
 }

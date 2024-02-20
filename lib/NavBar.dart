@@ -1,4 +1,6 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:mbti_app/famousPeople.dart';
+import 'package:mbti_app/login_screen.dart';
 import 'package:mbti_app/personalityPage.dart';
 import 'package:mbti_app/testPage.dart';
 import 'package:flutter/material.dart';
@@ -61,10 +63,22 @@ class NavBar extends StatelessWidget {
         ListTile(
           leading: const Icon(Icons.exit_to_app_rounded),
           title: const Text(
-            "Exit",
+            "Logout",
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
-          onTap: () => null,
+          onTap: () {
+            FirebaseAuth.instance.signOut();
+
+            ScaffoldMessenger.of(context).showSnackBar(
+              const SnackBar(
+                content: Text('User successfully Logout'),
+                duration: Duration(seconds: 2), // Adjust the duration as needed
+              ),
+            );
+
+            Navigator.pushReplacement(
+                context, MaterialPageRoute(builder: (context) => LoginPage()));
+          },
         )
       ]),
     );
