@@ -1,5 +1,7 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:mbti_app/login_screen.dart';
+import 'package:mbti_app/user_auth/firebase_auth/firebaseAuthServices.dart';
 
 class SignUp extends StatefulWidget {
   const SignUp({super.key});
@@ -9,6 +11,22 @@ class SignUp extends StatefulWidget {
 }
 
 class _SignUpState extends State<SignUp> {
+
+  final firebaseAuthService _auth = firebaseAuthService();
+
+  TextEditingController _nameController = TextEditingController();
+  TextEditingController _emailController = TextEditingController();
+  TextEditingController _passController = TextEditingController();
+
+  @override
+  void dispose() {
+    _nameController.dispose();
+    _emailController.dispose();
+    _passController.dispose();
+
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -39,12 +57,23 @@ class _SignUpState extends State<SignUp> {
                 // physics: BouncingScrollPhysics(),
                 child: Container(
                   padding: EdgeInsets.only(
-                      top: MediaQuery.of(context).size.height * .5,
+                      top: MediaQuery.of(context).size.height * .38,
                       right: 35,
                       left: 35),
                   child: Column(
                     children: [
                       TextField(
+                        controller: _nameController,
+                        decoration: InputDecoration(
+                            fillColor: Colors.grey.shade100,
+                            filled: true,
+                            hintText: 'Name',
+                            border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10))),
+                      ),
+                      const SizedBox(height: 27),
+                      TextField(
+                        controller: _emailController,
                         decoration: InputDecoration(
                             fillColor: Colors.grey.shade100,
                             filled: true,
@@ -52,8 +81,9 @@ class _SignUpState extends State<SignUp> {
                             border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(10))),
                       ),
-                      const SizedBox(height: 30),
+                      const SizedBox(height: 27),
                       TextField(
+                        controller: _passController,
                         obscureText: true,
                         decoration: InputDecoration(
                             fillColor: Colors.grey.shade100,
@@ -116,5 +146,13 @@ class _SignUpState extends State<SignUp> {
         ),
       ),
     );
+  }
+  void _signUp() async {
+    String name = _nameController.text;
+    String email = _emailController.text;
+    String password = _passController.text;
+
+    User ? user = await _auth.signUpwithEmailAndPassword(email, password);
+
   }
 }
