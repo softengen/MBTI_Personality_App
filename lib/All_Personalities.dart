@@ -1966,52 +1966,55 @@ class ENFP extends StatefulWidget {
 class _ENFPState extends State<ENFP> {
   String headline = "Overview";
   String overview_body =
-      "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
-      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
-      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
-      "conversations to small talk and often find themselves lost in thought.";
+      "ENFPs, also known as Visionary, are enthusiastic, creative, and people-oriented individuals "
+      "who are always looking for new experiences and ways to make a difference in the world. "
+      "They are driven by a strong sense of idealism and a desire to help others. "
+      "ENFPs are often described as extroverted, intuitive, feeling, and perceiving.";
 
   String strength_text =
-      "Intellectual Brilliance: INTPs have a remarkable capacity for logical reasoning, pattern recognition, and problem-solving. They are often drawn to science, mathematics, philosophy, and other fields that require analytical thinking."
-      "\n\nCreative Problem-Solvers: Their unconventional approach and ability to see things from multiple angles allow them to generate innovative solutions to challenging problems."
-      "\n\nIndependent Thinkers: INTPs are not easily swayed by popular opinion or authority. They question everything, seeking to form their own logical conclusions based on evidence and reason."
-      "\n\nAdaptable Learners: They are eager to learn new things and continuously expand their knowledge base. Their curiosity and open-mindedness make them adaptable to change and new information."
-      "\n\nHonest and Direct: INTPs value truth and authenticity above social niceties. They are straightforward in their communication, often preferring blunt honesty over sugarcoating.";
+      "Enthusiastic and Energizing: ENFPs are enthusiastic and energizing individuals who are always up for a new adventure. They are able to light up a room with their positive energy and enthusiasm."
+      "\n\nCreative and Imaginative: ENFPs are creative and imaginative individuals who are always coming up with new ideas. They are able to see the world in new and exciting ways."
+      "\n\nPeople-Oriented and Caring: ENFPs are people-oriented and caring individuals who are always looking for ways to help others. They are able to connect with others on a deep level and build strong relationships."
+      "\n\nIdealistic and Principled: ENFPs are idealistic and principled individuals who believe in the inherent goodness of people. They are always striving to make the world a better place."
+      "\n\nOpen-Minded and Flexible: ENFPs are open-minded and flexible individuals who are always willing to try new things. They are able to adapt to change and embrace new experiences.";
 
   String weakness_text =
-      "Social Awkwardness: INTPs can struggle with social interactions and small talk, preferring solitude and intellectual pursuits. They may come across as aloof or detached in social settings."
-      "\n\nOverthinking and Procrastination: Their tendency to analyze everything from every angle can lead to overthinking, indecisiveness, and procrastination. They may struggle to make decisions or take action until they have considered all possible outcomes."
-      "\n\nInsensitivity: Their focus on logic and rationality can sometimes make them insensitive to others' feelings and emotions. They may unintentionally hurt others with their bluntness or lack of tact."
-      "\n\nDisregard for Rules and Routine: INTPs often chafe against rules and structures that they deem unnecessary or inefficient. They may resist authority and prefer to set their own schedules and priorities."
-      "\n\nDifficulty Expressing Emotions: While they experience deep emotions, INTPs often struggle to articulate and express them outwardly. This can lead to misunderstandings in relationships and difficulty connecting with others on an emotional level.";
+      "Overly Sensitive: ENFPs can be overly sensitive to the criticism or disapproval of others. They may take things personally and may need to learn to detach their emotions from their work."
+      "\n\nDisorganized and Impulsive: ENFPs can be disorganized and impulsive, which can lead to problems at work or school. They may need to learn to be more organized and planful."
+      "\n\nProcrastinators: ENFPs can be procrastinators, which can lead to missed deadlines and unfinished projects. They may need to learn to be more disciplined and focused."
+      "\n\nAvoidant of Conflict: ENFPs may avoid conflict at all costs, which can lead to unresolved issues and resentment. Learning to communicate their needs and assertively address conflict can be helpful."
+      "\n\nDifficulty Saying No: ENFPs may have difficulty saying no to others, even when it means putting their own needs last. This can lead to resentment and burnout.";
 
   String friend_text =
-      "INTPs seek authenticity and intellectual stimulation in their friendships. "
-      "\n\nThey value friends who share their interests, challenge their thinking, and respect their need for independence. "
-      "They gravitate towards deep, meaningful conversations over superficial social activities. While they may have a small circle of close friends, they are fiercely loyal and supportive within it.";
+      "ENFPs value authenticity, deep conversations, and genuine connections. "
+      "\n\nThey seek friends who share their depth, idealism, and desire to make a difference. "
+      "While their circle may be small, their friendships are strong and built on mutual understanding and deep trust.";
 
   String parent_text =
-      "INTP parents prioritize fostering their children's intellectual curiosity, critical thinking skills, and independence. "
-      "\n\nThey create a stimulating environment for learning and encourage their children to explore their interests. "
-      "They value open communication, honesty, and respect for individuality. "
-      "However, they may struggle to express affection openly and may need to consciously work on understanding and validating their children's emotional needs.";
+      "ENFPs nurture their children with unconditional love, empathy, and encouragement. "
+      "\n\nThey foster their children's individuality, creativity, and critical thinking, while "
+      "instilling strong values and a sense of social responsibility. However, their sensitivity and "
+      "perfectionism require conscious effort to balance with providing space for exploration and independence.";
 
   String relation =
-      "INTPs can be engaging and loyal partners who offer intellectual stimulation and a unique perspective. However, their emotional reserve and dislike for routine can create challenges. Open communication, understanding their personality preferences, and a willingness to compromise are essential for building strong and lasting connections with INTPs."
-      "\n\nStrengths:"
-      "\nIntellectual Companionship: They value intelligent conversations and enjoy stimulating discussions with partners who can engage in deep thinking and explore complex ideas."
-      "\nLoyalty and Supportive Nature: Once they commit to a relationship, INTPs are loyal and supportive partners. They offer intellectual stimulation, encouragement, and unwavering support for their loved ones' goals."
-      "\nRespect for Individuality: Their independent nature translates into respect for their partner's autonomy and individuality. They appreciate and encourage individuality within the relationship."
-      "\n\nChallenges:"
-      "\nEmotional Vulnerability and Expression: Their reserved nature can make it difficult for partners to understand their emotions and needs. Open communication and learning to express feelings constructively are crucial."
-      "\nPractical Responsibilities: Their dislike for mundane tasks can lead to neglecting shared responsibilities. Finding a balance between intellectual pursuits and practical needs is important."
-      "\nConflict Resolution: Their avoidance of conflict can lead to unresolved issues or emotional distance. Learning healthy communication and conflict resolution skills can strengthen their relationships.";
+      "Key Points for ENFP Relationships:"
+      "\n\nHealthy communication: Express your thoughts and feelings openly and honestly, while being mindful of your partner's communication style and emotional needs."
+      "\n\nBalancing idealism and practicality: While pursuing your dreams, don't neglect practical aspects of life and shared responsibilities."
+      "\n\nFinding emotional balance: Share your emotions openly and constructively, but also learn to manage your own emotional intensity for a healthy relationship."
+      "\n\nEmbracing spontaneity and structure: Find a balance between your spontaneous nature and your partner's need for structure and stability."
+      "\n\n\nCompatible Types:"
+      "\n\nINFJ: Share idealistic aspirations, deep thinking, and a desire for meaningful connections. Both value authenticity, personal growth, and exploring possibilities. However, both might need to develop emotional expression and navigate conflict constructively."
+      "\n\nINFP: Balance ENFP's extroversion with their emotional sensitivity and artistic expression. INFPs bring depth, creativity, and a focus on personal values, encouraging ENFPs to connect with their emotions and explore their inner world."
+      "\n\nINTP: Share intellectual curiosity, a love for debate, and an independent spirit. Both enjoy exploring complex ideas and challenging each other's perspectives, but need to bridge the gap between ENFP's emotional warmth and INTP's logical nature."
+      "\n\nENFJ: Share enthusiasm, optimism, and a desire to inspire others. ENFJs bring leadership qualities and organizational skills, balancing ENFP's spontaneity with structure. However, managing potential power dynamics and communication styles is crucial."
+      "\n\nENTP: Share intellectual energy, a playful spirit, and a love for new experiences. ENTPs bring extraverted energy and an unconventional approach, encouraging ENFPs to embrace the moment and explore different perspectives. Balancing intellectual stimulation with emotional connection is key."
+      "\n\nISFP: Offer artistic expression, emotional sensitivity, and a focus on enjoying the present moment. ISFPs bring grounding and appreciation for beauty, encouraging ENFPs to connect with their emotions and savor experiences.";
 
   String body_text =
-      "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
-      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
-      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
-      "conversations to small talk and often find themselves lost in thought.";
+      "ENFPs, also known as Visionary, are enthusiastic, creative, and people-oriented individuals "
+      "who are always looking for new experiences and ways to make a difference in the world. "
+      "They are driven by a strong sense of idealism and a desire to help others. "
+      "ENFPs are often described as extroverted, intuitive, feeling, and perceiving.";
 
   void overview() {
     setState(() {
@@ -2057,29 +2060,12 @@ class _ENFPState extends State<ENFP> {
 
   @override
   Widget build(BuildContext context) {
-    String body_text =
-        "Entrepreneurs always have an impact on their immediate surroundings – "
-        "the best way to spot them at a party is to look for the whirling eddy of people flitting "
-        "about them as they move from group to group. Laughing and entertaining with a blunt and "
-        "earthy humor, Entrepreneur personalities love to be the center of attention. If an audience "
-        "member is asked to come on stage, Entrepreneurs volunteer – or volunteer a shy friend."
-        "\n\nTheory, abstract concepts and plodding discussions about global issues and their implications "
-        "don’t keep Entrepreneurs interested for long. Entrepreneurs keep their conversation energetic, "
-        "with a good dose of intelligence, but they like to talk about what is – or better yet, to just "
-        "go out and do it. Entrepreneurs leap before they look, fixing their mistakes as they go, "
-        "rather than sitting idle, preparing contingencies and escape clauses.";
-
-    List card = [
-      "ESFJ",
-      "Entertainer",
-      "Supportive and sociable, they thrive on nurturing relationships and creating a harmonious environment."
-    ];
 
     Color bgColor = Colors.deepPurple;
 
     return Scaffold(
         appBar: AppBar(
-          title: const Text("ESFJ"),
+          title: const Text("ENFP"),
         ),
         body: SingleChildScrollView(
           child: Column(
@@ -2087,7 +2073,7 @@ class _ENFPState extends State<ENFP> {
             children: [
               Material(
                 child: Hero(
-                  tag: "ESFJ",
+                  tag: "ENFP",
                   child: Center(
                     child: Container(
                       margin: const EdgeInsets.all(11),
@@ -2117,7 +2103,7 @@ class _ENFPState extends State<ENFP> {
                             margin: const EdgeInsets.only(bottom: 10),
                             height: 60,
                             child: Text(
-                              card[1],
+                              body["ENFP"][0],
                               style: const TextStyle(
                                 fontFamily: "ProtestRiot",
                                 fontSize: 45,
@@ -2126,9 +2112,9 @@ class _ENFPState extends State<ENFP> {
                               ),
                             ),
                           ),
-                          Text(
-                            ("(${card[0]})"),
-                            style: const TextStyle(
+                          const Text(
+                            ("(ENFP)"),
+                            style: TextStyle(
                               fontFamily: "Roboto",
                               fontWeight: FontWeight.bold,
                               fontSize: 30,
