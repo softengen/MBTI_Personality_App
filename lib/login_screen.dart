@@ -1,5 +1,4 @@
 import 'dart:developer';
-
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:mbti_app/personalityPage.dart';
@@ -40,6 +39,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xFFFFF1E1),
       body: GestureDetector(
         onTap: () {
           // Hide the keyboard when the screen is tapped
@@ -102,8 +102,9 @@ class _LoginPageState extends State<LoginPage> {
                     style: ElevatedButton.styleFrom(
                       // primary: Colors.white,
                       // onPrimary: Colors.deepPurple,
-                      backgroundColor: Colors.white60,
-                      elevation: 1,
+                      // backgroundColor: const Color(0x001d3c45),
+                      backgroundColor: const Color(0x001d3c45),
+                      elevation: 0.7,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(6)),
                       // padding: EdgeInsets.all(1),
