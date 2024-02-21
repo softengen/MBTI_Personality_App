@@ -39,7 +39,7 @@ class personality_card extends StatelessWidget {
             ),
           ),
           width: w * 0.9,
-          height: 280,
+          height: 320,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
@@ -73,7 +73,7 @@ class personality_card extends StatelessWidget {
                   body[2] ?? '', // Null check for body[2]
                   style: const TextStyle(
                     fontFamily: 'UbuntuMono',
-                    fontSize: 19,
+                    fontSize: 18.5,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),

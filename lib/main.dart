@@ -1,6 +1,8 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:mbti_app/personalityPage.dart';
 import 'package:mbti_app/signup.dart';
+import 'login_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -32,7 +34,10 @@ class MyApp extends StatelessWidget {
                 fontSize: 20,
                 fontFamily: "Comforta",
                 fontWeight: FontWeight.w400)),
-        primarySwatch: Colors.deepPurple,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.deepPurple,
+            foregroundColor: Colors.white70
+        )
       ),
       home: const MyHomePage(),
     );
@@ -51,6 +56,6 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return LoginPage();
+    return personalityPage();
   }
 }

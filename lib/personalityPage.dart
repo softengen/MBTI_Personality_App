@@ -113,6 +113,7 @@ class personalityPage extends StatelessWidget {
     return Scaffold(
       drawer: NavBar(),
       appBar: AppBar(
+
         title: Center(
             child: Text(
           "Personalities",
