@@ -40,7 +40,6 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       body: GestureDetector(
         onTap: () {
           // Hide the keyboard when the screen is tapped
@@ -90,44 +89,6 @@ class _LoginPageState extends State<LoginPage> {
                   width: 160,
                   child: ElevatedButton(
                     onPressed: _logIn,
-                    // Add your login logic here
-                    // String email = _emailController.text;
-                    // String password = _passController.text;
-
-                    // here authentication logic will be added later
-                    // For now, let's just print the username and password on the console
-
-                    // log('Username: $email');
-                    // log('Password: $password');
-
-                    // if (username == "admin" && password == "admin") {
-                    //   Navigator.pushReplacement(
-                    //     context,
-                    //     MaterialPageRoute(
-                    //         builder: (context) => personalityPage()),
-                    //   );
-                    // } else {
-                    //   // If login is unsuccessful, show a popup with an error message
-                    //   showDialog(
-                    //     context: context,
-                    //     builder: (BuildContext context) {
-                    //       return AlertDialog(
-                    //         title: const Text('Incorrect Password'),
-                    //         content: const Text(
-                    //             'Please check your username and password and try again.'),
-                    //         actions: [
-                    //           TextButton(
-                    //             onPressed: () {
-                    //               Navigator.pop(context); // Close the dialog
-                    //             },
-                    //             child: const Text('OK'),
-                    //           ),
-                    //         ],
-                    //       );
-                    //     },
-                    //   );
-                    // }
-
                     child: const Text(
                       'LOGIN',
                       style: TextStyle(
@@ -172,9 +133,10 @@ class _LoginPageState extends State<LoginPage> {
                             fontSize: 20,
                             color: Color(0xff4c505b),
                           ),
-                        ))
-                      ],
+                        )
                     )
+                  ],
+                )
               ],
             ),
           ),

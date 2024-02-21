@@ -158,8 +158,7 @@ class _SignUpState extends State<SignUp> {
 
     User? user = await _auth.signUpwithEmailAndPassword(email, password);
 
-    CollectionReference collRef =
-    FirebaseFirestore.instance.collection('user');
+    CollectionReference collRef = FirebaseFirestore.instance.collection('user');
     collRef.add({
       'name': name,
       'email': email,
