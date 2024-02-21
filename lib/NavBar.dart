@@ -11,7 +11,8 @@ class NavBar extends StatelessWidget {
     TextStyle navtext =
         const TextStyle(fontWeight: FontWeight.bold, fontSize: 15);
     return Drawer(
-      child: ListView(padding: EdgeInsets.zero, children: [
+      child: ListView(
+          padding: EdgeInsets.zero, children: [
         UserAccountsDrawerHeader(
           accountName: Text("Softengen", style: navtext),
           accountEmail: Text("softengenauthor@gmail.com", style: navtext),

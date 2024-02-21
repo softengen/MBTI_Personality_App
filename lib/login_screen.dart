@@ -53,14 +53,14 @@ class _LoginPageState extends State<LoginPage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                SizedBox(height: 120,),
+                const SizedBox(height: 120),
                 const FlutterLogo(size: 100),
                 const SizedBox(height: 60),
                 const SizedBox(height: 40),
                 TextField(
                   controller: _emailController,
                   decoration: const InputDecoration(
-                    labelText: 'Username',
+                    labelText: 'Email',
                     labelStyle: TextStyle(
                       fontFamily: '',
                       fontWeight: FontWeight.bold,
