@@ -1,9 +1,8 @@
 import 'dart:developer';
-
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:mbti_app/login_screen.dart';
-import 'package:mbti_app/personalityPage.dart';
 import 'package:mbti_app/user_auth/firebase_auth/firebaseAuthServices.dart';
 
 class SignUp extends StatefulWidget {
@@ -158,6 +157,14 @@ class _SignUpState extends State<SignUp> {
     String password = _passController.text;
 
     User? user = await _auth.signUpwithEmailAndPassword(email, password);
+
+    CollectionReference collRef =
+    FirebaseFirestore.instance.collection('user');
+    collRef.add({
+      'name': name,
+      'email': email,
+      'pass': password,
+    });
 
     if (user != null) {
       log("User successfully created");
