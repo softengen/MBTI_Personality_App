@@ -40,7 +40,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+
       body: GestureDetector(
         onTap: () {
           // Hide the keyboard when the screen is tapped
@@ -53,6 +53,7 @@ class _LoginPageState extends State<LoginPage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                SizedBox(height: 120,),
                 const FlutterLogo(size: 100),
                 const SizedBox(height: 60),
                 const SizedBox(height: 40),
