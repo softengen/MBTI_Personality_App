@@ -5,12 +5,14 @@ Until the first official release, the version will remain version 1.0.
 V1.0
 
 // it is dummy text //
+
 | Version | Supported          |
 | ------- | ------------------ |
 | 5.1.x   | :white_check_mark: |
 | 5.0.x   | :x:                |
 | 4.0.x   | :white_check_mark: |
 | < 4.0   | :x:                |
+
 // it is dummy text //
 
 ## Reporting a Vulnerability
