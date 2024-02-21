@@ -49,8 +49,12 @@ class _SignUpState extends State<SignUp> {
                 child: const Text(
                   "Create a \nnew profile.",
                   style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 33,
+                    color: Colors.grey,
+                    fontWeight: FontWeight.bold,
+                    wordSpacing: 0.5,
+                    fontSize: 40,
+                    fontFamily: "UbuntuMono",
+                    letterSpacing: 0.2,
                   ),
                 ),
               ),
@@ -69,6 +73,10 @@ class _SignUpState extends State<SignUp> {
                             fillColor: Colors.grey.shade100,
                             filled: true,
                             hintText: 'Name',
+                            hintStyle: TextStyle(
+                              fontSize: 20,
+                              color: Colors.grey,
+                            ),
                             border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(10))),
                       ),
@@ -79,6 +87,10 @@ class _SignUpState extends State<SignUp> {
                             fillColor: Colors.grey.shade100,
                             filled: true,
                             hintText: 'Email',
+                            hintStyle: TextStyle(
+                              fontSize: 20,
+                              color: Colors.grey,
+                            ),
                             border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(10))),
                       ),
@@ -90,6 +102,10 @@ class _SignUpState extends State<SignUp> {
                             fillColor: Colors.grey.shade100,
                             filled: true,
                             hintText: 'Password',
+                            hintStyle: TextStyle(
+                              fontSize: 20,
+                              color: Colors.grey,
+                            ),
                             border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(10))),
                       ),
