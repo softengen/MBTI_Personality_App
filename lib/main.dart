@@ -33,7 +33,10 @@ class MyApp extends StatelessWidget {
                 fontSize: 20,
                 fontFamily: "Comforta",
                 fontWeight: FontWeight.w400)),
-        primarySwatch: Colors.deepPurple,
+        appBarTheme: AppBarTheme(
+          backgroundColor: Colors.deepPurple,
+          foregroundColor: Colors.white70
+        ),
       ),
       home: const MyHomePage(),
     );
