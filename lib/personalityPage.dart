@@ -114,13 +114,10 @@ class personalityPage extends StatelessWidget {
       drawer: NavBar(),
       appBar: AppBar(
 
-        title: Center(
+        title: const Center(
             child: Text(
           "Personalities",
-          style: Theme.of(context)
-              .textTheme
-              .displayLarge!
-              .copyWith(fontSize: 30, color: Colors.white),
+          style: TextStyle(fontFamily: "Astro Space", fontWeight: FontWeight.bold, fontSize: 30),
         )),
       ),
       body: SingleChildScrollView(

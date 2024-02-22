@@ -41,8 +41,9 @@ class MyApp extends StatelessWidget {
         ),
         appBarTheme: const AppBarTheme(
             backgroundColor: Colors.deepPurple,
-            foregroundColor: Colors.white70),
+            foregroundColor: Color(0xffefe0ff),)
       ),
+
       home: user != null ? personalityPage() : LoginPage(),
     );
   }

@@ -262,59 +262,60 @@ class _INTJState extends State<INTJ> {
               ),
               Container(
                   margin: const EdgeInsets.all(20),
-                  child: Wrap(
-                    spacing: 10,
-                    alignment: WrapAlignment.spaceBetween,
-                    children: [
-                      ElevatedButton(
-                        onPressed: overview,
-                        child: const Text("Overview"),
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                      ),
-                      ElevatedButton(
-                        onPressed: Friendship,
-                        child: const Text("Friendship"),
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                      ),
-                      ElevatedButton(
-                        onPressed: Parenthood,
-                        child: const Text("Parenthood"),
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                      ),
-                      ElevatedButton(
-                        onPressed: strength,
-                        child: const Text("Strength"),
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                      ),
-                      ElevatedButton(
-                        onPressed: weakness,
-                        child: const Text("Weakness"),
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                      ),
-                      ElevatedButton(
-                        onPressed: Relation,
-                        child: const Text("Relationship"),
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                      ),
-                    ],
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      children: [
+                        ElevatedButton(
+                          onPressed: overview,
+                          style: ElevatedButton.styleFrom(
+                              shape: const RoundedRectangleBorder(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(20)))),
+                          child: const Text("Overview"),
+                        ),
+                        ElevatedButton(
+                          onPressed: Friendship,
+                          style: ElevatedButton.styleFrom(
+                              shape: const RoundedRectangleBorder(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(20)))),
+                          child: const Text("Friendship"),
+                        ),
+                        ElevatedButton(
+                          onPressed: Parenthood,
+                          style: ElevatedButton.styleFrom(
+                              shape: const RoundedRectangleBorder(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(20)))),
+                          child: const Text("Parenthood"),
+                        ),
+                        ElevatedButton(
+                          onPressed: strength,
+                          style: ElevatedButton.styleFrom(
+                              shape: const RoundedRectangleBorder(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(20)))),
+                          child: const Text("Strength"),
+                        ),
+                        ElevatedButton(
+                          onPressed: weakness,
+                          style: ElevatedButton.styleFrom(
+                              shape: const RoundedRectangleBorder(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(20)))),
+                          child: const Text("Weakness"),
+                        ),
+                        ElevatedButton(
+                          onPressed: Relation,
+                          style: ElevatedButton.styleFrom(
+                              shape: const RoundedRectangleBorder(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(20)))),
+                          child: const Text("Relationship"),
+                        ),
+                      ],
+                    ),
                   )),
               Container(
                   margin:
@@ -535,51 +536,51 @@ class _INTPState extends State<INTP> {
                     children: [
                       ElevatedButton(
                         onPressed: overview,
-                        child: const Text("Overview"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Overview"),
                       ),
                       ElevatedButton(
                         onPressed: Friendship,
-                        child: const Text("Friendship"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Friendship"),
                       ),
                       ElevatedButton(
                         onPressed: Parenthood,
-                        child: const Text("Parenthood"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Parenthood"),
                       ),
                       ElevatedButton(
                         onPressed: strength,
-                        child: const Text("Strength"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Strength"),
                       ),
                       ElevatedButton(
                         onPressed: weakness,
-                        child: const Text("Weakness"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Weakness"),
                       ),
                       ElevatedButton(
                         onPressed: Relation,
-                        child: const Text("Relationship"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Relationship"),
                       ),
                     ],
                   )),
@@ -798,51 +799,51 @@ class _ENTJState extends State<ENTJ> {
                     children: [
                       ElevatedButton(
                         onPressed: overview,
-                        child: const Text("Overview"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Overview"),
                       ),
                       ElevatedButton(
                         onPressed: Friendship,
-                        child: const Text("Friendship"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Friendship"),
                       ),
                       ElevatedButton(
                         onPressed: Parenthood,
-                        child: const Text("Parenthood"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Parenthood"),
                       ),
                       ElevatedButton(
                         onPressed: strength,
-                        child: const Text("Strength"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Strength"),
                       ),
                       ElevatedButton(
                         onPressed: weakness,
-                        child: const Text("Weakness"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Weakness"),
                       ),
                       ElevatedButton(
                         onPressed: Relation,
-                        child: const Text("Relationship"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Relationship"),
                       ),
                     ],
                   )),
@@ -1065,51 +1066,51 @@ class _ENTPState extends State<ENTP> {
                     children: [
                       ElevatedButton(
                         onPressed: overview,
-                        child: const Text("Overview"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Overview"),
                       ),
                       ElevatedButton(
                         onPressed: Friendship,
-                        child: const Text("Friendship"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Friendship"),
                       ),
                       ElevatedButton(
                         onPressed: Parenthood,
-                        child: const Text("Parenthood"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Parenthood"),
                       ),
                       ElevatedButton(
                         onPressed: strength,
-                        child: const Text("Strength"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Strength"),
                       ),
                       ElevatedButton(
                         onPressed: weakness,
-                        child: const Text("Weakness"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Weakness"),
                       ),
                       ElevatedButton(
                         onPressed: Relation,
-                        child: const Text("Relationship"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Relationship"),
                       ),
                     ],
                   )),
@@ -1333,51 +1334,51 @@ class _INFJState extends State<INFJ> {
                     children: [
                       ElevatedButton(
                         onPressed: overview,
-                        child: const Text("Overview"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Overview"),
                       ),
                       ElevatedButton(
                         onPressed: Friendship,
-                        child: const Text("Friendship"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Friendship"),
                       ),
                       ElevatedButton(
                         onPressed: Parenthood,
-                        child: const Text("Parenthood"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Parenthood"),
                       ),
                       ElevatedButton(
                         onPressed: strength,
-                        child: const Text("Strength"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Strength"),
                       ),
                       ElevatedButton(
                         onPressed: weakness,
-                        child: const Text("Weakness"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Weakness"),
                       ),
                       ElevatedButton(
                         onPressed: Relation,
-                        child: const Text("Relationship"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Relationship"),
                       ),
                     ],
                   )),
@@ -1599,51 +1600,51 @@ class _INFPState extends State<INFP> {
                     children: [
                       ElevatedButton(
                         onPressed: overview,
-                        child: const Text("Overview"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Overview"),
                       ),
                       ElevatedButton(
                         onPressed: Friendship,
-                        child: const Text("Friendship"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Friendship"),
                       ),
                       ElevatedButton(
                         onPressed: Parenthood,
-                        child: const Text("Parenthood"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Parenthood"),
                       ),
                       ElevatedButton(
                         onPressed: strength,
-                        child: const Text("Strength"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Strength"),
                       ),
                       ElevatedButton(
                         onPressed: weakness,
-                        child: const Text("Weakness"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Weakness"),
                       ),
                       ElevatedButton(
                         onPressed: Relation,
-                        child: const Text("Relationship"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Relationship"),
                       ),
                     ],
                   )),
@@ -1867,51 +1868,51 @@ class _ENFJState extends State<ENFJ> {
                     children: [
                       ElevatedButton(
                         onPressed: overview,
-                        child: const Text("Overview"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Overview"),
                       ),
                       ElevatedButton(
                         onPressed: Friendship,
-                        child: const Text("Friendship"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Friendship"),
                       ),
                       ElevatedButton(
                         onPressed: Parenthood,
-                        child: const Text("Parenthood"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Parenthood"),
                       ),
                       ElevatedButton(
                         onPressed: strength,
-                        child: const Text("Strength"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Strength"),
                       ),
                       ElevatedButton(
                         onPressed: weakness,
-                        child: const Text("Weakness"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Weakness"),
                       ),
                       ElevatedButton(
                         onPressed: Relation,
-                        child: const Text("Relationship"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Relationship"),
                       ),
                     ],
                   )),
@@ -2135,51 +2136,51 @@ class _ENFPState extends State<ENFP> {
                     children: [
                       ElevatedButton(
                         onPressed: overview,
-                        child: const Text("Overview"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Overview"),
                       ),
                       ElevatedButton(
                         onPressed: Friendship,
-                        child: const Text("Friendship"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Friendship"),
                       ),
                       ElevatedButton(
                         onPressed: Parenthood,
-                        child: const Text("Parenthood"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Parenthood"),
                       ),
                       ElevatedButton(
                         onPressed: strength,
-                        child: const Text("Strength"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Strength"),
                       ),
                       ElevatedButton(
                         onPressed: weakness,
-                        child: const Text("Weakness"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Weakness"),
                       ),
                       ElevatedButton(
                         onPressed: Relation,
-                        child: const Text("Relationship"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Relationship"),
                       ),
                     ],
                   )),
@@ -2234,52 +2235,55 @@ class ISTJ extends StatefulWidget {
 class _ISTJState extends State<ISTJ> {
   String headline = "Overview";
   String overview_body =
-      "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
-      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
-      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
-      "conversations to small talk and often find themselves lost in thought.";
+      "The ISTJ, often known as the Inspector thrives on stability, practicality, and a well-defined plan. "
+      "They are meticulous individuals who value order, tradition, and clear expectations. In relationships, "
+      "ISTJs are loyal and dependable partners who prioritize security and reliability. They might appear reserved at first, "
+      "but their inner warmth and genuine care become evident with time.";
 
   String strength_text =
-      "Intellectual Brilliance: INTPs have a remarkable capacity for logical reasoning, pattern recognition, and problem-solving. They are often drawn to science, mathematics, philosophy, and other fields that require analytical thinking."
-      "\n\nCreative Problem-Solvers: Their unconventional approach and ability to see things from multiple angles allow them to generate innovative solutions to challenging problems."
-      "\n\nIndependent Thinkers: INTPs are not easily swayed by popular opinion or authority. They question everything, seeking to form their own logical conclusions based on evidence and reason."
-      "\n\nAdaptable Learners: They are eager to learn new things and continuously expand their knowledge base. Their curiosity and open-mindedness make them adaptable to change and new information."
-      "\n\nHonest and Direct: INTPs value truth and authenticity above social niceties. They are straightforward in their communication, often preferring blunt honesty over sugarcoating.";
+      "Reliable and Dependable: When you need someone to follow through, an ISTJ is your person. They keep promises, meet deadlines, and demonstrate unwavering commitment to their responsibilities."
+      "\n\nLogical and Analytical: They excel at solving problems with a step-by-step approach, utilizing logic and evidence to reach well-reasoned conclusions. They make efficient decisions and avoid emotional biases."
+      "\n\nOrganized and Efficient: ISTJs value order and structure, prioritizing planning and meticulousness in their work and lives. They manage time effectively, streamline processes, and ensure things run smoothly."
+      "\n\nDetail-Oriented: Nothing escapes their sharp eye for detail. They ensure accuracy and thoroughness in their work, spotting the smallest discrepancies and contributing to high-quality outcomes."
+      "\n\nLoyal and Committed: Once they trust someone, they form strong bonds and offer unwavering support. Their loyalty extends to friends, family, and colleagues, demonstrated through practical actions and dedication.";
 
   String weakness_text =
-      "Social Awkwardness: INTPs can struggle with social interactions and small talk, preferring solitude and intellectual pursuits. They may come across as aloof or detached in social settings."
-      "\n\nOverthinking and Procrastination: Their tendency to analyze everything from every angle can lead to overthinking, indecisiveness, and procrastination. They may struggle to make decisions or take action until they have considered all possible outcomes."
-      "\n\nInsensitivity: Their focus on logic and rationality can sometimes make them insensitive to others' feelings and emotions. They may unintentionally hurt others with their bluntness or lack of tact."
-      "\n\nDisregard for Rules and Routine: INTPs often chafe against rules and structures that they deem unnecessary or inefficient. They may resist authority and prefer to set their own schedules and priorities."
-      "\n\nDifficulty Expressing Emotions: While they experience deep emotions, INTPs often struggle to articulate and express them outwardly. This can lead to misunderstandings in relationships and difficulty connecting with others on an emotional level.";
+      "Inflexible and Resistant to Change: While stability is their comfort zone, sudden changes can disrupt their established routines and routines, causing discomfort and resistance. Adaptability can be a challenge."
+      "\n\nOverly Critical and Blunt: Their directness and focus on logic can sometimes be perceived as harsh or overly critical. While truthful, their honest assessments might unintentionally hurt others' feelings."
+      "\n\nEmotionally Reserved: Expressing emotions isn't their forte. They may struggle to navigate complex emotional situations or openly express their own feelings, potentially creating challenges in understanding or responding to others' emotional needs."
+      "\n\nPerfectionistic and Impatient: Their high standards for themselves and others can lead to self-criticism and frustration when things fall short. Their focus on efficiency can make them impatient with those who are perceived as less detail-oriented or slower."
+      "\n\nDifficulty Delegating: Trusting their own abilities, delegating tasks can be challenging for ISTJs. They might prefer to maintain control, potentially hindering collaboration and preventing others from learning and growing.";
 
   String friend_text =
-      "INTPs seek authenticity and intellectual stimulation in their friendships. "
-      "\n\nThey value friends who share their interests, challenge their thinking, and respect their need for independence. "
-      "They gravitate towards deep, meaningful conversations over superficial social activities. While they may have a small circle of close friends, they are fiercely loyal and supportive within it.";
+      "ISTJs value authenticity, genuine connections, and intellectual conversations. "
+      "\n\nThey seek friends who are reliable, honest, and share their appreciation for logic and order. "
+      "While their social circles may be smaller, their friendships are typically strong and built on mutual trust, respect, and shared values.";
 
   String parent_text =
-      "INTP parents prioritize fostering their children's intellectual curiosity, critical thinking skills, and independence. "
-      "\n\nThey create a stimulating environment for learning and encourage their children to explore their interests. "
-      "They value open communication, honesty, and respect for individuality. "
-      "However, they may struggle to express affection openly and may need to consciously work on understanding and validating their children's emotional needs.";
+      "ISTJ parents provide their children with clear rules, well-defined routines, and clear expectations. "
+      "\n\nhey emphasize responsibility, hard work, academic achievement, and logical thinking. "
+      "While they demonstrate love and support, expressing emotions openly may be a challenge. "
+      "They encourage independence, self-discipline, and a strong work ethic in their children.";
 
   String relation =
-      "INTPs can be engaging and loyal partners who offer intellectual stimulation and a unique perspective. However, their emotional reserve and dislike for routine can create challenges. Open communication, understanding their personality preferences, and a willingness to compromise are essential for building strong and lasting connections with INTPs."
-      "\n\nStrengths:"
-      "\nIntellectual Companionship: They value intelligent conversations and enjoy stimulating discussions with partners who can engage in deep thinking and explore complex ideas."
-      "\nLoyalty and Supportive Nature: Once they commit to a relationship, INTPs are loyal and supportive partners. They offer intellectual stimulation, encouragement, and unwavering support for their loved ones' goals."
-      "\nRespect for Individuality: Their independent nature translates into respect for their partner's autonomy and individuality. They appreciate and encourage individuality within the relationship."
-      "\n\nChallenges:"
-      "\nEmotional Vulnerability and Expression: Their reserved nature can make it difficult for partners to understand their emotions and needs. Open communication and learning to express feelings constructively are crucial."
-      "\nPractical Responsibilities: Their dislike for mundane tasks can lead to neglecting shared responsibilities. Finding a balance between intellectual pursuits and practical needs is important."
-      "\nConflict Resolution: Their avoidance of conflict can lead to unresolved issues or emotional distance. Learning healthy communication and conflict resolution skills can strengthen their relationships.";
+      "Key Points for ISTJ Relationships:"
+      "\n\nHealthy communication: Express your thoughts and needs clearly and directly, while also being mindful of your partner's communication style and emotional needs."
+      "\n\nBalancing practicality and emotional expression: While valuing stability and planning, also prioritize connecting with your partner on an emotional level and express your feelings constructively."
+      "\n\nEmbracing flexibility: Be open to new ideas and experiences while maintaining your core values, finding a balance with your partner's needs for variety."
+      "\n\nRespecting individual differences: Appreciate your partner's unique personality and perspective, fostering a supportive and understanding environment."
+      "\n\n\nCompatible Types:"
+      "\n\nISFJ: Share practicality, organization, and value for tradition and stability. Both prioritize reliability, responsibility, and building a secure foundation for their lives. However, both might need to work on expressing emotions openly and addressing conflict directly."
+      "\n\nISTP: Share pragmatism, logical thinking, and a preference for action over theory. Both enjoy problem-solving and efficiency, valuing clear communication and shared goals. However, ISTJs might need to adjust their seriousness and embrace ISTPs' spontaneity at times."
+      "\n\nINTJ: Share strategic thinking, long-term vision, and a focus on achieving goals. Both prioritize logic, efficiency, and planning, enjoying deep intellectual conversations. However, both might need to work on emotional expression and navigating potential power dynamics."
+      "\n\nESTJ: Share decisiveness, direct communication, and a focus on getting things done. ESTJs bring an extraverted and action-oriented approach, balancing ISTJs' introspective nature. However, managing potential power dynamics and respecting communication styles are important."
+      "\n\nINFJ: Offer intuition, emotional understanding, and a desire for meaningful connections. INFJs bring depth, compassion, and a different perspective, encouraging ISTJs to connect with their emotions and consider hidden meanings. However, ISTJs might need to communicate emotions more openly and appreciate INFJs' need for emotional connection."
+      "\n\nISFP: Offer artistic expression, emotional sensitivity, and a focus on enjoying the present moment. ISFPs bring creativity, authenticity, and appreciation for beauty, encouraging ISTJs to loosen up and appreciate spontaneity. However, balancing practicality with emotional needs and communication styles is crucial.";
 
   String body_text =
-      "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
-      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
-      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
-      "conversations to small talk and often find themselves lost in thought.";
+      "The ISTJ, often known as the Inspector thrives on stability, practicality, and a well-defined plan. "
+      "They are meticulous individuals who value order, tradition, and clear expectations. In relationships, "
+      "ISTJs are loyal and dependable partners who prioritize security and reliability. They might appear reserved at first, "
+      "but their inner warmth and genuine care become evident with time.";
 
   void overview() {
     setState(() {
@@ -2325,29 +2329,12 @@ class _ISTJState extends State<ISTJ> {
 
   @override
   Widget build(BuildContext context) {
-    String body_text =
-        "Entrepreneurs always have an impact on their immediate surroundings – "
-        "the best way to spot them at a party is to look for the whirling eddy of people flitting "
-        "about them as they move from group to group. Laughing and entertaining with a blunt and "
-        "earthy humor, Entrepreneur personalities love to be the center of attention. If an audience "
-        "member is asked to come on stage, Entrepreneurs volunteer – or volunteer a shy friend."
-        "\n\nTheory, abstract concepts and plodding discussions about global issues and their implications "
-        "don’t keep Entrepreneurs interested for long. Entrepreneurs keep their conversation energetic, "
-        "with a good dose of intelligence, but they like to talk about what is – or better yet, to just "
-        "go out and do it. Entrepreneurs leap before they look, fixing their mistakes as they go, "
-        "rather than sitting idle, preparing contingencies and escape clauses.";
-
-    List card = [
-      "ESFJ",
-      "Entertainer",
-      "Supportive and sociable, they thrive on nurturing relationships and creating a harmonious environment."
-    ];
 
     Color bgColor = Colors.deepPurple;
 
     return Scaffold(
         appBar: AppBar(
-          title: const Text("ESFJ"),
+          title: const Text("ISTJ"),
         ),
         body: SingleChildScrollView(
           child: Column(
@@ -2355,7 +2342,7 @@ class _ISTJState extends State<ISTJ> {
             children: [
               Material(
                 child: Hero(
-                  tag: "ESFJ",
+                  tag: "ISTJ",
                   child: Center(
                     child: Container(
                       margin: const EdgeInsets.all(11),
@@ -2385,7 +2372,7 @@ class _ISTJState extends State<ISTJ> {
                             margin: const EdgeInsets.only(bottom: 10),
                             height: 60,
                             child: Text(
-                              card[1],
+                              body["ISTJ"][0],
                               style: const TextStyle(
                                 fontFamily: "ProtestRiot",
                                 fontSize: 45,
@@ -2394,9 +2381,9 @@ class _ISTJState extends State<ISTJ> {
                               ),
                             ),
                           ),
-                          Text(
-                            ("(${card[0]})"),
-                            style: const TextStyle(
+                          const Text(
+                            ("(ISTJ)"),
+                            style: TextStyle(
                               fontFamily: "Roboto",
                               fontWeight: FontWeight.bold,
                               fontSize: 30,
@@ -2417,51 +2404,51 @@ class _ISTJState extends State<ISTJ> {
                     children: [
                       ElevatedButton(
                         onPressed: overview,
-                        child: const Text("Overview"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Overview"),
                       ),
                       ElevatedButton(
                         onPressed: Friendship,
-                        child: const Text("Friendship"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Friendship"),
                       ),
                       ElevatedButton(
                         onPressed: Parenthood,
-                        child: const Text("Parenthood"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Parenthood"),
                       ),
                       ElevatedButton(
                         onPressed: strength,
-                        child: const Text("Strength"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Strength"),
                       ),
                       ElevatedButton(
                         onPressed: weakness,
-                        child: const Text("Weakness"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Weakness"),
                       ),
                       ElevatedButton(
                         onPressed: Relation,
-                        child: const Text("Relationship"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Relationship"),
                       ),
                     ],
                   )),
@@ -2516,52 +2503,54 @@ class ISFJ extends StatefulWidget {
 class _ISFJState extends State<ISFJ> {
   String headline = "Overview";
   String overview_body =
-      "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
-      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
-      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
-      "conversations to small talk and often find themselves lost in thought.";
+      "ISFJs, often called Protectors, are nurturing individuals guided by strong internal values "
+      "and a deep desire for harmony. They navigate the world through a combination of practicality "
+      "and empathy, making them dependable friends, loyal partners, and dedicated caregivers.";
 
   String strength_text =
-      "Intellectual Brilliance: INTPs have a remarkable capacity for logical reasoning, pattern recognition, and problem-solving. They are often drawn to science, mathematics, philosophy, and other fields that require analytical thinking."
-      "\n\nCreative Problem-Solvers: Their unconventional approach and ability to see things from multiple angles allow them to generate innovative solutions to challenging problems."
-      "\n\nIndependent Thinkers: INTPs are not easily swayed by popular opinion or authority. They question everything, seeking to form their own logical conclusions based on evidence and reason."
-      "\n\nAdaptable Learners: They are eager to learn new things and continuously expand their knowledge base. Their curiosity and open-mindedness make them adaptable to change and new information."
-      "\n\nHonest and Direct: INTPs value truth and authenticity above social niceties. They are straightforward in their communication, often preferring blunt honesty over sugarcoating.";
+      "Reliable and Dependable: ISFJs are people you can count on. They take commitments seriously and follow through on their promises. Their stability and dependability make them valuable assets in any team."
+      "\n\nCaring and Compassionate: ISFJs are genuinely concerned about the well-being of others. They are empathetic and understanding, always willing to lend a helping hand to those in need."
+      "\n\nPractical and Organized: ISFJs thrive on order and efficiency. They excel at planning, prioritizing, and managing tasks to achieve goals effectively."
+      "\n\nDetail-Oriented: ISFJs have a keen eye for detail, noticing even the smallest discrepancies. This meticulousness ensures accuracy and thoroughness in their work."
+      "\n\nLoyal and Committed: ISFJs form strong bonds with those they trust and value. They are fiercely loyal to their friends, family, and colleagues, demonstrating commitment through practical actions and support.";
 
   String weakness_text =
-      "Social Awkwardness: INTPs can struggle with social interactions and small talk, preferring solitude and intellectual pursuits. They may come across as aloof or detached in social settings."
-      "\n\nOverthinking and Procrastination: Their tendency to analyze everything from every angle can lead to overthinking, indecisiveness, and procrastination. They may struggle to make decisions or take action until they have considered all possible outcomes."
-      "\n\nInsensitivity: Their focus on logic and rationality can sometimes make them insensitive to others' feelings and emotions. They may unintentionally hurt others with their bluntness or lack of tact."
-      "\n\nDisregard for Rules and Routine: INTPs often chafe against rules and structures that they deem unnecessary or inefficient. They may resist authority and prefer to set their own schedules and priorities."
-      "\n\nDifficulty Expressing Emotions: While they experience deep emotions, INTPs often struggle to articulate and express them outwardly. This can lead to misunderstandings in relationships and difficulty connecting with others on an emotional level.";
+      "\n\nInflexible and Resistant to Change: ISFJs value stability and predictability. Sudden changes can disrupt their established routines and make them uncomfortable. They may resist adapting, requiring time and understanding to adjust."
+      "\n\nOverly Sensitive and Easily Hurt: ISFJs are sensitive to criticism and may take things personally. They may be easily hurt by the words or actions of others, even if they are not intended to be hurtful."
+      "\n\nEmotionally Reserved: ISFJs tend to express their emotions less readily and may struggle to navigate complex emotional situations. This can create challenges in understanding or responding to the emotional needs of others."
+      "\n\nPerfectionistic and Impatient: ISFJs set high standards for themselves and others. This can lead to perfectionism and frustration when things fall short of their expectations. Additionally, their focus on efficiency can make them impatient with those who are slower or less detail-oriented."
+      "\n\nDifficulty Delegating: ISFJs trust their own abilities and prefer to be in control. Delegating tasks can be challenging for them, potentially causing unnecessary stress and hindering collaboration.";
 
   String friend_text =
-      "INTPs seek authenticity and intellectual stimulation in their friendships. "
-      "\n\nThey value friends who share their interests, challenge their thinking, and respect their need for independence. "
-      "They gravitate towards deep, meaningful conversations over superficial social activities. While they may have a small circle of close friends, they are fiercely loyal and supportive within it.";
+      "ISFJs value genuine connections and meaningful conversations. "
+      "\n\nThey seek friends who are reliable, honest, and share their respect for logic and order. "
+      "While their social circle may be smaller, their friendships are usually strong and built on mutual trust and respect.";
 
   String parent_text =
-      "INTP parents prioritize fostering their children's intellectual curiosity, critical thinking skills, and independence. "
-      "\n\nThey create a stimulating environment for learning and encourage their children to explore their interests. "
-      "They value open communication, honesty, and respect for individuality. "
-      "However, they may struggle to express affection openly and may need to consciously work on understanding and validating their children's emotional needs.";
+      "ISFJ parents provide their children with clear rules, routines, and expectations. "
+      "\n\nThey emphasize responsibility, hard work, and academic achievement. "
+      "They are supportive and loving but may struggle with expressing emotions openly. "
+      "They encourage their children to be independent and logical thinkers, fostering self-discipline "
+      "and a strong work ethic.";
 
   String relation =
-      "INTPs can be engaging and loyal partners who offer intellectual stimulation and a unique perspective. However, their emotional reserve and dislike for routine can create challenges. Open communication, understanding their personality preferences, and a willingness to compromise are essential for building strong and lasting connections with INTPs."
-      "\n\nStrengths:"
-      "\nIntellectual Companionship: They value intelligent conversations and enjoy stimulating discussions with partners who can engage in deep thinking and explore complex ideas."
-      "\nLoyalty and Supportive Nature: Once they commit to a relationship, INTPs are loyal and supportive partners. They offer intellectual stimulation, encouragement, and unwavering support for their loved ones' goals."
-      "\nRespect for Individuality: Their independent nature translates into respect for their partner's autonomy and individuality. They appreciate and encourage individuality within the relationship."
-      "\n\nChallenges:"
-      "\nEmotional Vulnerability and Expression: Their reserved nature can make it difficult for partners to understand their emotions and needs. Open communication and learning to express feelings constructively are crucial."
-      "\nPractical Responsibilities: Their dislike for mundane tasks can lead to neglecting shared responsibilities. Finding a balance between intellectual pursuits and practical needs is important."
-      "\nConflict Resolution: Their avoidance of conflict can lead to unresolved issues or emotional distance. Learning healthy communication and conflict resolution skills can strengthen their relationships.";
+      "Key Points for ISFJ Relationships:"
+      "\n\nHealthy communication: Express your thoughts and feelings openly and honestly, while also being mindful of your partner's communication style and emotional needs."
+      "\n\nBalancing practicality and emotional expression: While valuing stability and responsibility, prioritize connecting with your partner on an emotional level and express your feelings constructively."
+      "\n\nSetting boundaries: Learn to say no and prioritize your own needs while maintaining healthy connections with your partner."
+      "\n\nEmbracing growth and individual differences: Encourage yourself and your partner to explore personal growth while appreciating each other's unique personalities and perspectives."
+      "\n\n\nCompatible Types:"
+      "\n\nISTJ: Share practicality, value for tradition and stability, and a commitment to building a secure foundation for their lives. Both prioritize loyalty, responsibility, and creating a harmonious environment. However, both might need to work on expressing emotions openly and addressing conflict directly."
+      "\n\nISFP: Share empathy, compassion, and a focus on creating a warm and supportive environment. Both value harmony, personal connections, and expressing care through actions. However, ISFPs might need reassurance and understanding from ISFJs who sometimes prioritize practicality over overt emotional expression."
+      "\n\nINFJ: Share empathy, compassion, and a desire for meaningful connections. INFJs bring depth, intuition, and a focus on understanding others' emotions, potentially encouraging ISFJs to connect with their own emotions more deeply. However, both might need to work on assertiveness and expressing needs directly."
+      "\n\nESTJ: Offer decisiveness, direct communication, and a focus on getting things done. ESTJs bring an extraverted and action-oriented approach, balancing ISFJs' introspective nature and desire for harmony. However, managing potential power dynamics and respecting communication styles are important."
+      "\n\nINFP: Offer idealism, creativity, and a focus on personal values. INFPs bring a different perspective and encourage ISFJs to connect with their own creativity and individuality. However, ISFJs might need to manage potential conflict avoidance and ensure their practical needs are met."
+      "\n\nENFJ: Offer warmth, empathy, and a desire to inspire others. ENFJs bring extraverted energy and leadership qualities, encouraging ISFJs to step outside their comfort zone and engage socially. However, ISFJs might need to communicate their own needs clearly and set boundaries while maintaining the connection.";
 
   String body_text =
-      "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
-      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
-      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
-      "conversations to small talk and often find themselves lost in thought.";
+      "ISFJs, often called Protectors, are nurturing individuals guided by strong internal values "
+      "and a deep desire for harmony. They navigate the world through a combination of practicality "
+      "and empathy, making them dependable friends, loyal partners, and dedicated caregivers.";
 
   void overview() {
     setState(() {
@@ -2607,29 +2596,13 @@ class _ISFJState extends State<ISFJ> {
 
   @override
   Widget build(BuildContext context) {
-    String body_text =
-        "Entrepreneurs always have an impact on their immediate surroundings – "
-        "the best way to spot them at a party is to look for the whirling eddy of people flitting "
-        "about them as they move from group to group. Laughing and entertaining with a blunt and "
-        "earthy humor, Entrepreneur personalities love to be the center of attention. If an audience "
-        "member is asked to come on stage, Entrepreneurs volunteer – or volunteer a shy friend."
-        "\n\nTheory, abstract concepts and plodding discussions about global issues and their implications "
-        "don’t keep Entrepreneurs interested for long. Entrepreneurs keep their conversation energetic, "
-        "with a good dose of intelligence, but they like to talk about what is – or better yet, to just "
-        "go out and do it. Entrepreneurs leap before they look, fixing their mistakes as they go, "
-        "rather than sitting idle, preparing contingencies and escape clauses.";
 
-    List card = [
-      "ESFJ",
-      "Entertainer",
-      "Supportive and sociable, they thrive on nurturing relationships and creating a harmonious environment."
-    ];
 
     Color bgColor = Colors.deepPurple;
 
     return Scaffold(
         appBar: AppBar(
-          title: const Text("ESFJ"),
+          title: const Text("ISFJ"),
         ),
         body: SingleChildScrollView(
           child: Column(
@@ -2637,7 +2610,7 @@ class _ISFJState extends State<ISFJ> {
             children: [
               Material(
                 child: Hero(
-                  tag: "ESFJ",
+                  tag: "ISFJ",
                   child: Center(
                     child: Container(
                       margin: const EdgeInsets.all(11),
@@ -2667,7 +2640,7 @@ class _ISFJState extends State<ISFJ> {
                             margin: const EdgeInsets.only(bottom: 10),
                             height: 60,
                             child: Text(
-                              card[1],
+                              body["ISFJ"][0],
                               style: const TextStyle(
                                 fontFamily: "ProtestRiot",
                                 fontSize: 45,
@@ -2676,9 +2649,9 @@ class _ISFJState extends State<ISFJ> {
                               ),
                             ),
                           ),
-                          Text(
-                            ("(${card[0]})"),
-                            style: const TextStyle(
+                          const Text(
+                            ("(ISFJ)"),
+                            style: TextStyle(
                               fontFamily: "Roboto",
                               fontWeight: FontWeight.bold,
                               fontSize: 30,
@@ -2699,51 +2672,51 @@ class _ISFJState extends State<ISFJ> {
                     children: [
                       ElevatedButton(
                         onPressed: overview,
-                        child: const Text("Overview"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Overview"),
                       ),
                       ElevatedButton(
                         onPressed: Friendship,
-                        child: const Text("Friendship"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Friendship"),
                       ),
                       ElevatedButton(
                         onPressed: Parenthood,
-                        child: const Text("Parenthood"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Parenthood"),
                       ),
                       ElevatedButton(
                         onPressed: strength,
-                        child: const Text("Strength"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Strength"),
                       ),
                       ElevatedButton(
                         onPressed: weakness,
-                        child: const Text("Weakness"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Weakness"),
                       ),
                       ElevatedButton(
                         onPressed: Relation,
-                        child: const Text("Relationship"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Relationship"),
                       ),
                     ],
                   )),
@@ -2981,51 +2954,51 @@ class _ESTJState extends State<ESTJ> {
                     children: [
                       ElevatedButton(
                         onPressed: overview,
-                        child: const Text("Overview"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Overview"),
                       ),
                       ElevatedButton(
                         onPressed: Friendship,
-                        child: const Text("Friendship"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Friendship"),
                       ),
                       ElevatedButton(
                         onPressed: Parenthood,
-                        child: const Text("Parenthood"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Parenthood"),
                       ),
                       ElevatedButton(
                         onPressed: strength,
-                        child: const Text("Strength"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Strength"),
                       ),
                       ElevatedButton(
                         onPressed: weakness,
-                        child: const Text("Weakness"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Weakness"),
                       ),
                       ElevatedButton(
                         onPressed: Relation,
-                        child: const Text("Relationship"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Relationship"),
                       ),
                     ],
                   )),
@@ -3263,51 +3236,51 @@ class _ESFJState extends State<ESFJ> {
                     children: [
                       ElevatedButton(
                         onPressed: overview,
-                        child: const Text("Overview"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Overview"),
                       ),
                       ElevatedButton(
                         onPressed: Friendship,
-                        child: const Text("Friendship"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Friendship"),
                       ),
                       ElevatedButton(
                         onPressed: Parenthood,
-                        child: const Text("Parenthood"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Parenthood"),
                       ),
                       ElevatedButton(
                         onPressed: strength,
-                        child: const Text("Strength"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Strength"),
                       ),
                       ElevatedButton(
                         onPressed: weakness,
-                        child: const Text("Weakness"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Weakness"),
                       ),
                       ElevatedButton(
                         onPressed: Relation,
-                        child: const Text("Relationship"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Relationship"),
                       ),
                     ],
                   )),
@@ -3545,51 +3518,51 @@ class _ISTPState extends State<ISTP> {
                     children: [
                       ElevatedButton(
                         onPressed: overview,
-                        child: const Text("Overview"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Overview"),
                       ),
                       ElevatedButton(
                         onPressed: Friendship,
-                        child: const Text("Friendship"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Friendship"),
                       ),
                       ElevatedButton(
                         onPressed: Parenthood,
-                        child: const Text("Parenthood"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Parenthood"),
                       ),
                       ElevatedButton(
                         onPressed: strength,
-                        child: const Text("Strength"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Strength"),
                       ),
                       ElevatedButton(
                         onPressed: weakness,
-                        child: const Text("Weakness"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Weakness"),
                       ),
                       ElevatedButton(
                         onPressed: Relation,
-                        child: const Text("Relationship"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Relationship"),
                       ),
                     ],
                   )),
@@ -3827,51 +3800,51 @@ class _ISFPState extends State<ISFP> {
                     children: [
                       ElevatedButton(
                         onPressed: overview,
-                        child: const Text("Overview"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Overview"),
                       ),
                       ElevatedButton(
                         onPressed: Friendship,
-                        child: const Text("Friendship"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Friendship"),
                       ),
                       ElevatedButton(
                         onPressed: Parenthood,
-                        child: const Text("Parenthood"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Parenthood"),
                       ),
                       ElevatedButton(
                         onPressed: strength,
-                        child: const Text("Strength"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Strength"),
                       ),
                       ElevatedButton(
                         onPressed: weakness,
-                        child: const Text("Weakness"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Weakness"),
                       ),
                       ElevatedButton(
                         onPressed: Relation,
-                        child: const Text("Relationship"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Relationship"),
                       ),
                     ],
                   )),
@@ -4109,51 +4082,51 @@ class _ESTPState extends State<ESTP> {
                     children: [
                       ElevatedButton(
                         onPressed: overview,
-                        child: const Text("Overview"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Overview"),
                       ),
                       ElevatedButton(
                         onPressed: Friendship,
-                        child: const Text("Friendship"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Friendship"),
                       ),
                       ElevatedButton(
                         onPressed: Parenthood,
-                        child: const Text("Parenthood"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Parenthood"),
                       ),
                       ElevatedButton(
                         onPressed: strength,
-                        child: const Text("Strength"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Strength"),
                       ),
                       ElevatedButton(
                         onPressed: weakness,
-                        child: const Text("Weakness"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Weakness"),
                       ),
                       ElevatedButton(
                         onPressed: Relation,
-                        child: const Text("Relationship"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Relationship"),
                       ),
                     ],
                   )),
@@ -4391,51 +4364,51 @@ class _ESFPState extends State<ESFP> {
                     children: [
                       ElevatedButton(
                         onPressed: overview,
-                        child: const Text("Overview"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Overview"),
                       ),
                       ElevatedButton(
                         onPressed: Friendship,
-                        child: const Text("Friendship"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Friendship"),
                       ),
                       ElevatedButton(
                         onPressed: Parenthood,
-                        child: const Text("Parenthood"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Parenthood"),
                       ),
                       ElevatedButton(
                         onPressed: strength,
-                        child: const Text("Strength"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Strength"),
                       ),
                       ElevatedButton(
                         onPressed: weakness,
-                        child: const Text("Weakness"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Weakness"),
                       ),
                       ElevatedButton(
                         onPressed: Relation,
-                        child: const Text("Relationship"),
                         style: ElevatedButton.styleFrom(
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Relationship"),
                       ),
                     ],
                   )),
