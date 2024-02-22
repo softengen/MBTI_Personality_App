@@ -173,9 +173,10 @@ class _SignUpState extends State<SignUp> {
     String password = _passController.text;
 
     User? user = await _auth.signUpwithEmailAndPassword(email, password);
+    String? uid = FirebaseAuth.instance.currentUser?.uid;
 
     CollectionReference collRef = FirebaseFirestore.instance.collection('user');
-    collRef.add({
+    collRef.doc(uid).set({
       'name': name,
       'email': email,
       'pass': password,
@@ -183,6 +184,14 @@ class _SignUpState extends State<SignUp> {
 
     if (user != null) {
       log("User successfully created");
+      User? user = FirebaseAuth.instance.currentUser;
+
+      if (user != null) {
+        String uid = user.uid;
+        log("UID: $uid");
+      } else {
+        log("User is not authenticated.");
+      }
 
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
