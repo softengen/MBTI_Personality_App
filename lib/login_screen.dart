@@ -39,7 +39,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFFFF1E1),
+      backgroundColor: const Color(0xFFFDF9ED),
       body: GestureDetector(
         onTap: () {
           // Hide the keyboard when the screen is tapped
@@ -89,15 +89,6 @@ class _LoginPageState extends State<LoginPage> {
                   width: 160,
                   child: ElevatedButton(
                     onPressed: _logIn,
-                    child: const Text(
-                      'LOGIN',
-                      style: TextStyle(
-                        fontSize: 19,
-                        fontWeight: FontWeight.bold,
-                        fontFamily: '',
-                        color: Colors.black,
-                      ),
-                    ),
                     // design of elevated button
                     style: ElevatedButton.styleFrom(
                       // primary: Colors.white,
@@ -108,6 +99,15 @@ class _LoginPageState extends State<LoginPage> {
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(6)),
                       // padding: EdgeInsets.all(1),
+                    ),
+                    child: const Text(
+                      'LOGIN',
+                      style: TextStyle(
+                        fontSize: 19,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: '',
+                        color: Colors.black,
+                      ),
                     ),
                   ),
                 ),
@@ -160,7 +160,7 @@ class _LoginPageState extends State<LoginPage> {
 
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
-          content: Text('User successfully Login'),
+          content: Text('User successfully logged in'),
           duration: Duration(seconds: 2), // Adjust the duration as needed
         ),
       );

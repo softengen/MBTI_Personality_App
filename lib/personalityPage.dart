@@ -77,7 +77,7 @@ class personalityPage extends StatelessWidget {
       ISFP()
     ],
     "ESTP": [
-      "Dynamo",
+      "Entrepreneur",
       "Energetic and spontaneous, they thrive in dynamic environments and enjoy taking risks for excitement.",
       ESTP()
     ],

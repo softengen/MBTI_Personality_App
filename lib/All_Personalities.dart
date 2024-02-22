@@ -72,7 +72,7 @@ final Map body = {
     ISFP()
   ],
   "ESTP": [
-    "Dynamo",
+    "Entrepreneur",
     "Energetic and spontaneous, they thrive in dynamic environments and enjoy taking risks for excitement.",
     ESTP()
   ],
@@ -131,7 +131,7 @@ class _INTJState extends State<INTJ> {
       "focus on logic and efficiency can sometimes overshadow emotional needs. Open communication and conscious effort "
       "to express affection are crucial to ensuring their children feel loved and supported.";
 
-  String relation = "Key Points for INTJ Relationships:"
+  String relation = "INTJ Relationships:"
       "\n\nOpen communication: Express emotions constructively and actively listen to your partner's needs."
       "\n\nEmotional understanding: Make an effort to connect with your partner on an emotional level and show appreciation for their feelings."
       "\n\nFlexibility and compromise: Be willing to consider other perspectives and adapt to different preferences without sacrificing your core values."
@@ -262,60 +262,59 @@ class _INTJState extends State<INTJ> {
               ),
               Container(
                   margin: const EdgeInsets.all(20),
-                  child: SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    child: Row(
-                      children: [
-                        ElevatedButton(
-                          onPressed: overview,
-                          style: ElevatedButton.styleFrom(
-                              shape: const RoundedRectangleBorder(
-                                  borderRadius:
-                                      BorderRadius.all(Radius.circular(20)))),
-                          child: const Text("Overview"),
-                        ),
-                        ElevatedButton(
-                          onPressed: Friendship,
-                          style: ElevatedButton.styleFrom(
-                              shape: const RoundedRectangleBorder(
-                                  borderRadius:
-                                      BorderRadius.all(Radius.circular(20)))),
-                          child: const Text("Friendship"),
-                        ),
-                        ElevatedButton(
-                          onPressed: Parenthood,
-                          style: ElevatedButton.styleFrom(
-                              shape: const RoundedRectangleBorder(
-                                  borderRadius:
-                                      BorderRadius.all(Radius.circular(20)))),
-                          child: const Text("Parenthood"),
-                        ),
-                        ElevatedButton(
-                          onPressed: strength,
-                          style: ElevatedButton.styleFrom(
-                              shape: const RoundedRectangleBorder(
-                                  borderRadius:
-                                      BorderRadius.all(Radius.circular(20)))),
-                          child: const Text("Strength"),
-                        ),
-                        ElevatedButton(
-                          onPressed: weakness,
-                          style: ElevatedButton.styleFrom(
-                              shape: const RoundedRectangleBorder(
-                                  borderRadius:
-                                      BorderRadius.all(Radius.circular(20)))),
-                          child: const Text("Weakness"),
-                        ),
-                        ElevatedButton(
-                          onPressed: Relation,
-                          style: ElevatedButton.styleFrom(
-                              shape: const RoundedRectangleBorder(
-                                  borderRadius:
-                                      BorderRadius.all(Radius.circular(20)))),
-                          child: const Text("Relationship"),
-                        ),
-                      ],
-                    ),
+                  child: Wrap(
+                    spacing: 10,
+                    alignment: WrapAlignment.spaceBetween,
+                    children: [
+                      ElevatedButton(
+                        onPressed: overview,
+                        style: ElevatedButton.styleFrom(
+                            shape: const RoundedRectangleBorder(
+                                borderRadius:
+                                BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Overview"),
+                      ),
+                      ElevatedButton(
+                        onPressed: Friendship,
+                        style: ElevatedButton.styleFrom(
+                            shape: const RoundedRectangleBorder(
+                                borderRadius:
+                                BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Friendship"),
+                      ),
+                      ElevatedButton(
+                        onPressed: Parenthood,
+                        style: ElevatedButton.styleFrom(
+                            shape: const RoundedRectangleBorder(
+                                borderRadius:
+                                BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Parenthood"),
+                      ),
+                      ElevatedButton(
+                        onPressed: strength,
+                        style: ElevatedButton.styleFrom(
+                            shape: const RoundedRectangleBorder(
+                                borderRadius:
+                                BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Strength"),
+                      ),
+                      ElevatedButton(
+                        onPressed: weakness,
+                        style: ElevatedButton.styleFrom(
+                            shape: const RoundedRectangleBorder(
+                                borderRadius:
+                                BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Weakness"),
+                      ),
+                      ElevatedButton(
+                        onPressed: Relation,
+                        style: ElevatedButton.styleFrom(
+                            shape: const RoundedRectangleBorder(
+                                borderRadius:
+                                BorderRadius.all(Radius.circular(20)))),
+                        child: const Text("Relationship"),
+                      ),
+                    ],
                   )),
               Container(
                   margin:
@@ -399,7 +398,7 @@ class _INTPState extends State<INTP> {
       "They value open communication, honesty, and respect for individuality. "
       "However, they may struggle to express affection openly and may need to consciously work on understanding and validating their children's emotional needs.";
 
-  String relation = "Key Points for INTP Relationships:"
+  String relation = "INTP Relationships:"
       "\n\nOpen communication: Express emotions constructively and actively listen to your partner's needs."
       "\n\nEmotional understanding: Make an effort to connect with your partner on an emotional level and show appreciation for their feelings."
       "\n\nBalancing logic and emotions: While valuing intellectual connection, embrace emotional intimacy for a fulfilling relationship."
@@ -662,7 +661,7 @@ class _ENTJState extends State<ENTJ> {
   String parent_text = "ENTJ parents are demanding but supportive. "
       "\n\nThey set high standards for their children and expect them to work hard. They are also very involved in their children's lives and are always looking for ways to help them succeed.";
 
-  String relation = "Key Points for ENTJ Relationships:"
+  String relation = "ENTJ Relationships:"
       "\n\nEmotional understanding: Make an effort to connect with your partner on an emotional level and be receptive to their feelings."
       "\n\nFlexibility and compromise: Be willing to consider other perspectives and adapt to different preferences without sacrificing your core values."
       "\n\nHealthy communication: Express your thoughts and needs assertively but respectfully, actively listen to your partner, and work through conflicts constructively."
@@ -928,7 +927,7 @@ class _ENTPState extends State<ENTP> {
       "They are also very involved in their children's lives and are always looking for ways to help them succeed.";
 
   String relation =
-      "Key Points for ENTP Relationships:"
+      "ENTP Relationships:"
       "\n\nEmotional understanding: Make an effort to connect with your partner on an emotional level and be receptive to their feelings."
       "\n\nCommitment and follow-through: While enjoying novelty, commit to your partner and follow through on responsibilities to build trust and stability."
       "\n\nHealthy communication: Express your thoughts and needs openly and honestly, but be mindful of your partner's feelings and communication style."
@@ -1196,7 +1195,7 @@ class _INFJState extends State<INFJ> {
       "with providing space for exploration and independence.";
 
   String relation =
-      "Key Points for INFJ Relationships:"
+      "INFJ Relationships:"
       "\n\nHealthy communication: Express your thoughts and needs openly and honestly, while being mindful of your partner's feelings and communication style."
       "\n\nBalancing idealism and practicality: While pursuing your values, don't neglect practical details and responsibilities within the relationship."
       "\n\nSetting boundaries: Learn to say no and prioritize your own needs while maintaining healthy connections with your partner."
@@ -1463,7 +1462,7 @@ class _INFPState extends State<INFP> {
       "balance with providing space for exploration and independence.";
 
   String relation =
-      "Key Points for INFP Relationships:"
+      "INFP Relationships:"
       "\n\nHealthy communication: Express your thoughts and feelings openly and honestly, while being mindful of your partner's communication style."
       "\n\nBalancing idealism and practicality: While pursuing your values and dreams, don't neglect practical aspects of life and shared responsibilities."
       "\n\nSetting boundaries: Learn to say no and prioritize your own needs while maintaining healthy connections with your partner."
@@ -1730,7 +1729,7 @@ class _ENFJState extends State<ENFJ> {
       "perfectionism require conscious effort to balance with providing space for exploration and independence.";
 
   String relation =
-      "Key Points for ENFJ Relationships:"
+      "ENFJ Relationships:"
       "\n\nHealthy communication: Express your thoughts and needs openly and honestly, while being mindful of your partner's feelings and communication style."
       "\n\nBalancing inspiration and practicality: While motivating others, don't neglect practical details and responsibilities within the relationship."
       "\n\nRespecting boundaries: Give your partner space for individuality and autonomy while fostering healthy connections."
@@ -1998,7 +1997,7 @@ class _ENFPState extends State<ENFP> {
       "perfectionism require conscious effort to balance with providing space for exploration and independence.";
 
   String relation =
-      "Key Points for ENFP Relationships:"
+      "ENFP Relationships:"
       "\n\nHealthy communication: Express your thoughts and feelings openly and honestly, while being mindful of your partner's communication style and emotional needs."
       "\n\nBalancing idealism and practicality: While pursuing your dreams, don't neglect practical aspects of life and shared responsibilities."
       "\n\nFinding emotional balance: Share your emotions openly and constructively, but also learn to manage your own emotional intensity for a healthy relationship."
@@ -2266,7 +2265,7 @@ class _ISTJState extends State<ISTJ> {
       "They encourage independence, self-discipline, and a strong work ethic in their children.";
 
   String relation =
-      "Key Points for ISTJ Relationships:"
+      "ISTJ Relationships:"
       "\n\nHealthy communication: Express your thoughts and needs clearly and directly, while also being mindful of your partner's communication style and emotional needs."
       "\n\nBalancing practicality and emotional expression: While valuing stability and planning, also prioritize connecting with your partner on an emotional level and express your feelings constructively."
       "\n\nEmbracing flexibility: Be open to new ideas and experiences while maintaining your core values, finding a balance with your partner's needs for variety."
@@ -2534,7 +2533,7 @@ class _ISFJState extends State<ISFJ> {
       "and a strong work ethic.";
 
   String relation =
-      "Key Points for ISFJ Relationships:"
+      "ISFJ Relationships:"
       "\n\nHealthy communication: Express your thoughts and feelings openly and honestly, while also being mindful of your partner's communication style and emotional needs."
       "\n\nBalancing practicality and emotional expression: While valuing stability and responsibility, prioritize connecting with your partner on an emotional level and express your feelings constructively."
       "\n\nSetting boundaries: Learn to say no and prioritize your own needs while maintaining healthy connections with your partner."
@@ -2771,52 +2770,53 @@ class ESTJ extends StatefulWidget {
 class _ESTJState extends State<ESTJ> {
   String headline = "Overview";
   String overview_body =
-      "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
-      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
-      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
-      "conversations to small talk and often find themselves lost in thought.";
+      "ESTJs, also known as the Executives or Guardians, are individuals known for "
+      "their dependability, efficiency, and dedication to structure and organization. "
+      "They value facts, data, and clear procedures, approaching life with a logical and decisive nature.";
 
   String strength_text =
-      "Intellectual Brilliance: INTPs have a remarkable capacity for logical reasoning, pattern recognition, and problem-solving. They are often drawn to science, mathematics, philosophy, and other fields that require analytical thinking."
-      "\n\nCreative Problem-Solvers: Their unconventional approach and ability to see things from multiple angles allow them to generate innovative solutions to challenging problems."
-      "\n\nIndependent Thinkers: INTPs are not easily swayed by popular opinion or authority. They question everything, seeking to form their own logical conclusions based on evidence and reason."
-      "\n\nAdaptable Learners: They are eager to learn new things and continuously expand their knowledge base. Their curiosity and open-mindedness make them adaptable to change and new information."
-      "\n\nHonest and Direct: INTPs value truth and authenticity above social niceties. They are straightforward in their communication, often preferring blunt honesty over sugarcoating.";
+      "Reliable and Dependable: ESTJs are people of their word. They follow through on commitments and can be counted on in any situation. Their consistency and dependability make them valuable assets in any team or community."
+      "\n\nLogical and Analytical: ESTJs excel at solving problems with a step-by-step approach, carefully considering all aspects before making informed decisions based on logic and evidence. Their focus on rationality avoids emotional biases."
+      "\n\nOrganized and Efficient: ESTJs thrive on order and structure. They excel at planning, managing time effectively, and streamlining processes to ensure things run smoothly and efficiently."
+      "\n\nResults-Oriented: ESTJs are driven by achieving goals and seeing things through to completion. They set clear objectives and work tirelessly to achieve them, prioritizing practical solutions and concrete outcomes."
+      "\n\nDirect and Honest: ESTJs value honesty and transparency. They communicate directly and clearly, sometimes seeming blunt, but their straightforwardness ensures everyone understands their expectations and intentions.";
 
   String weakness_text =
-      "Social Awkwardness: INTPs can struggle with social interactions and small talk, preferring solitude and intellectual pursuits. They may come across as aloof or detached in social settings."
-      "\n\nOverthinking and Procrastination: Their tendency to analyze everything from every angle can lead to overthinking, indecisiveness, and procrastination. They may struggle to make decisions or take action until they have considered all possible outcomes."
-      "\n\nInsensitivity: Their focus on logic and rationality can sometimes make them insensitive to others' feelings and emotions. They may unintentionally hurt others with their bluntness or lack of tact."
-      "\n\nDisregard for Rules and Routine: INTPs often chafe against rules and structures that they deem unnecessary or inefficient. They may resist authority and prefer to set their own schedules and priorities."
-      "\n\nDifficulty Expressing Emotions: While they experience deep emotions, INTPs often struggle to articulate and express them outwardly. This can lead to misunderstandings in relationships and difficulty connecting with others on an emotional level.";
+      "Inflexible and Resistant to Change: ESTJs value stability and established systems. Sudden changes can disrupt their routines and comfort zones, making them hesitant to adapt. They may require time and understanding to adjust to new situations."
+      "\n\nOverly Critical and Blunt: Their direct communication style can sometimes come across as harsh or critical, even unintentionally. While truthful, their assessments may hurt others' feelings, especially those seeking emotional support or validation."
+      "\n\nEmotionally Reserved: Expressing emotions openly isn't ESTJs' forte. They may struggle with complex emotional situations and expressing their own feelings, potentially creating challenges in connecting with others on a deeper level."
+      "\n\nWorkaholic Tendencies: Their dedication to achieving goals and efficiency can lead to neglecting personal needs and social interactions. Balancing work and personal life is crucial for their well-being."
+      "\n\nDifficulty Delegating: Trusting their own abilities, delegating tasks can be challenging for ESTJs. They prefer maintaining control, potentially hindering collaboration and preventing others from learning and growing.";
 
   String friend_text =
-      "INTPs seek authenticity and intellectual stimulation in their friendships. "
-      "\n\nThey value friends who share their interests, challenge their thinking, and respect their need for independence. "
-      "They gravitate towards deep, meaningful conversations over superficial social activities. While they may have a small circle of close friends, they are fiercely loyal and supportive within it.";
+      "ESTJs value genuine connections and intellectual conversations. "
+      "\n\nThey seek friends who are reliable, honest, and share their appreciation for logic and order. "
+      "While their social circles may be smaller, their friendships are usually strong and built on mutual trust and respect.";
 
   String parent_text =
-      "INTP parents prioritize fostering their children's intellectual curiosity, critical thinking skills, and independence. "
-      "\n\nThey create a stimulating environment for learning and encourage their children to explore their interests. "
-      "They value open communication, honesty, and respect for individuality. "
-      "However, they may struggle to express affection openly and may need to consciously work on understanding and validating their children's emotional needs.";
+      "ESTJ parents provide their children with clear rules, routines, and expectations. "
+      "\n\nThey emphasize responsibility, hard work, academic achievement, and practical skills. "
+      "While they offer love and support, open emotional expression may be a challenge. "
+      "They encourage their children to be independent, decisive, and goal-oriented.";
 
   String relation =
-      "INTPs can be engaging and loyal partners who offer intellectual stimulation and a unique perspective. However, their emotional reserve and dislike for routine can create challenges. Open communication, understanding their personality preferences, and a willingness to compromise are essential for building strong and lasting connections with INTPs."
-      "\n\nStrengths:"
-      "\nIntellectual Companionship: They value intelligent conversations and enjoy stimulating discussions with partners who can engage in deep thinking and explore complex ideas."
-      "\nLoyalty and Supportive Nature: Once they commit to a relationship, INTPs are loyal and supportive partners. They offer intellectual stimulation, encouragement, and unwavering support for their loved ones' goals."
-      "\nRespect for Individuality: Their independent nature translates into respect for their partner's autonomy and individuality. They appreciate and encourage individuality within the relationship."
-      "\n\nChallenges:"
-      "\nEmotional Vulnerability and Expression: Their reserved nature can make it difficult for partners to understand their emotions and needs. Open communication and learning to express feelings constructively are crucial."
-      "\nPractical Responsibilities: Their dislike for mundane tasks can lead to neglecting shared responsibilities. Finding a balance between intellectual pursuits and practical needs is important."
-      "\nConflict Resolution: Their avoidance of conflict can lead to unresolved issues or emotional distance. Learning healthy communication and conflict resolution skills can strengthen their relationships.";
+      "ESTJ Relationships:"
+      "\n\nHealthy communication: Express your thoughts and needs clearly and directly, while also being mindful of your partner's communication style and emotional needs."
+      "\n\nBalancing efficiency and empathy: While valuing productivity and achieving goals, prioritize understanding and considering your partner's feelings and perspectives."
+      "\n\nEmbracing flexibility: Be open to new ideas and approaches while maintaining your core values, finding a balance with your partner's needs."
+      "\n\nRespecting individual differences: Appreciate your partner's unique personality and perspective, fostering a supportive and understanding environment."
+      "\n\n\nCompatible Types:"
+      "\n\nISTJ: Share decisiveness, practicality, and a focus on achieving goals. Both value efficiency, structure, and building a secure foundation. However, both might need to work on expressing emotions openly and addressing conflict constructively."
+      "\n\nENTJ: Share strategic thinking, ambition, and a drive to achieve goals. Both enjoy leadership roles, clear communication, and making a positive impact. However, managing potential power dynamics and respecting individual approaches are crucial."
+      "\n\nESTP: Share direct communication, action-oriented nature, and a love for challenges. Both enjoy problem-solving, getting things done, and having fun. However, ESTJs might need to adjust their seriousness and embrace ESTPs' spontaneity at times."
+      "\n\nESFJ: Offer warmth, empathy, and a focus on creating a harmonious environment. ESFJs bring social ease, attention to detail, and people skills, balancing ESTJs' directness and focus on efficiency. However, ESTJs might need to be mindful of ESFJs' emotional needs and express appreciation differently."
+      "\n\nINTJ: Offer strategic thinking, long-term vision, and a focus on achieving goals. INTJs bring intellectual depth, analytical thinking, and a different perspective, potentially challenging ESTJs and encouraging deeper intellectual connection. However, both might need to work on emotional expression and navigating potential power dynamics."
+      "\n\nISFP: Offer creativity, emotional sensitivity, and a focus on enjoying the present moment. ISFPs bring authenticity, artistic expression, and appreciation for beauty, encouraging ESTJs to loosen up and connect with their emotional side. However, balancing practicality with emotional needs and communication styles is crucial.";
 
   String body_text =
-      "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
-      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
-      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
-      "conversations to small talk and often find themselves lost in thought.";
+      "ESTJs, also known as the Executives or Guardians, are individuals known for "
+      "their dependability, efficiency, and dedication to structure and organization. "
+      "They value facts, data, and clear procedures, approaching life with a logical and decisive nature.";
 
   void overview() {
     setState(() {
@@ -2862,29 +2862,12 @@ class _ESTJState extends State<ESTJ> {
 
   @override
   Widget build(BuildContext context) {
-    String body_text =
-        "Entrepreneurs always have an impact on their immediate surroundings – "
-        "the best way to spot them at a party is to look for the whirling eddy of people flitting "
-        "about them as they move from group to group. Laughing and entertaining with a blunt and "
-        "earthy humor, Entrepreneur personalities love to be the center of attention. If an audience "
-        "member is asked to come on stage, Entrepreneurs volunteer – or volunteer a shy friend."
-        "\n\nTheory, abstract concepts and plodding discussions about global issues and their implications "
-        "don’t keep Entrepreneurs interested for long. Entrepreneurs keep their conversation energetic, "
-        "with a good dose of intelligence, but they like to talk about what is – or better yet, to just "
-        "go out and do it. Entrepreneurs leap before they look, fixing their mistakes as they go, "
-        "rather than sitting idle, preparing contingencies and escape clauses.";
-
-    List card = [
-      "ESFJ",
-      "Entertainer",
-      "Supportive and sociable, they thrive on nurturing relationships and creating a harmonious environment."
-    ];
 
     Color bgColor = Colors.deepPurple;
 
     return Scaffold(
         appBar: AppBar(
-          title: const Text("ESFJ"),
+          title: const Text("ESTJ"),
         ),
         body: SingleChildScrollView(
           child: Column(
@@ -2892,7 +2875,7 @@ class _ESTJState extends State<ESTJ> {
             children: [
               Material(
                 child: Hero(
-                  tag: "ESFJ",
+                  tag: "ESTJ",
                   child: Center(
                     child: Container(
                       margin: const EdgeInsets.all(11),
@@ -2922,7 +2905,7 @@ class _ESTJState extends State<ESTJ> {
                             margin: const EdgeInsets.only(bottom: 10),
                             height: 60,
                             child: Text(
-                              card[1],
+                              body["ESTJ"][0],
                               style: const TextStyle(
                                 fontFamily: "ProtestRiot",
                                 fontSize: 45,
@@ -2931,9 +2914,9 @@ class _ESTJState extends State<ESTJ> {
                               ),
                             ),
                           ),
-                          Text(
-                            ("(${card[0]})"),
-                            style: const TextStyle(
+                          const Text(
+                            ("(ESTJ)"),
+                            style: TextStyle(
                               fontFamily: "Roboto",
                               fontWeight: FontWeight.bold,
                               fontSize: 30,
@@ -3053,52 +3036,56 @@ class ESFJ extends StatefulWidget {
 class _ESFJState extends State<ESFJ> {
   String headline = "Overview";
   String overview_body =
-      "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
-      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
-      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
-      "conversations to small talk and often find themselves lost in thought.";
+      "ESFJs, also known as the Consuls or Providers, are known for their "
+      "warmth, empathy, and unwavering dedication to helping others. "
+      "They value harmony, cooperation, and maintaining strong "
+      "social connections, approaching life with a focus on emotions and interpersonal relationships.";
 
   String strength_text =
-      "Intellectual Brilliance: INTPs have a remarkable capacity for logical reasoning, pattern recognition, and problem-solving. They are often drawn to science, mathematics, philosophy, and other fields that require analytical thinking."
-      "\n\nCreative Problem-Solvers: Their unconventional approach and ability to see things from multiple angles allow them to generate innovative solutions to challenging problems."
-      "\n\nIndependent Thinkers: INTPs are not easily swayed by popular opinion or authority. They question everything, seeking to form their own logical conclusions based on evidence and reason."
-      "\n\nAdaptable Learners: They are eager to learn new things and continuously expand their knowledge base. Their curiosity and open-mindedness make them adaptable to change and new information."
-      "\n\nHonest and Direct: INTPs value truth and authenticity above social niceties. They are straightforward in their communication, often preferring blunt honesty over sugarcoating.";
+      "Caring and Compassionate: ESFJs genuinely care about the well-being of others. They are empathetic and understanding, offering support and encouragement to those in need. Their genuine concern fosters strong bonds and positive relationships."
+      "\n\nOrganized and Efficient: ESFJs thrive on creating a comfortable and well-organized environment. They excel at planning, managing tasks, and ensuring everything runs smoothly, often prioritizing the needs of others alongside their own."
+      "\n\nLoyal and Committed: ESFJs form strong bonds with those they trust and value. They are fiercely loyal to their friends, family, and colleagues, demonstrating commitment through practical actions, emotional support, and unwavering dedication."
+      "\n\nSocial and Outgoing: ESFJs gain energy from social interaction. They enjoy connecting with others, participating in activities, and building strong relationships, often serving as the glue that holds groups together."
+      "\n\nGood Communicators: ESFJs excel at understanding and responding to others' emotions. They communicate effectively, both verbally and nonverbally, creating a warm and inviting atmosphere.";
 
   String weakness_text =
-      "Social Awkwardness: INTPs can struggle with social interactions and small talk, preferring solitude and intellectual pursuits. They may come across as aloof or detached in social settings."
-      "\n\nOverthinking and Procrastination: Their tendency to analyze everything from every angle can lead to overthinking, indecisiveness, and procrastination. They may struggle to make decisions or take action until they have considered all possible outcomes."
-      "\n\nInsensitivity: Their focus on logic and rationality can sometimes make them insensitive to others' feelings and emotions. They may unintentionally hurt others with their bluntness or lack of tact."
-      "\n\nDisregard for Rules and Routine: INTPs often chafe against rules and structures that they deem unnecessary or inefficient. They may resist authority and prefer to set their own schedules and priorities."
-      "\n\nDifficulty Expressing Emotions: While they experience deep emotions, INTPs often struggle to articulate and express them outwardly. This can lead to misunderstandings in relationships and difficulty connecting with others on an emotional level.";
+      "People-Pleasing Tendencies: ESFJ's desire for harmony can lead them to prioritize others' needs over their own, neglecting their personal needs and desires to please others. Setting healthy boundaries is crucial for their well-being."
+      "\n\nOverly Sensitive and Easily Hurt: Their empathy can make them susceptible to taking things personally and feeling hurt by criticism or negativity, even if unintended. Developing emotional resilience can be helpful."
+      "\n\nDifficulty Saying No: Their desire to help and please others can make it challenging to say no to requests, even when they feel overwhelmed or overloaded. Learning to prioritize and set boundaries is essential."
+      "\n\nEmotionally Reserved in Their Own Needs: While open to others' emotions, ESFJs may struggle expressing their own deeper feelings and vulnerabilities, potentially hindering deeper connections. Sharing their inner world can be beneficial."
+      "\n\nConflict-Avoidant: Their desire for harmony can lead them to avoid conflict or confrontation, even when necessary. Learning to address issues constructively can be helpful.";
 
   String friend_text =
-      "INTPs seek authenticity and intellectual stimulation in their friendships. "
-      "\n\nThey value friends who share their interests, challenge their thinking, and respect their need for independence. "
-      "They gravitate towards deep, meaningful conversations over superficial social activities. While they may have a small circle of close friends, they are fiercely loyal and supportive within it.";
+      "ESFJs value genuine connections and meaningful conversations. "
+      "\n\nThey seek friends who are honest, supportive, and share their appreciation for emotional connection "
+      "and building strong relationships. Their friendships are typically warm, supportive, and "
+      "built on mutual trust and understanding.";
 
   String parent_text =
-      "INTP parents prioritize fostering their children's intellectual curiosity, critical thinking skills, and independence. "
-      "\n\nThey create a stimulating environment for learning and encourage their children to explore their interests. "
-      "They value open communication, honesty, and respect for individuality. "
-      "However, they may struggle to express affection openly and may need to consciously work on understanding and validating their children's emotional needs.";
+      "ESFJ parents provide their children with a loving and supportive environment. "
+      "\n\nThey emphasize responsibility, kindness, and building strong social skills. "
+      "While they offer clear guidance, emotional expression may be more readily available than with other personality types. "
+      "They encourage their children to be empathetic, compassionate, and value strong social connections.";
 
   String relation =
-      "INTPs can be engaging and loyal partners who offer intellectual stimulation and a unique perspective. However, their emotional reserve and dislike for routine can create challenges. Open communication, understanding their personality preferences, and a willingness to compromise are essential for building strong and lasting connections with INTPs."
-      "\n\nStrengths:"
-      "\nIntellectual Companionship: They value intelligent conversations and enjoy stimulating discussions with partners who can engage in deep thinking and explore complex ideas."
-      "\nLoyalty and Supportive Nature: Once they commit to a relationship, INTPs are loyal and supportive partners. They offer intellectual stimulation, encouragement, and unwavering support for their loved ones' goals."
-      "\nRespect for Individuality: Their independent nature translates into respect for their partner's autonomy and individuality. They appreciate and encourage individuality within the relationship."
-      "\n\nChallenges:"
-      "\nEmotional Vulnerability and Expression: Their reserved nature can make it difficult for partners to understand their emotions and needs. Open communication and learning to express feelings constructively are crucial."
-      "\nPractical Responsibilities: Their dislike for mundane tasks can lead to neglecting shared responsibilities. Finding a balance between intellectual pursuits and practical needs is important."
-      "\nConflict Resolution: Their avoidance of conflict can lead to unresolved issues or emotional distance. Learning healthy communication and conflict resolution skills can strengthen their relationships.";
+      "ESFJ Relationships:"
+      "\n\nHealthy communication: Express your thoughts and feelings openly and honestly, while also being mindful of your partner's communication style and emotional needs."
+      "\n\nBalancing practicality and emotional expression: While valuing harmony and creating a comfortable environment, prioritize connecting with your partner on a deeper emotional level and express your feelings constructively."
+      "\n\nSetting boundaries: Learn to say no and prioritize your own needs while maintaining healthy connections with your partner."
+      "\n\nEmbracing growth and individual differences: Encourage yourself and your partner to explore personal growth while appreciating each other's unique personalities and perspectives."
+      "\n\nCompatible Types:"
+      "\n\nISFJ: Share warmth, empathy, and a desire to create a harmonious environment. Both value caring for others, building strong connections, and maintaining traditions. However, both might need to work on expressing emotions openly and addressing conflict directly."
+      "\n\nISTJ: Offer practicality, reliability, and a focus on stability. ISTJs bring structure, organization, and grounding energy, balancing ESFJs' emotional nature and desire for connection. However, ESFJs might need reassurance and understanding from ISTJs, who prioritize practicality over overt emotional expression."
+      "\n\nESFP: Share an energetic and social nature, along with a love for fun and enjoyment. Both value connecting with others, creating positive experiences, and expressing affection openly. However, ESFPs might crave more spontaneity and excitement than ESFJs, requiring flexibility and compromise."
+      "\n\nESTJ: Offer decisiveness, direct communication, and a focus on getting things done. ESTJs bring leadership qualities and an action-oriented approach, balancing ESFJs' desire for harmony and social connection. However, managing potential power dynamics and respecting communication styles are important."
+      "\n\nENFJ: Share charisma, warmth, and a desire to inspire others. ENFJs bring extraverted energy and visionary ideas, encouraging ESFJs to step outside their comfort zone and explore new possibilities. However, ESFJs might need to communicate their own needs clearly and set boundaries while maintaining the connection."
+      "\n\nINFP: Offer idealism, creativity, and a focus on personal values. INFPs bring a different perspective and encourage ESFJs to connect with their own inner world and values. However, ESFJs might need to manage potential conflict avoidance and ensure their practical needs are met.";
 
   String body_text =
-      "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
-      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
-      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
-      "conversations to small talk and often find themselves lost in thought.";
+      "ESFJs, also known as the Consuls or Providers, are known for their "
+      "warmth, empathy, and unwavering dedication to helping others. "
+      "They value harmony, cooperation, and maintaining strong "
+      "social connections, approaching life with a focus on emotions and interpersonal relationships.";
 
   void overview() {
     setState(() {
@@ -3144,23 +3131,6 @@ class _ESFJState extends State<ESFJ> {
 
   @override
   Widget build(BuildContext context) {
-    String body_text =
-        "Entrepreneurs always have an impact on their immediate surroundings – "
-        "the best way to spot them at a party is to look for the whirling eddy of people flitting "
-        "about them as they move from group to group. Laughing and entertaining with a blunt and "
-        "earthy humor, Entrepreneur personalities love to be the center of attention. If an audience "
-        "member is asked to come on stage, Entrepreneurs volunteer – or volunteer a shy friend."
-        "\n\nTheory, abstract concepts and plodding discussions about global issues and their implications "
-        "don’t keep Entrepreneurs interested for long. Entrepreneurs keep their conversation energetic, "
-        "with a good dose of intelligence, but they like to talk about what is – or better yet, to just "
-        "go out and do it. Entrepreneurs leap before they look, fixing their mistakes as they go, "
-        "rather than sitting idle, preparing contingencies and escape clauses.";
-
-    List card = [
-      "ESFJ",
-      "Entertainer",
-      "Supportive and sociable, they thrive on nurturing relationships and creating a harmonious environment."
-    ];
 
     Color bgColor = Colors.deepPurple;
 
@@ -3204,7 +3174,7 @@ class _ESFJState extends State<ESFJ> {
                             margin: const EdgeInsets.only(bottom: 10),
                             height: 60,
                             child: Text(
-                              card[1],
+                              body["ESFJ"][0],
                               style: const TextStyle(
                                 fontFamily: "ProtestRiot",
                                 fontSize: 45,
@@ -3214,7 +3184,7 @@ class _ESFJState extends State<ESFJ> {
                             ),
                           ),
                           Text(
-                            ("(${card[0]})"),
+                            ("(ESFJ)"),
                             style: const TextStyle(
                               fontFamily: "Roboto",
                               fontWeight: FontWeight.bold,
@@ -3335,52 +3305,56 @@ class ISTP extends StatefulWidget {
 class _ISTPState extends State<ISTP> {
   String headline = "Overview";
   String overview_body =
-      "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
-      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
-      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
-      "conversations to small talk and often find themselves lost in thought.";
+      "ISTPs are a complex blend of logic, practicality, and a thirst for hands-on experience. "
+      "They navigate the world with quiet confidence, seeking to understand, solve, and "
+      "master the intricacies of their surroundings. While their introverted nature might make them seem reserved at first, "
+      "their genuine connections and problem-solving prowess make them valuable assets to any team or relationship.";
 
   String strength_text =
-      "Intellectual Brilliance: INTPs have a remarkable capacity for logical reasoning, pattern recognition, and problem-solving. They are often drawn to science, mathematics, philosophy, and other fields that require analytical thinking."
-      "\n\nCreative Problem-Solvers: Their unconventional approach and ability to see things from multiple angles allow them to generate innovative solutions to challenging problems."
-      "\n\nIndependent Thinkers: INTPs are not easily swayed by popular opinion or authority. They question everything, seeking to form their own logical conclusions based on evidence and reason."
-      "\n\nAdaptable Learners: They are eager to learn new things and continuously expand their knowledge base. Their curiosity and open-mindedness make them adaptable to change and new information."
-      "\n\nHonest and Direct: INTPs value truth and authenticity above social niceties. They are straightforward in their communication, often preferring blunt honesty over sugarcoating.";
+      "Independent and Self-Reliant: ISTPs thrive on autonomy and making their own decisions. They are comfortable forging their own path and rely on their internal compass to navigate diverse situations."
+      "\n\nLogical and Analytical: They possess a sharp mind and excel at solving problems with a step-by-step, objective approach. They dissect information efficiently and reach reasoned conclusions, prioritizing logic over emotions."
+      "\n\nResourceful and Adaptable: ISTPs are quick thinkers and resourceful individuals. They thrive in flexible environments and adapt readily to changing circumstances, finding creative solutions with whatever resources are available."
+      "\n\nHands-On and Skilled: Their desire for action translates into a love for working with their hands. They excel at building, fixing, and tinkering, often developing impressive practical skills and enjoying making things work."
+      "\n\nDirect and Honest: ISTPs value authenticity and clarity. They communicate directly and honestly, sometimes appearing blunt, but their straightforwardness ensures everyone understands their thoughts and intentions.";
 
   String weakness_text =
-      "Social Awkwardness: INTPs can struggle with social interactions and small talk, preferring solitude and intellectual pursuits. They may come across as aloof or detached in social settings."
-      "\n\nOverthinking and Procrastination: Their tendency to analyze everything from every angle can lead to overthinking, indecisiveness, and procrastination. They may struggle to make decisions or take action until they have considered all possible outcomes."
-      "\n\nInsensitivity: Their focus on logic and rationality can sometimes make them insensitive to others' feelings and emotions. They may unintentionally hurt others with their bluntness or lack of tact."
-      "\n\nDisregard for Rules and Routine: INTPs often chafe against rules and structures that they deem unnecessary or inefficient. They may resist authority and prefer to set their own schedules and priorities."
-      "\n\nDifficulty Expressing Emotions: While they experience deep emotions, INTPs often struggle to articulate and express them outwardly. This can lead to misunderstandings in relationships and difficulty connecting with others on an emotional level.";
+      "Emotionally Reserved: Expressing emotions openly isn't ISTPs' forte. They may struggle with complex emotional situations and expressing their own feelings, potentially creating difficulties connecting with others on a deeper level."
+      "\n\nImpatient and Restless: Their preference for action and tangible results can make them impatient with theoretical discussions or slow processes. They might find activities lacking immediate challenge or practical application boring."
+      "\n\nDislike for Routine: While adaptable, ISTPs dislike rigid routines and predictability. They find repetitive tasks monotonous and seek new challenges and experiences to keep them engaged."
+      "\n\nDifficulty Prioritizing: Their diverse interests and desire for novelty can make prioritizing tasks challenging. They might struggle with focusing on long-term goals if they don't find them immediately stimulating."
+      "\n\nConflict-Avoidant: While honest, ISTPs typically dislike engaging in emotional confrontations. They might avoid expressing disagreement or addressing uncomfortable situations directly.";
 
   String friend_text =
-      "INTPs seek authenticity and intellectual stimulation in their friendships. "
-      "\n\nThey value friends who share their interests, challenge their thinking, and respect their need for independence. "
-      "They gravitate towards deep, meaningful conversations over superficial social activities. While they may have a small circle of close friends, they are fiercely loyal and supportive within it.";
+      "ISTPs value genuine connections and intellectually stimulating conversations. "
+      "\n\nThey seek friends who are honest, independent, and share their appreciation for "
+      "hands-on activities and practical solutions. While their social circles may be smaller, "
+      "their friendships are usually strong and built on mutual trust and respect for each other's individuality.";
 
   String parent_text =
-      "INTP parents prioritize fostering their children's intellectual curiosity, critical thinking skills, and independence. "
-      "\n\nThey create a stimulating environment for learning and encourage their children to explore their interests. "
-      "They value open communication, honesty, and respect for individuality. "
-      "However, they may struggle to express affection openly and may need to consciously work on understanding and validating their children's emotional needs.";
+      "ISTP parents encourage their children's curiosity and independent exploration. "
+      "\n\nThey emphasize self-reliance, critical thinking, and practical skills. "
+      "While they offer love and support, their emotional expression may be more subtle. "
+      "They encourage their children to be resourceful, adaptable, and embrace challenges with a hands-on approach.";
 
   String relation =
-      "INTPs can be engaging and loyal partners who offer intellectual stimulation and a unique perspective. However, their emotional reserve and dislike for routine can create challenges. Open communication, understanding their personality preferences, and a willingness to compromise are essential for building strong and lasting connections with INTPs."
-      "\n\nStrengths:"
-      "\nIntellectual Companionship: They value intelligent conversations and enjoy stimulating discussions with partners who can engage in deep thinking and explore complex ideas."
-      "\nLoyalty and Supportive Nature: Once they commit to a relationship, INTPs are loyal and supportive partners. They offer intellectual stimulation, encouragement, and unwavering support for their loved ones' goals."
-      "\nRespect for Individuality: Their independent nature translates into respect for their partner's autonomy and individuality. They appreciate and encourage individuality within the relationship."
-      "\n\nChallenges:"
-      "\nEmotional Vulnerability and Expression: Their reserved nature can make it difficult for partners to understand their emotions and needs. Open communication and learning to express feelings constructively are crucial."
-      "\nPractical Responsibilities: Their dislike for mundane tasks can lead to neglecting shared responsibilities. Finding a balance between intellectual pursuits and practical needs is important."
-      "\nConflict Resolution: Their avoidance of conflict can lead to unresolved issues or emotional distance. Learning healthy communication and conflict resolution skills can strengthen their relationships.";
+      "ISTP relationships:"
+      "\n\nHealthy communication: Express your thoughts and needs clearly and directly, while also being mindful of your partner's communication style and emotional needs."
+      "\n\nBalancing logic and emotions: While valuing logic and practicality, prioritize connecting with your partner on an emotional level and express your feelings constructively."
+      "\n\nEmbracing spontaneity and flexibility: Be open to new experiences and adjust your plans when needed, finding a balance with your partner's preferences."
+      "\n\nRespecting individual differences: Appreciate your partner's unique personality and perspective, fostering a supportive and understanding environment."
+      "\n\n\nCompatible Types:"
+      "\n\nESTP: Share a love for action, problem-solving, and hands-on experiences. Both enjoy challenges, independence, and exploring new possibilities. However, both might need to work on expressing emotions openly and navigating conflict constructively."
+      "\n\nINTP: Share intellectual curiosity, analytical thinking, and a preference for logic over emotions. Both enjoy deep conversations, exploring complex ideas, and valuing individual freedom. However, both might need to develop emotional expression and bridge the gap between ISTPs' action-oriented nature and INTPs' theoretical focus."
+      "\n\nISFP: Balance ISTPs' pragmatism with their artistic expression and emotional sensitivity. ISFPs offer authenticity, creativity, and a focus on enjoying the present moment, encouraging ISTPs to connect with their emotions and appreciate artistic beauty. However, ISTPs might need to adjust their directness and embrace ISFPs' need for emotional understanding."
+      "\n\nESFP: Offer spontaneity, social energy, and a love for fun. ESFPs bring out ISTPs' playful side, encouraging them to enjoy the moment and connect with others. However, balancing individual needs and communication styles is crucial."
+      "\n\nENTJ: Share strategic thinking, decisiveness, and a drive to achieve goals. ENTJs bring structure and focus, potentially complementing ISTPs' flexibility and problem-solving skills. However, managing potential power dynamics and respecting communication styles are important."
+      "\n\nINFJ: Offer intuition, emotional depth, and a desire for meaningful connections. INFJs bring a different perspective and can encourage ISTPs to connect with their emotions and explore their inner world. However, both might need to work on expressing their needs directly and navigating potential conflict.";
 
   String body_text =
-      "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
-      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
-      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
-      "conversations to small talk and often find themselves lost in thought.";
+      "ISTPs are a complex blend of logic, practicality, and a thirst for hands-on experience. "
+      "They navigate the world with quiet confidence, seeking to understand, solve, and "
+      "master the intricacies of their surroundings. While their introverted nature might make them seem reserved at first, "
+      "their genuine connections and problem-solving prowess make them valuable assets to any team or relationship.";
 
   void overview() {
     setState(() {
@@ -3426,29 +3400,13 @@ class _ISTPState extends State<ISTP> {
 
   @override
   Widget build(BuildContext context) {
-    String body_text =
-        "Entrepreneurs always have an impact on their immediate surroundings – "
-        "the best way to spot them at a party is to look for the whirling eddy of people flitting "
-        "about them as they move from group to group. Laughing and entertaining with a blunt and "
-        "earthy humor, Entrepreneur personalities love to be the center of attention. If an audience "
-        "member is asked to come on stage, Entrepreneurs volunteer – or volunteer a shy friend."
-        "\n\nTheory, abstract concepts and plodding discussions about global issues and their implications "
-        "don’t keep Entrepreneurs interested for long. Entrepreneurs keep their conversation energetic, "
-        "with a good dose of intelligence, but they like to talk about what is – or better yet, to just "
-        "go out and do it. Entrepreneurs leap before they look, fixing their mistakes as they go, "
-        "rather than sitting idle, preparing contingencies and escape clauses.";
 
-    List card = [
-      "ESFJ",
-      "Entertainer",
-      "Supportive and sociable, they thrive on nurturing relationships and creating a harmonious environment."
-    ];
 
     Color bgColor = Colors.deepPurple;
 
     return Scaffold(
         appBar: AppBar(
-          title: const Text("ESFJ"),
+          title: const Text("ISTP"),
         ),
         body: SingleChildScrollView(
           child: Column(
@@ -3456,7 +3414,7 @@ class _ISTPState extends State<ISTP> {
             children: [
               Material(
                 child: Hero(
-                  tag: "ESFJ",
+                  tag: "ISTP",
                   child: Center(
                     child: Container(
                       margin: const EdgeInsets.all(11),
@@ -3486,7 +3444,7 @@ class _ISTPState extends State<ISTP> {
                             margin: const EdgeInsets.only(bottom: 10),
                             height: 60,
                             child: Text(
-                              card[1],
+                              body["ISTP"][0],
                               style: const TextStyle(
                                 fontFamily: "ProtestRiot",
                                 fontSize: 45,
@@ -3495,9 +3453,9 @@ class _ISTPState extends State<ISTP> {
                               ),
                             ),
                           ),
-                          Text(
-                            ("(${card[0]})"),
-                            style: const TextStyle(
+                          const Text(
+                            ("(ISTP)"),
+                            style: TextStyle(
                               fontFamily: "Roboto",
                               fontWeight: FontWeight.bold,
                               fontSize: 30,
@@ -3617,52 +3575,54 @@ class ISFP extends StatefulWidget {
 class _ISFPState extends State<ISFP> {
   String headline = "Overview";
   String overview_body =
-      "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
-      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
-      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
-      "conversations to small talk and often find themselves lost in thought.";
+      "ISFPs, also known as the Artists, are individuals known for their spontaneity, creativity, "
+      "and appreciation for beauty in the world around them. They value freedom, authenticity, "
+      "and living in the present moment, approaching life with a focus on sensory experiences and personal expression.";
 
   String strength_text =
-      "Intellectual Brilliance: INTPs have a remarkable capacity for logical reasoning, pattern recognition, and problem-solving. They are often drawn to science, mathematics, philosophy, and other fields that require analytical thinking."
-      "\n\nCreative Problem-Solvers: Their unconventional approach and ability to see things from multiple angles allow them to generate innovative solutions to challenging problems."
-      "\n\nIndependent Thinkers: INTPs are not easily swayed by popular opinion or authority. They question everything, seeking to form their own logical conclusions based on evidence and reason."
-      "\n\nAdaptable Learners: They are eager to learn new things and continuously expand their knowledge base. Their curiosity and open-mindedness make them adaptable to change and new information."
-      "\n\nHonest and Direct: INTPs value truth and authenticity above social niceties. They are straightforward in their communication, often preferring blunt honesty over sugarcoating.";
+      "Spontaneous and Open-Minded: ISFPs embrace new experiences and enjoy living in the moment. They are adaptable and flexible, readily embracing change and new perspectives."
+      "\n\nCreative and Artistic: ISFPs possess a natural talent for expressing themselves through art, music, or other creative outlets. They have a keen eye for aesthetics and find joy in crafting beauty in their surroundings."
+      "\n\nCaring and Compassionate: ISFPs genuinely care about the well-being of others. They are empathetic and understanding, offering support and encouragement to those in need."
+      "\n\nIndependent and Self-Reliant: ISFPs value their independence and making their own decisions. They are comfortable forging their own path and rely on their internal compass to navigate diverse situations."
+      "\n\nLoyal and Committed: ISFPs form strong bonds with those they trust and value. They are fiercely loyal to their friends, family, and colleagues, demonstrating commitment through practical actions and unwavering support.";
 
   String weakness_text =
-      "Social Awkwardness: INTPs can struggle with social interactions and small talk, preferring solitude and intellectual pursuits. They may come across as aloof or detached in social settings."
-      "\n\nOverthinking and Procrastination: Their tendency to analyze everything from every angle can lead to overthinking, indecisiveness, and procrastination. They may struggle to make decisions or take action until they have considered all possible outcomes."
-      "\n\nInsensitivity: Their focus on logic and rationality can sometimes make them insensitive to others' feelings and emotions. They may unintentionally hurt others with their bluntness or lack of tact."
-      "\n\nDisregard for Rules and Routine: INTPs often chafe against rules and structures that they deem unnecessary or inefficient. They may resist authority and prefer to set their own schedules and priorities."
-      "\n\nDifficulty Expressing Emotions: While they experience deep emotions, INTPs often struggle to articulate and express them outwardly. This can lead to misunderstandings in relationships and difficulty connecting with others on an emotional level.";
+      "Difficulty Planning for the Future: ISFPs' focus on the present can make it challenging for them to plan for the future. They may find long-term goals abstract and struggle with setting concrete plans."
+      "\n\nAvoidance of Conflict: ISFPs typically dislike engaging in emotional confrontations. They might avoid expressing disagreement or addressing uncomfortable situations directly."
+      "\n\nDislike for Routine: While adaptable, ISFPs dislike rigid routines and predictability. They find repetitive tasks monotonous and seek new challenges and experiences to keep them engaged."
+      "\n\nExpression of Emotions: ISFPs may struggle to express their emotions verbally, especially deeper feelings or vulnerabilities. This can hinder their ability to connect with others on an emotional level."
+      "\n\nDecision-Making: ISFPs may find it challenging to make decisions, especially when faced with multiple options or complex choices. They may weigh pros and cons excessively, seeking to avoid making the wrong choice.";
 
   String friend_text =
-      "INTPs seek authenticity and intellectual stimulation in their friendships. "
-      "\n\nThey value friends who share their interests, challenge their thinking, and respect their need for independence. "
-      "They gravitate towards deep, meaningful conversations over superficial social activities. While they may have a small circle of close friends, they are fiercely loyal and supportive within it.";
+      "ISFPs value genuine connections and meaningful conversations. "
+      "\n\nThey seek friends who are honest, supportive, and share their appreciation for "
+      "sensory experiences, creativity, and living in the moment. "
+      "Their friendships are typically warm, supportive, and built on mutual trust and understanding.";
 
   String parent_text =
-      "INTP parents prioritize fostering their children's intellectual curiosity, critical thinking skills, and independence. "
-      "\n\nThey create a stimulating environment for learning and encourage their children to explore their interests. "
-      "They value open communication, honesty, and respect for individuality. "
-      "However, they may struggle to express affection openly and may need to consciously work on understanding and validating their children's emotional needs.";
+      "ISFP parents provide their children with a loving and supportive environment that encourages creativity and self-expression. "
+      "\n\nThey emphasize independence, critical thinking, and exploring the world through "
+      "hands-on experiences. While they offer love and support, their emotional expression may be more subtle. "
+      "They encourage their children to be curious, open-minded, and embrace their unique talents and interests.";
 
   String relation =
-      "INTPs can be engaging and loyal partners who offer intellectual stimulation and a unique perspective. However, their emotional reserve and dislike for routine can create challenges. Open communication, understanding their personality preferences, and a willingness to compromise are essential for building strong and lasting connections with INTPs."
-      "\n\nStrengths:"
-      "\nIntellectual Companionship: They value intelligent conversations and enjoy stimulating discussions with partners who can engage in deep thinking and explore complex ideas."
-      "\nLoyalty and Supportive Nature: Once they commit to a relationship, INTPs are loyal and supportive partners. They offer intellectual stimulation, encouragement, and unwavering support for their loved ones' goals."
-      "\nRespect for Individuality: Their independent nature translates into respect for their partner's autonomy and individuality. They appreciate and encourage individuality within the relationship."
-      "\n\nChallenges:"
-      "\nEmotional Vulnerability and Expression: Their reserved nature can make it difficult for partners to understand their emotions and needs. Open communication and learning to express feelings constructively are crucial."
-      "\nPractical Responsibilities: Their dislike for mundane tasks can lead to neglecting shared responsibilities. Finding a balance between intellectual pursuits and practical needs is important."
-      "\nConflict Resolution: Their avoidance of conflict can lead to unresolved issues or emotional distance. Learning healthy communication and conflict resolution skills can strengthen their relationships.";
+      "ISFP Relationships:"
+      "\n\nHealthy communication: Express your thoughts and feelings openly and honestly, while also being mindful of your partner's communication style and emotional needs."
+      "\n\nBalancing creativity and practicality: While pursuing your artistic passions, prioritize finding a balance with practical aspects of life and shared responsibilities."
+      "\n\nSetting boundaries: Learn to say no and prioritize your own needs while maintaining healthy connections with your partner."
+      "\n\nEmbracing emotional expression: Share your emotions openly and constructively, and encourage your partner to do the same, for deeper emotional connection."
+      "\n\n\nCompatible Types:"
+      "\n\nINFJ: Share depth, empathy, and a desire for meaningful connections. Both value authenticity, exploring personal values, and creative expression. However, both might need to develop assertiveness and navigate conflict constructively."
+      "\n\nINFP: Balance ISFP's introversion with their emotional sensitivity and artistic expression. INFPs offer idealism, creativity, and a focus on individual values, encouraging ISFPs to explore their inner world and express themselves openly."
+      "\n\nISTP: Offer logical thinking, pragmatism, and a love for action. ISTPs bring grounding, problem-solving skills, and a different perspective, encouraging ISFPs to embrace spontaneity and explore new possibilities. However, both might need to work on emotional expression and bridging the gap between their communication styles."
+      "\n\nESFP: Share spontaneity, love for fun, and enjoyment of the present moment. ESFPs bring extraverted energy and enthusiasm, encouraging ISFPs to socialize and embrace new experiences. However, balancing individual needs and communication styles is important."
+      "\n\nENFJ: Offer warmth, empathy, and a desire to inspire others. ENFJs bring leadership qualities and a vision for the future, potentially encouraging ISFPs to step outside their comfort zone and express their talents. However, ISFPs might need to communicate their own needs clearly and set boundaries."
+      "\n\nISTJ: Offer practicality, stability, and a focus on building secure foundations. ISTJs provide grounding and structure, balancing ISFP's emotional sensitivity and creative spirit. However, ISFPs might need reassurance and understanding from ISTJs who prioritize practicality over overt emotional expression.";
 
   String body_text =
-      "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
-      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
-      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
-      "conversations to small talk and often find themselves lost in thought.";
+      "ISFPs, also known as the Artists, are individuals known for their spontaneity, creativity, "
+      "and appreciation for beauty in the world around them. They value freedom, authenticity, "
+      "and living in the present moment, approaching life with a focus on sensory experiences and personal expression.";
 
   void overview() {
     setState(() {
@@ -3708,29 +3668,12 @@ class _ISFPState extends State<ISFP> {
 
   @override
   Widget build(BuildContext context) {
-    String body_text =
-        "Entrepreneurs always have an impact on their immediate surroundings – "
-        "the best way to spot them at a party is to look for the whirling eddy of people flitting "
-        "about them as they move from group to group. Laughing and entertaining with a blunt and "
-        "earthy humor, Entrepreneur personalities love to be the center of attention. If an audience "
-        "member is asked to come on stage, Entrepreneurs volunteer – or volunteer a shy friend."
-        "\n\nTheory, abstract concepts and plodding discussions about global issues and their implications "
-        "don’t keep Entrepreneurs interested for long. Entrepreneurs keep their conversation energetic, "
-        "with a good dose of intelligence, but they like to talk about what is – or better yet, to just "
-        "go out and do it. Entrepreneurs leap before they look, fixing their mistakes as they go, "
-        "rather than sitting idle, preparing contingencies and escape clauses.";
-
-    List card = [
-      "ESFJ",
-      "Entertainer",
-      "Supportive and sociable, they thrive on nurturing relationships and creating a harmonious environment."
-    ];
 
     Color bgColor = Colors.deepPurple;
 
     return Scaffold(
         appBar: AppBar(
-          title: const Text("ESFJ"),
+          title: const Text("ISFP"),
         ),
         body: SingleChildScrollView(
           child: Column(
@@ -3738,7 +3681,7 @@ class _ISFPState extends State<ISFP> {
             children: [
               Material(
                 child: Hero(
-                  tag: "ESFJ",
+                  tag: "ISFP",
                   child: Center(
                     child: Container(
                       margin: const EdgeInsets.all(11),
@@ -3768,7 +3711,7 @@ class _ISFPState extends State<ISFP> {
                             margin: const EdgeInsets.only(bottom: 10),
                             height: 60,
                             child: Text(
-                              card[1],
+                              body["ISFP"][0],
                               style: const TextStyle(
                                 fontFamily: "ProtestRiot",
                                 fontSize: 45,
@@ -3777,9 +3720,9 @@ class _ISFPState extends State<ISFP> {
                               ),
                             ),
                           ),
-                          Text(
-                            ("(${card[0]})"),
-                            style: const TextStyle(
+                          const Text(
+                            ("(ISFP)"),
+                            style: TextStyle(
                               fontFamily: "Roboto",
                               fontWeight: FontWeight.bold,
                               fontSize: 30,
@@ -3899,52 +3842,56 @@ class ESTP extends StatefulWidget {
 class _ESTPState extends State<ESTP> {
   String headline = "Overview";
   String overview_body =
-      "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
-      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
-      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
-      "conversations to small talk and often find themselves lost in thought.";
+      "ESTPs, also known as the Entrepreneurs, are individuals known for "
+      "their energy, enthusiasm, and ability to quickly adapt to change. "
+      "They value action, excitement, and living life to the fullest, approaching life with a focus on "
+      "practical solutions and tangible results.";
 
   String strength_text =
-      "Intellectual Brilliance: INTPs have a remarkable capacity for logical reasoning, pattern recognition, and problem-solving. They are often drawn to science, mathematics, philosophy, and other fields that require analytical thinking."
-      "\n\nCreative Problem-Solvers: Their unconventional approach and ability to see things from multiple angles allow them to generate innovative solutions to challenging problems."
-      "\n\nIndependent Thinkers: INTPs are not easily swayed by popular opinion or authority. They question everything, seeking to form their own logical conclusions based on evidence and reason."
-      "\n\nAdaptable Learners: They are eager to learn new things and continuously expand their knowledge base. Their curiosity and open-mindedness make them adaptable to change and new information."
-      "\n\nHonest and Direct: INTPs value truth and authenticity above social niceties. They are straightforward in their communication, often preferring blunt honesty over sugarcoating.";
+      "Energetic and Enthusiastic: ESTPs are full of life and energy. They are always up for a new challenge and enjoy being in the thick of things. Their enthusiasm is contagious and can motivate others to get involved."
+      "\n\nAction-Oriented and Practical: ESTPs are not afraid to take risks and try new things. They are focused on getting things done and are not afraid to get their hands dirty. They are resourceful and can find creative solutions to problems."
+      "\n\nPersuasive and Influential: ESTPs are natural salespeople. They are good at reading people and knowing what they want. They are also good at articulating their ideas and convincing others to see their point of view."
+      "\n\nAdaptable and Flexible: ESTPs are able to quickly adapt to change. They are not afraid of the unknown and are always up for a new adventure. They are also good at thinking on their feet and solving problems as they arise."
+      "\n\nGood at Problem-Solving: ESTPs are good at identifying and solving problems. They are able to see the big picture and come up with creative solutions. They are also good at delegating tasks and getting others involved.";
 
   String weakness_text =
-      "Social Awkwardness: INTPs can struggle with social interactions and small talk, preferring solitude and intellectual pursuits. They may come across as aloof or detached in social settings."
-      "\n\nOverthinking and Procrastination: Their tendency to analyze everything from every angle can lead to overthinking, indecisiveness, and procrastination. They may struggle to make decisions or take action until they have considered all possible outcomes."
-      "\n\nInsensitivity: Their focus on logic and rationality can sometimes make them insensitive to others' feelings and emotions. They may unintentionally hurt others with their bluntness or lack of tact."
-      "\n\nDisregard for Rules and Routine: INTPs often chafe against rules and structures that they deem unnecessary or inefficient. They may resist authority and prefer to set their own schedules and priorities."
-      "\n\nDifficulty Expressing Emotions: While they experience deep emotions, INTPs often struggle to articulate and express them outwardly. This can lead to misunderstandings in relationships and difficulty connecting with others on an emotional level.";
+      "Impulsive and Reckless: ESTPs can sometimes be impulsive and reckless. They may act without thinking things through, which can lead to problems. They may also take risks that are not worth taking."
+      "\n\nInsensitive and Blunt: ESTPs can sometimes be insensitive and blunt. They may not always think about how their words will affect others. They may also be too focused on the facts and not take into account people's feelings."
+      "\n\nDifficulty Focusing: ESTPs can sometimes have difficulty focusing. They may be easily bored and may have trouble staying on task. They may also be easily distracted by new and exciting things."
+      "\n\nLack of Long-Term Planning: ESTPs may not always be good at long-term planning. They may be more focused on the present moment and may not always think about the future. They may also be reluctant to commit to long-term goals."
+      "\n\nArgumentative: ESTPs can sometimes be argumentative. They may enjoy debating and may not always be willing to listen to other people's points of view. They may also be quick to defend themselves and their ideas.";
 
   String friend_text =
-      "INTPs seek authenticity and intellectual stimulation in their friendships. "
-      "\n\nThey value friends who share their interests, challenge their thinking, and respect their need for independence. "
-      "They gravitate towards deep, meaningful conversations over superficial social activities. While they may have a small circle of close friends, they are fiercely loyal and supportive within it.";
+      "ESTPs value genuine connections and stimulating conversations. "
+      "\n\nThey seek friends who are honest, supportive, and share their appreciation for "
+      "action, excitement, and new experiences. Their friendships are typically lively, engaging, and "
+      "built on mutual trust and respect for each other's individuality.";
 
   String parent_text =
-      "INTP parents prioritize fostering their children's intellectual curiosity, critical thinking skills, and independence. "
-      "\n\nThey create a stimulating environment for learning and encourage their children to explore their interests. "
-      "They value open communication, honesty, and respect for individuality. "
-      "However, they may struggle to express affection openly and may need to consciously work on understanding and validating their children's emotional needs.";
+      "ESTP parents encourage their children's independence and exploration. "
+      "\n\nThey emphasize hands-on learning, problem-solving, and taking risks. "
+      "While they offer love and support, their emotional expression may be more subtle. "
+      "They encourage their children to be bold, adventurous, and embrace life's challenges with enthusiasm.";
 
   String relation =
-      "INTPs can be engaging and loyal partners who offer intellectual stimulation and a unique perspective. However, their emotional reserve and dislike for routine can create challenges. Open communication, understanding their personality preferences, and a willingness to compromise are essential for building strong and lasting connections with INTPs."
-      "\n\nStrengths:"
-      "\nIntellectual Companionship: They value intelligent conversations and enjoy stimulating discussions with partners who can engage in deep thinking and explore complex ideas."
-      "\nLoyalty and Supportive Nature: Once they commit to a relationship, INTPs are loyal and supportive partners. They offer intellectual stimulation, encouragement, and unwavering support for their loved ones' goals."
-      "\nRespect for Individuality: Their independent nature translates into respect for their partner's autonomy and individuality. They appreciate and encourage individuality within the relationship."
-      "\n\nChallenges:"
-      "\nEmotional Vulnerability and Expression: Their reserved nature can make it difficult for partners to understand their emotions and needs. Open communication and learning to express feelings constructively are crucial."
-      "\nPractical Responsibilities: Their dislike for mundane tasks can lead to neglecting shared responsibilities. Finding a balance between intellectual pursuits and practical needs is important."
-      "\nConflict Resolution: Their avoidance of conflict can lead to unresolved issues or emotional distance. Learning healthy communication and conflict resolution skills can strengthen their relationships.";
+      "ESTP Relationships:"
+      "\n\nHealthy communication: Express your thoughts and needs clearly and directly, while also being mindful of your partner's communication style and emotional needs."
+      "\n\nBalancing action and connection: While enjoying adventure and excitement, prioritize connecting with your partner on an emotional level and express your feelings constructively."
+      "\n\nEmbracing flexibility and compromise: Be open to new experiences and adjust your plans when needed, finding a balance with your partner's preferences."
+      "\n\nRespecting individual differences: Appreciate your partner's unique personality and perspective, fostering a supportive and understanding environment."
+      "\n\n\nCompatible Types:"
+      "\n\nISTP: Share a love for action, adventure, and hands-on experiences. Both enjoy challenges, independence, and exploring new possibilities. However, both might need to work on expressing emotions openly and navigating conflict constructively."
+      "\n\nESFP: Balance ESTP's directness with their enthusiasm, social energy, and love for fun. ESFPs bring excitement, spontaneity, and a focus on enjoying the present moment, encouraging ESTPs to loosen up and connect with others. However, both might need to manage individual needs and communication styles."
+      "\n\nENTP: Share intellectual curiosity, quick wit, and a love for debate. Both enjoy engaging conversations, exploring new ideas, and challenging each other. However, both might need to address potential impulsiveness and prioritize emotional connection alongside intellectual stimulation."
+      "\n\nESTJ: Offer decisiveness, direct communication, and a focus on getting things done. ESTJs bring leadership qualities, structure, and an action-oriented approach, complementing ESTPs' practical side and problem-solving skills. However, managing potential power dynamics and respecting communication styles are crucial."
+      "\n\nENFJ: Offer charisma, warmth, and a desire to inspire others. ENFJs bring out ESTPs' playful side, encouraging them to connect with others and engage in shared goals. However, ESTPs might need to communicate their own needs clearly and find a balance between excitement and emotional connection."
+      "\n\nISFP: Offer artistic expression, emotional sensitivity, and a focus on enjoying the present moment. ISFPs bring authenticity, creativity, and a different perspective, encouraging ESTPs to connect with their emotions and appreciate artistic beauty. However, ESTPs might need to adjust their directness and respect ISFPs' need for emotional understanding.";
 
   String body_text =
-      "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
-      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
-      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
-      "conversations to small talk and often find themselves lost in thought.";
+      "ESTPs, also known as the Entrepreneurs, are individuals known for "
+      "their energy, enthusiasm, and ability to quickly adapt to change. "
+      "They value action, excitement, and living life to the fullest, approaching life with a focus on "
+      "practical solutions and tangible results.";
 
   void overview() {
     setState(() {
@@ -3990,29 +3937,12 @@ class _ESTPState extends State<ESTP> {
 
   @override
   Widget build(BuildContext context) {
-    String body_text =
-        "Entrepreneurs always have an impact on their immediate surroundings – "
-        "the best way to spot them at a party is to look for the whirling eddy of people flitting "
-        "about them as they move from group to group. Laughing and entertaining with a blunt and "
-        "earthy humor, Entrepreneur personalities love to be the center of attention. If an audience "
-        "member is asked to come on stage, Entrepreneurs volunteer – or volunteer a shy friend."
-        "\n\nTheory, abstract concepts and plodding discussions about global issues and their implications "
-        "don’t keep Entrepreneurs interested for long. Entrepreneurs keep their conversation energetic, "
-        "with a good dose of intelligence, but they like to talk about what is – or better yet, to just "
-        "go out and do it. Entrepreneurs leap before they look, fixing their mistakes as they go, "
-        "rather than sitting idle, preparing contingencies and escape clauses.";
-
-    List card = [
-      "ESFJ",
-      "Entertainer",
-      "Supportive and sociable, they thrive on nurturing relationships and creating a harmonious environment."
-    ];
 
     Color bgColor = Colors.deepPurple;
 
     return Scaffold(
         appBar: AppBar(
-          title: const Text("ESFJ"),
+          title: const Text("ESTP"),
         ),
         body: SingleChildScrollView(
           child: Column(
@@ -4020,7 +3950,7 @@ class _ESTPState extends State<ESTP> {
             children: [
               Material(
                 child: Hero(
-                  tag: "ESFJ",
+                  tag: "ESTP",
                   child: Center(
                     child: Container(
                       margin: const EdgeInsets.all(11),
@@ -4050,7 +3980,7 @@ class _ESTPState extends State<ESTP> {
                             margin: const EdgeInsets.only(bottom: 10),
                             height: 60,
                             child: Text(
-                              card[1],
+                              body["ESTP"][0],
                               style: const TextStyle(
                                 fontFamily: "ProtestRiot",
                                 fontSize: 45,
@@ -4060,7 +3990,7 @@ class _ESTPState extends State<ESTP> {
                             ),
                           ),
                           Text(
-                            ("(${card[0]})"),
+                            ("(ESTP)"),
                             style: const TextStyle(
                               fontFamily: "Roboto",
                               fontWeight: FontWeight.bold,
@@ -4181,52 +4111,53 @@ class ESFP extends StatefulWidget {
 class _ESFPState extends State<ESFP> {
   String headline = "Overview";
   String overview_body =
-      "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
-      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
-      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
-      "conversations to small talk and often find themselves lost in thought.";
+      "ESFPs are known for their infectious enthusiasm, spontaneity, and love of life. "
+      "They approach the world with a focus on experiencing the present moment through "
+      "their senses, valuing connection, fun, and expressing themselves authentically.";
 
   String strength_text =
-      "Intellectual Brilliance: INTPs have a remarkable capacity for logical reasoning, pattern recognition, and problem-solving. They are often drawn to science, mathematics, philosophy, and other fields that require analytical thinking."
-      "\n\nCreative Problem-Solvers: Their unconventional approach and ability to see things from multiple angles allow them to generate innovative solutions to challenging problems."
-      "\n\nIndependent Thinkers: INTPs are not easily swayed by popular opinion or authority. They question everything, seeking to form their own logical conclusions based on evidence and reason."
-      "\n\nAdaptable Learners: They are eager to learn new things and continuously expand their knowledge base. Their curiosity and open-mindedness make them adaptable to change and new information."
-      "\n\nHonest and Direct: INTPs value truth and authenticity above social niceties. They are straightforward in their communication, often preferring blunt honesty over sugarcoating.";
+      "Enthusiastic and Energetic: ESFPs bring a vibrant energy to any situation. Their excitement is contagious and can motivate others to join in the fun."
+      "\n\nSociable and Outgoing: ESFPs thrive in social situations and easily connect with others. They enjoy meeting new people and building relationships."
+      "\n\nFlexible and Adaptable: ESFPs are quick to adjust to changing circumstances and embrace new experiences. They dislike routine and prefer to keep things exciting."
+      "\n\nCreative and Expressive: ESFPs have a natural talent for expressing themselves creatively, often through art, music, or physical activities. They appreciate beauty and enjoy adding it to their surroundings."
+      "\n\nPractical and Resourceful: Despite their spontaneity, ESFPs are grounded in the present and excel at solving problems with practical solutions.";
 
   String weakness_text =
-      "Social Awkwardness: INTPs can struggle with social interactions and small talk, preferring solitude and intellectual pursuits. They may come across as aloof or detached in social settings."
-      "\n\nOverthinking and Procrastination: Their tendency to analyze everything from every angle can lead to overthinking, indecisiveness, and procrastination. They may struggle to make decisions or take action until they have considered all possible outcomes."
-      "\n\nInsensitivity: Their focus on logic and rationality can sometimes make them insensitive to others' feelings and emotions. They may unintentionally hurt others with their bluntness or lack of tact."
-      "\n\nDisregard for Rules and Routine: INTPs often chafe against rules and structures that they deem unnecessary or inefficient. They may resist authority and prefer to set their own schedules and priorities."
-      "\n\nDifficulty Expressing Emotions: While they experience deep emotions, INTPs often struggle to articulate and express them outwardly. This can lead to misunderstandings in relationships and difficulty connecting with others on an emotional level.";
+      "Impulsive and Disorganized: Their desire for immediate gratification can lead to impulsiveness and a lack of long-term planning. They may struggle with organization and sticking to routines."
+      "\n\nEmotionally Expressive, but not Deep: ESFPs readily express their emotions openly, but may struggle with deeper emotional exploration and vulnerability. This can hinder deeper connections."
+      "\n\nDislike Conflict: While engaging, ESFPs prefer harmony and may avoid conflict or difficult conversations, even if necessary."
+      "\n\nEasily Bored: Their need for novelty can make them easily bored with repetitive tasks or predictable situations."
+      "\n\nCan Be Impatient: Their focus on the present and instant gratification can lead to impatience with slower processes or people who don't share their immediate enthusiasm.";
 
   String friend_text =
-      "INTPs seek authenticity and intellectual stimulation in their friendships. "
-      "\n\nThey value friends who share their interests, challenge their thinking, and respect their need for independence. "
-      "They gravitate towards deep, meaningful conversations over superficial social activities. While they may have a small circle of close friends, they are fiercely loyal and supportive within it.";
+      "ESFPs seek friends who are genuine, fun-loving, and open to new experiences. "
+      "\n\nThey value authenticity, humor, and shared moments of joy. "
+      "Their friendships are usually lively, supportive, and filled with shared activities and enjoyment.";
 
   String parent_text =
-      "INTP parents prioritize fostering their children's intellectual curiosity, critical thinking skills, and independence. "
-      "\n\nThey create a stimulating environment for learning and encourage their children to explore their interests. "
-      "They value open communication, honesty, and respect for individuality. "
-      "However, they may struggle to express affection openly and may need to consciously work on understanding and validating their children's emotional needs.";
+      "ESFP parents create a stimulating and fun environment for their children. "
+      "\n\nThey emphasize personal expression, creativity, and enjoying life's pleasures. "
+      "While offering love and support, their emotional expression may be more lighthearted and less focused on deep introspection. "
+      "They encourage their children to be open-minded, adventurous, and express themselves authentically.";
 
   String relation =
-      "INTPs can be engaging and loyal partners who offer intellectual stimulation and a unique perspective. However, their emotional reserve and dislike for routine can create challenges. Open communication, understanding their personality preferences, and a willingness to compromise are essential for building strong and lasting connections with INTPs."
-      "\n\nStrengths:"
-      "\nIntellectual Companionship: They value intelligent conversations and enjoy stimulating discussions with partners who can engage in deep thinking and explore complex ideas."
-      "\nLoyalty and Supportive Nature: Once they commit to a relationship, INTPs are loyal and supportive partners. They offer intellectual stimulation, encouragement, and unwavering support for their loved ones' goals."
-      "\nRespect for Individuality: Their independent nature translates into respect for their partner's autonomy and individuality. They appreciate and encourage individuality within the relationship."
-      "\n\nChallenges:"
-      "\nEmotional Vulnerability and Expression: Their reserved nature can make it difficult for partners to understand their emotions and needs. Open communication and learning to express feelings constructively are crucial."
-      "\nPractical Responsibilities: Their dislike for mundane tasks can lead to neglecting shared responsibilities. Finding a balance between intellectual pursuits and practical needs is important."
-      "\nConflict Resolution: Their avoidance of conflict can lead to unresolved issues or emotional distance. Learning healthy communication and conflict resolution skills can strengthen their relationships.";
+      "ESFP Relationships:"
+      "\n\nHealthy communication: Express your thoughts and feelings openly and honestly, while also being mindful of your partner's communication style and emotional needs."
+      "\n\nBalancing spontaneity and grounding: While enjoying the excitement of the moment, prioritize finding a balance with practical aspects of life and shared responsibilities."
+      "\n\nSetting boundaries: Learn to say no and prioritize your own needs while maintaining healthy connections with your partner."
+      "\n\nNurturing emotional connection: Share your emotions openly and constructively, and encourage your partner to do the same, for deeper emotional intimacy."
+      "\n\n\nCompatible Types:"
+      "\n\nENFP: Share enthusiasm, optimism, and a desire to live life to the fullest. Both value spontaneity, social connection, and expressing joy authentically. However, both might need to develop emotional depth and navigate conflict constructively."
+      "\n\nESFP: Complement each other's social energy, love for fun, and spontaneity. Both enjoy shared experiences, laughter, and creating excitement, keeping the relationship playful and vibrant. However, managing individual needs and potential emotional intensity requires awareness."
+      "\n\nISTP: Balance ESFP's extroversion with their logical thinking and focus on action. ISTPs bring grounding, problem-solving skills, and a different perspective, encouraging ESFPs to explore practical aspects of life and enjoy quiet moments. However, ISTPs might need to adjust their directness and express emotions more openly."
+      "\n\nESTP: Share a love for action, adventure, and hands-on experiences. ESTPs bring decisiveness, direct communication, and a thrill-seeking spirit, keeping things exciting for ESFPs. However, balancing individual needs and communication styles is crucial."
+      "\n\nENFJ: Offer warmth, empathy, and a desire to inspire others. ENFJs bring leadership qualities, vision, and a focus on shared goals, potentially encouraging ESFPs to step outside their comfort zone and contribute their positive energy. However, ESFPs might need to communicate their own needs clearly and set boundaries."
+      "\n\nISFP: Offer artistic expression, emotional sensitivity, and a focus on enjoying the present moment. ISFPs bring authenticity, creativity, and a different perspective, encouraging ESFPs to connect with their emotions and appreciate artistic beauty. However, ESFPs might need to be patient and understanding of ISFPs' need for individual space and emotional processing.";
 
   String body_text =
-      "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
-      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
-      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
-      "conversations to small talk and often find themselves lost in thought.";
+      "ESFPs are known for their infectious enthusiasm, spontaneity, and love of life. "
+      "They approach the world with a focus on experiencing the present moment through "
+      "their senses, valuing connection, fun, and expressing themselves authentically.";
 
   void overview() {
     setState(() {
@@ -4272,23 +4203,6 @@ class _ESFPState extends State<ESFP> {
 
   @override
   Widget build(BuildContext context) {
-    String body_text =
-        "Entrepreneurs always have an impact on their immediate surroundings – "
-        "the best way to spot them at a party is to look for the whirling eddy of people flitting "
-        "about them as they move from group to group. Laughing and entertaining with a blunt and "
-        "earthy humor, Entrepreneur personalities love to be the center of attention. If an audience "
-        "member is asked to come on stage, Entrepreneurs volunteer – or volunteer a shy friend."
-        "\n\nTheory, abstract concepts and plodding discussions about global issues and their implications "
-        "don’t keep Entrepreneurs interested for long. Entrepreneurs keep their conversation energetic, "
-        "with a good dose of intelligence, but they like to talk about what is – or better yet, to just "
-        "go out and do it. Entrepreneurs leap before they look, fixing their mistakes as they go, "
-        "rather than sitting idle, preparing contingencies and escape clauses.";
-
-    List card = [
-      "ESFJ",
-      "Entertainer",
-      "Supportive and sociable, they thrive on nurturing relationships and creating a harmonious environment."
-    ];
 
     Color bgColor = Colors.deepPurple;
 
@@ -4332,7 +4246,7 @@ class _ESFPState extends State<ESFP> {
                             margin: const EdgeInsets.only(bottom: 10),
                             height: 60,
                             child: Text(
-                              card[1],
+                              body["ESFP"][0],
                               style: const TextStyle(
                                 fontFamily: "ProtestRiot",
                                 fontSize: 45,
@@ -4342,7 +4256,7 @@ class _ESFPState extends State<ESFP> {
                             ),
                           ),
                           Text(
-                            ("(${card[0]})"),
+                            ("(ESFP)"),
                             style: const TextStyle(
                               fontFamily: "Roboto",
                               fontWeight: FontWeight.bold,
