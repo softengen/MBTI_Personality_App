@@ -73,7 +73,7 @@ class _SignUpState extends State<SignUp> {
                             fillColor: Colors.grey.shade100,
                             filled: true,
                             hintText: 'Name',
-                            hintStyle: TextStyle(
+                            hintStyle: const TextStyle(
                               fontSize: 20,
                               color: Colors.grey,
                             ),
@@ -87,7 +87,7 @@ class _SignUpState extends State<SignUp> {
                             fillColor: Colors.grey.shade100,
                             filled: true,
                             hintText: 'Email',
-                            hintStyle: TextStyle(
+                            hintStyle: const TextStyle(
                               fontSize: 20,
                               color: Colors.grey,
                             ),
@@ -102,7 +102,7 @@ class _SignUpState extends State<SignUp> {
                             fillColor: Colors.grey.shade100,
                             filled: true,
                             hintText: 'Password',
-                            hintStyle: TextStyle(
+                            hintStyle: const TextStyle(
                               fontSize: 20,
                               color: Colors.grey,
                             ),
