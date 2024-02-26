@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 final Map body = {
   "INTJ": [
@@ -88,6 +90,9 @@ Color gradientColor1 =
 Color gradientColor2 =
     Colors.deepPurpleAccent[200] ?? Colors.deepPurple; // Null check
 
+TextStyle normal = const TextStyle(fontFamily: "Comforta", fontSize: 19, fontWeight: FontWeight.w300, color: Colors.white);
+
+TextStyle bold = const TextStyle(fontFamily: "Comforta", fontSize: 19.5, fontWeight: FontWeight.bold, color: Colors.white);
 
 
 
@@ -98,57 +103,126 @@ class INTJ extends StatefulWidget {
 
 class _INTJState extends State<INTJ> {
   String headline = "Overview";
-  String overview_body =
-      "INTJs, also known as Masterminds, are brilliant strategists with a sharp intellect "
-      "and a drive to achieve ambitious goals. They are independent thinkers, fiercely logical, and value "
-      "efficiency and competence above all else. INTJs prefer deep, meaningful conversations and can find "
-      "themselves easily bored by small talk.";
-  String strength_text =
-      "Strategic Visionaries: INTJs possess a rare ability to see the big picture, anticipate potential problems, and formulate ingenious solutions. They envision the long game and orchestrate complex plans with meticulous attention to detail."
-      "\n\nIntellectual Powerhouses: Driven by insatiable curiosity and a thirst for knowledge, INTJs devour information, analyze with laser-sharp focus, and synthesize complex ideas into elegant theories. Their minds are veritable engines of logic and insight."
-      "\n\nUnshakable Independence: Free from the need for external validation, INTJs forge their own paths, unfazed by societal pressures or popular trends. They trust their own judgment and navigate life with unwavering autonomy."
-      "\n\nStoic Resilience: Challenges do not deter INTJs; they see them as opportunities for growth and refinement. Their emotional control and unwavering determination allow them to weather storms with composure and emerge stronger."
-      "\n\nUnwavering Loyalty: While their circle may be small, INTJs devote unwavering loyalty to those they deem worthy. They offer steadfast support, insightful advice, and unwavering protection to their chosen few.";
 
-  String weakness_text =
-      "Social Navigation Challenges: INTJs, for all their brilliance, can sometimes struggle with the nuances of social interaction. Bluntness and directness can be misconstrued as insensitivity, while their preference for deep analysis can make them seem aloof or disconnected."
-      "\n\nPerfectionism's Pitfalls: The relentless pursuit of excellence can morph into crippling perfectionism. INTJs might set impossibly high standards for themselves and others, leading to frustration, self-criticism, and missed opportunities."
-      "\n\nEmotional Blind Spots: While adept at understanding their own logical processes, INTJs can struggle to grasp the subtleties of human emotions. This can lead to misunderstandings, hurt feelings, and difficulties navigating interpersonal conflicts."
-      "\n\nInflexible Strategies: The INTJ's meticulous planning can become their own undoing. Rigidity in the face of unforeseen circumstances can hinder adaptability and prevent them from embracing beneficial changes or innovative solutions."
-      "\n\nInternalized Emotions: Suppressing emotions for too long can manifest in unpredictable ways. Bottled-up frustrations might resurface unexpectedly, leading to outbursts or emotional detachment, further complicating personal and professional relationships.";
+  RichText overview_body = RichText(text : TextSpan(children: [
+    TextSpan(text: "INTJ", style: bold),
+    TextSpan(text: "s, also known as ", style: normal),
+    TextSpan(text: "Masterminds", style: bold),
+    TextSpan(text: ", are brilliant strategists with a sharp intellect and a drive to achieve ambitious goals. They are ", style: normal),
+    TextSpan(text: "independent thinkers, fiercely logical", style: bold),
+    TextSpan(text: ", and ", style: normal),
+    TextSpan(text: "value efficiency", style: bold),
+    TextSpan(text: " and competence above all else. INTJs prefer deep, meaningful conversations and can find "
+        "themselves easily bored by small talk.", style: normal),
+  ]),
+  );
 
-  String friend_text =
-      "For INTJs, friendship is a carefully curated haven for intellectual exchange and meaningful connection. "
-      "\n\nThey seek friends who can stimulate their minds with engaging debates, challenge their perspectives with divergent viewpoints,"
-      " and appreciate their introspective nature. Loyalty, honesty, and mutual respect are the cornerstones of their friendships. "
-      "While not prone to outward displays of affection, INTJs demonstrate their commitment through consistent actions, "
-      "unwavering support, and unwavering loyalty.";
-  String parent_text =
-      "INTJ parents approach child-rearing with the same analytical precision they apply to everything else. "
-      "\n\nThey prioritize fostering their children's intellectual curiosity, encouraging independent thinking, and providing a "
-      "stimulating environment for growth. They set high standards and offer constructive criticism, aiming to shape their "
-      "children into self-sufficient, critical thinkers capable of navigating the world with confidence. However, their "
-      "focus on logic and efficiency can sometimes overshadow emotional needs. Open communication and conscious effort "
-      "to express affection are crucial to ensuring their children feel loved and supported.";
 
-  String relation = "INTJ Relationships:"
-      "\n\nOpen communication: Express emotions constructively and actively listen to your partner's needs."
-      "\n\nEmotional understanding: Make an effort to connect with your partner on an emotional level and show appreciation for their feelings."
-      "\n\nFlexibility and compromise: Be willing to consider other perspectives and adapt to different preferences without sacrificing your core values."
-      "\n\nBalance logic and emotion: Embrace both intellectual connection and emotional intimacy for a fulfilling relationship."
-      "\n\n\nCompatible Types:"
-      "\n\nINTP: Share logical thinking, intellectual curiosity, and value for autonomy. Both appreciate deep conversations and independent exploration, but might need to work on emotional expression."
-      "\n\nENFP: Balance INTJ's logic with visionary idealism and emotional warmth. ENFPs bring creativity, enthusiasm, and a focus on possibilities, helping INTJs connect with their emotional side."
-      "\n\nINFJ: Share introspective nature, complex thinking, and value for meaningful connections. Both prioritize authenticity and understanding hidden meanings, but might need to address potential conflict avoidance."
-      "\n\nENFJ: Share strategic thinking and goal-oriented nature, but ENFJs bring warmth and social engagement, encouraging INTJs to connect with others."
-      "\n\nISTJ: Share practicality, organization, and respect for logic. ISTJs offer grounding and stability, while INTJs provide innovative ideas and strategic vision."
-      "\n\nISTP: Both value independence, logical problem-solving, and efficiency. ISTPs bring a spontaneous and action-oriented approach, balancing INTJ's focus on planning.";
+  RichText strength_text = RichText(text: TextSpan(children: [
+    TextSpan(text:"Strategic Visionaries:" ,style: bold),
+    TextSpan(text: " INTJs possess a rare ability to see the big picture, anticipate potential problems, and formulate ingenious solutions. They envision the long game and orchestrate complex plans with meticulous attention to detail." ,style: normal),
+    TextSpan(text:"\n\nIntellectual Powerhouses:" ,style: bold),
+    TextSpan(text: " Driven by insatiable curiosity and a thirst for knowledge, INTJs devour information, analyze with laser-sharp focus, and synthesize complex ideas into elegant theories. Their minds are veritable engines of logic and insight." ,style: normal),
+    TextSpan(text:"\n\nUnshakable Independence:" ,style: bold),
+    TextSpan(text: " Free from the need for external validation, INTJs forge their own paths, unfazed by societal pressures or popular trends. They trust their own judgment and navigate life with unwavering autonomy." ,style: normal),
+    TextSpan(text:"\n\nStoic Resilience:" ,style: bold),
+    TextSpan(text: " Challenges do not deter INTJs; they see them as opportunities for growth and refinement. Their emotional control and unwavering determination allow them to weather storms with composure and emerge stronger." ,style: normal),
+    TextSpan(text:"\n\nUnwavering Loyalty:" ,style: bold),
+    TextSpan(text: " While their circle may be small, INTJs devote unwavering loyalty to those they deem worthy. They offer steadfast support, insightful advice, and unwavering protection to their chosen few." ,style: normal),
+  ]),
 
-  String body_text =
-      "INTJs, also known as Masterminds, are brilliant strategists with a sharp intellect "
-      "and a drive to achieve ambitious goals. They are independent thinkers, fiercely logical, and value "
-      "efficiency and competence above all else. INTJs prefer deep, meaningful conversations and can find "
-      "themselves easily bored by small talk.";
+  );
+
+
+  RichText weakness_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "Social Navigation Challenges:",style: bold),
+    TextSpan(text: " INTJs, for all their brilliance, can sometimes struggle with the nuances of social interaction. Bluntness and directness can be misconstrued as insensitivity, while their preference for deep analysis can make them seem aloof or disconnected.",style: normal),
+    TextSpan(text: "\n\nPerfectionism's Pitfalls:",style: bold),
+    TextSpan(text: " The relentless pursuit of excellence can morph into crippling perfectionism. INTJs might set impossibly high standards for themselves and others, leading to frustration, self-criticism, and missed opportunities.",style: normal),
+    TextSpan(text: "\n\nEmotional Blind Spots:",style: bold),
+    TextSpan(text: " While adept at understanding their own logical processes, INTJs can struggle to grasp the subtleties of human emotions. This can lead to misunderstandings, hurt feelings, and difficulties navigating interpersonal conflicts.",style: normal),
+    TextSpan(text: "\n\nInflexible Strategies:",style: bold),
+    TextSpan(text: " The INTJ's meticulous planning can become their own undoing. Rigidity in the face of unforeseen circumstances can hinder adaptability and prevent them from embracing beneficial changes or innovative solutions.",style: normal),
+    TextSpan(text: "\n\nInternalized Emotions:",style: bold),
+    TextSpan(text: " Suppressing emotions for too long can manifest in unpredictable ways. Bottled-up frustrations might resurface unexpectedly, leading to outbursts or emotional detachment, further complicating personal and professional relationships.",style: normal),
+  ]));
+
+
+  RichText relation = RichText(text: TextSpan(children: [
+    TextSpan(text: "INTJ Relationships:",style: bold),
+    TextSpan(text: "\nOpen communication: ",style: bold),
+    TextSpan(text: "Express emotions constructively and actively listen to your partner's needs.",style: normal),
+    TextSpan(text: "\nEmotional understanding: ",style: bold),
+    TextSpan(text: "Make an effort to connect with your partner on an emotional level and show appreciation for their feelings.",style: normal),
+    TextSpan(text: "\nFlexibility and compromise: ",style: bold),
+    TextSpan(text: "Be willing to consider other perspectives and adapt to different preferences without sacrificing your core values.",style: normal),
+    TextSpan(text: "\nBalance logic and emotion: ",style: bold),
+    TextSpan(text: "Embrace both intellectual connection and emotional intimacy for a fulfilling relationship.",style: normal),
+    TextSpan(text: "\n\nCompatible Types:",style: bold),
+    TextSpan(text: "\nINTP: ",style: bold),
+    TextSpan(text: "Share logical thinking, intellectual curiosity, and value for autonomy. Both appreciate deep conversations and independent exploration, but might need to work on emotional expression.",style: normal),
+    TextSpan(text: "\nENFP: ",style: bold),
+    TextSpan(text: "Balance INTJ's logic with visionary idealism and emotional warmth. ENFPs bring creativity, enthusiasm, and a focus on possibilities, helping INTJs connect with their emotional side.",style: normal),
+    TextSpan(text: "\nINFJ: ",style: bold),
+    TextSpan(text: "Share introspective nature, complex thinking, and value for meaningful connections. Both prioritize authenticity and understanding hidden meanings, but might need to address potential conflict avoidance.",style: normal),
+    TextSpan(text: "\nENFJ: ",style: bold),
+    TextSpan(text: "Share strategic thinking and goal-oriented nature, but ENFJs bring warmth and social engagement, encouraging INTJs to connect with others.",style: normal),
+    TextSpan(text: "\nISTJ: ",style: bold),
+    TextSpan(text: "Share practicality, organization, and respect for logic. ISTJs offer grounding and stability, while INTJs provide innovative ideas and strategic vision.",style: normal),
+    TextSpan(text: "\nISTP: ",style: bold),
+    TextSpan(text: "Both value independence, logical problem-solving, and efficiency. ISTPs bring a spontaneous and action-oriented approach, balancing INTJ's focus on planning.",style: normal),
+  ]));
+
+  RichText friend_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "For INTJs, friendship is a carefully curated haven for intellectual exchange and meaningful connection. "
+        "\n\nThey seek friends who can ", style: normal),
+    TextSpan(text: "stimulate their minds with engaging debates, challenge their perspectives with divergent viewpoints,", style: bold),
+    TextSpan(text: " and ", style: normal),
+    TextSpan(text: "appreciate their introspective nature. Loyalty, honesty,", style: bold),
+    TextSpan(text: " and ", style: normal),
+    TextSpan(text: "mutual respect", style: bold),
+    TextSpan(text: " are the cornerstones of their friendships. "
+        "While not prone to outward displays of affection, INTJs demonstrate their commitment through ", style: normal),
+    TextSpan(text: "consistent actions, unwavering support,", style: bold),
+    TextSpan(text: " and ", style: normal),
+    TextSpan(text: "unwavering loyalty.", style: bold),
+  ]));
+
+
+  RichText parent_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "INTJ parents approach child-rearing with the same analytical precision they apply to everything else."
+        "\n\nThey prioritize fostering their children's ", style: normal),
+    TextSpan(text: "intellectual curiosity", style: bold),
+    TextSpan(text: ", encouraging ", style: normal),
+    TextSpan(text: "independent thinking", style: bold),
+    TextSpan(text: ", and providing a ", style: normal),
+    TextSpan(text: "stimulating environment", style: bold),
+    TextSpan(text: " for growth. They set high standards and offer constructive criticism,"
+        " aiming to shape their children into ", style: normal),
+    TextSpan(text: "self-sufficient, critical thinkers capable of navigating the world with confidence", style: bold),
+    TextSpan(text: ". However, their focus on logic and efficiency can sometimes overshadow emotional needs. ", style: normal),
+    TextSpan(text: "Open communication", style: bold),
+    TextSpan(text: " and ", style: normal),
+    TextSpan(text: "conscious effort ", style: bold),
+    TextSpan(text: "to express affection are crucial to ensuring their children feel loved and supported.", style: normal),
+  ]));
+
+
+
+
+
+  RichText body_text =  RichText(text : TextSpan(children: [
+     TextSpan(text: "INTJ", style: bold),
+     TextSpan(text: "s, also known as ", style: normal),
+     TextSpan(text: "Masterminds", style: bold),
+     TextSpan(text: ", are brilliant strategists with a sharp intellect and a drive to achieve ambitious goals. They are ", style: normal),
+     TextSpan(text: "independent thinkers, fiercely logical", style: bold),
+     TextSpan(text: ", and ", style: normal),
+     TextSpan(text: "value efficiency", style: bold),
+     TextSpan(text: " and competence above all else. INTJs prefer deep, meaningful conversations and can find "
+         "themselves easily bored by small talk.", style: normal),
+   ]),
+   );
 
   void overview() {
     setState(() {
@@ -343,13 +417,15 @@ class _INTJState extends State<INTJ> {
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
-                          child: Text(
-                            body_text,
-                            style: Theme.of(context)
-                                .textTheme
-                                .bodyLarge!
-                                .copyWith(color: Colors.white),
-                          ),
+                          child: body_text
+
+                          // child: Text(
+                          //   body_text,
+                          //   style: Theme.of(context)
+                          //       .textTheme
+                          //       .bodyLarge!
+                          //       .copyWith(color: Colors.white),
+                          // ),
                         ),
                       ],
                     ),

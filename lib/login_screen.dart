@@ -1,5 +1,6 @@
 import 'dart:developer';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mbti_app/personalityPage.dart';
 import 'package:mbti_app/signup.dart';
@@ -172,3 +173,105 @@ class _LoginPageState extends State<LoginPage> {
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// class LoginPage extends StatefulWidget {
+//   const LoginPage({super.key});
+//
+//   @override
+//   State<LoginPage> createState() => _LoginPageState();
+// }
+//
+//
+//
+// class _LoginPageState extends State<LoginPage> {
+//
+//   double x=110,y=290,back_height=400,main_h = 90,c_rad = 80;
+//   bool visible = true;
+//   void _login(){
+//       setState(() {
+//         visible = !visible;
+//         back_height = main_h;
+//         c_rad = 0;
+//       });
+//   }
+//   void _signup(){
+//     setState(() {
+//       visible = !visible;
+//     });
+//   }
+//   @override
+//   Widget build(BuildContext context) {
+//     main_h = MediaQuery.of(context).size.height;
+//     double radius = 200;
+//     return Scaffold(
+//       body: Stack(
+//         children: [
+//           Container(
+//             width: MediaQuery.of(context).size.width,
+//             height: MediaQuery.of(context).size.height,
+//             child: Column(
+//               mainAxisAlignment: MainAxisAlignment.end,
+//               children: visible?[
+//                 if(visible)
+//                   Text("Softengen", style: TextStyle(fontSize: 35, color: Colors.black87),),
+//                   SizedBox(height: 40,),
+//                   ElevatedButton(onPressed: _login, child: Text("Login", )),
+//                   SizedBox(height: 15,),
+//                   ElevatedButton(onPressed: _signup, child: Text("Sign Up")),
+//                   SizedBox(height: 150,)
+//
+//               ]: [],
+//             ),
+//           ),
+//           AnimatedContainer(
+//             height: back_height,
+//             width: MediaQuery.of(context).size.width,
+//             decoration: BoxDecoration(
+//               borderRadius: BorderRadius.only(bottomLeft: Radius.circular(c_rad),bottomRight: Radius.circular(c_rad)),
+//               color: Colors.deepPurple,
+//               boxShadow: [BoxShadow(
+//                 color: Colors.black87.withOpacity(.5),
+//                 blurRadius: 20,
+//                 offset: Offset(0,10)
+//               )]
+//             ),
+//             duration: Duration(milliseconds: 700),
+//           ),
+//           Positioned(
+//             top: y,
+//             left: x,
+//             child: AnimatedContainer(
+//               height: radius,
+//               width: radius,
+//               decoration: BoxDecoration(
+//                   borderRadius: BorderRadius.all(Radius.circular(radius)),
+//                   color: Colors.white,
+//                   boxShadow: [BoxShadow(
+//                       color: Colors.black87.withOpacity(.5),
+//                       blurRadius: 20,
+//                       offset: Offset(0,10)
+//                   )]
+//               ),
+//               duration: Duration(seconds: 2),
+//             ),
+//           ),
+//
+//         ],
+//       ),
+//     );
+//   }
+// }

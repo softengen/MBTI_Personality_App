@@ -45,6 +45,7 @@ class MyApp extends StatelessWidget {
       ),
 
       home: user != null ? personalityPage() : LoginPage(),
+
     );
   }
 }
