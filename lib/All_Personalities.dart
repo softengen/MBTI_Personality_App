@@ -443,55 +443,119 @@ class INTP extends StatefulWidget {
 
 class _INTPState extends State<INTP> {
   String headline = "Overview";
-  String overview_body =
-      "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
-      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
-      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
-      "conversations to small talk and often find themselves lost in thought.";
+  RichText overview_body = RichText(text: TextSpan(children: [
+    TextSpan(text: "INTPs, also known as ",style: normal),
+    TextSpan(text: "Logicians",style: bold),
+    TextSpan(text: ", are known for their ",style: normal),
+    TextSpan(text: "sharp intellect, thirst for knowledge,",style: bold),
+    TextSpan(text: " and ",style: normal),
+    TextSpan(text: "knack for dissecting complex problems",style: bold),
+    TextSpan(text: ". They are ",style: normal),
+    TextSpan(text: "creative thinkers",style: bold),
+    TextSpan(text: ", constantly seeking new ideas and possibilities. "
+        "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. "
+        "They prefer deep, meaningful "
+        "conversations to small talk and often find themselves lost in thought.",style: normal),
+  ]));
 
-  String strength_text =
-      "Intellectual Brilliance: INTPs have a remarkable capacity for logical reasoning, pattern recognition, and problem-solving. They are often drawn to science, mathematics, philosophy, and other fields that require analytical thinking."
-      "\n\nCreative Problem-Solvers: Their unconventional approach and ability to see things from multiple angles allow them to generate innovative solutions to challenging problems."
-      "\n\nIndependent Thinkers: INTPs are not easily swayed by popular opinion or authority. They question everything, seeking to form their own logical conclusions based on evidence and reason."
-      "\n\nAdaptable Learners: They are eager to learn new things and continuously expand their knowledge base. Their curiosity and open-mindedness make them adaptable to change and new information."
-      "\n\nHonest and Direct: INTPs value truth and authenticity above social niceties. They are straightforward in their communication, often preferring blunt honesty over sugarcoating.";
 
-  String weakness_text =
-      "Social Awkwardness: INTPs can struggle with social interactions and small talk, preferring solitude and intellectual pursuits. They may come across as aloof or detached in social settings."
-      "\n\nOverthinking and Procrastination: Their tendency to analyze everything from every angle can lead to overthinking, indecisiveness, and procrastination. They may struggle to make decisions or take action until they have considered all possible outcomes."
-      "\n\nInsensitivity: Their focus on logic and rationality can sometimes make them insensitive to others' feelings and emotions. They may unintentionally hurt others with their bluntness or lack of tact."
-      "\n\nDisregard for Rules and Routine: INTPs often chafe against rules and structures that they deem unnecessary or inefficient. They may resist authority and prefer to set their own schedules and priorities."
-      "\n\nDifficulty Expressing Emotions: While they experience deep emotions, INTPs often struggle to articulate and express them outwardly. This can lead to misunderstandings in relationships and difficulty connecting with others on an emotional level.";
 
-  String friend_text =
-      "INTPs seek authenticity and intellectual stimulation in their friendships. "
-      "\n\nThey value friends who share their interests, challenge their thinking, and respect their need for independence. "
-      "They gravitate towards deep, meaningful conversations over superficial social activities. While they may have a small circle of close friends, they are fiercely loyal and supportive within it.";
+  RichText strength_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "Intellectual Brilliance: ",style: bold),
+    TextSpan(text: "INTPs have a remarkable capacity for logical reasoning, pattern recognition, and problem-solving. They are often drawn to science, mathematics, philosophy, and other fields that require analytical thinking.",style: normal),
+    TextSpan(text: "\n\nCreative Problem-Solvers: ",style: bold),
+    TextSpan(text: "Their unconventional approach and ability to see things from multiple angles allow them to generate innovative solutions to challenging problems.",style: normal),
+    TextSpan(text: "\n\nIndependent Thinkers: ",style: bold),
+    TextSpan(text: "INTPs are not easily swayed by popular opinion or authority. They question everything, seeking to form their own logical conclusions based on evidence and reason.",style: normal),
+    TextSpan(text: "\n\nAdaptable Learners: ",style: bold),
+    TextSpan(text: "They are eager to learn new things and continuously expand their knowledge base. Their curiosity and open-mindedness make them adaptable to change and new information.",style: normal),
+    TextSpan(text: "\n\nHonest and Direct: ",style: bold),
+    TextSpan(text: "INTPs value truth and authenticity above social niceties. They are straightforward in their communication, often preferring blunt honesty over sugarcoating.",style: normal),
+  ]));
 
-  String parent_text =
-      "INTP parents prioritize fostering their children's intellectual curiosity, critical thinking skills, and independence. "
-      "\n\nThey create a stimulating environment for learning and encourage their children to explore their interests. "
-      "They value open communication, honesty, and respect for individuality. "
-      "However, they may struggle to express affection openly and may need to consciously work on understanding and validating their children's emotional needs.";
 
-  String relation = "INTP Relationships:"
-      "\n\nOpen communication: Express emotions constructively and actively listen to your partner's needs."
-      "\n\nEmotional understanding: Make an effort to connect with your partner on an emotional level and show appreciation for their feelings."
-      "\n\nBalancing logic and emotions: While valuing intellectual connection, embrace emotional intimacy for a fulfilling relationship."
-      "\n\nPrioritizing shared experiences: Engage in activities that connect you emotionally and foster deeper understanding."
-      "\n\n\nCompatible Types:"
-      "\n\nINTJ: Share an analytical mind, value for logic, and independent nature. Both enjoy deep intellectual conversations and exploring complex ideas, but need to work on emotional expression."
-      "\n\nENFP: Balance INTP's logic with creativity, enthusiasm, and emotional warmth. ENFPs bring new perspectives, spontaneity, and help INTPs connect with their feelings."
-      "\n\nNFJ: Share introspective nature, complex thinking, and value for meaningful connections. Both prioritize authenticity and understanding hidden meanings, but need to address potential conflict avoidance."
-      "\n\nENTP: Share intellectual curiosity, openness to new ideas, and enjoyment of debate. ENTPs bring an extraverted energy and encourage INTPs to engage socially."
-      "\n\nISTP: Value independence, logical problem-solving, and efficiency. ISTPs offer a practical and action-oriented approach, complementing INTPs' theoretical thinking."
-      "\n\nISFP: Appreciate authenticity, creativity, and individual expression. ISFPs bring emotional sensitivity and artistic expression, encouraging INTPs to connect with their emotions through shared experiences.";
 
-  String body_text =
-      "INTPs, also known as Logicians, are known for their sharp intellect, thirst for knowledge, "
-      "and knack for dissecting complex problems. They are creative thinkers, constantly seeking new ideas and possibilities. "
-      "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. They prefer deep, meaningful "
-      "conversations to small talk and often find themselves lost in thought.";
+
+  RichText weakness_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "Social Awkwardness: ",style: bold),
+    TextSpan(text: "INTPs can struggle with social interactions and small talk, preferring solitude and intellectual pursuits. They may come across as aloof or detached in social settings.",style: normal),
+    TextSpan(text: "\n\nOverthinking and Procrastination: ",style: bold),
+    TextSpan(text: "Their tendency to analyze everything from every angle can lead to overthinking, indecisiveness, and procrastination. They may struggle to make decisions or take action until they have considered all possible outcomes.",style: normal),
+    TextSpan(text: "\n\nInsensitivity: ",style: bold),
+    TextSpan(text: "Their focus on logic and rationality can sometimes make them insensitive to others' feelings and emotions. They may unintentionally hurt others with their bluntness or lack of tact.",style: normal),
+    TextSpan(text: "\n\nDisregard for Rules and Routine: ",style: bold),
+    TextSpan(text: "INTPs often chafe against rules and structures that they deem unnecessary or inefficient. They may resist authority and prefer to set their own schedules and priorities.",style: normal),
+    TextSpan(text: "\n\nDifficulty Expressing Emotions: ",style: bold),
+    TextSpan(text: "While they experience deep emotions, INTPs often struggle to articulate and express them outwardly. This can lead to misunderstandings in relationships and difficulty connecting with others on an emotional level.",style: normal),
+  ]));
+
+
+
+  RichText friend_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "INTPs seek ",style: normal),
+    TextSpan(text: "authenticity",style: bold),
+    TextSpan(text: " and ",style: normal),
+    TextSpan(text: "intellectual stimulation",style: bold),
+    TextSpan(text: " in their friendships. \n\nThey value friends who share their interests, challenge their thinking, and respect their need for independence. "
+        "They gravitate towards deep, meaningful conversations over superficial social activities. "
+        "While they may have a small circle of close friends, they are fiercely loyal and supportive within it.",style: normal),
+  ]));
+
+
+  RichText parent_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "INTP parents prioritize fostering their children's ",style: normal),
+    TextSpan(text: "intellectual curiosity, critical thinking skills,",style: bold),
+    TextSpan(text: " and ",style: normal),
+    TextSpan(text: "independence",style: bold),
+    TextSpan(text: ". \n\nThey create a stimulating environment for learning and encourage their children to explore their interests. "
+        "They value open communication, honesty, and respect for individuality. "
+        "However, they may struggle to express affection openly and may need to consciously work on understanding and validating their children's emotional needs.",style: normal),
+  ]));
+
+
+
+  RichText relation = RichText(text: TextSpan(children: [
+    TextSpan(text: "INTP Relationships:",style: bold),
+    TextSpan(text: "\n\nOpen communication: ",style: bold),
+    TextSpan(text: "Express emotions constructively and actively listen to your partner's needs.",style: normal),
+    TextSpan(text: "\n\nEmotional understanding: ",style: bold),
+    TextSpan(text: "Make an effort to connect with your partner on an emotional level and show appreciation for their feelings.",style: normal),
+    TextSpan(text: "\n\nBalancing logic and emotions: ",style: bold),
+    TextSpan(text: "While valuing intellectual connection, embrace emotional intimacy for a fulfilling relationship.",style: normal),
+    TextSpan(text: "\n\nPrioritizing shared experiences: ",style: bold),
+    TextSpan(text: "Engage in activities that connect you emotionally and foster deeper understanding.",style: normal),
+    TextSpan(text: "\n\n\nCompatible Types:",style: bold),
+    TextSpan(text: "\n\nINTJ: ",style: bold),
+    TextSpan(text: "Share an analytical mind, value for logic, and independent nature. Both enjoy deep intellectual conversations and exploring complex ideas, but need to work on emotional expression.",style: normal),
+    TextSpan(text: "\n\nENFP: ",style: bold),
+    TextSpan(text: "Balance INTP's logic with creativity, enthusiasm, and emotional warmth. ENFPs bring new perspectives, spontaneity, and help INTPs connect with their feelings.",style: normal),
+    TextSpan(text: "\n\nINFJ: ",style: bold),
+    TextSpan(text: "Share introspective nature, complex thinking, and value for meaningful connections. Both prioritize authenticity and understanding hidden meanings, but need to address potential conflict avoidance.",style: normal),
+    TextSpan(text: "\n\nENTP: ",style: bold),
+    TextSpan(text: "Share intellectual curiosity, openness to new ideas, and enjoyment of debate. ENTPs bring an extraverted energy and encourage INTPs to engage socially.",style: normal),
+    TextSpan(text: "\n\nISTP: ",style: bold),
+    TextSpan(text: "Value independence, logical problem-solving, and efficiency. ISTPs offer a practical and action-oriented approach, complementing INTPs' theoretical thinking.",style: normal),
+    TextSpan(text: "\n\nISFP: ",style: bold),
+    TextSpan(text: "Appreciate authenticity, creativity, and individual expression. ISFPs bring emotional sensitivity and artistic expression, encouraging INTPs to connect with their emotions through shared experiences.",style: normal),
+  ]));
+
+
+
+
+  RichText body_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "INTPs, also known as ",style: normal),
+    TextSpan(text: "Logicians",style: bold),
+    TextSpan(text: ", are known for their ",style: normal),
+    TextSpan(text: "sharp intellect, thirst for knowledge,",style: bold),
+    TextSpan(text: " and ",style: normal),
+    TextSpan(text: "knack for dissecting complex problems",style: bold),
+    TextSpan(text: ". They are ",style: normal),
+    TextSpan(text: "creative thinkers",style: bold),
+    TextSpan(text: ", constantly seeking new ideas and possibilities. "
+        "INTPs value autonomy, logic, and authenticity, and tend to be introspective and reserved. "
+        "They prefer deep, meaningful "
+        "conversations to small talk and often find themselves lost in thought.",style: normal),
+  ]));
 
   void overview() {
     setState(() {
@@ -685,13 +749,7 @@ class _INTPState extends State<INTP> {
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
-                          child: Text(
-                            body_text,
-                            style: Theme.of(context)
-                                .textTheme
-                                .bodyLarge!
-                                .copyWith(color: Colors.white),
-                          ),
+                          child: body_text,
                         ),
                       ],
                     ),
@@ -709,52 +767,117 @@ class ENTJ extends StatefulWidget {
 
 class _ENTJState extends State<ENTJ> {
   String headline = "Overview";
-  String overview_body =
-      "ENTJs, also known as Commanders, are natural-born leaders with a vision for the future "
-      "and a drive to achieve their goals. They are charismatic, confident, and strategic, with a strong sense of "
-      "purpose and a knack for motivating others. ENTJs value efficiency, logic, and order, and are always looking "
-      "for ways to improve and optimize.";
 
-  String strength_text =
-      "Visionary Leaders: ENTJs have a clear vision for the future and are able to inspire and motivate others to follow their lead. They are strategic thinkers who can see the big picture and develop plans to achieve their goals."
-      "\n\nDecisive and Action-Oriented: ENTJs are not afraid to make decisions and take action. They are confident in their abilities and are not afraid to take risks."
-      "\n\nEfficient and Organized: ENTJs value efficiency and order. They are good at managing their time and resources and are always looking for ways to improve their systems."
-      "\n\nCharismatic and Persuasive: ENTJs are charismatic and persuasive. They are able to connect with others and get them excited about their ideas."
-      "\n\nLogical and Analytical: ENTJs are logical and analytical. They are able to see the big picture and make decisions based on facts and data.";
+  RichText overview_body = RichText(text: TextSpan(children: [
+    TextSpan(text: "ENTJs, also known as ", style: normal),
+    TextSpan(text: "Commanders", style: bold),
+    TextSpan(text: ", are ", style: normal),
+    TextSpan(text: "natural-born leaders", style: bold),
+    TextSpan(text: " with a vision for the future and a drive to achieve their goals. They are ", style: normal),
+    TextSpan(text: "charismatic, confident", style: bold),
+    TextSpan(text: ", and ", style: normal),
+    TextSpan(text: "strategic", style: bold),
+    TextSpan(text: ", with a strong sense of purpose and a knack for motivating others. "
+        "ENTJs value efficiency, logic, and order, and are always looking for ways to improve and optimize.", style: normal),
+  ]));
 
-  String weakness_text =
-      "Stubborn and Opinionated: ENTJs can be stubborn and opinionated. They are not always open to feedback and can be dismissive of other people's ideas."
-      "\n\nInsensitive and Blunt: ENTJs can be insensitive and blunt. They may not always consider the feelings of others and can be direct to the point of rudeness."
-      "\n\nOverly Critical: ENTJs can be overly critical. They may have high standards for themselves and others and can be quick to point out mistakes."
-      "\n\nImpatient and Demanding: ENTJs can be impatient and demanding. They may expect others to keep up with their pace and may be frustrated by those who do not."
-      "\n\nWorkaholics: ENTJs can be workaholics. They may put their work above their personal relationships and may neglect their own needs.";
 
-  String friend_text =
-      "ENTJs value friends who are intelligent, ambitious, and supportive. "
-      "\n\nThey enjoy deep conversations and challenging debates. "
-      "They are loyal and supportive friends, but they can also be demanding and critical.";
 
-  String parent_text = "ENTJ parents are demanding but supportive. "
-      "\n\nThey set high standards for their children and expect them to work hard. They are also very involved in their children's lives and are always looking for ways to help them succeed.";
+  RichText strength_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "Visionary Leaders: ", style: bold),
+    TextSpan(text: "ENTJs have a clear vision for the future and are able to inspire and motivate others to follow their lead. They are strategic thinkers who can see the big picture and develop plans to achieve their goals.", style: normal),
+    TextSpan(text: "\n\nDecisive and Action-Oriented: ", style: bold),
+    TextSpan(text: "ENTJs are not afraid to make decisions and take action. They are confident in their abilities and are not afraid to take risks.", style: normal),
+    TextSpan(text: "\n\nEfficient and Organized: ", style: bold),
+    TextSpan(text: "ENTJs value efficiency and order. They are good at managing their time and resources and are always looking for ways to improve their systems.", style: normal),
+    TextSpan(text: "\n\nCharismatic and Persuasive: ", style: bold),
+    TextSpan(text: "ENTJs are charismatic and persuasive. They are able to connect with others and get them excited about their ideas.", style: normal),
+    TextSpan(text: "\n\nLogical and Analytical: ", style: bold),
+    TextSpan(text: "ENTJs are logical and analytical. They are able to see the big picture and make decisions based on facts and data.", style: normal),
+  ]));
 
-  String relation = "ENTJ Relationships:"
-      "\n\nEmotional understanding: Make an effort to connect with your partner on an emotional level and be receptive to their feelings."
-      "\n\nFlexibility and compromise: Be willing to consider other perspectives and adapt to different preferences without sacrificing your core values."
-      "\n\nHealthy communication: Express your thoughts and needs assertively but respectfully, actively listen to your partner, and work through conflicts constructively."
-      "\n\nBalancing control and collaboration: Delegate tasks effectively, appreciate others' contributions, and foster a team spirit within the relationship."
-      "\n\n\nCompatible Types:"
-      "\n\nINTJ: Share strategic thinking, goal-oriented nature, and intellectual depth. Both value efficiency, logic, and achieving ambitious goals. However, both might need to work on expressing emotions openly."
-      "\n\nINFJ: Balance ENTJ's directness with their visionary idealism and emotional intelligence. INFJs offer deeper emotional connection, shared values, and intuitive understanding, but conflict resolution might require effort."
-      "\n\nENFP: Provide intellectual stimulation, enthusiasm, and a focus on possibilities, balancing ENTJ's decisiveness. ENFPs encourage flexibility and new perspectives, but emotional expression and understanding each other's needs remain crucial."
-      "\n\nENTP: Share intellectual curiosity, debate enjoyment, and a drive for innovation. ENTPs bring an extraverted energy, encouraging ENTJs to socialize and consider different viewpoints."
-      "\n\nISTJ: Appreciate structure, organization, and practical action. ISTJs offer grounding, stability, and reliable support, while ENTJs provide vision and strategic planning. However, ENTJs might need to adjust their domineering tendencies."
-      "\n\nESTP: Share decisiveness, action-orientation, and a love for challenges. ESTPs bring spontaneity, adaptability, and a fun-loving spirit, encouraging ENTJs to loosen up and enjoy the moment. Balancing assertiveness and respect is key.";
 
-  String body_text =
-      "ENTJs, also known as Commanders, are natural-born leaders with a vision for the future "
-      "and a drive to achieve their goals. They are charismatic, confident, and strategic, with a strong sense of "
-      "purpose and a knack for motivating others. ENTJs value efficiency, logic, and order, and are always looking "
-      "for ways to improve and optimize.";
+
+  RichText weakness_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "Stubborn and Opinionated: ", style: bold),
+    TextSpan(text: "ENTJs can be stubborn and opinionated. They are not always open to feedback and can be dismissive of other people's ideas.", style: normal),
+    TextSpan(text: "\n\nInsensitive and Blunt: ", style: bold),
+    TextSpan(text: "ENTJs can be insensitive and blunt. They may not always consider the feelings of others and can be direct to the point of rudeness.", style: normal),
+    TextSpan(text: "\n\nOverly Critical: ", style: bold),
+    TextSpan(text: "ENTJs can be overly critical. They may have high standards for themselves and others and can be quick to point out mistakes.", style: normal),
+    TextSpan(text: "\n\nImpatient and Demanding: ", style: bold),
+    TextSpan(text: "ENTJs can be impatient and demanding. They may expect others to keep up with their pace and may be frustrated by those who do not.", style: normal),
+    TextSpan(text: "\n\nWorkaholics: ", style: bold),
+    TextSpan(text: "ENTJs can be workaholics. They may put their work above their personal relationships and may neglect their own needs.", style: normal),
+  ]));
+
+
+
+  RichText friend_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "ENTJs value friends who are ", style: normal),
+    TextSpan(text: "intelligent, ambitious", style: bold),
+    TextSpan(text: ", and ", style: normal),
+    TextSpan(text: "supportive", style: bold),
+    TextSpan(text: ". \n\nThey enjoy deep conversations and challenging debates. "
+        "They are loyal and supportive friends, but they can also be demanding and critical.", style: normal),
+  ]));
+
+
+  RichText parent_text = RichText(text: TextSpan(children: [
+
+    TextSpan(text: "ENTJ parents are ", style: normal),
+    TextSpan(text: "demanding", style: bold),
+    TextSpan(text: " but ", style: normal),
+    TextSpan(text: "supportive", style: bold),
+    TextSpan(text: ". \n\nThey set high standards for their children and expect them to work hard. "
+        "They are also very involved in their children's lives and are always looking for ways to help them succeed.", style: normal),
+  ]));
+
+
+
+
+  RichText relation = RichText(text: TextSpan(children: [
+    TextSpan(text: "ENTJ Relationships:", style: bold),
+    TextSpan(text: "\n\nEmotional understanding: ", style: bold),
+    TextSpan(text: "Make an effort to connect with your partner on an emotional level and be receptive to their feelings.", style: normal),
+    TextSpan(text: "\n\nFlexibility and compromise: ", style: bold),
+    TextSpan(text: "Be willing to consider other perspectives and adapt to different preferences without sacrificing your core values.", style: normal),
+    TextSpan(text: "\n\nHealthy communication: ", style: bold),
+    TextSpan(text: "Express your thoughts and needs assertively but respectfully, actively listen to your partner, and work through conflicts constructively.", style: normal),
+    TextSpan(text: "\n\nBalancing control and collaboration: ", style: bold),
+    TextSpan(text: "Delegate tasks effectively, appreciate others' contributions, and foster a team spirit within the relationship.", style: normal),
+    TextSpan(text: "\n\n\nCompatible Types:", style: bold),
+    TextSpan(text: "\n\nINTJ: ", style: bold),
+    TextSpan(text: "Share strategic thinking, goal-oriented nature, and intellectual depth. Both value efficiency, logic, and achieving ambitious goals. However, both might need to work on expressing emotions openly.", style: normal),
+    TextSpan(text: "\n\nINFJ: ", style: bold),
+    TextSpan(text: "Balance ENTJ's directness with their visionary idealism and emotional intelligence. INFJs offer deeper emotional connection, shared values, and intuitive understanding, but conflict resolution might require effort.", style: normal),
+    TextSpan(text: "\n\nENFP: ", style: bold),
+    TextSpan(text: "Provide intellectual stimulation, enthusiasm, and a focus on possibilities, balancing ENTJ's decisiveness. ENFPs encourage flexibility and new perspectives, but emotional expression and understanding each other's needs remain crucial.", style: normal),
+    TextSpan(text: "\n\nENTP: ", style: bold),
+    TextSpan(text: "Share intellectual curiosity, debate enjoyment, and a drive for innovation. ENTPs bring an extraverted energy, encouraging ENTJs to socialize and consider different viewpoints.", style: normal),
+    TextSpan(text: "\n\nISTJ: ", style: bold),
+    TextSpan(text: "Appreciate structure, organization, and practical action. ISTJs offer grounding, stability, and reliable support, while ENTJs provide vision and strategic planning. However, ENTJs might need to adjust their domineering tendencies.", style: normal),
+    TextSpan(text: "\n\nESTP: ", style: bold),
+    TextSpan(text: "Share decisiveness, action-orientation, and a love for challenges. ESTPs bring spontaneity, adaptability, and a fun-loving spirit, encouraging ENTJs to loosen up and enjoy the moment. Balancing assertiveness and respect is key.", style: normal),
+  ]));
+
+
+
+
+
+  RichText body_text =
+  RichText(text: TextSpan(children: [
+    TextSpan(text: "ENTJs, also known as ", style: normal),
+    TextSpan(text: "Commanders", style: bold),
+    TextSpan(text: ", are ", style: normal),
+    TextSpan(text: "natural-born leaders", style: bold),
+    TextSpan(text: " with a vision for the future and a drive to achieve their goals. They are ", style: normal),
+    TextSpan(text: "charismatic, confident", style: bold),
+    TextSpan(text: ", and ", style: normal),
+    TextSpan(text: "strategic", style: bold),
+    TextSpan(text: ", with a strong sense of purpose and a knack for motivating others. "
+        "ENTJs value efficiency, logic, and order, and are always looking for ways to improve and optimize.", style: normal),
+  ]));
 
   void overview() {
     setState(() {
@@ -948,13 +1071,7 @@ class _ENTJState extends State<ENTJ> {
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
-                          child: Text(
-                            body_text,
-                            style: Theme.of(context)
-                                .textTheme
-                                .bodyLarge!
-                                .copyWith(color: Colors.white),
-                          ),
+                          child: body_text
                         ),
                       ],
                     ),
