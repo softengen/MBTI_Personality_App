@@ -2063,56 +2063,141 @@ class ENFJ extends StatefulWidget {
 
 class _ENFJState extends State<ENFJ> {
   String headline = "Overview";
-  String overview_body =
-      "ENFJs, also known as Protagonists, are warm, enthusiastic, and inspiring individuals "
-      "who possess a natural ability to connect with others and motivate them to achieve their goals. "
-      "They are driven by a strong sense of purpose and a desire to make a positive impact on the world. "
-      "ENFJs are often described as extroverted, intuitive, feeling, and judging.";
 
-  String strength_text =
-      "Empathetic and Compassionate: ENFJs are deeply empathetic and compassionate individuals who can readily understand and share the feelings of others. They are drawn to helping others and often dedicate their lives to making a positive impact on the world."
-      "\n\nCharismatic and Inspiring: ENFJs possess a natural charisma and enthusiasm that inspires others to follow their lead. They are skilled at motivating and encouraging others to achieve their goals."
-      "\n\nVisionary and Strategic: ENFJs are visionary leaders who are able to see the big picture and develop plans to achieve their goals. They are skilled at identifying and developing talent in others."
-      "\n\nOrganized and Efficient: ENFJs are organized and efficient individuals who are able to manage their time and resources effectively. They are skilled at delegating tasks and getting things done."
-      "\n\nDiplomatic and Tactful: ENFJs are diplomatic and tactful individuals who are able to build consensus and resolve conflict. They are skilled at communicating effectively with others.";
 
-  String weakness_text =
-      "Overly Sensitive: ENFJs can be overly sensitive to the criticism or disapproval of others. They may take things personally and may need to learn to detach their emotions from their work."
-      "\n\nPeople-Pleasers: ENFJs can be people-pleasers who may put the needs of others before their own. They may need to learn to set boundaries and say no to others."
-      "\n\nPerfectionistic: ENFJs can be perfectionistic, which can lead to self-criticism and frustration when things fall short of their expectations."
-      "\n\nWorkaholics: ENFJs can be workaholics who may neglect their own needs in order to meet the needs of others. They may need to learn to take time for themselves and relax."
-      "\n\nAvoidant of Conflict: ENFJs may avoid conflict at all costs, which can lead to unresolved issues and resentment. Learning to communicate their needs and assertively address conflict can be helpful.";
+  RichText overview_body = RichText(text: TextSpan(children: [
+    TextSpan(text: "ENFJs" , style: bold),
+    TextSpan(text: ", also known as " , style: normal),
+    TextSpan(text: "Protagonists" , style: bold),
+    TextSpan(text: ", are " , style: normal),
+    TextSpan(text: "warm, enthusiastic" , style: bold),
+    TextSpan(text: ", and " , style: normal),
+    TextSpan(text: "inspiring individuals " , style: bold),
+    TextSpan(text: "who possess a natural ability "
+        "to connect with others and motivate them to achieve their goals. They are driven by a strong "
+        "sense of purpose and a desire to make a positive impact on the world. ENFJs are often described as " , style: normal),
+    TextSpan(text: "extroverted, intuitive, feeling" , style: bold),
+    TextSpan(text: ", and " , style: normal),
+    TextSpan(text: "judging" , style: bold),
+    TextSpan(text: "." , style: normal),
+  ]));
 
-  String friend_text =
-      "ENFJs value authenticity, deep conversations, and genuine connections. "
-      "\n\nThey seek friends who share their depth, idealism, and desire to make a difference. "
-      "While their circle may be small, their friendships are strong and built on mutual understanding and deep trust.";
 
-  String parent_text =
-      "ENFJs nurture their children with unconditional love, empathy, and encouragement. "
-      "\n\nThey foster their children's individuality, creativity, and critical thinking, while "
-      "instilling strong values and a sense of social responsibility. However, their sensitivity and "
-      "perfectionism require conscious effort to balance with providing space for exploration and independence.";
 
-  String relation =
-      "ENFJ Relationships:"
-      "\n\nHealthy communication: Express your thoughts and needs openly and honestly, while being mindful of your partner's feelings and communication style."
-      "\n\nBalancing inspiration and practicality: While motivating others, don't neglect practical details and responsibilities within the relationship."
-      "\n\nRespecting boundaries: Give your partner space for individuality and autonomy while fostering healthy connections."
-      "\n\nEmotional understanding: Actively listen to your partner's emotions and express your own feelings constructively for deeper emotional connection."
-      "\n\n\nCompatible Types:"
-      "\n\nINFJ: Share compassion, idealism, and a deep desire to help others. Both value meaningful connections, authenticity, and personal growth. However, both might need to work on practicality and navigating potential conflict situations constructively."
-      "\n\nENFP: Balance ENFJ's structure and organization with their visionary idealism and enthusiasm. ENFPs bring spontaneity, creativity, and a focus on possibilities, encouraging ENFJs to embrace flexibility and explore new perspectives."
-      "\n\nINTP: Share intellectual curiosity and a love for exploring complex ideas. INTPs offer a logical and analytical perspective, balancing ENFJ's emotional nature. However, bridging the gap between ENFJ's desire for connection and INTP's need for autonomy is crucial."
-      "\n\nENTJ: Share strategic thinking, decisiveness, and a drive to achieve goals. ENTJs bring a more direct and assertive approach, complementing ENFJ's inspirational leadership. However, managing potential power dynamics and respecting communication styles are important."
-      "\n\nENTP: Share intellectual energy, love of debate, and a focus on innovation. ENTPs bring an extraverted and playful approach, encouraging ENFJs to relax and enjoy the moment. Balancing intellectual stimulation with emotional connection is key."
-      "\n\nISFP: Offer emotional sensitivity, artistic expression, and a focus on personal values. ISFPs bring authenticity, creativity, and a grounding presence, encouraging ENFJs to connect with their emotions and appreciate individual differences.";
+  RichText strength_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "Empathetic and Compassionate: " , style: bold),
+    TextSpan(text: "ENFJs are deeply empathetic and compassionate individuals who can readily understand and share the feelings of others. They are drawn to helping others and often dedicate their lives to making a positive impact on the world." , style: normal),
+    TextSpan(text: "\n\nCharismatic and Inspiring: " , style: bold),
+    TextSpan(text: "ENFJs possess a natural charisma and enthusiasm that inspires others to follow their lead. They are skilled at motivating and encouraging others to achieve their goals." , style: normal),
+    TextSpan(text: "\n\nVisionary and Strategic: " , style: bold),
+    TextSpan(text: "ENFJs are visionary leaders who are able to see the big picture and develop plans to achieve their goals. They are skilled at identifying and developing talent in others." , style: normal),
+    TextSpan(text: "\n\nOrganized and Efficient: " , style: bold),
+    TextSpan(text: "ENFJs are organized and efficient individuals who are able to manage their time and resources effectively. They are skilled at delegating tasks and getting things done." , style: normal),
+    TextSpan(text: "n\nDiplomatic and Tactful: " , style: bold),
+    TextSpan(text: "ENFJs are diplomatic and tactful individuals who are able to build consensus and resolve conflict. They are skilled at communicating effectively with others." , style: normal),
+  ]));
 
-  String body_text =
-      "ENFJs, also known as Protagonists, are warm, enthusiastic, and inspiring individuals "
-      "who possess a natural ability to connect with others and motivate them to achieve their goals. "
-      "They are driven by a strong sense of purpose and a desire to make a positive impact on the world. "
-      "ENFJs are often described as extroverted, intuitive, feeling, and judging.";
+
+
+  RichText weakness_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "Overly Sensitive: " , style: bold),
+    TextSpan(text: "ENFJs can be overly sensitive to the criticism or disapproval of others. They may take things personally and may need to learn to detach their emotions from their work." , style: normal),
+    TextSpan(text: "\n\nPeople-Pleasers: " , style: bold),
+    TextSpan(text: "ENFJs can be people-pleasers who may put the needs of others before their own. They may need to learn to set boundaries and say no to others." , style: normal),
+    TextSpan(text: "\n\nPerfectionistic: " , style: bold),
+    TextSpan(text: "ENFJs can be perfectionistic, which can lead to self-criticism and frustration when things fall short of their expectations." , style: normal),
+    TextSpan(text: "\n\nWorkaholics: " , style: bold),
+    TextSpan(text: "ENFJs can be workaholics who may neglect their own needs in order to meet the needs of others. They may need to learn to take time for themselves and relax." , style: normal),
+    TextSpan(text: "\n\nAvoidant of Conflict: " , style: bold),
+    TextSpan(text: "ENFJs may avoid conflict at all costs, which can lead to unresolved issues and resentment. Learning to communicate their needs and assertively address conflict can be helpful." , style: normal),
+  ]));
+
+
+
+
+  RichText relation = RichText(text: TextSpan(children: [
+    TextSpan(text: "ENFJ Relationships:" , style: bold),
+    TextSpan(text: "\n\nHealthy communication: " , style: bold),
+    TextSpan(text: "Express your thoughts and needs openly and honestly, while being mindful of your partner's feelings and communication style." , style: normal),
+    TextSpan(text: "\n\nBalancing inspiration and practicality: " , style: bold),
+    TextSpan(text: "While motivating others, don't neglect practical details and responsibilities within the relationship." , style: normal),
+    TextSpan(text: "\n\nRespecting boundaries: " , style: bold),
+    TextSpan(text: "Give your partner space for individuality and autonomy while fostering healthy connections." , style: normal),
+    TextSpan(text: "\n\nEmotional understanding: " , style: bold),
+    TextSpan(text: "Actively listen to your partner's emotions and express your own feelings constructively for deeper emotional connection." , style: normal),
+    TextSpan(text: "\n\n\nCompatible Types:" , style: bold),
+    TextSpan(text: "\n\nINFJ: " , style: bold),
+    TextSpan(text: "Share compassion, idealism, and a deep desire to help others. Both value meaningful connections, authenticity, and personal growth. However, both might need to work on practicality and navigating potential conflict situations constructively." , style: normal),
+    TextSpan(text: "\n\nENFP: " , style: bold),
+    TextSpan(text: "Balance ENFJ's structure and organization with their visionary idealism and enthusiasm. ENFPs bring spontaneity, creativity, and a focus on possibilities, encouraging ENFJs to embrace flexibility and explore new perspectives." , style: normal),
+    TextSpan(text: "\n\nINTP: " , style: bold),
+    TextSpan(text: "Share intellectual curiosity and a love for exploring complex ideas. INTPs offer a logical and analytical perspective, balancing ENFJ's emotional nature. However, bridging the gap between ENFJ's desire for connection and INTP's need for autonomy is crucial." , style: normal),
+    TextSpan(text: "\n\nENTJ: " , style: bold),
+    TextSpan(text: "Share strategic thinking, decisiveness, and a drive to achieve goals. ENTJs bring a more direct and assertive approach, complementing ENFJ's inspirational leadership. However, managing potential power dynamics and respecting communication styles are important." , style: normal),
+    TextSpan(text: "\n\nENTP: " , style: bold),
+    TextSpan(text: "Share intellectual energy, love of debate, and a focus on innovation. ENTPs bring an extraverted and playful approach, encouraging ENFJs to relax and enjoy the moment. Balancing intellectual stimulation with emotional connection is key." , style: normal),
+    TextSpan(text: "\n\nISFP: " , style: bold),
+    TextSpan(text: "Offer emotional sensitivity, artistic expression, and a focus on personal values. ISFPs bring authenticity, creativity, and a grounding presence, encouraging ENFJs to connect with their emotions and appreciate individual differences." , style: normal),
+  ]));
+
+
+
+
+  RichText friend_text = RichText(text: TextSpan(children: [
+
+    TextSpan(text: "ENFJs" , style: bold),
+    TextSpan(text: " value " , style: normal),
+    TextSpan(text: "authenticity, deep conversations" , style: bold),
+    TextSpan(text: ", and " , style: normal),
+    TextSpan(text: "genuine connections" , style: bold),
+    TextSpan(text: ". \n\nThey seek friends who share their " , style: normal),
+    TextSpan(text: "depth, idealism" , style: bold),
+    TextSpan(text: ", and " , style: normal),
+    TextSpan(text: "desire to make a difference" , style: bold),
+    TextSpan(text: ". While their circle may be small, their friendships are strong and "
+        "built on mutual understanding and deep trust." , style: normal),
+  ]));
+
+
+
+
+
+  RichText parent_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "ENFJs" , style: bold),
+    TextSpan(text: "nurture their children with " , style: normal),
+    TextSpan(text: "unconditional love, empathy" , style: bold),
+    TextSpan(text: ", and " , style: normal),
+    TextSpan(text: "encouragement" , style: bold),
+    TextSpan(text: ". \n\nThey foster their children's " , style: normal),
+    TextSpan(text: "individuality, creativity" , style: bold),
+    TextSpan(text: ", and " , style: normal),
+    TextSpan(text: "critical thinking" , style: bold),
+    TextSpan(text: ", while instilling strong values and a sense of social responsibility. However, their sensitivity and "
+        "perfectionism require conscious effort to balance with providing space for exploration and independence." , style: normal),
+  ]));
+
+
+
+
+
+
+  RichText body_text =
+  RichText(text: TextSpan(children: [
+    TextSpan(text: "ENFJs" , style: bold),
+    TextSpan(text: ", also known as " , style: normal),
+    TextSpan(text: "Protagonists" , style: bold),
+    TextSpan(text: ", are " , style: normal),
+    TextSpan(text: "warm, enthusiastic" , style: bold),
+    TextSpan(text: ", and " , style: normal),
+    TextSpan(text: "inspiring individuals " , style: bold),
+    TextSpan(text: "who possess a natural ability "
+        "to connect with others and motivate them to achieve their goals. They are driven by a strong "
+        "sense of purpose and a desire to make a positive impact on the world. ENFJs are often described as " , style: normal),
+    TextSpan(text: "extroverted, intuitive, feeling" , style: bold),
+    TextSpan(text: ", and " , style: normal),
+    TextSpan(text: "judging" , style: bold),
+    TextSpan(text: "." , style: normal),
+  ]));
 
   void overview() {
     setState(() {
@@ -2307,13 +2392,7 @@ class _ENFJState extends State<ENFJ> {
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
-                          child: Text(
-                            body_text,
-                            style: Theme.of(context)
-                                .textTheme
-                                .bodyLarge!
-                                .copyWith(color: Colors.white),
-                          ),
+                          child: body_text,
                         ),
                       ],
                     ),
@@ -3549,9 +3628,9 @@ class _ESFJState extends State<ESFJ> {
                               ),
                             ),
                           ),
-                          Text(
+                          const Text(
                             ("(ESFJ)"),
-                            style: const TextStyle(
+                            style: TextStyle(
                               fontFamily: "Roboto",
                               fontWeight: FontWeight.bold,
                               fontSize: 30,
@@ -4425,9 +4504,9 @@ class _ESTPState extends State<ESTP> {
                               ),
                             ),
                           ),
-                          Text(
+                          const Text(
                             ("(ESTP)"),
-                            style: const TextStyle(
+                            style: TextStyle(
                               fontFamily: "Roboto",
                               fontWeight: FontWeight.bold,
                               fontSize: 30,
@@ -4546,8 +4625,8 @@ class _ESFPState extends State<ESFP> {
     TextSpan(text: "infectious enthusiasm, spontaneity",style: bold),
     TextSpan(text: ", and ",style: normal),
     TextSpan(text: " love of life.",style: bold),
-    TextSpan(text: " They approach the world with a focus on experiencing the present moment through their",style: normal),
-    TextSpan(text: "their senses, valuing connection, fun, and expressing themselves authentically.",style: bold),
+    TextSpan(text: " They approach the world with a focus on experiencing the present moment through "
+        "their their senses, valuing connection, fun, and expressing themselves authentically.",style: normal),
   ]));
 
   RichText strength_text = RichText(text: TextSpan(children: [
@@ -4724,9 +4803,9 @@ class _ESFPState extends State<ESFP> {
                               ),
                             ),
                           ),
-                          Text(
+                          const Text(
                             ("(ESFP)"),
-                            style: const TextStyle(
+                            style: TextStyle(
                               fontFamily: "Roboto",
                               fontWeight: FontWeight.bold,
                               fontSize: 30,
