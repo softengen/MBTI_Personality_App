@@ -90,7 +90,7 @@ class _testPgageState extends State<testPage> {
                       points["t2"]!.contains(null) ||
                       points["t3"]!.contains(null) ||
                       points["t4"]!.contains(null)) {
-                    final message = const SnackBar(
+                    const message = SnackBar(
                       content: Center(
                           child: Text(
                         "Answer all questions to proceed",

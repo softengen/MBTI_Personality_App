@@ -46,7 +46,7 @@ class MyApp extends StatelessWidget {
             foregroundColor: Color(0xffefe0ff),)
       ),
 
-      home: user != null ? resultPage() : LoginPage(),
+      home: user != null ? personalityPage() : LoginPage(),
 
     );
   }
