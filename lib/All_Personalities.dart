@@ -1089,55 +1089,117 @@ class ENTP extends StatefulWidget {
 
 class _ENTPState extends State<ENTP> {
   String headline = "Overview";
-  String overview_body =
-      "ENTPs, also known as Debaters, are quick-witted, imaginative, and always up for a challenge. "
-      "They are natural-born debaters who love to explore new ideas and possibilities. "
-      "ENTPs value freedom, creativity, and authenticity, and tend to be independent and non-conformist. "
-      "They are always looking for ways to improve the world around them and are not afraid to challenge the status quo.";
 
-  String strength_text =
-      "Imaginative and Creative: ENTPs are imaginative and creative. They are always coming up with new ideas and ways of doing things. They are also good at seeing the big picture and making connections between seemingly unrelated ideas."
-      "\n\nIntelligent and Witty: ENTPs are intelligent and witty. They are able to see the humor in almost any situation and are good at using their words to entertain and persuade others."
-      "\n\nIndependent and Non-Conformist: ENTPs are independent and non-conformist. They do not like to be told what to do and are always looking for new ways to challenge themselves."
-      "\n\nAdaptable and Flexible: ENTPs are adaptable and flexible. They are able to change their plans quickly and easily and are not afraid to take risks."
-      "\n\nEnthusiastic and Optimistic: ENTPs are enthusiastic and optimistic. They are always looking for the next big thing and are always excited about new possibilities.";
+  RichText overview_body = RichText(text: TextSpan(children: [
+    TextSpan(text: "ENTPs, also known as ",style: normal),
+    TextSpan(text: "Debaters",style: bold),
+    TextSpan(text: ", are ",style: normal),
+    TextSpan(text: "quick-witted, imaginative",style: bold),
+    TextSpan(text: ", and ",style: normal),
+    TextSpan(text: "always up for a challenge",style: bold),
+    TextSpan(text: ". They are natural-born debaters who love to explore new ideas and possibilities. They are ",style: normal),
+    TextSpan(text: "atural-born debaters",style: bold),
+    TextSpan(text: "who love to explore new ideas and possibilities. ENTPs value freedom, creativity, and authenticity, and tend to be independent and non-conformist. "
+        "They are always looking for ways to improve the world around them and are not afraid to challenge the status quo.",style: normal),
+  ]));
 
-  String weakness_text =
-      "Disorganized and Impulsive: ENTPs can be disorganized and impulsive. They may start projects without finishing them and may make decisions without thinking them through."
-      "\n\nArgumentative and Debatative: ENTPs can be argumentative and debatative. They may enjoy arguing for the sake of arguing and may not always be open to other people's ideas."
-      "\n\nInsensitive and Blunt: ENTPs can be insensitive and blunt. They may not always consider the feelings of others and may say things that are hurtful or offensive."
-      "\n\nUnreliable and Flaky: ENTPs can be unreliable and flaky. They may not always follow through on their commitments and may change their plans at the last minute."
-      "\n\nOverly Critical: ENTPs can be overly critical. They may have high standards for themselves and others and may be quick to point out mistakes.";
 
-  String friend_text =
-      "ENTPs value friends who are intelligent, challenging, and supportive. "
-      "\n\nThey enjoy deep conversations and lively debates. "
-      "They are loyal and supportive friends, but they can also be demanding and critical.";
 
-  String parent_text =
-      "ENTP parents are stimulating and engaging. "
-      "\n\nThey are always looking for new ways to teach and entertain their children. "
-      "They are also very involved in their children's lives and are always looking for ways to help them succeed.";
+  RichText strength_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "Imaginative and Creative: ",style: bold),
+    TextSpan(text: "ENTPs are imaginative and creative. They are always coming up with new ideas and ways of doing things. They are also good at seeing the big picture and making connections between seemingly unrelated ideas.",style: normal),
+    TextSpan(text: "\n\nIntelligent and Witty: ",style: bold),
+    TextSpan(text: "ENTPs are intelligent and witty. They are able to see the humor in almost any situation and are good at using their words to entertain and persuade others.",style: normal),
+    TextSpan(text: "\n\nIndependent and Non-Conformist: ",style: bold),
+    TextSpan(text: "ENTPs are independent and non-conformist. They do not like to be told what to do and are always looking for new ways to challenge themselves.",style: normal),
+    TextSpan(text: "\n\nAdaptable and Flexible: ",style: bold),
+    TextSpan(text: "ENTPs are adaptable and flexible. They are able to change their plans quickly and easily and are not afraid to take risks.",style: normal),
+    TextSpan(text: "\n\nEnthusiastic and Optimistic:",style: bold),
+    TextSpan(text: "ENTPs are enthusiastic and optimistic. They are always looking for the next big thing and are always excited about new possibilities.",style: normal),
+  ]));
 
-  String relation =
-      "ENTP Relationships:"
-      "\n\nEmotional understanding: Make an effort to connect with your partner on an emotional level and be receptive to their feelings."
-      "\n\nCommitment and follow-through: While enjoying novelty, commit to your partner and follow through on responsibilities to build trust and stability."
-      "\n\nHealthy communication: Express your thoughts and needs openly and honestly, but be mindful of your partner's feelings and communication style."
-      "\n\nBalancing intellectual stimulation and emotional connection: Foster deep conversations and intellectual sharing, while also nurturing emotional intimacy and shared experiences."
-      "\n\n\nCompatible Types:"
-      "\n\nINTP: Share intellectual curiosity, love of debate, and an independent spirit. Both enjoy exploring complex ideas and challenging each other's perspectives, but need to work on emotional vulnerability and expressing feelings constructively."
-      "\n\nENFP: Balance ENTP's analytical side with their visionary idealism and enthusiasm. ENFPs bring creativity, emotional warmth, and a focus on possibilities, encouraging ENTPs to connect with their feelings and explore new perspectives."
-      "\n\nINFJ: Share a fascination with complex concepts, introspective nature, and value for authenticity. INFJs offer emotional depth, intuitive understanding, and shared values, but managing potential conflict avoidance and expressing individual needs remain crucial."
-      "\n\nENTJ: Share intellectual energy, strategic thinking, and a drive for innovation. ENTPs bring a playful and adaptable approach, balancing ENTJ's decisiveness and ambition. However, navigating potential power dynamics and respecting each other's communication styles are important."
-      "\n\nESTP: Share a love for action, adventure, and spontaneous fun. ESTPs offer grounding in the present moment, a practical outlook, and a zest for life, encouraging ENTPs to embrace the here and now. Balancing impulsiveness and appreciating different communication styles are key."
-      "\n\nISFP: Offer creative expression, emotional sensitivity, and a focus on enjoying the moment. ISFPs bring a different perspective, encouraging ENTPs to connect with their feelings and appreciate individuality. Balancing intellectual stimulation with emotional connection is crucial.";
 
-  String body_text =
-      "ENTPs, also known as Debaters, are quick-witted, imaginative, and always up for a challenge. "
-      "They are natural-born debaters who love to explore new ideas and possibilities. "
-      "ENTPs value freedom, creativity, and authenticity, and tend to be independent and non-conformist. "
-      "They are always looking for ways to improve the world around them and are not afraid to challenge the status quo.";
+
+  RichText weakness_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "Disorganized and Impulsive: ",style: bold),
+    TextSpan(text: "ENTPs can be disorganized and impulsive. They may start projects without finishing them and may make decisions without thinking them through.",style: normal),
+    TextSpan(text: "\n\nArgumentative and Debatative: ",style: bold),
+    TextSpan(text: "ENTPs can be argumentative and debatative. They may enjoy arguing for the sake of arguing and may not always be open to other people's ideas.",style: normal),
+    TextSpan(text: "\n\nInsensitive and Blunt: ",style: bold),
+    TextSpan(text: "ENTPs can be insensitive and blunt. They may not always consider the feelings of others and may say things that are hurtful or offensive.",style: normal),
+    TextSpan(text: "\n\nUnreliable and Flaky: ",style: bold),
+    TextSpan(text: "ENTPs can be unreliable and flaky. They may not always follow through on their commitments and may change their plans at the last minute.",style: normal),
+    TextSpan(text: "\n\nOverly Critical: ",style: bold),
+    TextSpan(text: "ENTPs can be overly critical. They may have high standards for themselves and others and may be quick to point out mistakes.",style: normal),
+  ]));
+
+
+
+
+  RichText relation = RichText(text: TextSpan(children: [
+    TextSpan(text: "ENTP Relationships:",style: bold),
+    TextSpan(text: "\n\nEmotional understanding: ",style: bold),
+    TextSpan(text: "Make an effort to connect with your partner on an emotional level and be receptive to their feelings.",style: normal),
+    TextSpan(text: "\n\nCommitment and follow-through: ",style: bold),
+    TextSpan(text: "While enjoying novelty, commit to your partner and follow through on responsibilities to build trust and stability.",style: normal),
+    TextSpan(text: "\n\nHealthy communication: ",style: bold),
+    TextSpan(text: "Express your thoughts and needs openly and honestly, but be mindful of your partner's feelings and communication style.",style: normal),
+    TextSpan(text: "\n\nBalancing intellectual stimulation and emotional connection: ",style: bold),
+    TextSpan(text: "Foster deep conversations and intellectual sharing, while also nurturing emotional intimacy and shared experiences.",style: normal),
+    TextSpan(text: "\n\n\nCompatible Types:",style: bold),
+    TextSpan(text: "\n\nINTP: ",style: bold),
+    TextSpan(text: "Share intellectual curiosity, love of debate, and an independent spirit. Both enjoy exploring complex ideas and challenging each other's perspectives, but need to work on emotional vulnerability and expressing feelings constructively.",style: normal),
+    TextSpan(text: "\n\nENFP: ",style: bold),
+    TextSpan(text: "Balance ENTP's analytical side with their visionary idealism and enthusiasm. ENFPs bring creativity, emotional warmth, and a focus on possibilities, encouraging ENTPs to connect with their feelings and explore new perspectives.",style: normal),
+    TextSpan(text: "\n\nINFJ: ",style: bold),
+    TextSpan(text: "Share a fascination with complex concepts, introspective nature, and value for authenticity. INFJs offer emotional depth, intuitive understanding, and shared values, but managing potential conflict avoidance and expressing individual needs remain crucial.",style: normal),
+    TextSpan(text: "\n\nENTJ: ",style: bold),
+    TextSpan(text: "Share intellectual energy, strategic thinking, and a drive for innovation. ENTPs bring a playful and adaptable approach, balancing ENTJ's decisiveness and ambition. However, navigating potential power dynamics and respecting each other's communication styles are important.",style: bold),
+    TextSpan(text: "\n\nESTP: ",style: bold),
+    TextSpan(text: "Share a love for action, adventure, and spontaneous fun. ESTPs offer grounding in the present moment, a practical outlook, and a zest for life, encouraging ENTPs to embrace the here and now. Balancing impulsiveness and appreciating different communication styles are key.",style: normal),
+    TextSpan(text: "\n\nISFP: ",style: bold),
+    TextSpan(text: "Offer creative expression, emotional sensitivity, and a focus on enjoying the moment. ISFPs bring a different perspective, encouraging ENTPs to connect with their feelings and appreciate individuality. Balancing intellectual stimulation with emotional connection is crucial.",style: normal),
+  ]));
+
+
+
+  RichText friend_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "ENTPs value friends who are ",style: normal),
+    TextSpan(text: "intelligent, challenging",style: bold),
+    TextSpan(text: ", and ",style: normal),
+    TextSpan(text: "supportive",style: bold),
+    TextSpan(text: ". \n\nThey enjoy deep conversations and lively debates. "
+        "They are loyal and supportive friends, but they can also be demanding and critical.",style: normal),
+  ]));
+
+
+
+
+  RichText parent_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "ENTP parents are ",style: normal),
+    TextSpan(text: "stimulating",style: bold),
+    TextSpan(text: " and ",style: normal),
+    TextSpan(text: "engaging",style: bold),
+    TextSpan(text: ". \n\nThey are always looking for new ways to teach and entertain their children. "
+        "They are also very involved in their children's lives and are always looking for ways to help them succeed.",style: normal),
+  ]));
+
+
+
+
+  RichText body_text =
+  RichText(text: TextSpan(children: [
+    TextSpan(text: "ENTPs, also known as ",style: normal),
+    TextSpan(text: "Debaters",style: bold),
+    TextSpan(text: ", are ",style: normal),
+    TextSpan(text: "quick-witted, imaginative",style: bold),
+    TextSpan(text: ", and ",style: normal),
+    TextSpan(text: "always up for a challenge",style: bold),
+    TextSpan(text: ". They are natural-born debaters who love to explore new ideas and possibilities. They are ",style: normal),
+    TextSpan(text: "atural-born debaters",style: bold),
+    TextSpan(text: "who love to explore new ideas and possibilities. ENTPs value freedom, creativity, and authenticity, and tend to be independent and non-conformist. "
+        "They are always looking for ways to improve the world around them and are not afraid to challenge the status quo.",style: normal),
+  ]));
 
   void overview() {
     setState(() {
@@ -1235,9 +1297,9 @@ class _ENTPState extends State<ENTP> {
                               ),
                             ),
                           ),
-                          Text(
+                          const Text(
                             ("(ENTP)"),
-                            style: const TextStyle(
+                            style: TextStyle(
                               fontFamily: "Roboto",
                               fontWeight: FontWeight.bold,
                               fontSize: 30,
@@ -1332,13 +1394,7 @@ class _ENTPState extends State<ENTP> {
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
-                          child: Text(
-                            body_text,
-                            style: Theme.of(context)
-                                .textTheme
-                                .bodyLarge!
-                                .copyWith(color: Colors.white),
-                          ),
+                          child: body_text
                         ),
                       ],
                     ),

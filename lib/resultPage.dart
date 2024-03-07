@@ -51,6 +51,8 @@ class resultPage extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
+    double w = MediaQuery.of(context).size.width, h = MediaQuery.of(context).size.height;
+
 
     return Scaffold(
       drawer: NavBar(),
@@ -61,8 +63,8 @@ class resultPage extends StatelessWidget{
           children: [
             Center(child: LinearChart(percentage: percentage, )),
             Container(
-              height: 310,
-              width: 390,
+              height: h*.38,
+              width: w*.95,
               decoration: const BoxDecoration(color: Color(0xff352F44),
                   boxShadow: [BoxShadow(blurRadius: 20)],
                   borderRadius: const BorderRadius.all(Radius.circular(20) ) ),
