@@ -10,8 +10,10 @@ class LinearChart extends StatelessWidget{
   const LinearChart({required this.percentage,});
   @override
   Widget build(BuildContext context) {
-    double w = MediaQuery.of(context).size.width, h = MediaQuery.of(context).size.height;
-    double barWidth = w*.37, barHeight = h*.015;
+    double w = MediaQuery.of(context).size.width,
+        h = MediaQuery.of(context).size.height,
+        barWidth = w*.37,
+        barHeight = h*.015;
 
 
     Color color1 = Colors.green.shade400;

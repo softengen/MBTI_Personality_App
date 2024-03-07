@@ -1412,56 +1412,125 @@ class INFJ extends StatefulWidget {
 
 class _INFJState extends State<INFJ> {
   String headline = "Overview";
-  String overview_body =
-      "INFJs, also known as Advocates, are deeply insightful, idealistic, and driven by a desire to help others. "
-      "They possess a unique ability to understand people's emotions and motivations, often seeing through surface-level interactions "
-      "to the core of someone's being. INFJs are drawn to meaningful connections, complex ideas, and making a positive impact "
-      "on the world.";
 
-  String strength_text =
-      "Empathetic and Compassionate: INFJs naturally grasp and deeply resonate with the emotions of others. They care deeply about people's well-being and are driven to alleviate suffering and contribute to the betterment of society."
-      "\n\nInsightful and Visionary: Possessing keen intuition and foresight, INFJs can readily perceive unseen connections, patterns, and future possibilities. This allows them to offer unique perspectives and innovative solutions to challenges."
-      "\n\nCreative and Idealistic: Driven by strong values and a desire for positive change, INFJs readily generate creative solutions and envision ideal scenarios for the future. They inspire others with their passion and belief in a better world."
-      "\n\nLoyal and Committed: Once they connect with someone on a deep level, INFJs forge strong and lasting bonds. They are fiercely loyal and supportive, offering unwavering dedication to those they care about."
-      "\n\nIndependent Thinkers: While valuing meaningful connections, INFJs maintain their own sense of individuality and are not easily swayed by popular opinion. They critically evaluate information and form their own informed conclusions.";
+  RichText overview_body = RichText(text: TextSpan(children: [
+    TextSpan(text: "INFJs, also known as ", style: normal),
+    TextSpan(text: "Advocates", style: bold),
+    TextSpan(text: ", are deeply ", style: normal),
+    TextSpan(text: "insightful, idealistic", style: bold),
+    TextSpan(text: ", and ", style: normal),
+    TextSpan(text: "driven by a desire to help others", style: bold),
+    TextSpan(text: ". They possess a unique ability to understand people's emotions and motivations, "
+        "often seeing through surface-level interactions to the core of someone's being. "
+        "INFJs are drawn to meaningful connections, complex ideas, and making a positive impact "
+        "on the world.", style: normal),
+  ]));
 
-  String weakness_text =
-      "Overly Sensitive: Their deep empathy can leave them vulnerable to emotional overload, particularly in highly charged environments. They may take on the burdens of others and struggle to separate their own emotions from those around them."
-      "\n\nPerfectionism: Driven by their ideals and high standards, INFJs can become perfectionistic, leading to self-criticism, procrastination, and frustration when things fall short of their expectations."
-      "\n\nDifficulty Saying No: Their desire to help and prioritize others' needs can make it challenging for INFJs to set boundaries and decline requests, potentially leading to personal sacrifices and resentment."
-      "\n\nSocial Introversion: Though capable of deep connections, INFJs often require significant alone time to recharge and process their emotions. This can sometimes present as social awkwardness or shyness in large groups."
-      "\n\nTaking Criticism Personally: Due to their deep investment in their values and ideals, INFJs can take criticism personally, sometimes feeling misunderstood or unfairly judged. Learning to detach and adopt a more objective perspective can be helpful.";
 
-  String friend_text =
-      "INFJs value authenticity, meaningful conversations, and genuine connections. "
-      "\n\nThey seek friends who share their depth, idealism, and desire to make a difference. "
-      "While their circle may be small, their friendships are strong and built on mutual understanding and deep trust.";
 
-  String parent_text =
-      "INFJs nurture their children with unconditional love, empathy, and encouragement. "
-      "\n\nThey foster their children's individuality, creativity, and critical thinking, while instilling strong values "
-      "and a sense of social responsibility. However, their sensitivity and perfectionism require conscious effort to balance "
-      "with providing space for exploration and independence.";
+  RichText strength_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "Empathetic and Compassionate: ", style: bold),
+    TextSpan(text: "INFJs naturally grasp and deeply resonate with the emotions of others. They care deeply about people's well-being and are driven to alleviate suffering and contribute to the betterment of society.", style: normal),
+    TextSpan(text: "\n\nInsightful and Visionary: ", style: bold),
+    TextSpan(text: "Possessing keen intuition and foresight, INFJs can readily perceive unseen connections, patterns, and future possibilities. This allows them to offer unique perspectives and innovative solutions to challenges.", style: normal),
+    TextSpan(text: "\n\nCreative and Idealistic: ", style: bold),
+    TextSpan(text: "Driven by strong values and a desire for positive change, INFJs readily generate creative solutions and envision ideal scenarios for the future. They inspire others with their passion and belief in a better world.", style: normal),
+    TextSpan(text: "\n\nLoyal and Committed: ", style: bold),
+    TextSpan(text: "Once they connect with someone on a deep level, INFJs forge strong and lasting bonds. They are fiercely loyal and supportive, offering unwavering dedication to those they care about.", style: normal),
+    TextSpan(text: "\n\nIndependent Thinkers: ", style: bold),
+    TextSpan(text: "While valuing meaningful connections, INFJs maintain their own sense of individuality and are not easily swayed by popular opinion. They critically evaluate information and form their own informed conclusions.", style: normal),
+  ]));
 
-  String relation =
-      "INFJ Relationships:"
-      "\n\nHealthy communication: Express your thoughts and needs openly and honestly, while being mindful of your partner's feelings and communication style."
-      "\n\nBalancing idealism and practicality: While pursuing your values, don't neglect practical details and responsibilities within the relationship."
-      "\n\nSetting boundaries: Learn to say no and prioritize your own needs while maintaining healthy connections with your partner."
-      "\n\nEmbracing emotional expression: Share your feelings openly and constructively, and encourage your partner to do the same, for deeper emotional connection."
-      "\n\n\nCompatible Types:"
-      "\n\nINTJ: Share introspective nature, complex thinking, and value for meaningful connections. Both prioritize authenticity and understanding deep motivations, but might need to work on emotional expression and addressing conflict directly."
-      "\n\nENFP: Balance INFJ's introversion with their visionary idealism and emotional warmth. ENFPs bring enthusiasm, optimism, and a focus on possibilities, helping INFJs connect with their emotions and express themselves more openly."
-      "\n\nINFP: Share idealism, empathy, and a desire for authentic connections. Both value creativity, personal growth, and meaningful conversations, but might need to address potential conflict avoidance and practical realities."
-      "\n\nENFJ: Share strong intuition, compassion, and a desire to help others. ENFJs bring extraverted energy and leadership qualities, encouraging INFJs to engage socially and express their ideas confidently."
-      "\n\nISTJ: Provide grounding, stability, and practical support. ISTJs offer structure, reliability, and a different perspective, balancing INFJ's idealism with groundedness. However, INFJs might need to manage potential power dynamics and communication differences."
-      "\n\nISFP: Offer emotional sensitivity, artistic expression, and a focus on personal values. ISFPs bring authenticity, creativity, and a different way of experiencing the world, encouraging INFJs to connect with their emotions and appreciate beauty in everyday life.";
 
-  String body_text =
-      "INFJs, also known as Advocates, are deeply insightful, idealistic, and driven by a desire to help others. "
-      "They possess a unique ability to understand people's emotions and motivations, often seeing through surface-level interactions "
-      "to the core of someone's being. INFJs are drawn to meaningful connections, complex ideas, and making a positive impact "
-      "on the world.";
+
+
+  RichText weakness_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "Overly Sensitive: ", style: bold),
+    TextSpan(text: "Their deep empathy can leave them vulnerable to emotional overload, particularly in highly charged environments. They may take on the burdens of others and struggle to separate their own emotions from those around them.", style: normal),
+    TextSpan(text: "\n\nPerfectionism: ", style: bold),
+    TextSpan(text: "Driven by their ideals and high standards, INFJs can become perfectionistic, leading to self-criticism, procrastination, and frustration when things fall short of their expectations.", style: normal),
+    TextSpan(text: "\n\nDifficulty Saying No: ", style: bold),
+    TextSpan(text: "Their desire to help and prioritize others' needs can make it challenging for INFJs to set boundaries and decline requests, potentially leading to personal sacrifices and resentment.", style: normal),
+    TextSpan(text: "\n\nSocial Introversion: ", style: bold),
+    TextSpan(text: "Though capable of deep connections, INFJs often require significant alone time to recharge and process their emotions. This can sometimes present as social awkwardness or shyness in large groups.", style: normal),
+    TextSpan(text: "\n\nTaking Criticism Personally: ", style: bold),
+    TextSpan(text: "Due to their deep investment in their values and ideals, INFJs can take criticism personally, sometimes feeling misunderstood or unfairly judged. Learning to detach and adopt a more objective perspective can be helpful.", style: normal),
+  ]));
+
+
+
+  RichText relation = RichText(text: TextSpan(children: [
+    TextSpan(text: "INFJ Relationships:", style: bold),
+    TextSpan(text: "\n\nHealthy communication: ", style: bold),
+    TextSpan(text: "Express your thoughts and needs openly and honestly, while being mindful of your partner's feelings and communication style.", style: normal),
+    TextSpan(text: "\n\nBalancing idealism and practicality: ", style: bold),
+    TextSpan(text: "While pursuing your values, don't neglect practical details and responsibilities within the relationship.", style: normal),
+    TextSpan(text: "\n\nSetting boundaries: ", style: bold),
+    TextSpan(text: "Learn to say no and prioritize your own needs while maintaining healthy connections with your partner.", style: normal),
+    TextSpan(text: "\n\nEmbracing emotional expression: ", style: bold),
+    TextSpan(text: "Share your feelings openly and constructively, and encourage your partner to do the same, for deeper emotional connection.", style: normal),
+    TextSpan(text: "\n\n\nCompatible Types:", style: bold),
+    TextSpan(text: "\n\nINTJ: ", style: bold),
+    TextSpan(text: "Share introspective nature, complex thinking, and value for meaningful connections. Both prioritize authenticity and understanding deep motivations, but might need to work on emotional expression and addressing conflict directly.", style: normal),
+    TextSpan(text: "\n\nENFP: ", style: bold),
+    TextSpan(text: "Balance INFJ's introversion with their visionary idealism and emotional warmth. ENFPs bring enthusiasm, optimism, and a focus on possibilities, helping INFJs connect with their emotions and express themselves more openly.", style: normal),
+    TextSpan(text: "\n\nINFP: ", style: bold),
+    TextSpan(text: "Share idealism, empathy, and a desire for authentic connections. Both value creativity, personal growth, and meaningful conversations, but might need to address potential conflict avoidance and practical realities.", style: normal),
+    TextSpan(text: "\n\nENFJ: ", style: bold),
+    TextSpan(text: "Share strong intuition, compassion, and a desire to help others. ENFJs bring extraverted energy and leadership qualities, encouraging INFJs to engage socially and express their ideas confidently.", style: normal),
+    TextSpan(text: "\n\nISTJ: ", style: bold),
+    TextSpan(text: "Provide grounding, stability, and practical support. ISTJs offer structure, reliability, and a different perspective, balancing INFJ's idealism with groundedness. However, INFJs might need to manage potential power dynamics and communication differences.", style: normal),
+    TextSpan(text: "\n\nISFP: ", style: bold),
+    TextSpan(text: "Offer emotional sensitivity, artistic expression, and a focus on personal values. ISFPs bring authenticity, creativity, and a different way of experiencing the world, encouraging INFJs to connect with their emotions and appreciate beauty in everyday life.", style: normal),
+  ]));
+
+
+
+
+
+  RichText friend_text = RichText(text: TextSpan(children: [
+
+    TextSpan(text: "INFJs value ", style: normal),
+    TextSpan(text: "authenticity, meaningful conversations", style: bold),
+    TextSpan(text: ", and ", style: normal),
+    TextSpan(text: "genuine connections", style: bold),
+    TextSpan(text: ". eek friends who share their depth, idealism, and desire to make a difference. "
+        "While their circle may be small, their friendships are strong and built on mutual understanding and deep trust.", style: normal),
+
+  ]));
+
+
+
+
+
+
+  RichText parent_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "INFJs nurture their children with ", style: normal),
+    TextSpan(text: "unconditional love, empathy", style: bold),
+    TextSpan(text: ", and ", style: normal),
+    TextSpan(text: "encouragement", style: bold),
+    TextSpan(text: ". \n\nThey foster their children's individuality, creativity, and critical thinking, while instilling strong values "
+        "and a sense of social responsibility. However, their sensitivity and perfectionism require conscious effort to balance "
+        "with providing space for exploration and independence.", style: normal),
+  ]));
+
+
+
+
+
+  RichText body_text =
+  RichText(text: TextSpan(children: [
+    TextSpan(text: "INFJs, also known as ", style: normal),
+    TextSpan(text: "Advocates", style: bold),
+    TextSpan(text: ", are deeply ", style: normal),
+    TextSpan(text: "insightful, idealistic", style: bold),
+    TextSpan(text: ", and ", style: normal),
+    TextSpan(text: "driven by a desire to help others", style: bold),
+    TextSpan(text: ". They possess a unique ability to understand people's emotions and motivations, "
+        "often seeing through surface-level interactions to the core of someone's being. "
+        "INFJs are drawn to meaningful connections, complex ideas, and making a positive impact "
+        "on the world.", style: normal),
+  ]));
 
   void overview() {
     setState(() {
@@ -1559,9 +1628,9 @@ class _INFJState extends State<INFJ> {
                               ),
                             ),
                           ),
-                          Text(
+                          const Text(
                             ("(INFJ)"),
-                            style: const TextStyle(
+                            style: TextStyle(
                               fontFamily: "Roboto",
                               fontWeight: FontWeight.bold,
                               fontSize: 30,
@@ -1656,13 +1725,7 @@ class _INFJState extends State<INFJ> {
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
-                          child: Text(
-                            body_text,
-                            style: Theme.of(context)
-                                .textTheme
-                                .bodyLarge!
-                                .copyWith(color: Colors.white),
-                          ),
+                          child: body_text,
                         ),
                       ],
                     ),
