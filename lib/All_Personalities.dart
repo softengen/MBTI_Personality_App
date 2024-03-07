@@ -3940,55 +3940,94 @@ class ISFP extends StatefulWidget {
 
 class _ISFPState extends State<ISFP> {
   String headline = "Overview";
-  String overview_body =
-      "ISFPs, also known as the Artists, are individuals known for their spontaneity, creativity, "
-      "and appreciation for beauty in the world around them. They value freedom, authenticity, "
-      "and living in the present moment, approaching life with a focus on sensory experiences and personal expression.";
 
-  String strength_text =
-      "Spontaneous and Open-Minded: ISFPs embrace new experiences and enjoy living in the moment. They are adaptable and flexible, readily embracing change and new perspectives."
-      "\n\nCreative and Artistic: ISFPs possess a natural talent for expressing themselves through art, music, or other creative outlets. They have a keen eye for aesthetics and find joy in crafting beauty in their surroundings."
-      "\n\nCaring and Compassionate: ISFPs genuinely care about the well-being of others. They are empathetic and understanding, offering support and encouragement to those in need."
-      "\n\nIndependent and Self-Reliant: ISFPs value their independence and making their own decisions. They are comfortable forging their own path and rely on their internal compass to navigate diverse situations."
-      "\n\nLoyal and Committed: ISFPs form strong bonds with those they trust and value. They are fiercely loyal to their friends, family, and colleagues, demonstrating commitment through practical actions and unwavering support.";
+  RichText overview_body = RichText(text: TextSpan(children: [
+    TextSpan(text: "ISFPs, also known as the ",style: normal),
+    TextSpan(text: "Artists, ",style: bold),
+    TextSpan(text: "are individuals known for their ",style: normal),
+    TextSpan(text: " spontaneity, creativity, and appreciation for beauty in the world around them. ",style: bold),
+    TextSpan(text: " They value freedom, authenticity, and living in the present moment, approaching life with a focus on sensory experiences and personal expression.",style: normal),
+  ]));
 
-  String weakness_text =
-      "Difficulty Planning for the Future: ISFPs' focus on the present can make it challenging for them to plan for the future. They may find long-term goals abstract and struggle with setting concrete plans."
-      "\n\nAvoidance of Conflict: ISFPs typically dislike engaging in emotional confrontations. They might avoid expressing disagreement or addressing uncomfortable situations directly."
-      "\n\nDislike for Routine: While adaptable, ISFPs dislike rigid routines and predictability. They find repetitive tasks monotonous and seek new challenges and experiences to keep them engaged."
-      "\n\nExpression of Emotions: ISFPs may struggle to express their emotions verbally, especially deeper feelings or vulnerabilities. This can hinder their ability to connect with others on an emotional level."
-      "\n\nDecision-Making: ISFPs may find it challenging to make decisions, especially when faced with multiple options or complex choices. They may weigh pros and cons excessively, seeking to avoid making the wrong choice.";
+  RichText strength_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "Spontaneous and Open-Minded: ",style: bold),
+    TextSpan(text: "ISFPs embrace new experiences and enjoy living in the moment. They are adaptable and flexible, readily embracing change and new perspectives.",style: normal),
+    TextSpan(text: "\n\nCreative and Artistic: ",style: bold),
+    TextSpan(text: "ISFPs possess a natural talent for expressing themselves through art, music, or other creative outlets. They have a keen eye for aesthetics and find joy in crafting beauty in their surroundings.",style: normal),
+    TextSpan(text: "\n\nCaring and Compassionate: ",style: bold),
+    TextSpan(text: "ISFPs genuinely care about the well-being of others. They are empathetic and understanding, offering support and encouragement to those in need.",style: normal),
+    TextSpan(text: "\n\nIndependent and Self-Reliant: ",style: bold),
+    TextSpan(text: "ISFPs value their independence and making their own decisions. They are comfortable forging their own path and rely on their internal compass to navigate diverse situations.",style: normal),
+    TextSpan(text: "\n\nLoyal and Committed: ",style: bold),
+    TextSpan(text: "ISFPs form strong bonds with those they trust and value. They are fiercely loyal to their friends, family, and colleagues, demonstrating commitment through practical actions and unwavering support.",style: normal),
+  ]));
 
-  String friend_text =
-      "ISFPs value genuine connections and meaningful conversations. "
-      "\n\nThey seek friends who are honest, supportive, and share their appreciation for "
-      "sensory experiences, creativity, and living in the moment. "
-      "Their friendships are typically warm, supportive, and built on mutual trust and understanding.";
+  RichText weakness_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "Difficulty Planning for the Future: ",style: bold),
+    TextSpan(text: "ISFPs' focus on the present can make it challenging for them to plan for the future. They may find long-term goals abstract and struggle with setting concrete plans.",style: normal),
+    TextSpan(text: "\n\nAvoidance of Conflict: ",style: bold),
+    TextSpan(text: "ISFPs typically dislike engaging in emotional confrontations. They might avoid expressing disagreement or addressing uncomfortable situations directly.",style: normal),
+    TextSpan(text: "\n\nDislike for Routine: ",style: bold),
+    TextSpan(text: "While adaptable, ISFPs dislike rigid routines and predictability. They find repetitive tasks monotonous and seek new challenges and experiences to keep them engaged.",style: normal),
+    TextSpan(text: "\n\nExpression of Emotions: ",style: bold),
+    TextSpan(text: "ISFPs may struggle to express their emotions verbally, especially deeper feelings or vulnerabilities. This can hinder their ability to connect with others on an emotional level.",style: normal),
+    TextSpan(text: "\n\nDecision-Making: ",style: bold),
+    TextSpan(text: "ISFPs may find it challenging to make decisions, especially when faced with multiple options or complex choices. They may weigh pros and cons excessively, seeking to avoid making the wrong choice.",style: normal),
+  ]));
 
-  String parent_text =
-      "ISFP parents provide their children with a loving and supportive environment that encourages creativity and self-expression. "
-      "\n\nThey emphasize independence, critical thinking, and exploring the world through "
-      "hands-on experiences. While they offer love and support, their emotional expression may be more subtle. "
-      "They encourage their children to be curious, open-minded, and embrace their unique talents and interests.";
+  RichText friend_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "ISFPs ",style: bold),
+    TextSpan(text: "value genuine connections and meaningful conversations.\n\nThey seek friends who are ",style: normal),
+    TextSpan(text: " honest, supportive ",style: bold),
+    TextSpan(text: "and share their appreciation for ",style: normal),
+    TextSpan(text: "sensory experiences, creativity, and living in the moment.", style: bold),
+    TextSpan(text: "Their friendships are typically ", style: normal),
+    TextSpan(text: "warm, supportive, and built on mutual trust and understanding.", style: bold),
+  ]));
 
-  String relation =
-      "ISFP Relationships:"
-      "\n\nHealthy communication: Express your thoughts and feelings openly and honestly, while also being mindful of your partner's communication style and emotional needs."
-      "\n\nBalancing creativity and practicality: While pursuing your artistic passions, prioritize finding a balance with practical aspects of life and shared responsibilities."
-      "\n\nSetting boundaries: Learn to say no and prioritize your own needs while maintaining healthy connections with your partner."
-      "\n\nEmbracing emotional expression: Share your emotions openly and constructively, and encourage your partner to do the same, for deeper emotional connection."
-      "\n\n\nCompatible Types:"
-      "\n\nINFJ: Share depth, empathy, and a desire for meaningful connections. Both value authenticity, exploring personal values, and creative expression. However, both might need to develop assertiveness and navigate conflict constructively."
-      "\n\nINFP: Balance ISFP's introversion with their emotional sensitivity and artistic expression. INFPs offer idealism, creativity, and a focus on individual values, encouraging ISFPs to explore their inner world and express themselves openly."
-      "\n\nISTP: Offer logical thinking, pragmatism, and a love for action. ISTPs bring grounding, problem-solving skills, and a different perspective, encouraging ISFPs to embrace spontaneity and explore new possibilities. However, both might need to work on emotional expression and bridging the gap between their communication styles."
-      "\n\nESFP: Share spontaneity, love for fun, and enjoyment of the present moment. ESFPs bring extraverted energy and enthusiasm, encouraging ISFPs to socialize and embrace new experiences. However, balancing individual needs and communication styles is important."
-      "\n\nENFJ: Offer warmth, empathy, and a desire to inspire others. ENFJs bring leadership qualities and a vision for the future, potentially encouraging ISFPs to step outside their comfort zone and express their talents. However, ISFPs might need to communicate their own needs clearly and set boundaries."
-      "\n\nISTJ: Offer practicality, stability, and a focus on building secure foundations. ISTJs provide grounding and structure, balancing ISFP's emotional sensitivity and creative spirit. However, ISFPs might need reassurance and understanding from ISTJs who prioritize practicality over overt emotional expression.";
+  RichText parent_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "ISFP parents provide their children with a loving and supportive environment that encourages creativity and self-expression. \n\nThey emphasize",style: normal),
+    TextSpan(text: "independence, critical thinking, and exploring the world through hands-on experiences. ",style: bold),
+    TextSpan(text: "While they offer ",style: normal),
+    TextSpan(text: "love and support, ",style: bold),
+    TextSpan(text: "their emotional expression may be more subtle. They encourage their children to be ",style: normal),
+    TextSpan(text: "curious, open-minded, and embrace their unique talents and interests.",style: bold),
+  ]));
 
-  String body_text =
-      "ISFPs, also known as the Artists, are individuals known for their spontaneity, creativity, "
-      "and appreciation for beauty in the world around them. They value freedom, authenticity, "
-      "and living in the present moment, approaching life with a focus on sensory experiences and personal expression.";
+  RichText relation = RichText(text: TextSpan(children: [
+    TextSpan(text: "ISFP Relationships:",style: bold),
+    TextSpan(text: "\n\nHealthy communication: ",style: bold),
+    TextSpan(text: "Express your thoughts and feelings openly and honestly, while also being mindful of your partner's communication style and emotional needs.",style: normal),
+    TextSpan(text: "\n\nBalancing action and connection: ",style: bold),
+    TextSpan(text: "While pursuing your artistic passions, prioritize finding a balance with practical aspects of life and shared responsibilities.",style: normal),
+    TextSpan(text: "\n\nSetting boundaries: ",style: bold),
+    TextSpan(text: "Learn to say no and prioritize your own needs while maintaining healthy connections with your partner.",style: normal),
+    TextSpan(text: "\n\nEmbracing emotional expression: ",style: bold),
+    TextSpan(text: "Share your emotions openly and constructively, and encourage your partner to do the same, for deeper emotional connection.",style: normal),
+    TextSpan(text: "\n\n\nCompatible Types:",style: bold),
+    TextSpan(text: "\n\nINFJ: ",style: bold),
+    TextSpan(text: "Share depth, empathy, and a desire for meaningful connections. Both value authenticity, exploring personal values, and creative expression. However, both might need to develop assertiveness and navigate conflict constructively.", style: normal),
+    TextSpan(text: "\n\nINFP: ",style: bold),
+    TextSpan(text: "Balance ISFP's introversion with their emotional sensitivity and artistic expression. INFPs offer idealism, creativity, and a focus on individual values, encouraging ISFPs to explore their inner world and express themselves openly.", style: normal),
+    TextSpan(text: "\n\nISTP: ",style: bold),
+    TextSpan(text: "Offer logical thinking, pragmatism, and a love for action. ISTPs bring grounding, problem-solving skills, and a different perspective, encouraging ISFPs to embrace spontaneity and explore new possibilities. However, both might need to work on emotional expression and bridging the gap between their communication styles.", style: normal),
+    TextSpan(text: "\n\nESFP: ",style: bold),
+    TextSpan(text: "Share spontaneity, love for fun, and enjoyment of the present moment. ESFPs bring extraverted energy and enthusiasm, encouraging ISFPs to socialize and embrace new experiences. However, balancing individual needs and communication styles is important.", style: normal),
+    TextSpan(text: "\n\nENFJ: ",style: bold),
+    TextSpan(text: "Offer warmth, empathy, and a desire to inspire others. ENFJs bring leadership qualities and a vision for the future, potentially encouraging ISFPs to step outside their comfort zone and express their talents. However, ISFPs might need to communicate their own needs clearly and set boundaries.", style: normal),
+    TextSpan(text: "\n\nISTJ: ",style: bold),
+    TextSpan(text: "Offer practicality, stability, and a focus on building secure foundations. ISTJs provide grounding and structure, balancing ISFP's emotional sensitivity and creative spirit. However, ISFPs might need reassurance and understanding from ISTJs who prioritize practicality over overt emotional expression.", style: normal),
+  ]));
+
+  RichText body_text =
+  RichText(text: TextSpan(children: [
+    TextSpan(text: "ESTPs, also known as the ",style: normal),
+    TextSpan(text: "Artists.",style: bold),
+    TextSpan(text: ", are individuals known for their ",style: normal),
+    TextSpan(text: "spontaneity, creativity, and appreciation for beauty in the world around them.",style: bold),
+    TextSpan(text: "They value ", style: normal),
+    TextSpan(text: "freedom, authenticity, and living in the present moment, approaching life with a focus on sensory experiences and personal expression.", style: bold),
+  ]));
 
   void overview() {
     setState(() {
@@ -4183,13 +4222,7 @@ class _ISFPState extends State<ISFP> {
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
-                          child: Text(
-                            body_text,
-                            style: Theme.of(context)
-                                .textTheme
-                                .bodyLarge!
-                                .copyWith(color: Colors.white),
-                          ),
+                          child: body_text,
                         ),
                       ],
                     ),
@@ -4207,57 +4240,94 @@ class ESTP extends StatefulWidget {
 
 class _ESTPState extends State<ESTP> {
   String headline = "Overview";
-  String overview_body =
-      "ESTPs, also known as the Entrepreneurs, are individuals known for "
-      "their energy, enthusiasm, and ability to quickly adapt to change. "
-      "They value action, excitement, and living life to the fullest, approaching life with a focus on "
-      "practical solutions and tangible results.";
 
-  String strength_text =
-      "Energetic and Enthusiastic: ESTPs are full of life and energy. They are always up for a new challenge and enjoy being in the thick of things. Their enthusiasm is contagious and can motivate others to get involved."
-      "\n\nAction-Oriented and Practical: ESTPs are not afraid to take risks and try new things. They are focused on getting things done and are not afraid to get their hands dirty. They are resourceful and can find creative solutions to problems."
-      "\n\nPersuasive and Influential: ESTPs are natural salespeople. They are good at reading people and knowing what they want. They are also good at articulating their ideas and convincing others to see their point of view."
-      "\n\nAdaptable and Flexible: ESTPs are able to quickly adapt to change. They are not afraid of the unknown and are always up for a new adventure. They are also good at thinking on their feet and solving problems as they arise."
-      "\n\nGood at Problem-Solving: ESTPs are good at identifying and solving problems. They are able to see the big picture and come up with creative solutions. They are also good at delegating tasks and getting others involved.";
+  RichText overview_body = RichText(text: TextSpan(children: [
+    TextSpan(text: "ESTPs, also known as the ",style: normal),
+    TextSpan(text: "Entrepreneurs, ",style: bold),
+    TextSpan(text: "are individuals known for their ",style: normal),
+    TextSpan(text: " energy, enthusiasm, and ability to quickly adapt to change. ",style: bold),
+    TextSpan(text: " They value action, excitement, and living life to the fullest, approaching life with a focus on practical solutions and tangible results.",style: normal),
+  ]));
 
-  String weakness_text =
-      "Impulsive and Reckless: ESTPs can sometimes be impulsive and reckless. They may act without thinking things through, which can lead to problems. They may also take risks that are not worth taking."
-      "\n\nInsensitive and Blunt: ESTPs can sometimes be insensitive and blunt. They may not always think about how their words will affect others. They may also be too focused on the facts and not take into account people's feelings."
-      "\n\nDifficulty Focusing: ESTPs can sometimes have difficulty focusing. They may be easily bored and may have trouble staying on task. They may also be easily distracted by new and exciting things."
-      "\n\nLack of Long-Term Planning: ESTPs may not always be good at long-term planning. They may be more focused on the present moment and may not always think about the future. They may also be reluctant to commit to long-term goals."
-      "\n\nArgumentative: ESTPs can sometimes be argumentative. They may enjoy debating and may not always be willing to listen to other people's points of view. They may also be quick to defend themselves and their ideas.";
+  RichText strength_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "Energetic and Enthusiastic: ",style: bold),
+    TextSpan(text: "ESTPs are full of life and energy. They are always up for a new challenge and enjoy being in the thick of things. Their enthusiasm is contagious and can motivate others to get involved.",style: normal),
+    TextSpan(text: "\n\nAction-Oriented and Practical: ",style: bold),
+    TextSpan(text: "ESTPs are not afraid to take risks and try new things. They are focused on getting things done and are not afraid to get their hands dirty. They are resourceful and can find creative solutions to problems.",style: normal),
+    TextSpan(text: "\n\nPersuasive and Influential: ",style: bold),
+    TextSpan(text: "ESTPs are natural salespeople. They are good at reading people and knowing what they want. They are also good at articulating their ideas and convincing others to see their point of view.",style: normal),
+    TextSpan(text: "\n\nAdaptable and Flexible: ",style: bold),
+    TextSpan(text: "ESTPs are able to quickly adapt to change. They are not afraid of the unknown and are always up for a new adventure. They are also good at thinking on their feet and solving problems as they arise.",style: normal),
+    TextSpan(text: "\n\nGood at Problem-Solving: ",style: bold),
+    TextSpan(text: "ESTPs are good at identifying and solving problems. They are able to see the big picture and come up with creative solutions. They are also good at delegating tasks and getting others involved.",style: normal),
+  ]));
 
-  String friend_text =
-      "ESTPs value genuine connections and stimulating conversations. "
-      "\n\nThey seek friends who are honest, supportive, and share their appreciation for "
-      "action, excitement, and new experiences. Their friendships are typically lively, engaging, and "
-      "built on mutual trust and respect for each other's individuality.";
+  RichText weakness_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "Impulsive and Reckless: ",style: bold),
+    TextSpan(text: "ESTPs can sometimes be impulsive and reckless. They may act without thinking things through, which can lead to problems. They may also take risks that are not worth taking.",style: normal),
+    TextSpan(text: "\n\nInsensitive and Blunt: ",style: bold),
+    TextSpan(text: "ESTPs can sometimes be insensitive and blunt. They may not always think about how their words will affect others. They may also be too focused on the facts and not take into account people's feelings.",style: normal),
+    TextSpan(text: "\n\nDifficulty Focusing: ",style: bold),
+    TextSpan(text: "ESTPs can sometimes have difficulty focusing. They may be easily bored and may have trouble staying on task. They may also be easily distracted by new and exciting things.",style: normal),
+    TextSpan(text: "\n\nLack of Long-Term Planning: ",style: bold),
+    TextSpan(text: "ESTPs may not always be good at long-term planning. They may be more focused on the present moment and may not always think about the future. They may also be reluctant to commit to long-term goals.",style: normal),
+    TextSpan(text: "\n\nArgumentative: ",style: bold),
+    TextSpan(text: "ESTPs can sometimes be argumentative. They may enjoy debating and may not always be willing to listen to other people's points of view. They may also be quick to defend themselves and their ideas.",style: normal),
+  ]));
 
-  String parent_text =
-      "ESTP parents encourage their children's independence and exploration. "
-      "\n\nThey emphasize hands-on learning, problem-solving, and taking risks. "
-      "While they offer love and support, their emotional expression may be more subtle. "
-      "They encourage their children to be bold, adventurous, and embrace life's challenges with enthusiasm.";
+  RichText friend_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "ESTPs ",style: bold),
+    TextSpan(text: "value genuine connections and stimulating conversations.\n\nThey seek friends who are ",style: normal),
+    TextSpan(text: " honest, supportive ",style: bold),
+    TextSpan(text: "and share their appreciation for ",style: normal),
+    TextSpan(text: "action, excitement, and new experiences.", style: bold),
+    TextSpan(text: "Their friendships are typically ", style: normal),
+    TextSpan(text: "lively, engaging, and built on mutual trust and respect for each other's individuality.", style: bold),
+  ]));
 
-  String relation =
-      "ESTP Relationships:"
-      "\n\nHealthy communication: Express your thoughts and needs clearly and directly, while also being mindful of your partner's communication style and emotional needs."
-      "\n\nBalancing action and connection: While enjoying adventure and excitement, prioritize connecting with your partner on an emotional level and express your feelings constructively."
-      "\n\nEmbracing flexibility and compromise: Be open to new experiences and adjust your plans when needed, finding a balance with your partner's preferences."
-      "\n\nRespecting individual differences: Appreciate your partner's unique personality and perspective, fostering a supportive and understanding environment."
-      "\n\n\nCompatible Types:"
-      "\n\nISTP: Share a love for action, adventure, and hands-on experiences. Both enjoy challenges, independence, and exploring new possibilities. However, both might need to work on expressing emotions openly and navigating conflict constructively."
-      "\n\nESFP: Balance ESTP's directness with their enthusiasm, social energy, and love for fun. ESFPs bring excitement, spontaneity, and a focus on enjoying the present moment, encouraging ESTPs to loosen up and connect with others. However, both might need to manage individual needs and communication styles."
-      "\n\nENTP: Share intellectual curiosity, quick wit, and a love for debate. Both enjoy engaging conversations, exploring new ideas, and challenging each other. However, both might need to address potential impulsiveness and prioritize emotional connection alongside intellectual stimulation."
-      "\n\nESTJ: Offer decisiveness, direct communication, and a focus on getting things done. ESTJs bring leadership qualities, structure, and an action-oriented approach, complementing ESTPs' practical side and problem-solving skills. However, managing potential power dynamics and respecting communication styles are crucial."
-      "\n\nENFJ: Offer charisma, warmth, and a desire to inspire others. ENFJs bring out ESTPs' playful side, encouraging them to connect with others and engage in shared goals. However, ESTPs might need to communicate their own needs clearly and find a balance between excitement and emotional connection."
-      "\n\nISFP: Offer artistic expression, emotional sensitivity, and a focus on enjoying the present moment. ISFPs bring authenticity, creativity, and a different perspective, encouraging ESTPs to connect with their emotions and appreciate artistic beauty. However, ESTPs might need to adjust their directness and respect ISFPs' need for emotional understanding.";
+  RichText parent_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "ESTP parents encourage their children's independence and exploration. \n\nThey emphasize",style: normal),
+    TextSpan(text: "hands-on learning, problem-solving, and taking risks. ",style: bold),
+    TextSpan(text: "While they offer ",style: normal),
+    TextSpan(text: "love and support, ",style: bold),
+    TextSpan(text: "their emotional expression may be more subtle. They encourage their children to be ",style: normal),
+    TextSpan(text: "bold, adventurous, and embrace life's challenges with enthusiasm.",style: bold),
+  ]));
 
-  String body_text =
-      "ESTPs, also known as the Entrepreneurs, are individuals known for "
-      "their energy, enthusiasm, and ability to quickly adapt to change. "
-      "They value action, excitement, and living life to the fullest, approaching life with a focus on "
-      "practical solutions and tangible results.";
+  RichText relation = RichText(text: TextSpan(children: [
+    TextSpan(text: "ESTP Relationships:",style: bold),
+    TextSpan(text: "\n\nHealthy communication: ",style: bold),
+    TextSpan(text: "Express your thoughts and needs clearly and directly, while also being mindful of your partner's communication style and emotional needs.",style: normal),
+    TextSpan(text: "\n\nBalancing action and connection: ",style: bold),
+    TextSpan(text: "While enjoying adventure and excitement, prioritize connecting with your partner on an emotional level and express your feelings constructively.",style: normal),
+    TextSpan(text: "\n\nEmbracing flexibility and compromise: ",style: bold),
+    TextSpan(text: "Be open to new experiences and adjust your plans when needed, finding a balance with your partner's preferences.",style: normal),
+    TextSpan(text: "\n\nRespecting individual differences: ",style: bold),
+    TextSpan(text: "Appreciate your partner's unique personality and perspective, fostering a supportive and understanding environment.",style: normal),
+    TextSpan(text: "\n\n\nCompatible Types:",style: bold),
+    TextSpan(text: "\n\nISTP: ",style: bold),
+    TextSpan(text: "Share a love for action, adventure, and hands-on experiences. Both enjoy challenges, independence, and exploring new possibilities. However, both might need to work on expressing emotions openly and navigating conflict constructively.", style: normal),
+    TextSpan(text: "\n\nESFP: ",style: bold),
+    TextSpan(text: "Balance ESTP's directness with their enthusiasm, social energy, and love for fun. ESFPs bring excitement, spontaneity, and a focus on enjoying the present moment, encouraging ESTPs to loosen up and connect with others. However, both might need to manage individual needs and communication styles.", style: normal),
+    TextSpan(text: "\n\nENTP: ",style: bold),
+    TextSpan(text: "Share intellectual curiosity, quick wit, and a love for debate. Both enjoy engaging conversations, exploring new ideas, and challenging each other. However, both might need to address potential impulsiveness and prioritize emotional connection alongside intellectual stimulation.", style: normal),
+    TextSpan(text: "\n\nESTJ: ",style: bold),
+    TextSpan(text: "Offer decisiveness, direct communication, and a focus on getting things done. ESTJs bring leadership qualities, structure, and an action-oriented approach, complementing ESTPs' practical side and problem-solving skills. However, managing potential power dynamics and respecting communication styles are crucial.", style: normal),
+    TextSpan(text: "\n\nENFJ: ",style: bold),
+    TextSpan(text: "Offer charisma, warmth, and a desire to inspire others. ENFJs bring out ESTPs' playful side, encouraging them to connect with others and engage in shared goals. However, ESTPs might need to communicate their own needs clearly and find a balance between excitement and emotional connection.", style: normal),
+    TextSpan(text: "\n\nISFP: ",style: bold),
+    TextSpan(text: "Offer artistic expression, emotional sensitivity, and a focus on enjoying the present moment. ISFPs bring authenticity, creativity, and a different perspective, encouraging ESTPs to connect with their emotions and appreciate artistic beauty. However, ESTPs might need to adjust their directness and respect ISFPs' need for emotional understanding.", style: normal),
+  ]));
+
+  RichText body_text =
+  RichText(text: TextSpan(children: [
+    TextSpan(text: "ESTPs, also known as the ",style: normal),
+    TextSpan(text: "Entrepreneurs.",style: bold),
+    TextSpan(text: ", are individuals known for their ",style: normal),
+    TextSpan(text: "energy, enthusiasm, and ability to quickly adapt to change.",style: bold),
+    TextSpan(text: "They value ", style: normal),
+    TextSpan(text: "action, excitement, and living life to the fullest, approaching life with a focus on practical solutions and tangible results.", style: bold),
+  ]));
 
   void overview() {
     setState(() {
@@ -4452,13 +4522,7 @@ class _ESTPState extends State<ESTP> {
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
-                          child: Text(
-                            body_text,
-                            style: Theme.of(context)
-                                .textTheme
-                                .bodyLarge!
-                                .copyWith(color: Colors.white),
-                          ),
+                          child: body_text,
                         ),
                       ],
                     ),
