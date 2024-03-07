@@ -1743,54 +1743,114 @@ class INFP extends StatefulWidget {
 
 class _INFPState extends State<INFP> {
   String headline = "Overview";
-  String overview_body =
-      "INFPs, also known as Healer, are kind, idealistic, and creative individuals who value authenticity, "
-      "compassion, and meaningful connections. They are driven by a deep desire to make a positive impact on "
-      "the world and help others in need. INFPs are often described as introverted, intuitive, feeling, and perceiving.";
+  RichText overview_body = RichText(text: TextSpan(children: [
+    TextSpan(text: "INFPs, also known as ",style: normal),
+    TextSpan(text: "Healer",style: bold),
+    TextSpan(text: ", are ",style: normal),
+    TextSpan(text: "kind, idealistic",style: bold),
+    TextSpan(text: ", and ",style: normal),
+    TextSpan(text: "creative individuals who value authenticity, compassion, and meaningful connections",style: bold),
+    TextSpan(text: ". They are driven by a deep desire to make a positive impact on "
+        "the world and help others in need. INFPs are often described as introverted, intuitive, feeling, and perceiving.",style: normal),
+  ]));
 
-  String strength_text =
-      "Empathetic and Compassionate: INFPs are deeply empathetic and compassionate individuals who can readily understand and share the feelings of others. They are drawn to helping others and often dedicate their lives to making a positive impact on the world."
-      "\n\nCreative and Imaginative: INFPs possess a rich imagination and creativity that allows them to see the world in unique and inspiring ways. They are often drawn to artistic pursuits, such as writing, painting, or music."
-      "\n\nIdealistic and Principled: INFPs are guided by a strong sense of idealism and principle. They believe in the inherent goodness of people and strive to live their lives according to their values."
-      "\n\nIndependent Thinkers: INFPs are independent thinkers who are not easily swayed by popular opinion. They are willing to stand up for what they believe in, even if it means going against the grain."
-      "\n\nLoyal and Committed: INFPs are loyal and committed individuals who are devoted to their loved ones. They are always willing to lend a helping hand and are always there for those they care about.";
 
-  String weakness_text =
-      "Sensitive and Easily Overwhelmed: INFPs are sensitive individuals who can be easily overwhelmed by strong emotions or stressful situations. They may need to take extra time to recharge and process their emotions."
-      "\n\nPerfectionistic: INFPs can be perfectionistic, which can lead to self-criticism and frustration when things fall short of their expectations."
-      "\n\nDifficulty Saying No: INFPs may have difficulty saying no to others, even when it means putting their own needs last. This can lead to resentment and burnout."
-      "\n\nSocial Introversion: INFPs are introverted individuals who prefer to spend time alone or with close friends and family. They may find social situations draining and may need to recharge after spending time in large groups."
-      "\n\nAvoidant of Conflict: INFPs may avoid conflict at all costs, which can lead to unresolved issues and resentment. Learning to communicate their needs and assertively address conflict can be helpful.";
 
-  String friend_text =
-      "INFPs value authenticity, deep conversations, and genuine connections. "
-      "\n\nThey seek friends who share their depth, idealism, and desire to make a difference. "
-      "While their circle may be small, their friendships are strong and built on mutual understanding and deep trust.";
+  RichText strength_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "Empathetic and Compassionate: ",style: bold),
+    TextSpan(text: "INFPs are deeply empathetic and compassionate individuals who can readily understand and share the feelings of others. They are drawn to helping others and often dedicate their lives to making a positive impact on the world.",style: normal),
+    TextSpan(text: "\n\nCreative and Imaginative: ",style: bold),
+    TextSpan(text: "INFPs possess a rich imagination and creativity that allows them to see the world in unique and inspiring ways. They are often drawn to artistic pursuits, such as writing, painting, or music.",style: normal),
+    TextSpan(text: "\n\nIdealistic and Principled: ",style: bold),
+    TextSpan(text: "INFPs are guided by a strong sense of idealism and principle. They believe in the inherent goodness of people and strive to live their lives according to their values.",style: normal),
+    TextSpan(text: "\n\nIndependent Thinkers: ",style: bold),
+    TextSpan(text: "INFPs are independent thinkers who are not easily swayed by popular opinion. They are willing to stand up for what they believe in, even if it means going against the grain.",style: normal),
+    TextSpan(text: "\n\nLoyal and Committed: ",style: bold),
+    TextSpan(text: "INFPs are loyal and committed individuals who are devoted to their loved ones. They are always willing to lend a helping hand and are always there for those they care about.",style: normal),
+  ]));
 
-  String parent_text =
-      "INFPs nurture their children with unconditional love, empathy, and encouragement. "
-      "\n\nThey foster their children's individuality, creativity, and critical thinking, while instilling strong values "
-      "and a sense of social responsibility. However, their sensitivity and perfectionism require conscious effort to "
-      "balance with providing space for exploration and independence.";
 
-  String relation =
-      "INFP Relationships:"
-      "\n\nHealthy communication: Express your thoughts and feelings openly and honestly, while being mindful of your partner's communication style."
-      "\n\nBalancing idealism and practicality: While pursuing your values and dreams, don't neglect practical aspects of life and shared responsibilities."
-      "\n\nSetting boundaries: Learn to say no and prioritize your own needs while maintaining healthy connections with your partner."
-      "\n\nFinding emotional balance: Share your emotions openly and constructively, but also learn to manage your own emotional sensitivity for a healthy relationship."
-      "\n\n\nCompatible Types:"
-      "\n\nINFJ: Share introspective nature, idealism, and a deep desire for meaningful connections. Both value authenticity, personal growth, and creative expression. However, both might need to work on expressing emotions openly and addressing conflict constructively."
-      "\n\nENFP: Balance INFP's introversion with their visionary idealism and emotional warmth. ENFPs bring enthusiasm, optimism, and a focus on possibilities, encouraging INFPs to connect with their emotions and express themselves more openly."
-      "\n\nINTP: Share intellectual curiosity, independent spirit, and a love for exploring complex ideas. Both value authenticity, individuality, and deep conversations, but might need to bridge the gap between INFP's emotional sensitivity and INTP's logical nature."
-      "\n\nENFJ: Share empathy, compassion, and a desire to help others. ENFJs bring extraverted energy and leadership qualities, encouraging INFPs to engage socially and advocate for their values. However, INFPs might need to manage potential power dynamics and communication differences."
-      "\n\nISFP: Share artistic expression, emotional sensitivity, and a focus on personal values. Both value authenticity, creativity, and meaningful connections, but might need to address potential conflict avoidance and differing communication styles."
-      "\n\nISTJ: Provide grounding, stability, and practical support. ISTJs offer structure, reliability, and a different perspective, balancing INFP's idealism with groundedness. However, INFPs might need to manage potential emotional differences and communication styles.";
 
-  String body_text =
-      "INFPs, also known as Healer, are kind, idealistic, and creative individuals who value authenticity, "
-      "compassion, and meaningful connections. They are driven by a deep desire to make a positive impact on "
-      "the world and help others in need. INFPs are often described as introverted, intuitive, feeling, and perceiving.";
+  RichText weakness_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "Sensitive and Easily Overwhelmed: ",style: bold),
+    TextSpan(text: "INFPs are sensitive individuals who can be easily overwhelmed by strong emotions or stressful situations. They may need to take extra time to recharge and process their emotions.",style: normal),
+    TextSpan(text: "\n\nPerfectionistic: ",style: bold),
+    TextSpan(text: "INFPs can be perfectionistic, which can lead to self-criticism and frustration when things fall short of their expectations.",style: normal),
+    TextSpan(text: "\n\nDifficulty Saying No: ",style: bold),
+    TextSpan(text: "INFPs may have difficulty saying no to others, even when it means putting their own needs last. This can lead to resentment and burnout.",style: normal),
+    TextSpan(text: "\n\nSocial Introversion: ",style: bold),
+    TextSpan(text: "INFPs are introverted individuals who prefer to spend time alone or with close friends and family. They may find social situations draining and may need to recharge after spending time in large groups.",style: normal),
+    TextSpan(text: "\n\nAvoidant of Conflict: ",style: bold),
+    TextSpan(text: "INFPs may avoid conflict at all costs, which can lead to unresolved issues and resentment. Learning to communicate their needs and assertively address conflict can be helpful.",style: normal),
+  ]));
+
+
+
+
+  RichText relation = RichText(text: TextSpan(children: [
+    TextSpan(text: "INFP Relationships:",style: bold),
+    TextSpan(text: "\n\nHealthy communication: ",style: bold),
+    TextSpan(text: "Express your thoughts and feelings openly and honestly, while being mindful of your partner's communication style.",style: normal),
+    TextSpan(text: "\n\nBalancing idealism and practicality: ",style: bold),
+    TextSpan(text: "While pursuing your values and dreams, don't neglect practical aspects of life and shared responsibilities.",style: normal),
+    TextSpan(text: "\n\nSetting boundaries: ",style: bold),
+    TextSpan(text: "Learn to say no and prioritize your own needs while maintaining healthy connections with your partner.",style: normal),
+    TextSpan(text: "\n\nFinding emotional balance: ",style: bold),
+    TextSpan(text: "Share your emotions openly and constructively, but also learn to manage your own emotional sensitivity for a healthy relationship.",style: normal),
+    TextSpan(text: "\n\n\nCompatible Types:",style: bold),
+    TextSpan(text: "\n\nINFJ: ",style: bold),
+    TextSpan(text: "Share introspective nature, idealism, and a deep desire for meaningful connections. Both value authenticity, personal growth, and creative expression. However, both might need to work on expressing emotions openly and addressing conflict constructively.",style: normal),
+    TextSpan(text: "\n\nENFP: ",style: bold),
+    TextSpan(text: "Balance INFP's introversion with their visionary idealism and emotional warmth. ENFPs bring enthusiasm, optimism, and a focus on possibilities, encouraging INFPs to connect with their emotions and express themselves more openly.",style: normal),
+    TextSpan(text: "\n\nINTP: ",style: bold),
+    TextSpan(text: "Share intellectual curiosity, independent spirit, and a love for exploring complex ideas. Both value authenticity, individuality, and deep conversations, but might need to bridge the gap between INFP's emotional sensitivity and INTP's logical nature.",style: normal),
+    TextSpan(text: "\n\nENFJ: ",style: bold),
+    TextSpan(text: "Share empathy, compassion, and a desire to help others. ENFJs bring extraverted energy and leadership qualities, encouraging INFPs to engage socially and advocate for their values. However, INFPs might need to manage potential power dynamics and communication differences.",style: normal),
+    TextSpan(text: "\n\nISFP: ",style: bold),
+    TextSpan(text: "Share artistic expression, emotional sensitivity, and a focus on personal values. Both value authenticity, creativity, and meaningful connections, but might need to address potential conflict avoidance and differing communication styles.",style: normal),
+    TextSpan(text: "\n\nISTJ: ",style: bold),
+    TextSpan(text: "Provide grounding, stability, and practical support. ISTJs offer structure, reliability, and a different perspective, balancing INFP's idealism with groundedness. However, INFPs might need to manage potential emotional differences and communication styles.",style: normal),
+  ]));
+
+
+
+
+  RichText friend_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "INFPs value ",style: normal),
+    TextSpan(text: "authenticity, deep conversations",style: bold),
+    TextSpan(text: ", and ",style: normal),
+    TextSpan(text: "genuine connections",style: bold),
+    TextSpan(text: ". \n\nThey seek friends who share their depth, idealism, and desire to make a difference. "
+        "While their circle may be small, their friendships are strong and built on mutual understanding and deep trust.",style: normal),
+  ]));
+
+
+
+
+  RichText parent_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "INFPs nurture their children with ",style: normal),
+    TextSpan(text: "unconditional love, empathy",style: bold),
+    TextSpan(text: ", and ",style: normal),
+    TextSpan(text: "encouragement",style: bold),
+    TextSpan(text: ". \n\nThey foster their children's individuality, creativity, and critical thinking, while instilling strong values "
+        "and a sense of social responsibility. However, their sensitivity and perfectionism require conscious effort to "
+        "balance with providing space for exploration and independence.",style: normal),
+  ]));
+
+
+
+
+  RichText body_text =
+  RichText(text: TextSpan(children: [
+    TextSpan(text: "INFPs, also known as ",style: normal),
+    TextSpan(text: "Healer",style: bold),
+    TextSpan(text: ", are ",style: normal),
+    TextSpan(text: "kind, idealistic",style: bold),
+    TextSpan(text: ", and ",style: normal),
+    TextSpan(text: "creative individuals who value authenticity, compassion, and meaningful connections",style: bold),
+    TextSpan(text: ". They are driven by a deep desire to make a positive impact on "
+        "the world and help others in need. INFPs are often described as introverted, intuitive, feeling, and perceiving.",style: normal),
+  ]));
 
   void overview() {
     setState(() {
@@ -1888,9 +1948,9 @@ class _INFPState extends State<INFP> {
                               ),
                             ),
                           ),
-                          Text(
+                          const Text(
                             ("(INFP)"),
-                            style: const TextStyle(
+                            style: TextStyle(
                               fontFamily: "Roboto",
                               fontWeight: FontWeight.bold,
                               fontSize: 30,
@@ -1985,13 +2045,7 @@ class _INFPState extends State<INFP> {
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
-                          child: Text(
-                            body_text,
-                            style: Theme.of(context)
-                                .textTheme
-                                .bodyLarge!
-                                .copyWith(color: Colors.white),
-                          ),
+                          child: body_text
                         ),
                       ],
                     ),
