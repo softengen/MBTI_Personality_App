@@ -2410,56 +2410,148 @@ class ENFP extends StatefulWidget {
 
 class _ENFPState extends State<ENFP> {
   String headline = "Overview";
-  String overview_body =
-      "ENFPs, also known as Visionary, are enthusiastic, creative, and people-oriented individuals "
-      "who are always looking for new experiences and ways to make a difference in the world. "
-      "They are driven by a strong sense of idealism and a desire to help others. "
-      "ENFPs are often described as extroverted, intuitive, feeling, and perceiving.";
 
-  String strength_text =
-      "Enthusiastic and Energizing: ENFPs are enthusiastic and energizing individuals who are always up for a new adventure. They are able to light up a room with their positive energy and enthusiasm."
-      "\n\nCreative and Imaginative: ENFPs are creative and imaginative individuals who are always coming up with new ideas. They are able to see the world in new and exciting ways."
-      "\n\nPeople-Oriented and Caring: ENFPs are people-oriented and caring individuals who are always looking for ways to help others. They are able to connect with others on a deep level and build strong relationships."
-      "\n\nIdealistic and Principled: ENFPs are idealistic and principled individuals who believe in the inherent goodness of people. They are always striving to make the world a better place."
-      "\n\nOpen-Minded and Flexible: ENFPs are open-minded and flexible individuals who are always willing to try new things. They are able to adapt to change and embrace new experiences.";
+  RichText overview_body = RichText(text: TextSpan(children: [
+    TextSpan(text: "ENFPs", style: bold),
+    TextSpan(text: ", also known as ", style: normal),
+    TextSpan(text: "Visionary", style: bold),
+    TextSpan(text: ", are ", style: normal),
+    TextSpan(text: "enthusiastic, creative", style: bold),
+    TextSpan(text: ", and ", style: normal),
+    TextSpan(text: "people-oriented individuals ", style: bold),
+    TextSpan(text: "who are always looking for new experiences and ways to make a difference in the world. "
+        "They are driven by a strong sense of idealism and a desire to help others. ENFPs are often described as ", style: normal),
+    TextSpan(text: "extroverted, intuitive, feeling", style: bold),
+    TextSpan(text: ", and ", style: normal),
+    TextSpan(text: "perceiving.", style: bold),
+  ]));
 
-  String weakness_text =
-      "Overly Sensitive: ENFPs can be overly sensitive to the criticism or disapproval of others. They may take things personally and may need to learn to detach their emotions from their work."
-      "\n\nDisorganized and Impulsive: ENFPs can be disorganized and impulsive, which can lead to problems at work or school. They may need to learn to be more organized and planful."
-      "\n\nProcrastinators: ENFPs can be procrastinators, which can lead to missed deadlines and unfinished projects. They may need to learn to be more disciplined and focused."
-      "\n\nAvoidant of Conflict: ENFPs may avoid conflict at all costs, which can lead to unresolved issues and resentment. Learning to communicate their needs and assertively address conflict can be helpful."
-      "\n\nDifficulty Saying No: ENFPs may have difficulty saying no to others, even when it means putting their own needs last. This can lead to resentment and burnout.";
 
-  String friend_text =
-      "ENFPs value authenticity, deep conversations, and genuine connections. "
-      "\n\nThey seek friends who share their depth, idealism, and desire to make a difference. "
-      "While their circle may be small, their friendships are strong and built on mutual understanding and deep trust.";
 
-  String parent_text =
-      "ENFPs nurture their children with unconditional love, empathy, and encouragement. "
-      "\n\nThey foster their children's individuality, creativity, and critical thinking, while "
-      "instilling strong values and a sense of social responsibility. However, their sensitivity and "
-      "perfectionism require conscious effort to balance with providing space for exploration and independence.";
 
-  String relation =
-      "ENFP Relationships:"
-      "\n\nHealthy communication: Express your thoughts and feelings openly and honestly, while being mindful of your partner's communication style and emotional needs."
-      "\n\nBalancing idealism and practicality: While pursuing your dreams, don't neglect practical aspects of life and shared responsibilities."
-      "\n\nFinding emotional balance: Share your emotions openly and constructively, but also learn to manage your own emotional intensity for a healthy relationship."
-      "\n\nEmbracing spontaneity and structure: Find a balance between your spontaneous nature and your partner's need for structure and stability."
-      "\n\n\nCompatible Types:"
-      "\n\nINFJ: Share idealistic aspirations, deep thinking, and a desire for meaningful connections. Both value authenticity, personal growth, and exploring possibilities. However, both might need to develop emotional expression and navigate conflict constructively."
-      "\n\nINFP: Balance ENFP's extroversion with their emotional sensitivity and artistic expression. INFPs bring depth, creativity, and a focus on personal values, encouraging ENFPs to connect with their emotions and explore their inner world."
-      "\n\nINTP: Share intellectual curiosity, a love for debate, and an independent spirit. Both enjoy exploring complex ideas and challenging each other's perspectives, but need to bridge the gap between ENFP's emotional warmth and INTP's logical nature."
-      "\n\nENFJ: Share enthusiasm, optimism, and a desire to inspire others. ENFJs bring leadership qualities and organizational skills, balancing ENFP's spontaneity with structure. However, managing potential power dynamics and communication styles is crucial."
-      "\n\nENTP: Share intellectual energy, a playful spirit, and a love for new experiences. ENTPs bring extraverted energy and an unconventional approach, encouraging ENFPs to embrace the moment and explore different perspectives. Balancing intellectual stimulation with emotional connection is key."
-      "\n\nISFP: Offer artistic expression, emotional sensitivity, and a focus on enjoying the present moment. ISFPs bring grounding and appreciation for beauty, encouraging ENFPs to connect with their emotions and savor experiences.";
+    RichText strength_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "Enthusiastic and Energizing: ", style: bold),
+    TextSpan(text: "ENFPs are enthusiastic and energizing individuals who are always up for a new adventure. They are able to light up a room with their positive energy and enthusiasm.", style: normal),
+    TextSpan(text: "\n\nCreative and Imaginative: ", style: bold),
+    TextSpan(text: "ENFPs are creative and imaginative individuals who are always coming up with new ideas. They are able to see the world in new and exciting ways.", style: normal),
+    TextSpan(text: "\n\nPeople-Oriented and Caring: ", style: bold),
+    TextSpan(text: "ENFPs are people-oriented and caring individuals who are always looking for ways to help others. They are able to connect with others on a deep level and build strong relationships.", style: normal),
+    TextSpan(text: "\n\nIdealistic and Principled: ", style: bold),
+    TextSpan(text: "ENFPs are idealistic and principled individuals who believe in the inherent goodness of people. They are always striving to make the world a better place.", style: normal),
+    TextSpan(text: "\n\nOpen-Minded and Flexible: ", style: bold),
+    TextSpan(text: "ENFPs are open-minded and flexible individuals who are always willing to try new things. They are able to adapt to change and embrace new experiences.", style: normal),
 
-  String body_text =
-      "ENFPs, also known as Visionary, are enthusiastic, creative, and people-oriented individuals "
-      "who are always looking for new experiences and ways to make a difference in the world. "
-      "They are driven by a strong sense of idealism and a desire to help others. "
-      "ENFPs are often described as extroverted, intuitive, feeling, and perceiving.";
+  ]));
+
+
+
+
+  RichText weakness_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "Overly Sensitive: ", style: bold),
+    TextSpan(text: "ENFPs can be overly sensitive to the criticism or disapproval of others. They may take things personally and may need to learn to detach their emotions from their work.", style: normal),
+    TextSpan(text: "\n\nDisorganized and Impulsive: ", style: bold),
+    TextSpan(text: "ENFPs can be disorganized and impulsive, which can lead to problems at work or school. They may need to learn to be more organized and planful.", style: normal),
+    TextSpan(text: "\n\nProcrastinators: ", style: bold),
+    TextSpan(text: "ENFPs can be procrastinators, which can lead to missed deadlines and unfinished projects. They may need to learn to be more disciplined and focused.", style: normal),
+    TextSpan(text: "\n\nAvoidant of Conflict: ", style: bold),
+    TextSpan(text: "ENFPs may avoid conflict at all costs, which can lead to unresolved issues and resentment. Learning to communicate their needs and assertively address conflict can be helpful.", style: normal),
+    TextSpan(text: "\n\nDifficulty Saying No: ", style: bold),
+    TextSpan(text: "ENFPs may have difficulty saying no to others, even when it means putting their own needs last. This can lead to resentment and burnout.", style: normal),
+
+  ]));
+
+
+
+
+    RichText relation = RichText(text: TextSpan(children: [
+    TextSpan(text: "ENFP Relationships:", style: bold),
+    TextSpan(text: "\n\nHealthy communication: ", style: bold),
+    TextSpan(text: "Express your thoughts and feelings openly and honestly, while being mindful of your partner's communication style and emotional needs.", style: normal),
+    TextSpan(text: "\n\nBalancing idealism and practicality: ", style: bold),
+    TextSpan(text: "While pursuing your dreams, don't neglect practical aspects of life and shared responsibilities.", style: normal),
+    TextSpan(text: "\n\nFinding emotional balance: ", style: bold),
+    TextSpan(text: "Share your emotions openly and constructively, but also learn to manage your own emotional intensity for a healthy relationship.", style: normal),
+    TextSpan(text: "\n\nEmbracing spontaneity and structure: ", style: bold),
+    TextSpan(text: "Find a balance between your spontaneous nature and your partner's need for structure and stability.", style: normal),
+    TextSpan(text: "\n\n\nCompatible Types:", style: bold),
+    TextSpan(text: "\n\nINFJ: ", style: bold),
+    TextSpan(text: "Share idealistic aspirations, deep thinking, and a desire for meaningful connections. Both value authenticity, personal growth, and exploring possibilities. However, both might need to develop emotional expression and navigate conflict constructively.", style: normal),
+    TextSpan(text: "\n\nINFP: ", style: bold),
+    TextSpan(text: "Balance ENFP's extroversion with their emotional sensitivity and artistic expression. INFPs bring depth, creativity, and a focus on personal values, encouraging ENFPs to connect with their emotions and explore their inner world.", style: normal),
+    TextSpan(text: "\n\nINTP: ", style: bold),
+    TextSpan(text: "Share intellectual curiosity, a love for debate, and an independent spirit. Both enjoy exploring complex ideas and challenging each other's perspectives, but need to bridge the gap between ENFP's emotional warmth and INTP's logical nature.", style: normal),
+    TextSpan(text: "\n\nENFJ: ", style: bold),
+    TextSpan(text: "Share enthusiasm, optimism, and a desire to inspire others. ENFJs bring leadership qualities and organizational skills, balancing ENFP's spontaneity with structure. However, managing potential power dynamics and communication styles is crucial.", style: normal),
+    TextSpan(text: "\n\nENTP: ", style: bold),
+    TextSpan(text: "Share intellectual energy, a playful spirit, and a love for new experiences. ENTPs bring extraverted energy and an unconventional approach, encouraging ENFPs to embrace the moment and explore different perspectives. Balancing intellectual stimulation with emotional connection is key.", style: normal),
+    TextSpan(text: "\n\nISFP: ", style: bold),
+    TextSpan(text: "Offer artistic expression, emotional sensitivity, and a focus on enjoying the present moment. ISFPs bring grounding and appreciation for beauty, encouraging ENFPs to connect with their emotions and savor experiences.", style: normal),
+
+
+  ]));
+
+
+
+
+
+
+  RichText friend_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "ENFPs", style: bold),
+    TextSpan(text: " value ", style: normal),
+    TextSpan(text: "authenticity, deep conversations", style: bold),
+    TextSpan(text: ", and ", style: normal),
+    TextSpan(text: "genuine connections", style: bold),
+    TextSpan(text: ". \n\nThey seek friends who share their ", style: normal),
+    TextSpan(text: "depth, idealism", style: bold),
+    TextSpan(text: ", and ", style: normal),
+    TextSpan(text: "desire to make a difference", style: bold),
+    TextSpan(text: ". While their circle may be small, their friendships are "
+        "strong and built on mutual understanding and deep trust.", style: normal),
+
+  ]));
+
+
+
+
+    RichText parent_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "ENFPs", style: bold),
+    TextSpan(text: "nurture their children with ", style: normal),
+    TextSpan(text: "unconditional love, empathy", style: bold),
+    TextSpan(text: ", and ", style: normal),
+    TextSpan(text: "encouragement", style: bold),
+    TextSpan(text: ". \n\nThey foster their children's ", style: normal),
+    TextSpan(text: "individuality, creativity", style: bold),
+    TextSpan(text: ", and ", style: normal),
+    TextSpan(text: "critical thinking", style: bold),
+    TextSpan(text: ", while instilling strong values and a sense of social responsibility. However, their sensitivity and "
+        "perfectionism require conscious effort to balance with providing space for ", style: normal),
+    TextSpan(text: "exploration", style: bold),
+    TextSpan(text: " and ", style: normal),
+    TextSpan(text: "independence.", style: bold),
+
+  ]));
+
+
+
+
+
+
+  RichText body_text =
+  RichText(text: TextSpan(children: [
+    TextSpan(text: "ENFPs", style: bold),
+    TextSpan(text: ", also known as ", style: normal),
+    TextSpan(text: "Visionary", style: bold),
+    TextSpan(text: ", are ", style: normal),
+    TextSpan(text: "enthusiastic, creative", style: bold),
+    TextSpan(text: ", and ", style: normal),
+    TextSpan(text: "people-oriented individuals ", style: bold),
+    TextSpan(text: "who are always looking for new experiences and ways to make a difference in the world. "
+        "They are driven by a strong sense of idealism and a desire to help others. ENFPs are often described as ", style: normal),
+    TextSpan(text: "extroverted, intuitive, feeling", style: bold),
+    TextSpan(text: ", and ", style: normal),
+    TextSpan(text: "perceiving.", style: bold),
+  ]));
+
 
   void overview() {
     setState(() {
@@ -2654,13 +2746,7 @@ class _ENFPState extends State<ENFP> {
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
-                          child: Text(
-                            body_text,
-                            style: Theme.of(context)
-                                .textTheme
-                                .bodyLarge!
-                                .copyWith(color: Colors.white),
-                          ),
+                          child: body_text
                         ),
                       ],
                     ),
