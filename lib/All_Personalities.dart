@@ -3430,54 +3430,91 @@ class ESTJ extends StatefulWidget {
 
 class _ESTJState extends State<ESTJ> {
   String headline = "Overview";
-  String overview_body =
-      "ESTJs, also known as the Executives or Guardians, are individuals known for "
-      "their dependability, efficiency, and dedication to structure and organization. "
-      "They value facts, data, and clear procedures, approaching life with a logical and decisive nature.";
 
-  String strength_text =
-      "Reliable and Dependable: ESTJs are people of their word. They follow through on commitments and can be counted on in any situation. Their consistency and dependability make them valuable assets in any team or community."
-      "\n\nLogical and Analytical: ESTJs excel at solving problems with a step-by-step approach, carefully considering all aspects before making informed decisions based on logic and evidence. Their focus on rationality avoids emotional biases."
-      "\n\nOrganized and Efficient: ESTJs thrive on order and structure. They excel at planning, managing time effectively, and streamlining processes to ensure things run smoothly and efficiently."
-      "\n\nResults-Oriented: ESTJs are driven by achieving goals and seeing things through to completion. They set clear objectives and work tirelessly to achieve them, prioritizing practical solutions and concrete outcomes."
-      "\n\nDirect and Honest: ESTJs value honesty and transparency. They communicate directly and clearly, sometimes seeming blunt, but their straightforwardness ensures everyone understands their expectations and intentions.";
+  RichText overview_body = RichText(text: TextSpan(children: [
+    TextSpan(text: "ESTJs, also known as the ",style: normal),
+    TextSpan(text: "Executives or Guardians, are individuals ",style: bold),
+    TextSpan(text: "known for their ",style: normal),
+    TextSpan(text: "dependability, efficiency, and dedication to structure and organization.",style: bold),
+    TextSpan(text: "They value ",style: normal),
+    TextSpan(text: "facts, data, and clear procedures, approaching life with a logical and decisive nature.",style: bold),
+  ]));
 
-  String weakness_text =
-      "Inflexible and Resistant to Change: ESTJs value stability and established systems. Sudden changes can disrupt their routines and comfort zones, making them hesitant to adapt. They may require time and understanding to adjust to new situations."
-      "\n\nOverly Critical and Blunt: Their direct communication style can sometimes come across as harsh or critical, even unintentionally. While truthful, their assessments may hurt others' feelings, especially those seeking emotional support or validation."
-      "\n\nEmotionally Reserved: Expressing emotions openly isn't ESTJs' forte. They may struggle with complex emotional situations and expressing their own feelings, potentially creating challenges in connecting with others on a deeper level."
-      "\n\nWorkaholic Tendencies: Their dedication to achieving goals and efficiency can lead to neglecting personal needs and social interactions. Balancing work and personal life is crucial for their well-being."
-      "\n\nDifficulty Delegating: Trusting their own abilities, delegating tasks can be challenging for ESTJs. They prefer maintaining control, potentially hindering collaboration and preventing others from learning and growing.";
+  RichText strength_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "Reliable and Dependable: ",style: bold),
+    TextSpan(text: "ESTJs are people of their word. They follow through on commitments and can be counted on in any situation. Their consistency and dependability make them valuable assets in any team or community.",style: normal),
+    TextSpan(text: "\n\nLogical and Analytical: ",style: bold),
+    TextSpan(text: "ESTJs excel at solving problems with a step-by-step approach, carefully considering all aspects before making informed decisions based on logic and evidence. Their focus on rationality avoids emotional biases.",style: normal),
+    TextSpan(text: "\n\nOrganized and Efficient: ",style: bold),
+    TextSpan(text: "ESTJs thrive on order and structure. They excel at planning, managing time effectively, and streamlining processes to ensure things run smoothly and efficiently.",style: normal),
+    TextSpan(text: "\n\nResults-Oriented: ",style: bold),
+    TextSpan(text: "ESTJs are driven by achieving goals and seeing things through to completion. They set clear objectives and work tirelessly to achieve them, prioritizing practical solutions and concrete outcomes.",style: normal),
+    TextSpan(text: "\n\nDirect and Honest: ",style: bold),
+    TextSpan(text: "ESTJs value honesty and transparency. They communicate directly and clearly, sometimes seeming blunt, but their straightforwardness ensures everyone understands their expectations and intentions.",style: normal),
+  ]));
 
-  String friend_text =
-      "ESTJs value genuine connections and intellectual conversations. "
-      "\n\nThey seek friends who are reliable, honest, and share their appreciation for logic and order. "
-      "While their social circles may be smaller, their friendships are usually strong and built on mutual trust and respect.";
+  RichText weakness_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "Inflexible and Resistant to Change: ",style: bold),
+    TextSpan(text: "ESTJs value stability and established systems. Sudden changes can disrupt their routines and comfort zones, making them hesitant to adapt. They may require time and understanding to adjust to new situations.",style: normal),
+    TextSpan(text: "\n\nOverly Critical and Blunt: ",style: bold),
+    TextSpan(text: "Their direct communication style can sometimes come across as harsh or critical, even unintentionally. While truthful, their assessments may hurt others' feelings, especially those seeking emotional support or validation.",style: normal),
+    TextSpan(text: "\n\nEmotionally Reserved: ",style: bold),
+    TextSpan(text: "Expressing emotions openly isn't ESTJs' forte. They may struggle with complex emotional situations and expressing their own feelings, potentially creating challenges in connecting with others on a deeper level.",style: normal),
+    TextSpan(text: "\n\nWorkaholic Tendencies: ",style: bold),
+    TextSpan(text: "Their dedication to achieving goals and efficiency can lead to neglecting personal needs and social interactions. Balancing work and personal life is crucial for their well-being.",style: normal),
+    TextSpan(text: "\n\nDifficulty Delegating: ",style: bold),
+    TextSpan(text: "Trusting their own abilities, delegating tasks can be challenging for ESTJs. They prefer maintaining control, potentially hindering collaboration and preventing others from learning and growing.",style: normal),
+  ]));
 
-  String parent_text =
-      "ESTJ parents provide their children with clear rules, routines, and expectations. "
-      "\n\nThey emphasize responsibility, hard work, academic achievement, and practical skills. "
-      "While they offer love and support, open emotional expression may be a challenge. "
-      "They encourage their children to be independent, decisive, and goal-oriented.";
+  RichText friend_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "ESTJs ",style: bold),
+    TextSpan(text: "ESTJs value genuine connections and intellectual conversations.\n\nThey seek friends who are ",style: normal),
+    TextSpan(text: "reliable, honest, and share their appreciation for logic and order.",style: bold),
+    TextSpan(text: "While their social circles may be smaller, their friendships are usually strong and built on mutual trust and respect ",style: normal),
+  ]));
 
-  String relation =
-      "ESTJ Relationships:"
-      "\n\nHealthy communication: Express your thoughts and needs clearly and directly, while also being mindful of your partner's communication style and emotional needs."
-      "\n\nBalancing efficiency and empathy: While valuing productivity and achieving goals, prioritize understanding and considering your partner's feelings and perspectives."
-      "\n\nEmbracing flexibility: Be open to new ideas and approaches while maintaining your core values, finding a balance with your partner's needs."
-      "\n\nRespecting individual differences: Appreciate your partner's unique personality and perspective, fostering a supportive and understanding environment."
-      "\n\n\nCompatible Types:"
-      "\n\nISTJ: Share decisiveness, practicality, and a focus on achieving goals. Both value efficiency, structure, and building a secure foundation. However, both might need to work on expressing emotions openly and addressing conflict constructively."
-      "\n\nENTJ: Share strategic thinking, ambition, and a drive to achieve goals. Both enjoy leadership roles, clear communication, and making a positive impact. However, managing potential power dynamics and respecting individual approaches are crucial."
-      "\n\nESTP: Share direct communication, action-oriented nature, and a love for challenges. Both enjoy problem-solving, getting things done, and having fun. However, ESTJs might need to adjust their seriousness and embrace ESTPs' spontaneity at times."
-      "\n\nESFJ: Offer warmth, empathy, and a focus on creating a harmonious environment. ESFJs bring social ease, attention to detail, and people skills, balancing ESTJs' directness and focus on efficiency. However, ESTJs might need to be mindful of ESFJs' emotional needs and express appreciation differently."
-      "\n\nINTJ: Offer strategic thinking, long-term vision, and a focus on achieving goals. INTJs bring intellectual depth, analytical thinking, and a different perspective, potentially challenging ESTJs and encouraging deeper intellectual connection. However, both might need to work on emotional expression and navigating potential power dynamics."
-      "\n\nISFP: Offer creativity, emotional sensitivity, and a focus on enjoying the present moment. ISFPs bring authenticity, artistic expression, and appreciation for beauty, encouraging ESTJs to loosen up and connect with their emotional side. However, balancing practicality with emotional needs and communication styles is crucial.";
+  RichText parent_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "ESTJ parents provide their children with clear rules, routines, and expectations. \n\nThey emphasize",style: normal),
+    TextSpan(text: "responsibility, hard work, academic achievement, and practical skills. ",style: bold),
+    TextSpan(text: "While they offer ",style: normal),
+    TextSpan(text: "love and support, open emotional expression , ",style: bold),
+    TextSpan(text: "may be a challenge. They encourage their children to be ",style: normal),
+    TextSpan(text: "independent, decisive, and goal-oriented.",style: bold),
+  ]));
 
-  String body_text =
-      "ESTJs, also known as the Executives or Guardians, are individuals known for "
-      "their dependability, efficiency, and dedication to structure and organization. "
-      "They value facts, data, and clear procedures, approaching life with a logical and decisive nature.";
+  RichText relation = RichText(text: TextSpan(children: [
+    TextSpan(text: "ESTJ Relationships:",style: bold),
+    TextSpan(text: "\n\nHealthy communication: ",style: bold),
+    TextSpan(text: "Express your thoughts and needs clearly and directly, while also being mindful of your partner's communication style and emotional needs.",style: normal),
+    TextSpan(text: "\n\nBalancing efficiency and empathy: ",style: bold),
+    TextSpan(text: "While valuing productivity and achieving goals, prioritize understanding and considering your partner's feelings and perspectives.",style: normal),
+    TextSpan(text: "\n\nEmbracing flexibility: ",style: bold),
+    TextSpan(text: "Be open to new ideas and approaches while maintaining your core values, finding a balance with your partner's needs.",style: normal),
+    TextSpan(text: "\n\nRespecting individual differences: ",style: bold),
+    TextSpan(text: "Appreciate your partner's unique personality and perspective, fostering a supportive and understanding environment.",style: normal),
+    TextSpan(text: "\n\n\nCompatible Types:",style: bold),
+    TextSpan(text: "\n\nISTJ: ",style: bold),
+    TextSpan(text: "Share decisiveness, practicality, and a focus on achieving goals. Both value efficiency, structure, and building a secure foundation. However, both might need to work on expressing emotions openly and addressing conflict constructively.", style: normal),
+    TextSpan(text: "\n\nENTJ: ",style: bold),
+    TextSpan(text: "Share strategic thinking, ambition, and a drive to achieve goals. Both enjoy leadership roles, clear communication, and making a positive impact. However, managing potential power dynamics and respecting individual approaches are crucial.", style: normal),
+    TextSpan(text: "\n\nESTP: ",style: bold),
+    TextSpan(text: "Share direct communication, action-oriented nature, and a love for challenges. Both enjoy problem-solving, getting things done, and having fun. However, ESTJs might need to adjust their seriousness and embrace ESTPs' spontaneity at times.", style: normal),
+    TextSpan(text: "\n\nESFJ: ",style: bold),
+    TextSpan(text: "Offer warmth, empathy, and a focus on creating a harmonious environment. ESFJs bring social ease, attention to detail, and people skills, balancing ESTJs' directness and focus on efficiency. However, ESTJs might need to be mindful of ESFJs' emotional needs and express appreciation differently.", style: normal),
+    TextSpan(text: "\n\nINTJ: ",style: bold),
+    TextSpan(text: "Offer strategic thinking, long-term vision, and a focus on achieving goals. INTJs bring intellectual depth, analytical thinking, and a different perspective, potentially challenging ESTJs and encouraging deeper intellectual connection. However, both might need to work on emotional expression and navigating potential power dynamics.", style: normal),
+    TextSpan(text: "\n\nISFP: ",style: bold),
+    TextSpan(text: "Offer creativity, emotional sensitivity, and a focus on enjoying the present moment. ISFPs bring authenticity, artistic expression, and appreciation for beauty, encouraging ESTJs to loosen up and connect with their emotional side. However, balancing practicality with emotional needs and communication styles is crucial.", style: normal),
+  ]));
+
+  RichText body_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "ESTJs, also known as the ",style: normal),
+    TextSpan(text: "Executives or Guardians, are individuals ",style: bold),
+    TextSpan(text: "known for their ",style: normal),
+    TextSpan(text: "dependability, efficiency, and dedication to structure and organization.",style: bold),
+    TextSpan(text: "They value ", style: normal),
+    TextSpan(text: "facts, data, and clear procedures, approaching life with a logical and decisive nature.", style: bold),
+  ]));
 
   void overview() {
     setState(() {
@@ -3672,13 +3709,7 @@ class _ESTJState extends State<ESTJ> {
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
-                          child: Text(
-                            body_text,
-                            style: Theme.of(context)
-                                .textTheme
-                                .bodyLarge!
-                                .copyWith(color: Colors.white),
-                          ),
+                          child: body_text,
                         ),
                       ],
                     ),
