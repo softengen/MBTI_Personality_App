@@ -2764,56 +2764,129 @@ class ISTJ extends StatefulWidget {
 
 class _ISTJState extends State<ISTJ> {
   String headline = "Overview";
-  String overview_body =
-      "The ISTJ, often known as the Inspector thrives on stability, practicality, and a well-defined plan. "
-      "They are meticulous individuals who value order, tradition, and clear expectations. In relationships, "
-      "ISTJs are loyal and dependable partners who prioritize security and reliability. They might appear reserved at first, "
-      "but their inner warmth and genuine care become evident with time.";
 
-  String strength_text =
-      "Reliable and Dependable: When you need someone to follow through, an ISTJ is your person. They keep promises, meet deadlines, and demonstrate unwavering commitment to their responsibilities."
-      "\n\nLogical and Analytical: They excel at solving problems with a step-by-step approach, utilizing logic and evidence to reach well-reasoned conclusions. They make efficient decisions and avoid emotional biases."
-      "\n\nOrganized and Efficient: ISTJs value order and structure, prioritizing planning and meticulousness in their work and lives. They manage time effectively, streamline processes, and ensure things run smoothly."
-      "\n\nDetail-Oriented: Nothing escapes their sharp eye for detail. They ensure accuracy and thoroughness in their work, spotting the smallest discrepancies and contributing to high-quality outcomes."
-      "\n\nLoyal and Committed: Once they trust someone, they form strong bonds and offer unwavering support. Their loyalty extends to friends, family, and colleagues, demonstrated through practical actions and dedication.";
+  RichText overview_body = RichText(text: TextSpan(children: [
+    TextSpan(text: "The ", style: normal),
+    TextSpan(text: "ISTJ", style: bold),
+    TextSpan(text: ", often known as the ", style: normal),
+    TextSpan(text: "Inspector", style: bold),
+    TextSpan(text: "thrives on ", style: normal),
+    TextSpan(text: "stability, practicality", style: bold),
+    TextSpan(text: ", and ", style: normal),
+    TextSpan(text: "a well-defined plan", style: bold),
+    TextSpan(text: ". They are meticulous individuals who value order, tradition, and clear expectations. In relationships, "
+        "ISTJs are loyal and dependable partners who prioritize security and reliability. They might appear reserved at first, "
+        "but their inner warmth and genuine care become evident with time.", style: normal),
+  ]));
 
-  String weakness_text =
-      "Inflexible and Resistant to Change: While stability is their comfort zone, sudden changes can disrupt their established routines and routines, causing discomfort and resistance. Adaptability can be a challenge."
-      "\n\nOverly Critical and Blunt: Their directness and focus on logic can sometimes be perceived as harsh or overly critical. While truthful, their honest assessments might unintentionally hurt others' feelings."
-      "\n\nEmotionally Reserved: Expressing emotions isn't their forte. They may struggle to navigate complex emotional situations or openly express their own feelings, potentially creating challenges in understanding or responding to others' emotional needs."
-      "\n\nPerfectionistic and Impatient: Their high standards for themselves and others can lead to self-criticism and frustration when things fall short. Their focus on efficiency can make them impatient with those who are perceived as less detail-oriented or slower."
-      "\n\nDifficulty Delegating: Trusting their own abilities, delegating tasks can be challenging for ISTJs. They might prefer to maintain control, potentially hindering collaboration and preventing others from learning and growing.";
 
-  String friend_text =
-      "ISTJs value authenticity, genuine connections, and intellectual conversations. "
-      "\n\nThey seek friends who are reliable, honest, and share their appreciation for logic and order. "
-      "While their social circles may be smaller, their friendships are typically strong and built on mutual trust, respect, and shared values.";
 
-  String parent_text =
-      "ISTJ parents provide their children with clear rules, well-defined routines, and clear expectations. "
-      "\n\nhey emphasize responsibility, hard work, academic achievement, and logical thinking. "
-      "While they demonstrate love and support, expressing emotions openly may be a challenge. "
-      "They encourage independence, self-discipline, and a strong work ethic in their children.";
+  RichText strength_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "Reliable and Dependable: ", style: bold),
+    TextSpan(text: "When you need someone to follow through, an ISTJ is your person. They keep promises, meet deadlines, and demonstrate unwavering commitment to their responsibilities.", style: normal),
+    TextSpan(text: "\n\nLogical and Analytical: ", style: bold),
+    TextSpan(text: "They excel at solving problems with a step-by-step approach, utilizing logic and evidence to reach well-reasoned conclusions. They make efficient decisions and avoid emotional biases.", style: normal),
+    TextSpan(text: "\n\nOrganized and Efficient: ", style: bold),
+    TextSpan(text: "ISTJs value order and structure, prioritizing planning and meticulousness in their work and lives. They manage time effectively, streamline processes, and ensure things run smoothly.", style: normal),
+    TextSpan(text: "\n\nDetail-Oriented: ", style: bold),
+    TextSpan(text: "Nothing escapes their sharp eye for detail. They ensure accuracy and thoroughness in their work, spotting the smallest discrepancies and contributing to high-quality outcomes.", style: normal),
+    TextSpan(text: "\n\nLoyal and Committed: O", style: bold),
+    TextSpan(text: "Once they trust someone, they form strong bonds and offer unwavering support. Their loyalty extends to friends, family, and colleagues, demonstrated through practical actions and dedication.", style: normal),
 
-  String relation =
-      "ISTJ Relationships:"
-      "\n\nHealthy communication: Express your thoughts and needs clearly and directly, while also being mindful of your partner's communication style and emotional needs."
-      "\n\nBalancing practicality and emotional expression: While valuing stability and planning, also prioritize connecting with your partner on an emotional level and express your feelings constructively."
-      "\n\nEmbracing flexibility: Be open to new ideas and experiences while maintaining your core values, finding a balance with your partner's needs for variety."
-      "\n\nRespecting individual differences: Appreciate your partner's unique personality and perspective, fostering a supportive and understanding environment."
-      "\n\n\nCompatible Types:"
-      "\n\nISFJ: Share practicality, organization, and value for tradition and stability. Both prioritize reliability, responsibility, and building a secure foundation for their lives. However, both might need to work on expressing emotions openly and addressing conflict directly."
-      "\n\nISTP: Share pragmatism, logical thinking, and a preference for action over theory. Both enjoy problem-solving and efficiency, valuing clear communication and shared goals. However, ISTJs might need to adjust their seriousness and embrace ISTPs' spontaneity at times."
-      "\n\nINTJ: Share strategic thinking, long-term vision, and a focus on achieving goals. Both prioritize logic, efficiency, and planning, enjoying deep intellectual conversations. However, both might need to work on emotional expression and navigating potential power dynamics."
-      "\n\nESTJ: Share decisiveness, direct communication, and a focus on getting things done. ESTJs bring an extraverted and action-oriented approach, balancing ISTJs' introspective nature. However, managing potential power dynamics and respecting communication styles are important."
-      "\n\nINFJ: Offer intuition, emotional understanding, and a desire for meaningful connections. INFJs bring depth, compassion, and a different perspective, encouraging ISTJs to connect with their emotions and consider hidden meanings. However, ISTJs might need to communicate emotions more openly and appreciate INFJs' need for emotional connection."
-      "\n\nISFP: Offer artistic expression, emotional sensitivity, and a focus on enjoying the present moment. ISFPs bring creativity, authenticity, and appreciation for beauty, encouraging ISTJs to loosen up and appreciate spontaneity. However, balancing practicality with emotional needs and communication styles is crucial.";
+  ]));
 
-  String body_text =
-      "The ISTJ, often known as the Inspector thrives on stability, practicality, and a well-defined plan. "
-      "They are meticulous individuals who value order, tradition, and clear expectations. In relationships, "
-      "ISTJs are loyal and dependable partners who prioritize security and reliability. They might appear reserved at first, "
-      "but their inner warmth and genuine care become evident with time.";
+
+
+  RichText weakness_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "Inflexible and Resistant to Change: ", style: bold),
+    TextSpan(text: "While stability is their comfort zone, sudden changes can disrupt their established routines and routines, causing discomfort and resistance. Adaptability can be a challenge.", style: normal),
+    TextSpan(text: "\n\nOverly Critical and Blunt: ", style: bold),
+    TextSpan(text: "Their directness and focus on logic can sometimes be perceived as harsh or overly critical. While truthful, their honest assessments might unintentionally hurt others' feelings.", style: normal),
+    TextSpan(text: "\n\nEmotionally Reserved: ", style: bold),
+    TextSpan(text: "Expressing emotions isn't their forte. They may struggle to navigate complex emotional situations or openly express their own feelings, potentially creating challenges in understanding or responding to others' emotional needs.", style: normal),
+    TextSpan(text: "\n\nPerfectionistic and Impatient:", style: bold),
+    TextSpan(text: "Their high standards for themselves and others can lead to self-criticism and frustration when things fall short. Their focus on efficiency can make them impatient with those who are perceived as less detail-oriented or slower.", style: normal),
+    TextSpan(text: "\n\nDifficulty Delegating: ", style: bold),
+    TextSpan(text: "Trusting their own abilities, delegating tasks can be challenging for ISTJs. They might prefer to maintain control, potentially hindering collaboration and preventing others from learning and growing.", style: normal),
+
+  ]));
+
+
+
+
+  RichText relation = RichText(text: TextSpan(children: [
+    TextSpan(text: "ISTJ Relationships:", style: bold),
+    TextSpan(text: "\n\nHealthy communication: ", style: bold),
+    TextSpan(text: "Express your thoughts and needs clearly and directly, while also being mindful of your partner's communication style and emotional needs.", style: normal),
+    TextSpan(text: "\n\nBalancing practicality and emotional expression: ", style: bold),
+    TextSpan(text: "While valuing stability and planning, also prioritize connecting with your partner on an emotional level and express your feelings constructively.", style: normal),
+    TextSpan(text: "\n\nEmbracing flexibility: ", style: bold),
+    TextSpan(text: "Be open to new ideas and experiences while maintaining your core values, finding a balance with your partner's needs for variety.", style: normal),
+    TextSpan(text: "\n\nRespecting individual differences: ", style: bold),
+    TextSpan(text: "Appreciate your partner's unique personality and perspective, fostering a supportive and understanding environment.", style: normal),
+    TextSpan(text: "\n\n\nCompatible Types:", style: bold),
+    TextSpan(text: "\n\nISFJ: ", style: bold),
+    TextSpan(text: "Share practicality, organization, and value for tradition and stability. Both prioritize reliability, responsibility, and building a secure foundation for their lives. However, both might need to work on expressing emotions openly and addressing conflict directly.", style: normal),
+    TextSpan(text: "\n\nISTP: ", style: bold),
+    TextSpan(text: "Share pragmatism, logical thinking, and a preference for action over theory. Both enjoy problem-solving and efficiency, valuing clear communication and shared goals. However, ISTJs might need to adjust their seriousness and embrace ISTPs' spontaneity at times.", style: normal),
+    TextSpan(text: "\n\nINTJ: ", style: bold),
+    TextSpan(text: "Share strategic thinking, long-term vision, and a focus on achieving goals. Both prioritize logic, efficiency, and planning, enjoying deep intellectual conversations. However, both might need to work on emotional expression and navigating potential power dynamics.", style: normal),
+    TextSpan(text: "\n\nESTJ: ", style: bold),
+    TextSpan(text: "Share decisiveness, direct communication, and a focus on getting things done. ESTJs bring an extraverted and action-oriented approach, balancing ISTJs' introspective nature. However, managing potential power dynamics and respecting communication styles are important.", style: normal),
+    TextSpan(text: "\n\nINFJ: ", style: bold),
+    TextSpan(text: "Offer intuition, emotional understanding, and a desire for meaningful connections. INFJs bring depth, compassion, and a different perspective, encouraging ISTJs to connect with their emotions and consider hidden meanings. However, ISTJs might need to communicate emotions more openly and appreciate INFJs' need for emotional connection.", style: normal),
+    TextSpan(text: "\n\nISFP: ", style: bold),
+    TextSpan(text: "Offer artistic expression, emotional sensitivity, and a focus on enjoying the present moment. ISFPs bring creativity, authenticity, and appreciation for beauty, encouraging ISTJs to loosen up and appreciate spontaneity. However, balancing practicality with emotional needs and communication styles is crucial.", style: normal),
+
+  ]));
+
+
+
+
+  RichText friend_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "ISTJs", style: bold),
+    TextSpan(text: " value ", style: normal),
+    TextSpan(text: "authenticity, genuine connections", style: bold),
+    TextSpan(text: ", and ", style: normal),
+    TextSpan(text: "intellectual conversations", style: bold),
+    TextSpan(text: ". \n\nThey seek friends who are reliable, honest, and share their appreciation for logic and order. "
+        "While their social circles may be smaller, their friendships are typically strong and built on mutual trust, respect, and shared values.", style: normal),
+
+
+  ]));
+  RichText parent_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "ISTJ", style: bold),
+    TextSpan(text: " parents provide their children with ", style: normal),
+    TextSpan(text: "clear rules, well-defined routines", style: bold),
+    TextSpan(text: ", and ", style: normal),
+    TextSpan(text: "clear expectations", style: bold),
+    TextSpan(text: ". \n\nThey emphasize ", style: normal),
+    TextSpan(text: "responsibility, hard work, academic achievement", style: bold),
+    TextSpan(text: ", and ", style: normal),
+    TextSpan(text: "logical thinking", style: bold),
+    TextSpan(text: ". While they demonstrate love and support, expressing emotions openly may be a challenge. "
+        "They encourage independence, self-discipline, and a strong work ethic in their children.", style: normal),
+
+  ]));
+
+
+
+
+  RichText body_text =
+  RichText(text: TextSpan(children: [
+    TextSpan(text: "The ", style: normal),
+    TextSpan(text: "ISTJ", style: bold),
+    TextSpan(text: ", often known as the ", style: normal),
+    TextSpan(text: "Inspector", style: bold),
+    TextSpan(text: "thrives on ", style: normal),
+    TextSpan(text: "stability, practicality", style: bold),
+    TextSpan(text: ", and ", style: normal),
+    TextSpan(text: "a well-defined plan", style: bold),
+    TextSpan(text: ". They are meticulous individuals who value order, tradition, and clear expectations. In relationships, "
+        "ISTJs are loyal and dependable partners who prioritize security and reliability. They might appear reserved at first, "
+        "but their inner warmth and genuine care become evident with time.", style: normal),
+  ]));
+
 
   void overview() {
     setState(() {
@@ -3008,13 +3081,7 @@ class _ISTJState extends State<ISTJ> {
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
-                          child: Text(
-                            body_text,
-                            style: Theme.of(context)
-                                .textTheme
-                                .bodyLarge!
-                                .copyWith(color: Colors.white),
-                          ),
+                          child: body_text
                         ),
                       ],
                     ),
@@ -3032,55 +3099,124 @@ class ISFJ extends StatefulWidget {
 
 class _ISFJState extends State<ISFJ> {
   String headline = "Overview";
-  String overview_body =
-      "ISFJs, often called Protectors, are nurturing individuals guided by strong internal values "
-      "and a deep desire for harmony. They navigate the world through a combination of practicality "
-      "and empathy, making them dependable friends, loyal partners, and dedicated caregivers.";
 
-  String strength_text =
-      "Reliable and Dependable: ISFJs are people you can count on. They take commitments seriously and follow through on their promises. Their stability and dependability make them valuable assets in any team."
-      "\n\nCaring and Compassionate: ISFJs are genuinely concerned about the well-being of others. They are empathetic and understanding, always willing to lend a helping hand to those in need."
-      "\n\nPractical and Organized: ISFJs thrive on order and efficiency. They excel at planning, prioritizing, and managing tasks to achieve goals effectively."
-      "\n\nDetail-Oriented: ISFJs have a keen eye for detail, noticing even the smallest discrepancies. This meticulousness ensures accuracy and thoroughness in their work."
-      "\n\nLoyal and Committed: ISFJs form strong bonds with those they trust and value. They are fiercely loyal to their friends, family, and colleagues, demonstrating commitment through practical actions and support.";
+  RichText overview_body = RichText(text: TextSpan(children: [
+    TextSpan(text: "ISFJs", style: bold),
+    TextSpan(text: ", often called ", style: normal),
+    TextSpan(text: "Protectors", style: bold),
+    TextSpan(text: ", are ", style: normal),
+    TextSpan(text: "nurturing individuals guided by strong internal values ", style: bold),
+    TextSpan(text: "and ", style: normal),
+    TextSpan(text: "a deep desire for harmony", style: bold),
+    TextSpan(text: ". They navigate the world through a combination of practicality "
+        "and empathy, making them dependable friends, loyal partners, and dedicated caregivers.", style: normal),
+  ]));
 
-  String weakness_text =
-      "\n\nInflexible and Resistant to Change: ISFJs value stability and predictability. Sudden changes can disrupt their established routines and make them uncomfortable. They may resist adapting, requiring time and understanding to adjust."
-      "\n\nOverly Sensitive and Easily Hurt: ISFJs are sensitive to criticism and may take things personally. They may be easily hurt by the words or actions of others, even if they are not intended to be hurtful."
-      "\n\nEmotionally Reserved: ISFJs tend to express their emotions less readily and may struggle to navigate complex emotional situations. This can create challenges in understanding or responding to the emotional needs of others."
-      "\n\nPerfectionistic and Impatient: ISFJs set high standards for themselves and others. This can lead to perfectionism and frustration when things fall short of their expectations. Additionally, their focus on efficiency can make them impatient with those who are slower or less detail-oriented."
-      "\n\nDifficulty Delegating: ISFJs trust their own abilities and prefer to be in control. Delegating tasks can be challenging for them, potentially causing unnecessary stress and hindering collaboration.";
 
-  String friend_text =
-      "ISFJs value genuine connections and meaningful conversations. "
-      "\n\nThey seek friends who are reliable, honest, and share their respect for logic and order. "
-      "While their social circle may be smaller, their friendships are usually strong and built on mutual trust and respect.";
 
-  String parent_text =
-      "ISFJ parents provide their children with clear rules, routines, and expectations. "
-      "\n\nThey emphasize responsibility, hard work, and academic achievement. "
-      "They are supportive and loving but may struggle with expressing emotions openly. "
-      "They encourage their children to be independent and logical thinkers, fostering self-discipline "
-      "and a strong work ethic.";
+  RichText strength_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "Reliable and Dependable: ", style: bold),
+    TextSpan(text: "ISFJs are people you can count on. They take commitments seriously and follow through on their promises. Their stability and dependability make them valuable assets in any team.", style: normal),
+    TextSpan(text: "\n\nCaring and Compassionate: ", style: bold),
+    TextSpan(text: "ISFJs are genuinely concerned about the well-being of others. They are empathetic and understanding, always willing to lend a helping hand to those in need.", style: normal),
+    TextSpan(text: "\n\nPractical and Organized: ", style: bold),
+    TextSpan(text: "ISFJs thrive on order and efficiency. They excel at planning, prioritizing, and managing tasks to achieve goals effectively.", style: normal),
+    TextSpan(text: "\n\nDetail-Oriented: ", style: bold),
+    TextSpan(text: "ISFJs have a keen eye for detail, noticing even the smallest discrepancies. This meticulousness ensures accuracy and thoroughness in their work.", style: normal),
+    TextSpan(text: "\n\nLoyal and Committed: ", style: bold),
+    TextSpan(text: "ISFJs form strong bonds with those they trust and value. They are fiercely loyal to their friends, family, and colleagues, demonstrating commitment through practical actions and support.", style: normal),
 
-  String relation =
-      "ISFJ Relationships:"
-      "\n\nHealthy communication: Express your thoughts and feelings openly and honestly, while also being mindful of your partner's communication style and emotional needs."
-      "\n\nBalancing practicality and emotional expression: While valuing stability and responsibility, prioritize connecting with your partner on an emotional level and express your feelings constructively."
-      "\n\nSetting boundaries: Learn to say no and prioritize your own needs while maintaining healthy connections with your partner."
-      "\n\nEmbracing growth and individual differences: Encourage yourself and your partner to explore personal growth while appreciating each other's unique personalities and perspectives."
-      "\n\n\nCompatible Types:"
-      "\n\nISTJ: Share practicality, value for tradition and stability, and a commitment to building a secure foundation for their lives. Both prioritize loyalty, responsibility, and creating a harmonious environment. However, both might need to work on expressing emotions openly and addressing conflict directly."
-      "\n\nISFP: Share empathy, compassion, and a focus on creating a warm and supportive environment. Both value harmony, personal connections, and expressing care through actions. However, ISFPs might need reassurance and understanding from ISFJs who sometimes prioritize practicality over overt emotional expression."
-      "\n\nINFJ: Share empathy, compassion, and a desire for meaningful connections. INFJs bring depth, intuition, and a focus on understanding others' emotions, potentially encouraging ISFJs to connect with their own emotions more deeply. However, both might need to work on assertiveness and expressing needs directly."
-      "\n\nESTJ: Offer decisiveness, direct communication, and a focus on getting things done. ESTJs bring an extraverted and action-oriented approach, balancing ISFJs' introspective nature and desire for harmony. However, managing potential power dynamics and respecting communication styles are important."
-      "\n\nINFP: Offer idealism, creativity, and a focus on personal values. INFPs bring a different perspective and encourage ISFJs to connect with their own creativity and individuality. However, ISFJs might need to manage potential conflict avoidance and ensure their practical needs are met."
-      "\n\nENFJ: Offer warmth, empathy, and a desire to inspire others. ENFJs bring extraverted energy and leadership qualities, encouraging ISFJs to step outside their comfort zone and engage socially. However, ISFJs might need to communicate their own needs clearly and set boundaries while maintaining the connection.";
+  ]));
 
-  String body_text =
-      "ISFJs, often called Protectors, are nurturing individuals guided by strong internal values "
-      "and a deep desire for harmony. They navigate the world through a combination of practicality "
-      "and empathy, making them dependable friends, loyal partners, and dedicated caregivers.";
+
+
+  RichText weakness_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "Inflexible and Resistant to Change: ", style: bold),
+    TextSpan(text: "ISFJs value stability and predictability. Sudden changes can disrupt their established routines and make them uncomfortable. They may resist adapting, requiring time and understanding to adjust.", style: normal),
+    TextSpan(text: "\n\nOverly Sensitive and Easily Hurt: ", style: bold),
+    TextSpan(text: "ISFJs are sensitive to criticism and may take things personally. They may be easily hurt by the words or actions of others, even if they are not intended to be hurtful.", style: normal),
+    TextSpan(text: "\n\nEmotionally Reserved: ", style: bold),
+    TextSpan(text: "ISFJs tend to express their emotions less readily and may struggle to navigate complex emotional situations. This can create challenges in understanding or responding to the emotional needs of others.", style: normal),
+    TextSpan(text: "\n\nPerfectionistic and Impatient: ", style: bold),
+    TextSpan(text: "ISFJs set high standards for themselves and others. This can lead to perfectionism and frustration when things fall short of their expectations. Additionally, their focus on efficiency can make them impatient with those who are slower or less detail-oriented.", style: normal),
+    TextSpan(text: "\n\nDifficulty Delegating: ", style: bold),
+    TextSpan(text: "ISFJs trust their own abilities and prefer to be in control. Delegating tasks can be challenging for them, potentially causing unnecessary stress and hindering collaboration.", style: normal),
+
+  ]));
+
+
+
+  RichText relation = RichText(text: TextSpan(children: [
+    TextSpan(text: "ISFJ Relationships:", style: bold),
+    TextSpan(text: "\n\nHealthy communication: ", style: bold),
+    TextSpan(text: "Express your thoughts and feelings openly and honestly, while also being mindful of your partner's communication style and emotional needs.", style: normal),
+    TextSpan(text: "\n\nBalancing practicality and emotional expression: ", style: bold),
+    TextSpan(text: "While valuing stability and responsibility, prioritize connecting with your partner on an emotional level and express your feelings constructively.", style: normal),
+    TextSpan(text: "\n\nSetting boundaries: ", style: bold),
+    TextSpan(text: "Learn to say no and prioritize your own needs while maintaining healthy connections with your partner.", style: normal),
+    TextSpan(text: "\n\nEmbracing growth and individual differences: ", style: bold),
+    TextSpan(text: "Encourage yourself and your partner to explore personal growth while appreciating each other's unique personalities and perspectives.", style: normal),
+    TextSpan(text: "\n\n\nCompatible Types:", style: bold),
+    TextSpan(text: "\n\nISTJ: ", style: bold),
+    TextSpan(text: "Share practicality, value for tradition and stability, and a commitment to building a secure foundation for their lives. Both prioritize loyalty, responsibility, and creating a harmonious environment. However, both might need to work on expressing emotions openly and addressing conflict directly.", style: normal),
+    TextSpan(text: "\n\nISFP: ", style: bold),
+    TextSpan(text: " Share empathy, compassion, and a focus on creating a warm and supportive environment. Both value harmony, personal connections, and expressing care through actions. However, ISFPs might need reassurance and understanding from ISFJs who sometimes prioritize practicality over overt emotional expression.", style: normal),
+    TextSpan(text: "\n\nINFJ: ", style: bold),
+    TextSpan(text: "Share empathy, compassion, and a desire for meaningful connections. INFJs bring depth, intuition, and a focus on understanding others' emotions, potentially encouraging ISFJs to connect with their own emotions more deeply. However, both might need to work on assertiveness and expressing needs directly.", style: normal),
+    TextSpan(text: "\n\nESTJ: ", style: bold),
+    TextSpan(text: "Offer decisiveness, direct communication, and a focus on getting things done. ESTJs bring an extraverted and action-oriented approach, balancing ISFJs' introspective nature and desire for harmony. However, managing potential power dynamics and respecting communication styles are important.", style: normal),
+    TextSpan(text: "\n\nINFP: ", style: bold),
+    TextSpan(text: "Offer idealism, creativity, and a focus on personal values. INFPs bring a different perspective and encourage ISFJs to connect with their own creativity and individuality. However, ISFJs might need to manage potential conflict avoidance and ensure their practical needs are met.", style: normal),
+    TextSpan(text: "\n\nENFJ: ", style: bold),
+    TextSpan(text: "Offer warmth, empathy, and a desire to inspire others. ENFJs bring extraverted energy and leadership qualities, encouraging ISFJs to step outside their comfort zone and engage socially. However, ISFJs might need to communicate their own needs clearly and set boundaries while maintaining the connection.", style: normal),
+
+  ]));
+
+
+
+  RichText friend_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "ISFJs", style: bold),
+    TextSpan(text: " value ", style: normal),
+    TextSpan(text: "genuine connections", style: bold),
+    TextSpan(text: " and ", style: normal),
+    TextSpan(text: "meaningful conversations", style: bold),
+    TextSpan(text: ". \n\nThey seek friends who are reliable, honest, and share their respect for logic and order. "
+        "While their social circle may be smaller, their friendships are usually strong and built on mutual trust and respect.", style: normal),
+  ]));
+
+
+  RichText parent_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "ISFJ", style: bold),
+    TextSpan(text: " parents provide their children with ", style: normal),
+    TextSpan(text: "clear rules, routines", style: bold),
+    TextSpan(text: ", and ", style: normal),
+    TextSpan(text: "expectations", style: bold),
+    TextSpan(text: ". \n\nThey emphasize ", style: normal),
+    TextSpan(text: "responsibility, hard work", style: bold),
+    TextSpan(text: ", and ", style: normal),
+    TextSpan(text: "academic achievement", style: bold),
+    TextSpan(text: ". They are supportive and loving but may struggle with expressing emotions openly. "
+        "They encourage their children to be independent and logical thinkers, fostering self-discipline "
+        "and a strong work ethic.", style: normal),
+
+  ]));
+
+
+
+  RichText body_text =
+  RichText(text: TextSpan(children: [
+    TextSpan(text: "ISFJs", style: bold),
+    TextSpan(text: ", often called ", style: normal),
+    TextSpan(text: "Protectors", style: bold),
+    TextSpan(text: ", are ", style: normal),
+    TextSpan(text: "nurturing individuals guided by strong internal values ", style: bold),
+    TextSpan(text: "and ", style: normal),
+    TextSpan(text: "a deep desire for harmony", style: bold),
+    TextSpan(text: ". They navigate the world through a combination of practicality "
+        "and empathy, making them dependable friends, loyal partners, and dedicated caregivers.", style: normal),
+  ]));
+
+
 
   void overview() {
     setState(() {
@@ -3276,13 +3412,7 @@ class _ISFJState extends State<ISFJ> {
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
-                          child: Text(
-                            body_text,
-                            style: Theme.of(context)
-                                .textTheme
-                                .bodyLarge!
-                                .copyWith(color: Colors.white),
-                          ),
+                          child: body_text
                         ),
                       ],
                     ),
