@@ -3696,57 +3696,92 @@ class ESFJ extends StatefulWidget {
 
 class _ESFJState extends State<ESFJ> {
   String headline = "Overview";
-  String overview_body =
-      "ESFJs, also known as the Consuls or Providers, are known for their "
-      "warmth, empathy, and unwavering dedication to helping others. "
-      "They value harmony, cooperation, and maintaining strong "
-      "social connections, approaching life with a focus on emotions and interpersonal relationships.";
 
-  String strength_text =
-      "Caring and Compassionate: ESFJs genuinely care about the well-being of others. They are empathetic and understanding, offering support and encouragement to those in need. Their genuine concern fosters strong bonds and positive relationships."
-      "\n\nOrganized and Efficient: ESFJs thrive on creating a comfortable and well-organized environment. They excel at planning, managing tasks, and ensuring everything runs smoothly, often prioritizing the needs of others alongside their own."
-      "\n\nLoyal and Committed: ESFJs form strong bonds with those they trust and value. They are fiercely loyal to their friends, family, and colleagues, demonstrating commitment through practical actions, emotional support, and unwavering dedication."
-      "\n\nSocial and Outgoing: ESFJs gain energy from social interaction. They enjoy connecting with others, participating in activities, and building strong relationships, often serving as the glue that holds groups together."
-      "\n\nGood Communicators: ESFJs excel at understanding and responding to others' emotions. They communicate effectively, both verbally and nonverbally, creating a warm and inviting atmosphere.";
+  RichText overview_body = RichText(text: TextSpan(children: [
+    TextSpan(text: "ESFJs, also known as the ",style: normal),
+    TextSpan(text: "Consuls or Providers, ",style: bold),
+    TextSpan(text: "are known for their ",style: normal),
+    TextSpan(text: "warmth, empathy, and unwavering dedication to helping others.",style: bold),
+    TextSpan(text: "They value ",style: normal),
+    TextSpan(text: "harmony, cooperation, and maintaining strong social connections, approaching life with a focus on emotions and interpersonal relationships.",style: bold),
+  ]));
 
-  String weakness_text =
-      "People-Pleasing Tendencies: ESFJ's desire for harmony can lead them to prioritize others' needs over their own, neglecting their personal needs and desires to please others. Setting healthy boundaries is crucial for their well-being."
-      "\n\nOverly Sensitive and Easily Hurt: Their empathy can make them susceptible to taking things personally and feeling hurt by criticism or negativity, even if unintended. Developing emotional resilience can be helpful."
-      "\n\nDifficulty Saying No: Their desire to help and please others can make it challenging to say no to requests, even when they feel overwhelmed or overloaded. Learning to prioritize and set boundaries is essential."
-      "\n\nEmotionally Reserved in Their Own Needs: While open to others' emotions, ESFJs may struggle expressing their own deeper feelings and vulnerabilities, potentially hindering deeper connections. Sharing their inner world can be beneficial."
-      "\n\nConflict-Avoidant: Their desire for harmony can lead them to avoid conflict or confrontation, even when necessary. Learning to address issues constructively can be helpful.";
+  RichText strength_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "Caring and Compassionate: ",style: bold),
+    TextSpan(text: "ESFJs genuinely care about the well-being of others. They are empathetic and understanding, offering support and encouragement to those in need. Their genuine concern fosters strong bonds and positive relationships.",style: normal),
+    TextSpan(text: "\n\nOrganized and Efficient: ",style: bold),
+    TextSpan(text: "ESFJs thrive on creating a comfortable and well-organized environment. They excel at planning, managing tasks, and ensuring everything runs smoothly, often prioritizing the needs of others alongside their own.",style: normal),
+    TextSpan(text: "\n\nLoyal and Committed: ",style: bold),
+    TextSpan(text: "ESFJs form strong bonds with those they trust and value. They are fiercely loyal to their friends, family, and colleagues, demonstrating commitment through practical actions, emotional support, and unwavering dedication.",style: normal),
+    TextSpan(text: "\n\nSocial and Outgoing: ",style: bold),
+    TextSpan(text: "ESFJs gain energy from social interaction. They enjoy connecting with others, participating in activities, and building strong relationships, often serving as the glue that holds groups together.",style: normal),
+    TextSpan(text: "\n\nGood Communicators: ",style: bold),
+    TextSpan(text: "ESFJs excel at understanding and responding to others' emotions. They communicate effectively, both verbally and nonverbally, creating a warm and inviting atmosphere.",style: normal),
+  ]));
 
-  String friend_text =
-      "ESFJs value genuine connections and meaningful conversations. "
-      "\n\nThey seek friends who are honest, supportive, and share their appreciation for emotional connection "
-      "and building strong relationships. Their friendships are typically warm, supportive, and "
-      "built on mutual trust and understanding.";
+  RichText weakness_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "People-Pleasing Tendencies: ",style: bold),
+    TextSpan(text: "ESFJ's desire for harmony can lead them to prioritize others' needs over their own, neglecting their personal needs and desires to please others. Setting healthy boundaries is crucial for their well-being.",style: normal),
+    TextSpan(text: "\n\nOverly Sensitive and Easily Hurt: ",style: bold),
+    TextSpan(text: "Their empathy can make them susceptible to taking things personally and feeling hurt by criticism or negativity, even if unintended. Developing emotional resilience can be helpful.",style: normal),
+    TextSpan(text: "\n\nDifficulty Saying No: ",style: bold),
+    TextSpan(text: "Their desire to help and please others can make it challenging to say no to requests, even when they feel overwhelmed or overloaded. Learning to prioritize and set boundaries is essential.",style: normal),
+    TextSpan(text: "\n\nEmotionally Reserved in Their Own Needs: ",style: bold),
+    TextSpan(text: "While open to others' emotions, ESFJs may struggle expressing their own deeper feelings and vulnerabilities, potentially hindering deeper connections. Sharing their inner world can be beneficial.",style: normal),
+    TextSpan(text: "\n\nConflict-Avoidant: ",style: bold),
+    TextSpan(text: "Their desire for harmony can lead them to avoid conflict or confrontation, even when necessary. Learning to address issues constructively can be helpful.",style: normal),
+  ]));
 
-  String parent_text =
-      "ESFJ parents provide their children with a loving and supportive environment. "
-      "\n\nThey emphasize responsibility, kindness, and building strong social skills. "
-      "While they offer clear guidance, emotional expression may be more readily available than with other personality types. "
-      "They encourage their children to be empathetic, compassionate, and value strong social connections.";
+  RichText friend_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "ESFJs ",style: bold),
+    TextSpan(text: "value genuine connections and meaningful conversations.\n\nThey seek friends who are ",style: normal),
+    TextSpan(text: " honest, supportive, and share their appreciation for emotional connection and building strong relationships.",style: bold),
+    TextSpan(text: "Their friendships are typically ",style: normal),
+    TextSpan(text: "warm, supportive, and built on mutual trust and understanding.", style: bold),
+  ]));
 
-  String relation =
-      "ESFJ Relationships:"
-      "\n\nHealthy communication: Express your thoughts and feelings openly and honestly, while also being mindful of your partner's communication style and emotional needs."
-      "\n\nBalancing practicality and emotional expression: While valuing harmony and creating a comfortable environment, prioritize connecting with your partner on a deeper emotional level and express your feelings constructively."
-      "\n\nSetting boundaries: Learn to say no and prioritize your own needs while maintaining healthy connections with your partner."
-      "\n\nEmbracing growth and individual differences: Encourage yourself and your partner to explore personal growth while appreciating each other's unique personalities and perspectives."
-      "\n\nCompatible Types:"
-      "\n\nISFJ: Share warmth, empathy, and a desire to create a harmonious environment. Both value caring for others, building strong connections, and maintaining traditions. However, both might need to work on expressing emotions openly and addressing conflict directly."
-      "\n\nISTJ: Offer practicality, reliability, and a focus on stability. ISTJs bring structure, organization, and grounding energy, balancing ESFJs' emotional nature and desire for connection. However, ESFJs might need reassurance and understanding from ISTJs, who prioritize practicality over overt emotional expression."
-      "\n\nESFP: Share an energetic and social nature, along with a love for fun and enjoyment. Both value connecting with others, creating positive experiences, and expressing affection openly. However, ESFPs might crave more spontaneity and excitement than ESFJs, requiring flexibility and compromise."
-      "\n\nESTJ: Offer decisiveness, direct communication, and a focus on getting things done. ESTJs bring leadership qualities and an action-oriented approach, balancing ESFJs' desire for harmony and social connection. However, managing potential power dynamics and respecting communication styles are important."
-      "\n\nENFJ: Share charisma, warmth, and a desire to inspire others. ENFJs bring extraverted energy and visionary ideas, encouraging ESFJs to step outside their comfort zone and explore new possibilities. However, ESFJs might need to communicate their own needs clearly and set boundaries while maintaining the connection."
-      "\n\nINFP: Offer idealism, creativity, and a focus on personal values. INFPs bring a different perspective and encourage ESFJs to connect with their own inner world and values. However, ESFJs might need to manage potential conflict avoidance and ensure their practical needs are met.";
+  RichText parent_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "ESFJ parents provide their children with a loving and supportive environment. \n\nThey emphasize",style: normal),
+    TextSpan(text: "responsibility, kindness, and building strong social skills. ",style: bold),
+    TextSpan(text: "While they offer ",style: normal),
+    TextSpan(text: "clear guidance, emotional expression , ",style: bold),
+    TextSpan(text: "may be more readily available than with other personality types. They encourage their children to be ",style: normal),
+    TextSpan(text: "empathetic, compassionate, and value strong social connections.",style: bold),
+  ]));
 
-  String body_text =
-      "ESFJs, also known as the Consuls or Providers, are known for their "
-      "warmth, empathy, and unwavering dedication to helping others. "
-      "They value harmony, cooperation, and maintaining strong "
-      "social connections, approaching life with a focus on emotions and interpersonal relationships.";
+  RichText relation = RichText(text: TextSpan(children: [
+    TextSpan(text: "ESFJ Relationships:",style: bold),
+    TextSpan(text: "\n\nHealthy communication: ",style: bold),
+    TextSpan(text: "Express your thoughts and feelings openly and honestly, while also being mindful of your partner's communication style and emotional needs.",style: normal),
+    TextSpan(text: "\n\nBalancing practicality and emotional expression: ",style: bold),
+    TextSpan(text: "While valuing harmony and creating a comfortable environment, prioritize connecting with your partner on a deeper emotional level and express your feelings constructively.",style: normal),
+    TextSpan(text: "\n\nSetting boundaries: ",style: bold),
+    TextSpan(text: "Learn to say no and prioritize your own needs while maintaining healthy connections with your partner.",style: normal),
+    TextSpan(text: "\n\nEmbracing growth and individual differences: ",style: bold),
+    TextSpan(text: "Encourage yourself and your partner to explore personal growth while appreciating each other's unique personalities and perspectives.",style: normal),
+    TextSpan(text: "\n\n\nCompatible Types:",style: bold),
+    TextSpan(text: "\n\nISFJ: ",style: bold),
+    TextSpan(text: "Share warmth, empathy, and a desire to create a harmonious environment. Both value caring for others, building strong connections, and maintaining traditions. However, both might need to work on expressing emotions openly and addressing conflict directly.", style: normal),
+    TextSpan(text: "\n\nISTJ: ",style: bold),
+    TextSpan(text: "Offer practicality, reliability, and a focus on stability. ISTJs bring structure, organization, and grounding energy, balancing ESFJs' emotional nature and desire for connection. However, ESFJs might need reassurance and understanding from ISTJs, who prioritize practicality over overt emotional expression.", style: normal),
+    TextSpan(text: "\n\nESFP: ",style: bold),
+    TextSpan(text: "Share an energetic and social nature, along with a love for fun and enjoyment. Both value connecting with others, creating positive experiences, and expressing affection openly. However, ESFPs might crave more spontaneity and excitement than ESFJs, requiring flexibility and compromise.", style: normal),
+    TextSpan(text: "\n\nESTJ: ",style: bold),
+    TextSpan(text: "Offer decisiveness, direct communication, and a focus on getting things done. ESTJs bring leadership qualities and an action-oriented approach, balancing ESFJs' desire for harmony and social connection. However, managing potential power dynamics and respecting communication styles are important.", style: normal),
+    TextSpan(text: "\n\nENFJ: ",style: bold),
+    TextSpan(text: "Share charisma, warmth, and a desire to inspire others. ENFJs bring extraverted energy and visionary ideas, encouraging ESFJs to step outside their comfort zone and explore new possibilities. However, ESFJs might need to communicate their own needs clearly and set boundaries while maintaining the connection.", style: normal),
+    TextSpan(text: "\n\nINFP: ",style: bold),
+    TextSpan(text: "Offer idealism, creativity, and a focus on personal values. INFPs bring a different perspective and encourage ESFJs to connect with their own inner world and values. However, ESFJs might need to manage potential conflict avoidance and ensure their practical needs are met.", style: normal),
+  ]));
+
+  RichText body_text = RichText(text: TextSpan(children: [
+    TextSpan(text: "ESFJs, also known as the ",style: normal),
+    TextSpan(text: "Consuls or Providers, ",style: bold),
+    TextSpan(text: "are known for their ",style: normal),
+    TextSpan(text: "warmth, empathy, and unwavering dedication to helping others.",style: bold),
+    TextSpan(text: "They value ", style: normal),
+    TextSpan(text: "harmony, cooperation, and maintaining strong social connections, approaching life with a focus on emotions and interpersonal relationships.", style: bold),
+  ]));
 
   void overview() {
     setState(() {
@@ -3941,13 +3976,7 @@ class _ESFJState extends State<ESFJ> {
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20),
-                          child: Text(
-                            body_text,
-                            style: Theme.of(context)
-                                .textTheme
-                                .bodyLarge!
-                                .copyWith(color: Colors.white),
-                          ),
+                          child: body_text,
                         ),
                       ],
                     ),
