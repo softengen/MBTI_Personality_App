@@ -6,7 +6,7 @@ import 'NavBar.dart';
 
 
 class resultPage extends StatelessWidget{
-  final List<int> percentage;
+  final List percentage;
   final String personality_type;
 
   resultPage({this.percentage = const [65,60,23,49], this.personality_type = "ESFJ"});

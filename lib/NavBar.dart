@@ -2,28 +2,39 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:mbti_app/famousPeople.dart';
 import 'package:mbti_app/login_screen.dart';
 import 'package:mbti_app/personalityPage.dart';
+import 'package:mbti_app/resultPage.dart';
 import 'package:mbti_app/testPage.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:mbti_app/widgets/NavChart.dart';
+
 
 class NavBar extends StatelessWidget {
+  const NavBar({super.key});
+
   @override
   Widget build(BuildContext context) {
+    User user = FirebaseAuth.instance.currentUser!;
+
     return StreamBuilder<DocumentSnapshot>(
       stream: FirebaseFirestore.instance
           .collection('user')
-          .doc('uid')
+          .doc(user.uid)
           .snapshots(),
       builder: (context, snapshot) {
         if (!snapshot.hasData) {
           return const CircularProgressIndicator(); // or any loading indicator
         }
 
-        var userData = snapshot.data?.data();
+        var userData = snapshot.data!.data() as Map;
+        bool isResult = userData["result"] != null && userData["personality"]!= null;
+        List result = isResult ? userData["result"] : [];
+        String personality = isResult ? userData["personality"] : "";
+
 
         TextStyle navtext =
         const TextStyle(fontWeight: FontWeight.bold, fontSize: 15);
-
+        print(userData);
         return Drawer(
           child: ListView(
             padding: EdgeInsets.zero,
@@ -34,7 +45,7 @@ class NavBar extends StatelessWidget {
                   style: navtext,
                 ),
                 accountEmail: Text(
-                  (userData)?['email'] ?? "Unknown Email",
+                  (userData)['email'] ?? "Unknown Email",
                   style: navtext,
                 ),
                 currentAccountPicture: CircleAvatar(
@@ -55,16 +66,38 @@ class NavBar extends StatelessWidget {
                   ),
                 ),
               ),
+
+              isResult? InkWell(
+                onTap: () {
+                        Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) =>
+                                    resultPage(
+                                      percentage: result,
+                                      personality_type: personality,
+                                    )));
+                      },
+                child: SizedBox(
+                  width: MediaQuery.of(context).size.width,
+                  child: NavChart(result: result),
+                ),
+              ) : const SizedBox(),
+
+              const Divider(thickness: 1),
+
               ListTile(
                 leading: const Icon(Icons.text_snippet_outlined),
-                title: const Text(
-                  "Test Again",
+                title: Text(
+                  isResult ? "Test Again" : "Give Test",
                   style: TextStyle(fontWeight: FontWeight.bold),
                 ),
                 onTap: () => Navigator.pushReplacement(
                     context, MaterialPageRoute(builder: (context) => testPage())),
               ),
+
               const Divider(thickness: 1),
+
               ListTile(
                 leading: const Icon(Icons.pages_rounded),
                 title: const Text(
