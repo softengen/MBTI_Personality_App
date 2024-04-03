@@ -154,7 +154,7 @@ class _LoginPageState extends State<LoginPage> {
     log('Username: $email');
     log('Password: $password');
 
-    User? user = await _auth.signInwithEmailAndPassword(email, password);
+    User? user = await _auth.signInwithEmailAndPassword(email, password, context);
 
     if (user != null) {
       log("User successfully logged in");
