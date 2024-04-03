@@ -5,9 +5,9 @@ TextStyle txt = TextStyle(fontSize: 17.2, fontWeight: FontWeight.bold);
 
 
 class LinearChart extends StatelessWidget{
-  final List<int> percentage;
+  final List percentage;
 
-  const LinearChart({required this.percentage,});
+  const LinearChart({super.key, required this.percentage,});
   @override
   Widget build(BuildContext context) {
     double w = MediaQuery.of(context).size.width,

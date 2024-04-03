@@ -14,6 +14,7 @@ class SignUp extends StatefulWidget {
 
 class _SignUpState extends State<SignUp> {
   final firebaseAuthService _auth = firebaseAuthService();
+  User get user => FirebaseAuth.instance.currentUser!;
 
   TextEditingController _nameController = TextEditingController();
   TextEditingController _emailController = TextEditingController();
@@ -172,14 +173,16 @@ class _SignUpState extends State<SignUp> {
     String email = _emailController.text;
     String password = _passController.text;
 
-    User? user = await _auth.signUpwithEmailAndPassword(email, password);
-    String? uid = FirebaseAuth.instance.currentUser?.uid;
+    User? user = await _auth.signUpwithEmailAndPassword(email, password, context);
+
 
     CollectionReference collRef = FirebaseFirestore.instance.collection('user');
-    collRef.doc(uid).set({
+    collRef.doc(user?.uid).set({
       'name': name,
       'email': email,
       'pass': password,
+      'result' : null,
+      'personality' : null
     });
 
     if (user != null) {
@@ -195,7 +198,7 @@ class _SignUpState extends State<SignUp> {
 
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
-          content: Text('User successfully created'),
+          content: Text('Successfully created account'),
           duration: Duration(seconds: 2), // Adjust the duration as needed
         ),
       );

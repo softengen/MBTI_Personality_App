@@ -8,7 +8,13 @@ import 'package:mbti_app/testPage.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(
+    options: const FirebaseOptions(
+        apiKey: "AIzaSyDBW7FTGxv9k0fK8thvo54ITMIDh1UaBsE",
+        appId: "1:690493485282:android:237e415917ac8755b4aebb",
+        messagingSenderId: "690493485282",
+        projectId: "mbti-softengen")
+  );
   User? user = FirebaseAuth.instance.currentUser;
   runApp(MyApp(user: user));
 }
