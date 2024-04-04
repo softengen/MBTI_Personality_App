@@ -5,7 +5,6 @@ import 'package:mbti_app/login_screen.dart';
 import 'package:mbti_app/personalityPage.dart';
 import 'package:mbti_app/resultPage.dart';
 import 'package:mbti_app/testPage.dart';
-import 'package:mbti_app/user_auth/UserInfo.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

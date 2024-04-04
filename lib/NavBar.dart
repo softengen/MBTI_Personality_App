@@ -6,7 +6,6 @@ import 'package:mbti_app/resultPage.dart';
 import 'package:mbti_app/testPage.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:mbti_app/user_auth/UserInfo.dart';
 import 'package:mbti_app/widgets/AlertBox.dart';
 import 'package:mbti_app/widgets/NavChart.dart';
 
@@ -54,7 +53,6 @@ class NavBar extends StatelessWidget {
 
 
         var userData = snapshot.data!.data() as Map;
-        userInformation.userInfo = userData;
         bool isResult = userData["result"] != null && userData["personality"]!= null;
         List result = isResult ? userData["result"] : [];
         String personality = isResult ? userData["personality"] : "";
