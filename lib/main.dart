@@ -5,6 +5,7 @@ import 'package:mbti_app/login_screen.dart';
 import 'package:mbti_app/personalityPage.dart';
 import 'package:mbti_app/resultPage.dart';
 import 'package:mbti_app/testPage.dart';
+import 'package:mbti_app/user_auth/UserInfo.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -21,12 +22,14 @@ void main() async {
 
 class MyApp extends StatelessWidget {
   // const MyApp({super.key});
-  final User? user;
+  final  User? user;
 
   const MyApp({Key? key, this.user}) : super(key: key);
 
   // This widget is the root of your application.
   @override
+
+
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -53,7 +56,7 @@ class MyApp extends StatelessWidget {
       ),
 
       // home: user != null ? personalityPage() : LoginPage(),
-      home: personalityPage()
+      home: testPage()
 
     );
   }
