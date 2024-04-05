@@ -6,6 +6,7 @@ import 'package:mbti_app/resultPage.dart';
 import 'package:mbti_app/testPage.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:mbti_app/widgets/AlertBox.dart';
 import 'package:mbti_app/widgets/NavChart.dart';
 
 
@@ -15,6 +16,30 @@ class NavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     User user = FirebaseAuth.instance.currentUser!;
+
+
+    void signOut(){
+      showDialog(
+          context: context,
+          builder: (context) => CustomAlertBox(
+              text: "Want to log out?",
+              function: (){
+                FirebaseAuth.instance.signOut();
+
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(
+                    content: Text('User successfully Logout'),
+                    duration: Duration(seconds: 2), // Adjust the duration as needed
+                  ),
+                );
+
+                Navigator.pushReplacement(
+                    context, MaterialPageRoute(builder: (context) => LoginPage()));
+              }
+          ));
+    }
+
+
 
     return StreamBuilder<DocumentSnapshot>(
       stream: FirebaseFirestore.instance
@@ -26,10 +51,12 @@ class NavBar extends StatelessWidget {
           return const CircularProgressIndicator(); // or any loading indicator
         }
 
+
         var userData = snapshot.data!.data() as Map;
         bool isResult = userData["result"] != null && userData["personality"]!= null;
         List result = isResult ? userData["result"] : [];
         String personality = isResult ? userData["personality"] : "";
+
 
 
         TextStyle navtext =
@@ -123,19 +150,7 @@ class NavBar extends StatelessWidget {
                   "Logout",
                   style: TextStyle(fontWeight: FontWeight.bold),
                 ),
-                onTap: () {
-                  FirebaseAuth.instance.signOut();
-
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(
-                      content: Text('User successfully Logout'),
-                      duration: Duration(seconds: 2), // Adjust the duration as needed
-                    ),
-                  );
-
-                  Navigator.pushReplacement(
-                      context, MaterialPageRoute(builder: (context) => LoginPage()));
-                },
+                onTap: signOut,
               )
             ],
           ),

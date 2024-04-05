@@ -21,12 +21,14 @@ void main() async {
 
 class MyApp extends StatelessWidget {
   // const MyApp({super.key});
-  final User? user;
+  final  User? user;
 
   const MyApp({Key? key, this.user}) : super(key: key);
 
   // This widget is the root of your application.
   @override
+
+
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -53,7 +55,7 @@ class MyApp extends StatelessWidget {
       ),
 
       // home: user != null ? personalityPage() : LoginPage(),
-      home: personalityPage()
+      home: testPage()
 
     );
   }

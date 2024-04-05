@@ -1,4 +1,8 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:mbti_app/personalityPage.dart';
 import 'package:mbti_app/resultPage.dart';
+import 'package:mbti_app/widgets/AlertBox.dart';
 import 'package:mbti_app/widgets/multiple_choice.dart';
 import 'package:flutter/material.dart';
 import 'Texts.dart';
@@ -11,6 +15,22 @@ class testPage extends StatefulWidget {
 
 class _testPgageState extends State<testPage> {
   final String intoText = TestPageTexts.IntroText;
+  User user = FirebaseAuth.instance.currentUser!;
+
+
+  void close(){
+    showDialog(
+        context: context,
+        builder: (context) => CustomAlertBox(
+            function: (){
+
+              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => personalityPage()));
+            },
+            text: "Leave the test?",
+        )
+    );
+
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +56,19 @@ class _testPgageState extends State<testPage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text(""),
+        title: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20),
+          child: Align(
+            alignment: Alignment.centerRight ,
+            child: IconButton(
+                icon: Icon(Icons.close),
+                onPressed: close,
+            ),
+          ),
+        ),
+        backgroundColor: Colors.transparent,
+        foregroundColor: Colors.black87,
+
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -132,10 +164,10 @@ class _testPgageState extends State<testPage> {
                     if (result.every((element) => element == 49)) {
                       result = [45, 39, 62, 41];
                     }
-                    personality_type += (result[0] < 50) ? "I" : "E";
-                    personality_type += (result[1] < 50) ? "N" : "S";
-                    personality_type += (result[2] < 50) ? "F" : "T";
-                    personality_type += (result[3] < 50) ? "J" : "P";
+                    personality_type += (result[0] > 50) ? "I" : "E";
+                    personality_type += (result[1] > 50) ? "N" : "S";
+                    personality_type += (result[2] > 50) ? "F" : "T";
+                    personality_type += (result[3] > 50) ? "J" : "P";
 
                     Navigator.pushReplacement(
                         context,
@@ -144,6 +176,25 @@ class _testPgageState extends State<testPage> {
                                   percentage: result,
                                   personality_type: personality_type,
                                 )));
+                    showDialog(
+                        context: context,
+                        builder: (context) => CustomAlertBox(
+                            text: "Update your test result?",
+                            function: (){
+                              try {
+                                FirebaseFirestore.instance.collection("user").doc(
+                                    user.uid).update({
+                                  "result": result,
+                                  "personality": personality_type
+                                });
+                              }
+                              catch(e){
+                                print(e.toString());
+                              }
+                              Navigator.pop(context);
+                            }
+                        )
+                    );
                   }
                 },
                 child: const Text("Result",
