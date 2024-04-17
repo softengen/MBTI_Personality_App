@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -16,6 +18,7 @@ void main() async {
         projectId: "mbti-softengen")
   );
   User? user = FirebaseAuth.instance.currentUser;
+  log("Current user: $user");
   runApp(MyApp(user: user));
 }
 
@@ -54,8 +57,7 @@ class MyApp extends StatelessWidget {
             foregroundColor: Color(0xffefe0ff),)
       ),
 
-      // home: user != null ? personalityPage() : LoginPage(),
-      home: testPage()
+      home: user != null ? personalityPage() : LoginPage(),
 
     );
   }
