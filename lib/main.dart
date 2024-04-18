@@ -4,6 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:mbti_app/login_screen.dart';
 import 'package:mbti_app/personalityPage.dart';
+import 'package:mbti_app/splashScreen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -50,7 +51,8 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.deepPurple,
             foregroundColor: Color(0xffefe0ff),
           )),
-      home: user != null ? personalityPage() : LoginPage(),
+      // home: user != null ? personalityPage() : LoginPage(),
+      home: splashScreen(),
     );
   }
 }
