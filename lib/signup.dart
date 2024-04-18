@@ -4,6 +4,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:mbti_app/login_screen.dart';
 import 'package:mbti_app/user_auth/firebase_auth/firebaseAuthServices.dart';
+import 'package:top_snackbar_flutter/custom_snack_bar.dart';
+import 'package:top_snackbar_flutter/top_snack_bar.dart';
 
 class SignUp extends StatefulWidget {
   const SignUp({super.key});
@@ -14,6 +16,7 @@ class SignUp extends StatefulWidget {
 
 class _SignUpState extends State<SignUp> {
   final firebaseAuthService _auth = firebaseAuthService();
+
   User get user => FirebaseAuth.instance.currentUser!;
 
   TextEditingController _nameController = TextEditingController();
@@ -39,7 +42,7 @@ class _SignUpState extends State<SignUp> {
       child: Container(
         decoration: const BoxDecoration(
             image: DecorationImage(
-                image: AssetImage('assets/images/signup.png'),
+                image: AssetImage('assets/images/signup.jpg'),
                 fit: BoxFit.cover)),
         child: Scaffold(
           backgroundColor: Colors.transparent,
@@ -50,7 +53,7 @@ class _SignUpState extends State<SignUp> {
                 child: const Text(
                   "Create a \nnew profile.",
                   style: TextStyle(
-                    color: Colors.grey,
+                    color: Colors.black,
                     fontWeight: FontWeight.bold,
                     wordSpacing: 0.5,
                     fontSize: 40,
@@ -121,7 +124,7 @@ class _SignUpState extends State<SignUp> {
                             style: TextStyle(
                               fontSize: 27,
                               fontWeight: FontWeight.w700,
-                              color: Color(0xff4c505b),
+                              color: Colors.black,
                             ),
                           ),
                           CircleAvatar(
@@ -152,7 +155,7 @@ class _SignUpState extends State<SignUp> {
                                 style: TextStyle(
                                   decoration: TextDecoration.underline,
                                   fontSize: 20,
-                                  color: Color(0xff4c505b),
+                                  color: Colors.black,
                                 ),
                               ))
                         ],
@@ -173,20 +176,19 @@ class _SignUpState extends State<SignUp> {
     String email = _emailController.text;
     String password = _passController.text;
 
-    User? user = await _auth.signUpwithEmailAndPassword(email, password, context);
-
+    User? user =
+        await _auth.signUpwithEmailAndPassword(email, password, context);
 
     CollectionReference collRef = FirebaseFirestore.instance.collection('user');
     collRef.doc(user?.uid).set({
       'name': name,
       'email': email,
       'pass': password,
-      'result' : null,
-      'personality' : null
+      'result': null,
+      'personality': null
     });
 
     if (user != null) {
-      log("User successfully created");
       User? user = FirebaseAuth.instance.currentUser;
 
       if (user != null) {
@@ -196,10 +198,10 @@ class _SignUpState extends State<SignUp> {
         log("User is not authenticated.");
       }
 
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Successfully created account'),
-          duration: Duration(seconds: 2), // Adjust the duration as needed
+      showTopSnackBar(
+        Overlay.of(context),
+        const CustomSnackBar.success(
+          message: 'Successfully Created Account!',
         ),
       );
 
