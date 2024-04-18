@@ -45,7 +45,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFFDF9ED),
+      backgroundColor: Colors.deepPurple[100],
       body: GestureDetector(
         onTap: () {
           // Hide the keyboard when the screen is tapped
@@ -138,7 +138,7 @@ class _LoginPageState extends State<LoginPage> {
                           style: TextStyle(
                             decoration: TextDecoration.underline,
                             fontSize: 20,
-                            color: Color(0xff4c505b),
+                            color: Colors.black,
                           ),
                         ))
                   ],
