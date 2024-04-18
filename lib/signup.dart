@@ -179,19 +179,20 @@ class _SignUpState extends State<SignUp> {
     User? user =
         await _auth.signUpwithEmailAndPassword(email, password, context);
 
-    CollectionReference collRef = FirebaseFirestore.instance.collection('user');
-    collRef.doc(user?.uid).set({
-      'name': name,
-      'email': email,
-      'pass': password,
-      'result': null,
-      'personality': null
-    });
-
     if (user != null) {
       User? user = FirebaseAuth.instance.currentUser;
 
       if (user != null) {
+
+        CollectionReference collRef = FirebaseFirestore.instance.collection('user');
+        collRef.doc(user?.uid).set({
+          'name': name,
+          'email': email,
+          'pass': password,
+          'result': null,
+          'personality': null
+        });
+
         String uid = user.uid;
         log("UID: $uid");
       } else {
