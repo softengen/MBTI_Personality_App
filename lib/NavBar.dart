@@ -121,7 +121,7 @@ class NavBar extends StatelessWidget {
                   isResult ? "Test Again" : "Give Test",
                   style: TextStyle(fontWeight: FontWeight.bold),
                 ),
-                onTap: () => Navigator.pushReplacement(
+                onTap: () => Navigator.push(
                     context, MaterialPageRoute(builder: (context) => testPage())),
               ),
 
