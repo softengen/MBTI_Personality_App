@@ -1,12 +1,12 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
 import 'package:mbti_app/personalityPage.dart';
 import 'package:mbti_app/resultPage.dart';
 import 'package:mbti_app/widgets/AlertBox.dart';
 import 'package:mbti_app/widgets/multiple_choice.dart';
-import 'package:flutter/material.dart';
+
 import 'Texts.dart';
-import 'main.dart';
 
 class testPage extends StatefulWidget {
   @override
