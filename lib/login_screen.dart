@@ -1,15 +1,11 @@
 import 'dart:developer';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:mbti_app/NavBar.dart';
 import 'package:mbti_app/personalityPage.dart';
 import 'package:mbti_app/signup.dart';
 import 'package:mbti_app/user_auth/firebase_auth/firebaseAuthServices.dart';
 import 'package:top_snackbar_flutter/custom_snack_bar.dart';
-import 'package:top_snackbar_flutter/tap_bounce_container.dart';
 import 'package:top_snackbar_flutter/top_snack_bar.dart';
 
 class MyApp extends StatelessWidget {
@@ -18,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: LoginPage(),
     );
-  } 
+  }
 }
 
 class LoginPage extends StatefulWidget {
@@ -95,9 +91,9 @@ class _LoginPageState extends State<LoginPage> {
                     obscureText: true,
                   ),
                   const SizedBox(height: 40),
-      
+
                   // < -- Log in button section -- >
-      
+
                   Container(
                     height: 60,
                     width: 160,
@@ -126,9 +122,9 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                   ),
                   const SizedBox(height: 20),
-      
+
                   // < -- sign up button section -- >
-      
+
                   const SizedBox(height: 20),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,

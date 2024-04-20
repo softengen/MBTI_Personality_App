@@ -1,11 +1,10 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:mbti_app/famousPeople.dart';
+import 'package:flutter/material.dart';
 import 'package:mbti_app/login_screen.dart';
 import 'package:mbti_app/personalityPage.dart';
 import 'package:mbti_app/resultPage.dart';
 import 'package:mbti_app/testPage.dart';
-import 'package:flutter/material.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:mbti_app/widgets/AlertBox.dart';
 import 'package:mbti_app/widgets/NavChart.dart';
 import 'package:top_snackbar_flutter/custom_snack_bar.dart';
