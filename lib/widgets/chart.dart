@@ -6,8 +6,10 @@ TextStyle txt = TextStyle(fontSize: 17.2, fontWeight: FontWeight.bold);
 
 class LinearChart extends StatelessWidget{
   final List percentage;
+  final double chartHeight;
+  final bool colored;
 
-  const LinearChart({super.key, required this.percentage,});
+  const LinearChart({super.key, required this.percentage, this.chartHeight = 46 , this.colored = true});
   @override
   Widget build(BuildContext context) {
     double w = MediaQuery.of(context).size.width,
@@ -16,29 +18,30 @@ class LinearChart extends StatelessWidget{
         barHeight = h*.015;
 
 
-    Color color1 = Colors.green.shade400;
-    Color color2 = Colors.green.shade100;
-    Color color3 = Colors.blue;
-    Color color4 = Colors.blue.shade100;
-    Color color5 = Colors.orange;
-    Color color6 = Colors.orange.shade100;
-    Color color7 = Colors.purpleAccent.shade200;
-    Color color8 = Colors.purple.shade100;
+    Color color1 = colored ? Colors.green.shade400 : Colors.deepPurple.shade500;
+    Color color2 = colored ? Colors.green.shade100 : Colors.deepPurple.shade50;
+    Color color3 = colored ? Colors.blue : Colors.deepPurple.shade500;
+    Color color4 = colored ? Colors.blue.shade100 : Colors.deepPurple.shade50;
+    Color color5 = colored ? Colors.orange : Colors.deepPurple.shade500;
+    Color color6 = colored ? Colors.orange.shade100 : Colors.deepPurple.shade50;
+    Color color7 = colored ? Colors.purpleAccent.shade200 : Colors.deepPurple.shade500;
+    Color color8 = colored ? Colors.purple.shade100 : Colors.deepPurple.shade50;
 
 
     double rnd=10;
 
     return Container(
       margin: const EdgeInsets.only(top: 20 ,bottom: 20),
-      height: h*.46,
+      height: h*.01 * chartHeight,
       width: w*.95,
-      decoration: const BoxDecoration(
-        boxShadow: [BoxShadow(blurRadius: 40)],
+      decoration: BoxDecoration(
+        boxShadow: colored ? [BoxShadow(blurRadius: 40)] : [BoxShadow(blurRadius: 10)] ,
           borderRadius: BorderRadius.all(Radius.circular(20)),
-          color: Color(0xff352F44)
-          // gradient: LinearGradient(
-          //   colors: [Color(0xffEEF0E5),Color(0xffB6C4B6),Color(0xff304D30),Color(0xff163020)]
-          // )
+
+          color: colored ? Color(0xff352F44) : null,
+          gradient : colored ? null : LinearGradient(
+            colors : [Colors.deepPurple.shade50 , Colors.deepPurple.shade100 , Colors.deepPurple.shade200, Colors.deepPurple.shade500]
+          )
 
       ),
       child: Column(
