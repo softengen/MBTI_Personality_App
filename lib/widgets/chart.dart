@@ -40,7 +40,7 @@ class LinearChart extends StatelessWidget{
 
           color: colored ? Color(0xff352F44) : null,
           gradient : colored ? null : LinearGradient(
-            colors : [Colors.deepPurple.shade50 , Colors.deepPurple.shade100 , Colors.deepPurple.shade200, Colors.deepPurple.shade500]
+            colors : [Colors.deepPurple.shade100 , Colors.deepPurple.shade200 , Colors.deepPurple.shade400, Colors.deepPurple.shade500]
           )
 
       ),

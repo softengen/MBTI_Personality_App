@@ -175,7 +175,9 @@ class _UserProfileState extends State<UserProfile> {
                   ],
                 ),
               );
-
+              
+             
+             // for profile image
               Column UserProfile = Column(
                 children: [
                   Container(
@@ -185,6 +187,7 @@ class _UserProfileState extends State<UserProfile> {
                         shape: BoxShape.circle,
                         color: Colors.black38
                     ),
+                    child: ClipOval(child: Image.asset('assets/images/8.jpeg')),
                   ),
                   Text(
                     userData["name"],
@@ -282,7 +285,7 @@ class _UserProfileState extends State<UserProfile> {
 
 
                     AnimatedContainer(
-                      duration: Duration(milliseconds: 1000),
+                      duration: Duration(milliseconds: 500),
                       width: w,
                       height: container_height,
                       decoration: BoxDecoration(
