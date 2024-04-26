@@ -278,9 +278,9 @@ class _INTJState extends State<INTJ> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Material(
-                child: Hero(
-                  tag: "INTJ",
+              Hero(
+                tag: "INTJ",
+                child: Material(
                   child: Center(
                     child: Container(
                       margin: const EdgeInsets.all(11),
@@ -611,9 +611,9 @@ class _INTPState extends State<INTP> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Material(
-                child: Hero(
-                  tag: "INTP",
+              Hero(
+                tag: "INTP",
+                child: Material(
                   child: Center(
                     child: Container(
                       margin: const EdgeInsets.all(11),
@@ -933,9 +933,9 @@ class _ENTJState extends State<ENTJ> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Material(
-                child: Hero(
-                  tag: "ENTJ",
+              Hero(
+                tag: "ENTJ",
+                child: Material(
                   child: Center(
                     child: Container(
                       margin: const EdgeInsets.all(11),
@@ -1256,9 +1256,9 @@ class _ENTPState extends State<ENTP> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Material(
-                child: Hero(
-                  tag: "ENTP",
+              Hero(
+                tag: "ENTP",
+                child: Material(
                   child: Center(
                     child: Container(
                       margin: const EdgeInsets.all(11),
@@ -1587,9 +1587,9 @@ class _INFJState extends State<INFJ> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Material(
-                child: Hero(
-                  tag: "INFJ",
+              Hero(
+                tag: "INFJ",
+                child: Material(
                   child: Center(
                     child: Container(
                       margin: const EdgeInsets.all(11),
@@ -1907,9 +1907,9 @@ class _INFPState extends State<INFP> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Material(
-                child: Hero(
-                  tag: "INFP",
+              Hero(
+                tag: "INFP",
+                child: Material(
                   child: Center(
                     child: Container(
                       margin: const EdgeInsets.all(11),
@@ -2254,9 +2254,9 @@ class _ENFJState extends State<ENFJ> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Material(
-                child: Hero(
-                  tag: "ENFJ",
+              Hero(
+                tag: "ENFJ",
+                child: Material(
                   child: Center(
                     child: Container(
                       margin: const EdgeInsets.all(11),
@@ -2608,9 +2608,9 @@ class _ENFPState extends State<ENFP> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Material(
-                child: Hero(
-                  tag: "ENFP",
+              Hero(
+                tag: "ENFP",
+                child: Material(
                   child: Center(
                     child: Container(
                       margin: const EdgeInsets.all(11),
@@ -2943,9 +2943,9 @@ class _ISTJState extends State<ISTJ> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Material(
-                child: Hero(
-                  tag: "ISTJ",
+              Hero(
+                tag: "ISTJ",
+                child: Material(
                   child: Center(
                     child: Container(
                       margin: const EdgeInsets.all(11),
@@ -3274,9 +3274,9 @@ class _ISFJState extends State<ISFJ> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Material(
-                child: Hero(
-                  tag: "ISFJ",
+              Hero(
+                tag: "ISFJ",
+                child: Material(
                   child: Center(
                     child: Container(
                       margin: const EdgeInsets.all(11),
@@ -3571,9 +3571,9 @@ class _ESTJState extends State<ESTJ> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Material(
-                child: Hero(
-                  tag: "ESTJ",
+              Hero(
+                tag: "ESTJ",
+                child: Material(
                   child: Center(
                     child: Container(
                       margin: const EdgeInsets.all(11),
@@ -3869,9 +3869,9 @@ class _ESFJState extends State<ESFJ> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Material(
-                child: Hero(
-                  tag: "ESFJ",
+              Hero(
+                tag: "ESFJ",
+                child: Material(
                   child: Center(
                     child: Container(
                       margin: const EdgeInsets.all(11),
@@ -4168,9 +4168,9 @@ class _ISTPState extends State<ISTP> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Material(
-                child: Hero(
-                  tag: "ISTP",
+              Hero(
+                tag: "ISTP",
+                child: Material(
                   child: Center(
                     child: Container(
                       margin: const EdgeInsets.all(11),
@@ -4468,9 +4468,9 @@ class _ISFPState extends State<ISFP> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Material(
-                child: Hero(
-                  tag: "ISFP",
+              Hero(
+                tag: "ISFP",
+                child: Material(
                   child: Center(
                     child: Container(
                       margin: const EdgeInsets.all(11),
@@ -4768,9 +4768,9 @@ class _ESTPState extends State<ESTP> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Material(
-                child: Hero(
-                  tag: "ESTP",
+              Hero(
+                tag: "ESTP",
+                child: Material(
                   child: Center(
                     child: Container(
                       margin: const EdgeInsets.all(11),
@@ -5067,9 +5067,9 @@ class _ESFPState extends State<ESFP> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Material(
-                child: Hero(
-                  tag: "ESFP",
+              Hero(
+                tag: "ESFP",
+                child: Material(
                   child: Center(
                     child: Container(
                       margin: const EdgeInsets.all(11),
