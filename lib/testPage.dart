@@ -164,10 +164,10 @@ class _testPgageState extends State<testPage> {
                     if (result.every((element) => element == 49)) {
                       result = [45, 39, 62, 41];
                     }
-                    personality_type += (result[0] > 50) ? "I" : "E";
-                    personality_type += (result[1] > 50) ? "N" : "S";
-                    personality_type += (result[2] > 50) ? "F" : "T";
-                    personality_type += (result[3] > 50) ? "J" : "P";
+                    personality_type += (result[0] > 50) ? "E" : "I";
+                    personality_type += (result[1] > 50) ? "S" : "N";
+                    personality_type += (result[2] > 50) ? "T" : "F";
+                    personality_type += (result[3] > 50) ? "P" : "J";
 
                     Navigator.pushReplacement(
                         context,

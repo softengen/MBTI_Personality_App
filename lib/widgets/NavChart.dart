@@ -6,12 +6,13 @@ class NavChart extends StatelessWidget {
   const NavChart({super.key, required this.result});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(context) {
     double h = MediaQuery.of(context).size.height;
     double w = MediaQuery.of(context).size.width;
     Color color1 = Colors.deepPurple.shade500;
     Color color2 = Colors.deepPurple.shade200;
 
+    print(w);
     String PersonalityType = "";
     List left = ['I','N','F', 'J'];
     List right = ['E','S','T', 'P'];
