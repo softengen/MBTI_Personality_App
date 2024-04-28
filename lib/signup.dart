@@ -35,7 +35,6 @@ class _SignUpState extends State<SignUp> {
 
   @override
   Widget build(BuildContext context) {
-
     double w = MediaQuery.of(context).size.width;
     double h = MediaQuery.of(context).size.height;
 
@@ -70,10 +69,7 @@ class _SignUpState extends State<SignUp> {
               SingleChildScrollView(
                 // physics: BouncingScrollPhysics(),
                 child: Container(
-                  padding: EdgeInsets.only(
-                      top: h * .34,
-                      right: 35,
-                      left: 35),
+                  padding: EdgeInsets.only(top: h * .34, right: 35, left: 35),
                   child: Column(
                     children: [
                       TextField(
@@ -139,7 +135,7 @@ class _SignUpState extends State<SignUp> {
                               backgroundColor: const Color(0xff4c505b),
                               child: IconButton(
                                 color: Colors.white,
-                                onPressed: (){
+                                onPressed: () {
                                   _signUp(context);
                                 },
                                 icon: const Icon(Icons.arrow_forward),
@@ -152,12 +148,13 @@ class _SignUpState extends State<SignUp> {
 
                       // create account with google
                       Container(
-                        height: h*.08,
-                        width: w*.8,
+                        height: h * .08,
+                        width: w * .8,
                         child: ElevatedButton(
                           onPressed: () async {
                             try {
-                              await authServiceGoogle().signUpWithGoogle(context);
+                              await authServiceGoogle()
+                                  .signUpWithGoogle(context);
                             } catch (e) {
                               log('Error signing in with Google: $e');
                             }
@@ -227,8 +224,8 @@ class _SignUpState extends State<SignUp> {
       User? user = FirebaseAuth.instance.currentUser;
 
       if (user != null) {
-
-        CollectionReference collRef = FirebaseFirestore.instance.collection('user');
+        CollectionReference collRef =
+            FirebaseFirestore.instance.collection('user');
         collRef.doc(user?.uid).set({
           'name': name,
           'email': email,
@@ -251,7 +248,6 @@ class _SignUpState extends State<SignUp> {
             message: 'Successfully Created Account!',
           ),
         );
-
       } else {
         log("User is not authenticated.");
       }
