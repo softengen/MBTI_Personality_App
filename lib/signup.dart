@@ -237,6 +237,19 @@ class _SignUpState extends State<SignUp> {
 
         String uid = user.uid;
         log("UID: $uid");
+
+        showTopSnackBar(
+          Overlay.of(context),
+          const CustomSnackBar.success(
+            message: 'Successfully Created Account!',
+          ),
+        );
+
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (context) => personalityPage()),
+        );
+
       } else {
         log("User is not authenticated.");
       }
@@ -244,7 +257,7 @@ class _SignUpState extends State<SignUp> {
       showTopSnackBar(
         Overlay.of(context),
         const CustomSnackBar.success(
-          message: 'Successfully Created Account!',
+          message: 'Welcome Back!',
         ),
       );
 
