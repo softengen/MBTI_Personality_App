@@ -91,16 +91,16 @@ class firebaseAuthService {
 // Registering with email provider firebase
 
 class authServiceGoogle {
-
   // Generate a random password
   String _generateRandomPassword() {
     const chars = 'abcdefghijklmnopqrstuvwxyz0123456789';
     final random = Random.secure();
-    return List.generate(12, (index) => chars[random.nextInt(chars.length)]).join();
+    return List.generate(12, (index) => chars[random.nextInt(chars.length)])
+        .join();
   }
 
   // google sign in
-  signInWithGoogle() async {
+  signInWithGoogle(BuildContext context) async {
     // begin sign in process
     final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
 
@@ -115,12 +115,54 @@ class authServiceGoogle {
     );
 
     // finally, let's sign in
-    return await FirebaseAuth.instance.signInWithCredential(credential);
+    final UserCredential authResult =
+        await FirebaseAuth.instance.signInWithCredential(credential);
+
+    final User? user = authResult.user;
+    String password = _generateRandomPassword();
+    print("Password: $password");
+
+    if (authResult.additionalUserInfo!.isNewUser) {
+      await FirebaseFirestore.instance.collection('user').doc(user?.uid).set({
+        'name': user?.displayName,
+        'email': user?.email,
+        'pass': password,
+        'result': null,
+        'personality': null
+      });
+
+      Navigator.of(context).pop(); // Close the dialog
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => personalityPage()),
+      );
+
+      showTopSnackBar(
+        Overlay.of(context),
+        const CustomSnackBar.success(
+          message: 'Successfully account created!',
+        ),
+      );
+    } else {
+      showTopSnackBar(
+        Overlay.of(context),
+        const CustomSnackBar.success(
+          message: 'Welcome Back!',
+        ),
+      );
+
+      Navigator.of(context).pop(); // Close the dialog
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => personalityPage()),
+      );
+    }
+
+    return authResult;
   }
 
   // Google sign up
   Future<void> signUpWithGoogle(BuildContext context) async {
-
     try {
       // Begin the Google sign-in process
       final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
@@ -169,9 +211,7 @@ class authServiceGoogle {
               message: 'Successfully account created!',
             ),
           );
-
         } else {
-
           showTopSnackBar(
             Overlay.of(context),
             const CustomSnackBar.success(
@@ -184,7 +224,6 @@ class authServiceGoogle {
             context,
             MaterialPageRoute(builder: (context) => personalityPage()),
           );
-
         }
       } else {
         // User cancelled the sign-in process

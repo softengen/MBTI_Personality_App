@@ -41,7 +41,6 @@ class _LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
-
     double w = MediaQuery.of(context).size.width;
     double h = MediaQuery.of(context).size.height;
 
@@ -100,8 +99,8 @@ class _LoginPageState extends State<LoginPage> {
 
                   // email & password login
                   Container(
-                    height: h*.08,
-                    width: w*.8,
+                    height: h * .08,
+                    width: w * .8,
                     child: ElevatedButton(
                       onPressed: _logIn,
                       // design of elevated button
@@ -128,25 +127,43 @@ class _LoginPageState extends State<LoginPage> {
 
                   // google login
                   Container(
-                    height: h*.08,
-                    width: w*.8,
+                    height: h * .08,
+                    width: w * .8,
                     child: ElevatedButton(
                       onPressed: () async {
                         try {
-                          await authServiceGoogle().signInWithGoogle();
+                          await authServiceGoogle().signInWithGoogle(context);
+                          // Sign in with Google
+                          // final UserCredential userCredential =
+                          //     await authServiceGoogle().signUpWithGoogle();
 
-                          showTopSnackBar(
-                            Overlay.of(context),
-                            const CustomSnackBar.success(
-                              message: 'Welcome Back!',
-                            ),
-                          );
+                          // User successfully signed in
+                          // final User? user = userCredential.user;
+                          // if (user != null) {
+                          //   // Navigate to personality page
+                          //   Navigator.pushReplacement(
+                          //     context,
+                          //     MaterialPageRoute(
+                          //         builder: (context) => personalityPage()),
+                          //   );
+                          //
+                          //   showTopSnackBar(
+                          //     Overlay.of(context),
+                          //     const CustomSnackBar.success(
+                          //       message: 'Welcome Back!',
+                          //     ),
+                          //   );
 
-                          Navigator.pushReplacement(
-                            context,
-                            MaterialPageRoute(builder: (context) => personalityPage()),
-                          );
-
+                          // } else {
+                          //   // Handle error: user is null
+                          //   showTopSnackBar(
+                          //     Overlay.of(context),
+                          //     const CustomSnackBar.error(
+                          //       message: 'Create with google in Sign Up Page.',
+                          //     ),
+                          //   );
+                          //   log('User is null');
+                          // }
                         } catch (e) {
                           log('Error signing in with Google: $e');
                         }
