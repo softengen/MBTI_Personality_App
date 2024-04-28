@@ -19,6 +19,8 @@ class NavBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double w = MediaQuery.of(context).size.width;
+
     User user = FirebaseAuth.instance.currentUser!;
 
 
@@ -108,7 +110,7 @@ class NavBar extends StatelessWidget {
                   ),
                 ),
               ),
-
+              
               isResult? InkWell(
                 onTap: () {
                         Navigator.pushReplacement(
@@ -120,10 +122,8 @@ class NavBar extends StatelessWidget {
                                       personality_type: personality,
                                     )));
                       },
-                child: SizedBox(
-                  width: MediaQuery.of(context).size.width,
-                  child: NavChart(result: result),
-                ),
+                child: NavChart(
+                    result: result),
               ) : const SizedBox(),
 
               const Divider(thickness: 1),

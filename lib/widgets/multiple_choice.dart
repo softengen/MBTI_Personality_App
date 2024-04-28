@@ -89,7 +89,7 @@ class _ButtonState extends State<MultipleChoice>{
       b_6 = white;
       b_7 = white;
       state = true;
-      widget.controller.text = (sign=="P")? "-7":"7";
+      widget.controller.text = (sign=="N")? "-7":"7";
     });
   }
   void select_2(){
@@ -103,7 +103,7 @@ class _ButtonState extends State<MultipleChoice>{
       b_6 = white;
       b_7 = white;
       state = true;
-      widget.controller.text = (sign=="P")? "-5":"5";
+      widget.controller.text = (sign=="N")? "-5":"5";
     });
   }
   void select_3(){
@@ -117,7 +117,7 @@ class _ButtonState extends State<MultipleChoice>{
       b_6 = white;
       b_7 = white;
       state = true;
-      widget.controller.text = (sign=="P")? "-3" : "3";
+      widget.controller.text = (sign=="N")? "-3" : "3";
     });
     
   }
@@ -146,7 +146,7 @@ class _ButtonState extends State<MultipleChoice>{
       b_6 = white;
       b_7 = white;
       state = true;
-      widget.controller.text = (sign=="P")? "3" : "-3";
+      widget.controller.text = (sign=="N")? "3" : "-3";
     });
 
   }
@@ -161,7 +161,7 @@ class _ButtonState extends State<MultipleChoice>{
       b_6 = Center(child: null,);
       b_7 = white;
       state = true;
-      widget.controller.text = (sign=="P")? "5":"-5";
+      widget.controller.text = (sign=="N")? "5":"-5";
     });
   }
   void select_7(){
@@ -175,7 +175,7 @@ class _ButtonState extends State<MultipleChoice>{
       b_6 = white;
       b_7 = Center(child: null,);
       state = true;
-      widget.controller.text = (sign=="P")? "7":"-7";
+      widget.controller.text = (sign=="N")? "7":"-7";
     });
   }
 
@@ -183,8 +183,8 @@ class _ButtonState extends State<MultipleChoice>{
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(top: 6, bottom: 6, right: 10, left: 10),
-      decoration: BoxDecoration(
+      margin: const EdgeInsets.only(top: 6, bottom: 6, right: 10, left: 10),
+      decoration: const BoxDecoration(
         color: Colors.white,
         boxShadow: [
           BoxShadow(
