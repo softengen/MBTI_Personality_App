@@ -156,6 +156,20 @@ class authServiceGoogle {
             'result': null,
             'personality': null
           });
+
+          Navigator.of(context).pop(); // Close the dialog
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(builder: (context) => personalityPage()),
+          );
+
+          showTopSnackBar(
+            Overlay.of(context),
+            const CustomSnackBar.success(
+              message: 'Successfully account created!',
+            ),
+          );
+
         } else {
 
           showTopSnackBar(

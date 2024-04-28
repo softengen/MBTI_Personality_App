@@ -139,7 +139,9 @@ class _SignUpState extends State<SignUp> {
                               backgroundColor: const Color(0xff4c505b),
                               child: IconButton(
                                 color: Colors.white,
-                                onPressed: _signUp,
+                                onPressed: (){
+                                  _signUp(context);
+                                },
                                 icon: const Icon(Icons.arrow_forward),
                               ),
                             )
@@ -213,7 +215,7 @@ class _SignUpState extends State<SignUp> {
     );
   }
 
-  void _signUp() async {
+  void _signUp(BuildContext context) async {
     String name = _nameController.text;
     String email = _emailController.text;
     String password = _passController.text;
@@ -238,16 +240,16 @@ class _SignUpState extends State<SignUp> {
         String uid = user.uid;
         log("UID: $uid");
 
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (context) => personalityPage()),
+        );
+
         showTopSnackBar(
           Overlay.of(context),
           const CustomSnackBar.success(
             message: 'Successfully Created Account!',
           ),
-        );
-
-        Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(builder: (context) => personalityPage()),
         );
 
       } else {
