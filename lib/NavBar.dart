@@ -1,11 +1,13 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 import 'package:mbti_app/UserProfile.dart';
 import 'package:mbti_app/login_screen.dart';
 import 'package:mbti_app/personalityPage.dart';
 import 'package:mbti_app/resultPage.dart';
 import 'package:mbti_app/testPage.dart';
+import 'package:mbti_app/user_auth/firebase_auth/firebaseAuthServices.dart';
 import 'package:mbti_app/widgets/AlertBox.dart';
 import 'package:mbti_app/widgets/NavChart.dart';
 import 'package:top_snackbar_flutter/custom_snack_bar.dart';
@@ -27,6 +29,7 @@ class NavBar extends StatelessWidget {
               text: "Want to log out?",
               function: (){
                 FirebaseAuth.instance.signOut();
+                GoogleSignIn().signOut();
 
                 showTopSnackBar(
                   Overlay.of(context),

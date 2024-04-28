@@ -4,6 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:mbti_app/login_screen.dart';
 import 'package:mbti_app/personalityPage.dart';
+import 'package:mbti_app/signup.dart';
 import 'package:mbti_app/splashScreen.dart';
 
 void main() async {
@@ -52,7 +53,7 @@ class MyApp extends StatelessWidget {
             foregroundColor: Color(0xffefe0ff),
           )),
       home: user != null ? personalityPage() : LoginPage(),
-      // home: LoginPage(),
+      // home: const SignUp(),
     );
   }
 }
