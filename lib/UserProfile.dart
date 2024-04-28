@@ -39,6 +39,10 @@ class _UserProfileState extends State<UserProfile> {
 
     void edit(){
       isEdit = !isEdit;
+      nameController.text = "";
+      newPass.text = "";
+      newPass1.text = "";
+      oldPass.text = "";
       setState(() {
       });
     }
@@ -47,6 +51,10 @@ class _UserProfileState extends State<UserProfile> {
 
     void cancel(){
       isEdit = false;
+      nameController.text = "";
+      newPass.text = "";
+      newPass1.text = "";
+      oldPass.text = "";
       setState(() {
       });
     }
@@ -94,6 +102,10 @@ class _UserProfileState extends State<UserProfile> {
                       }
                     }
                  isEdit = false;
+                 nameController.text = "";
+                 newPass.text = "";
+                 newPass1.text = "";
+                 oldPass.text = "";
                }
                else{
                  log("Wrong Password");

@@ -41,6 +41,10 @@ class _LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
+
+    double w = MediaQuery.of(context).size.width;
+    double h = MediaQuery.of(context).size.height;
+
     return WillPopScope(
       onWillPop: () async {
         // exit the app
@@ -94,34 +98,70 @@ class _LoginPageState extends State<LoginPage> {
 
                   // < -- Log in button section -- >
 
+                  // email & password login
                   Container(
-                    height: 60,
-                    width: 160,
+                    height: h*.08,
+                    width: w*.8,
                     child: ElevatedButton(
                       onPressed: _logIn,
                       // design of elevated button
                       style: ElevatedButton.styleFrom(
-                        // primary: Colors.white,
-                        // onPrimary: Colors.deepPurple,
-                        // backgroundColor: const Color(0x001d3c45),
-                        backgroundColor: const Color(0x001d3c45),
+                        backgroundColor: Colors.deepPurple,
                         elevation: 0.7,
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(6)),
                         // padding: EdgeInsets.all(1),
                       ),
-                      child: const Text(
+                      child: Text(
                         'LOGIN',
                         style: TextStyle(
                           fontSize: 19,
                           fontWeight: FontWeight.bold,
                           fontFamily: '',
-                          color: Colors.black,
+                          color: Colors.purple.shade50,
                         ),
                       ),
                     ),
                   ),
+
                   const SizedBox(height: 20),
+
+                  // google login
+                  Container(
+                    height: h*.08,
+                    width: w*.8,
+                    child: ElevatedButton(
+                      onPressed: () async {
+                        try {
+                          await authServiceGoogle().signInWithGoogle();
+                          Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(builder: (context) => personalityPage()),
+                          );
+                        } catch (e) {
+                          log('Error signing in with Google: $e');
+                        }
+                      },
+
+                      // design of elevated button
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.deepPurple,
+                        elevation: 0.7,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(6)),
+                        // padding: EdgeInsets.all(1),
+                      ),
+                      child: Text(
+                        'LOGIN WITH GOOGLE',
+                        style: TextStyle(
+                          fontSize: 19,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: '',
+                          color: Colors.purple.shade50,
+                        ),
+                      ),
+                    ),
+                  ),
 
                   // < -- sign up button section -- >
 

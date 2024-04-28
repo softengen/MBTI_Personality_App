@@ -12,7 +12,20 @@
           "package_name": "com.example.mbti_app"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "690493485282-2ebadnc1jida17c8u06ava9vqrh9e6de.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mbti_app",
+            "certificate_hash": "b43f28a1177d6f8fbf10876e1114b483dc5f5a7d"
+          }
+        },
+        {
+          "client_id": "690493485282-p9jnda090scpgura3330531e7vil6m8j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyDBW7FTGxv9k0fK8thvo54ITMIDh1UaBsE"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "690493485282-p9jnda090scpgura3330531e7vil6m8j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

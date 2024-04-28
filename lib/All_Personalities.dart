@@ -336,9 +336,11 @@ class _INTJState extends State<INTJ> {
               ),
               Container(
                   margin: const EdgeInsets.all(20),
-                  child: Wrap(
-                    spacing: 10,
-                    alignment: WrapAlignment.spaceBetween,
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       ElevatedButton(
                         onPressed: overview,
@@ -389,7 +391,7 @@ class _INTJState extends State<INTJ> {
                         child: const Text("Relationship"),
                       ),
                     ],
-                  )),
+                  ))),
               Container(
                   margin:
                       const EdgeInsets.only(left: 10, right: 10, bottom: 10),
@@ -669,59 +671,61 @@ class _INTPState extends State<INTP> {
               ),
               Container(
                   margin: const EdgeInsets.all(20),
-                  child: Wrap(
-                    spacing: 10,
-                    alignment: WrapAlignment.spaceBetween,
-                    children: [
-                      ElevatedButton(
-                        onPressed: overview,
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                        child: const Text("Overview"),
-                      ),
-                      ElevatedButton(
-                        onPressed: Friendship,
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                        child: const Text("Friendship"),
-                      ),
-                      ElevatedButton(
-                        onPressed: Parenthood,
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                        child: const Text("Parenthood"),
-                      ),
-                      ElevatedButton(
-                        onPressed: strength,
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                        child: const Text("Strength"),
-                      ),
-                      ElevatedButton(
-                        onPressed: weakness,
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                        child: const Text("Weakness"),
-                      ),
-                      ElevatedButton(
-                        onPressed: Relation,
-                        style: ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)))),
-                        child: const Text("Relationship"),
-                      ),
-                    ],
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        ElevatedButton(
+                          onPressed: overview,
+                          style: ElevatedButton.styleFrom(
+                              shape: const RoundedRectangleBorder(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(20)))),
+                          child: const Text("Overview"),
+                        ),
+                        ElevatedButton(
+                          onPressed: Friendship,
+                          style: ElevatedButton.styleFrom(
+                              shape: const RoundedRectangleBorder(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(20)))),
+                          child: const Text("Friendship"),
+                        ),
+                        ElevatedButton(
+                          onPressed: Parenthood,
+                          style: ElevatedButton.styleFrom(
+                              shape: const RoundedRectangleBorder(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(20)))),
+                          child: const Text("Parenthood"),
+                        ),
+                        ElevatedButton(
+                          onPressed: strength,
+                          style: ElevatedButton.styleFrom(
+                              shape: const RoundedRectangleBorder(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(20)))),
+                          child: const Text("Strength"),
+                        ),
+                        ElevatedButton(
+                          onPressed: weakness,
+                          style: ElevatedButton.styleFrom(
+                              shape: const RoundedRectangleBorder(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(20)))),
+                          child: const Text("Weakness"),
+                        ),
+                        ElevatedButton(
+                          onPressed: Relation,
+                          style: ElevatedButton.styleFrom(
+                              shape: const RoundedRectangleBorder(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(20)))),
+                          child: const Text("Relationship"),
+                        ),
+                      ],
+                    ),
                   )),
               Container(
                   margin:
@@ -991,9 +995,11 @@ class _ENTJState extends State<ENTJ> {
               ),
               Container(
                   margin: const EdgeInsets.all(20),
-                  child: Wrap(
-                    spacing: 10,
-                    alignment: WrapAlignment.spaceBetween,
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       ElevatedButton(
                         onPressed: overview,
@@ -1044,7 +1050,7 @@ class _ENTJState extends State<ENTJ> {
                         child: const Text("Relationship"),
                       ),
                     ],
-                  )),
+                  ))),
               Container(
                   margin:
                       const EdgeInsets.only(left: 10, right: 10, bottom: 10),
@@ -1314,9 +1320,11 @@ class _ENTPState extends State<ENTP> {
               ),
               Container(
                   margin: const EdgeInsets.all(20),
-                  child: Wrap(
-                    spacing: 10,
-                    alignment: WrapAlignment.spaceBetween,
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       ElevatedButton(
                         onPressed: overview,
@@ -1367,7 +1375,7 @@ class _ENTPState extends State<ENTP> {
                         child: const Text("Relationship"),
                       ),
                     ],
-                  )),
+                  ))),
               Container(
                   margin:
                       const EdgeInsets.only(left: 10, right: 10, bottom: 10),
@@ -1645,9 +1653,11 @@ class _INFJState extends State<INFJ> {
               ),
               Container(
                   margin: const EdgeInsets.all(20),
-                  child: Wrap(
-                    spacing: 10,
-                    alignment: WrapAlignment.spaceBetween,
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       ElevatedButton(
                         onPressed: overview,
@@ -1698,7 +1708,7 @@ class _INFJState extends State<INFJ> {
                         child: const Text("Relationship"),
                       ),
                     ],
-                  )),
+                  ))),
               Container(
                   margin:
                       const EdgeInsets.only(left: 10, right: 10, bottom: 10),
@@ -1965,9 +1975,11 @@ class _INFPState extends State<INFP> {
               ),
               Container(
                   margin: const EdgeInsets.all(20),
-                  child: Wrap(
-                    spacing: 10,
-                    alignment: WrapAlignment.spaceBetween,
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       ElevatedButton(
                         onPressed: overview,
@@ -2018,7 +2030,7 @@ class _INFPState extends State<INFP> {
                         child: const Text("Relationship"),
                       ),
                     ],
-                  )),
+                  ))),
               Container(
                   margin:
                       const EdgeInsets.only(left: 10, right: 10, bottom: 10),
@@ -2312,9 +2324,11 @@ class _ENFJState extends State<ENFJ> {
               ),
               Container(
                   margin: const EdgeInsets.all(20),
-                  child: Wrap(
-                    spacing: 10,
-                    alignment: WrapAlignment.spaceBetween,
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       ElevatedButton(
                         onPressed: overview,
@@ -2365,7 +2379,7 @@ class _ENFJState extends State<ENFJ> {
                         child: const Text("Relationship"),
                       ),
                     ],
-                  )),
+                  ))),
               Container(
                   margin:
                       const EdgeInsets.only(left: 10, right: 10, bottom: 10),
@@ -2666,9 +2680,11 @@ class _ENFPState extends State<ENFP> {
               ),
               Container(
                   margin: const EdgeInsets.all(20),
-                  child: Wrap(
-                    spacing: 10,
-                    alignment: WrapAlignment.spaceBetween,
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       ElevatedButton(
                         onPressed: overview,
@@ -2719,7 +2735,7 @@ class _ENFPState extends State<ENFP> {
                         child: const Text("Relationship"),
                       ),
                     ],
-                  )),
+                  ))),
               Container(
                   margin:
                       const EdgeInsets.only(left: 10, right: 10, bottom: 10),
@@ -3001,9 +3017,11 @@ class _ISTJState extends State<ISTJ> {
               ),
               Container(
                   margin: const EdgeInsets.all(20),
-                  child: Wrap(
-                    spacing: 10,
-                    alignment: WrapAlignment.spaceBetween,
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       ElevatedButton(
                         onPressed: overview,
@@ -3054,7 +3072,7 @@ class _ISTJState extends State<ISTJ> {
                         child: const Text("Relationship"),
                       ),
                     ],
-                  )),
+                  ))),
               Container(
                   margin:
                       const EdgeInsets.only(left: 10, right: 10, bottom: 10),
@@ -3332,9 +3350,11 @@ class _ISFJState extends State<ISFJ> {
               ),
               Container(
                   margin: const EdgeInsets.all(20),
-                  child: Wrap(
-                    spacing: 10,
-                    alignment: WrapAlignment.spaceBetween,
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       ElevatedButton(
                         onPressed: overview,
@@ -3385,7 +3405,7 @@ class _ISFJState extends State<ISFJ> {
                         child: const Text("Relationship"),
                       ),
                     ],
-                  )),
+                  ))),
               Container(
                   margin:
                       const EdgeInsets.only(left: 10, right: 10, bottom: 10),
@@ -3629,9 +3649,11 @@ class _ESTJState extends State<ESTJ> {
               ),
               Container(
                   margin: const EdgeInsets.all(20),
-                  child: Wrap(
-                    spacing: 10,
-                    alignment: WrapAlignment.spaceBetween,
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       ElevatedButton(
                         onPressed: overview,
@@ -3682,7 +3704,7 @@ class _ESTJState extends State<ESTJ> {
                         child: const Text("Relationship"),
                       ),
                     ],
-                  )),
+                  ))),
               Container(
                   margin:
                       const EdgeInsets.only(left: 10, right: 10, bottom: 10),
@@ -3927,9 +3949,11 @@ class _ESFJState extends State<ESFJ> {
               ),
               Container(
                   margin: const EdgeInsets.all(20),
-                  child: Wrap(
-                    spacing: 10,
-                    alignment: WrapAlignment.spaceBetween,
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       ElevatedButton(
                         onPressed: overview,
@@ -3980,7 +4004,7 @@ class _ESFJState extends State<ESFJ> {
                         child: const Text("Relationship"),
                       ),
                     ],
-                  )),
+                  ))),
               Container(
                   margin:
                       const EdgeInsets.only(left: 10, right: 10, bottom: 10),
@@ -4226,9 +4250,11 @@ class _ISTPState extends State<ISTP> {
               ),
               Container(
                   margin: const EdgeInsets.all(20),
-                  child: Wrap(
-                    spacing: 10,
-                    alignment: WrapAlignment.spaceBetween,
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       ElevatedButton(
                         onPressed: overview,
@@ -4279,7 +4305,7 @@ class _ISTPState extends State<ISTP> {
                         child: const Text("Relationship"),
                       ),
                     ],
-                  )),
+                  ))),
               Container(
                   margin:
                       const EdgeInsets.only(left: 10, right: 10, bottom: 10),
@@ -4526,9 +4552,11 @@ class _ISFPState extends State<ISFP> {
               ),
               Container(
                   margin: const EdgeInsets.all(20),
-                  child: Wrap(
-                    spacing: 10,
-                    alignment: WrapAlignment.spaceBetween,
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       ElevatedButton(
                         onPressed: overview,
@@ -4579,7 +4607,7 @@ class _ISFPState extends State<ISFP> {
                         child: const Text("Relationship"),
                       ),
                     ],
-                  )),
+                  ))),
               Container(
                   margin:
                       const EdgeInsets.only(left: 10, right: 10, bottom: 10),
@@ -4826,9 +4854,11 @@ class _ESTPState extends State<ESTP> {
               ),
               Container(
                   margin: const EdgeInsets.all(20),
-                  child: Wrap(
-                    spacing: 10,
-                    alignment: WrapAlignment.spaceBetween,
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       ElevatedButton(
                         onPressed: overview,
@@ -4879,7 +4909,7 @@ class _ESTPState extends State<ESTP> {
                         child: const Text("Relationship"),
                       ),
                     ],
-                  )),
+                  ))),
               Container(
                   margin:
                       const EdgeInsets.only(left: 10, right: 10, bottom: 10),
@@ -5125,9 +5155,11 @@ class _ESFPState extends State<ESFP> {
               ),
               Container(
                   margin: const EdgeInsets.all(20),
-                  child: Wrap(
-                    spacing: 10,
-                    alignment: WrapAlignment.spaceBetween,
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       ElevatedButton(
                         onPressed: overview,
@@ -5178,7 +5210,7 @@ class _ESFPState extends State<ESFP> {
                         child: const Text("Relationship"),
                       ),
                     ],
-                  )),
+                  ))),
               Container(
                   margin:
                       const EdgeInsets.only(left: 10, right: 10, bottom: 10),
