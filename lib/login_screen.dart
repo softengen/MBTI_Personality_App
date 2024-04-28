@@ -134,10 +134,19 @@ class _LoginPageState extends State<LoginPage> {
                       onPressed: () async {
                         try {
                           await authServiceGoogle().signInWithGoogle();
+
+                          showTopSnackBar(
+                            Overlay.of(context),
+                            const CustomSnackBar.success(
+                              message: 'Welcome Back!',
+                            ),
+                          );
+
                           Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(builder: (context) => personalityPage()),
                           );
+
                         } catch (e) {
                           log('Error signing in with Google: $e');
                         }

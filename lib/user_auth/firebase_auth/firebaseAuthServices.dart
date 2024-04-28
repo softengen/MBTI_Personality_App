@@ -118,7 +118,7 @@ class authServiceGoogle {
     return await FirebaseAuth.instance.signInWithCredential(credential);
   }
 
-  // Google sign in
+  // Google sign up
   Future<void> signUpWithGoogle(BuildContext context) async {
 
     try {
