@@ -52,8 +52,8 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.deepPurple,
             foregroundColor: Color(0xffefe0ff),
           )),
-      home: user != null ? personalityPage() : LoginPage(),
-      // home: const SignUp(),
+      // home: user != null ? personalityPage() : LoginPage(),
+      home: const splashScreen(),
     );
   }
 }

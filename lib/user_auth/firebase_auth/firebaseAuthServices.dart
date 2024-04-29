@@ -131,7 +131,7 @@ class authServiceGoogle {
         'personality': null
       });
 
-      Navigator.of(context).pop(); // Close the dialog
+      // Navigator.of(context).pop(); // Close the dialog
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => personalityPage()),
@@ -151,7 +151,7 @@ class authServiceGoogle {
         ),
       );
 
-      Navigator.of(context).pop(); // Close the dialog
+      // Navigator.of(context).pop(); // Close the dialog
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => personalityPage()),
