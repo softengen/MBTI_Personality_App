@@ -178,7 +178,7 @@ class _LoginPageState extends State<LoginPage> {
                         // padding: EdgeInsets.all(1),
                       ),
                       child: Text(
-                        'LOGIN WITH GOOGLE',
+                        'CONTINUE WITH GOOGLE',
                         style: TextStyle(
                           fontSize: 19,
                           fontWeight: FontWeight.bold,
