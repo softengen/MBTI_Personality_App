@@ -14,8 +14,8 @@ class LinearChart extends StatelessWidget{
   Widget build(BuildContext context) {
     double w = MediaQuery.of(context).size.width,
         h = MediaQuery.of(context).size.height,
-        barWidth = w*.37,
-        barHeight = h*.015;
+        barWidth = w*.25,
+        barHeight = h*.01;
 
 
     Color color1 = colored ? Colors.green.shade400 : Colors.deepPurple.shade500;
@@ -32,7 +32,7 @@ class LinearChart extends StatelessWidget{
 
     return Container(
       margin: const EdgeInsets.only(top: 20 ,bottom: 20),
-      height: h*.01 * chartHeight,
+      height: h>w ? h*.01 * chartHeight : w*.01 * chartHeight,
       width: w*.95,
       decoration: BoxDecoration(
         boxShadow: colored ? [BoxShadow(blurRadius: 40)] : [BoxShadow(blurRadius: 10)] ,
@@ -48,7 +48,7 @@ class LinearChart extends StatelessWidget{
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Padding(
-            padding: const EdgeInsets.only(left: 10, right: 10),
+            padding: EdgeInsets.symmetric(horizontal: w*.05),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -58,7 +58,7 @@ class LinearChart extends StatelessWidget{
                   Text((percentage[0]).toString() + "%",style: txt.copyWith(color: color1),)
                 ],
               ),
-              const SizedBox(width: 15,),
+              SizedBox(width: w*.05,),
               Container(
                 width: (percentage[0]*barWidth*.01).toDouble(),
                 height : barHeight,
@@ -77,7 +77,7 @@ class LinearChart extends StatelessWidget{
 
                 ),
               ),
-              const SizedBox(width: 15,),
+              SizedBox(width: w*.05,),
               Column(
                 children: [
                   Text("Extrovert",style: txt.copyWith(color: color2),),
@@ -87,7 +87,7 @@ class LinearChart extends StatelessWidget{
             ],),
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 10, right: 10),
+            padding: EdgeInsets.symmetric(horizontal: w*.05),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -97,7 +97,7 @@ class LinearChart extends StatelessWidget{
                   Text((percentage[1]).toString() + "%",style: txt.copyWith(color: color3),)
                 ],
               ),
-              const SizedBox(width: 15,),
+              SizedBox(width: w*.05,),
               Container(
                 width: (percentage[1]*barWidth*.01).toDouble(),
                 height : barHeight,
@@ -114,7 +114,7 @@ class LinearChart extends StatelessWidget{
                     boxShadow: const [BoxShadow(blurRadius: 10,blurStyle: BlurStyle.outer)]
                 ),
               ),
-              const SizedBox(width: 15,),
+              SizedBox(width: w*.05,),
               Column(
                 children: [
                   Text("Observant",style: txt.copyWith(color: color4),),
@@ -124,7 +124,7 @@ class LinearChart extends StatelessWidget{
             ],),
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 10, right: 10),
+            padding: EdgeInsets.symmetric(horizontal: w*.05),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -134,7 +134,7 @@ class LinearChart extends StatelessWidget{
                   Text((percentage[2]).toString() + "%",style: txt.copyWith(color: color5),)
                 ],
               ),
-              const SizedBox(width: 15,),
+              SizedBox(width: w*.05,),
               Container(
                 width: (percentage[2]*barWidth*.01).toDouble(),
                 height : barHeight,
@@ -151,7 +151,7 @@ class LinearChart extends StatelessWidget{
                     boxShadow: const [BoxShadow(blurRadius: 10,blurStyle: BlurStyle.outer)]
                 ),
               ),
-              const SizedBox(width: 15,),
+              SizedBox(width: w*.05,),
               Column(
                 children: [
                   Text("Thinking",style: txt.copyWith(color: color6),),
@@ -161,7 +161,7 @@ class LinearChart extends StatelessWidget{
             ],),
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 10, right: 10),
+            padding: EdgeInsets.symmetric(horizontal: w*.05),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -171,7 +171,7 @@ class LinearChart extends StatelessWidget{
                   Text((percentage[3]).toString() + "%",style: txt.copyWith(color: color7),)
                 ],
               ),
-              const SizedBox(width: 15,),
+              SizedBox(width: w*.05,),
               Container(
                 width: (percentage[3]*barWidth*.01).toDouble(),
                 height : barHeight,
@@ -188,7 +188,7 @@ class LinearChart extends StatelessWidget{
                     boxShadow: const [BoxShadow(blurRadius: 10,blurStyle: BlurStyle.outer)]
                 ),
               ),
-              const SizedBox(width: 15,),
+              SizedBox(width: w*.05,),
               Column(
                 children: [
                   Text("Perceiving",style: txt.copyWith(color: color8),),

@@ -51,7 +51,7 @@ class _splashScreenState extends State<splashScreen> {
                 width: w * 0.3,
               ),
             ),
-            Center(
+            const Center(
               child: Text(
                 "Welcome",
                 style: TextStyle(

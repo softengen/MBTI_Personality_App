@@ -63,7 +63,7 @@ class resultPage extends StatelessWidget{
           children: [
             Center(child: LinearChart(percentage: percentage, )),
             Container(
-              height: h*.37,
+              height: h>w ? h*.37 : w*.37,
               width: w*.95,
               decoration: const BoxDecoration(color: Color(0xff352F44),
                   boxShadow: [BoxShadow(blurRadius: 20)],

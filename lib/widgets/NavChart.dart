@@ -21,9 +21,9 @@ class NavChart extends StatelessWidget {
     }
 
 
-    double barWidth = w*.5;
+    double barWidth = h>w ? w*.5 : w*.1;
     double barHeight = h*.008;
-    double space = w*.01;
+    double space = w*.01 ;
     Radius round = Radius.circular(barHeight*.5);
 
 
