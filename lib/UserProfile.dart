@@ -171,8 +171,8 @@ class _UserProfileState extends State<UserProfile> {
                     log("Wrong Password");
                     showTopSnackBar(
                       Overlay.of(context),
-                      CustomSnackBar.error(
-                        message: "Wrong Password!",
+                      const CustomSnackBar.error(
+                        message: "Password can't be wrong or empty!",
                       ),
                     );
                   }
