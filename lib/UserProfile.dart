@@ -70,6 +70,21 @@ class _UserProfileState extends State<UserProfile> {
                 Map userData = snapshot.data!.data() as Map;
 
 
+                // for personality profile logo
+
+                // checking if the result is null or not
+                String? personalityName = userData["personality"], imageLocation;
+                if(personalityName == null)
+                {
+                  imageLocation = "assets/images/8.jpeg";
+                }
+                else
+                {
+                  imageLocation = "assets/userProfile/$personalityName.png";
+                }
+
+                // for personality profile logo
+
                 //<---------- details updating function section start ---------->
 
                 Future<void> Save() async {
@@ -259,7 +274,7 @@ class _UserProfileState extends State<UserProfile> {
                       decoration: const BoxDecoration(
                           shape: BoxShape.circle, color: Colors.black38),
                       child:
-                          ClipOval(child: Image.asset('assets/images/8.jpeg')),
+                          ClipOval(child: Image.asset(imageLocation)),
                     ),
                     Text(
                       userData["name"],
