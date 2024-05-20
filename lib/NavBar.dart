@@ -73,6 +73,21 @@ class NavBar extends StatelessWidget {
           );
         }
 
+        // for personality profile logo
+
+        // checking if the result is null or not
+        String? personalityName = userData["personality"], imageLocation;
+        if(personalityName == null)
+        {
+          imageLocation = "assets/images/8.jpeg";
+        }
+        else
+        {
+          imageLocation = "assets/userProfile/$personalityName.png";
+        }
+
+        // for personality profile logo
+
         TextStyle navtext =
         const TextStyle(fontWeight: FontWeight.bold, fontSize: 15);
         print(userData);
@@ -94,7 +109,7 @@ class NavBar extends StatelessWidget {
                   currentAccountPicture: CircleAvatar(
                     child: ClipOval(
                       child: Image.asset(
-                        "assets/images/8.jpeg",
+                        imageLocation,
                         width: 95,
                         height: 95,
                         fit: BoxFit.cover,
