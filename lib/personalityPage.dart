@@ -32,7 +32,7 @@ class personalityPage extends StatelessWidget {
       INFJ()
     ],
     "INFP": [
-      "Healer",
+      "Mediator",
       "Creative and empathetic, they are driven by their values and aspire to make a positive impact on the world.",
       INFP()
     ],
@@ -62,7 +62,7 @@ class personalityPage extends StatelessWidget {
       ESTJ()
     ],
     "ESFJ": [
-      "Entertainer",
+      "Consul",
       "Supportive and sociable, they thrive on nurturing relationships and creating a harmonious environment.",
       ESFJ()
     ],

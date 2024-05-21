@@ -29,7 +29,7 @@ final Map body = {
     INFJ()
   ],
   "INFP": [
-    "Healer",
+    "Mediator",
     "Creative and empathetic, they are driven by their values and aspire to make a positive impact on the world.",
     INFP()
   ],
@@ -59,7 +59,7 @@ final Map body = {
     ESTJ()
   ],
   "ESFJ": [
-    "Entertainer",
+    "Consul",
     "Supportive and sociable, they thrive on nurturing relationships and creating a harmonious environment.",
     ESFJ()
   ],
