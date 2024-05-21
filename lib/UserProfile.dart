@@ -202,6 +202,8 @@ class _UserProfileState extends State<UserProfile> {
                         height: h * .2,
                         decoration: const BoxDecoration(
                             shape: BoxShape.circle, color: Colors.black38),
+                        child:
+                        ClipOval(child: Image.asset(imageLocation)),
                       ),
                       Text(
                         userData["name"],
