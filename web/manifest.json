@@ -1,6 +1,6 @@
 {
-    "name": "mbti_app",
-    "short_name": "mbti_app",
+    "name": "MBTI Personality",
+    "short_name": "MBTI Personality",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

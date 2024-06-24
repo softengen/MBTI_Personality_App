@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="mbti_app"
+        android:label="MBTI Personaliy"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

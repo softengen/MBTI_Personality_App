@@ -113,19 +113,17 @@ class _UserProfileState extends State<UserProfile> {
                     if (newPass.text != "") {
                       // if current password match
                       if (newPass.text == newPass1.text) {
-                        userCollection
-                            .doc(user.uid)
-                            .update({"pass": newPass.text});
+                        String tempPass = newPass.text;
                         var cred = EmailAuthProvider.credential(
                             email: userData["email"], password: oldPass.text);
 
                         await user
                             .reauthenticateWithCredential(cred)
                             .then((value) {
-                          user.updatePassword(newPass.text).then((value) => {
+                          user.updatePassword(tempPass).then((value) => {
                                 userCollection
                                     .doc(user.uid)
-                                    .update({"pass": newPass.text}),
+                                    .update({"pass": tempPass}),
                                 log("PassWord updated Successfully"),
                               });
                         }).catchError((e) {

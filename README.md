@@ -1,4 +1,4 @@
-# mbti_app
+# MBTI Personality
 @authors: MdMuntasir && imransihab0
 
 ## Getting Started

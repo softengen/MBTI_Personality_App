@@ -22,6 +22,7 @@ class _splashScreenState extends State<splashScreen> {
     final FirebaseAuth _auth = FirebaseAuth.instance;
     user = _auth.currentUser;
 
+
     Timer(Duration(seconds: 1), () {
       // Navigate to the login screen
       Navigator.of(context).pushReplacement(
