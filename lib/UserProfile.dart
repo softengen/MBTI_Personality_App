@@ -199,7 +199,11 @@ class _UserProfileState extends State<UserProfile> {
                         margin: EdgeInsets.only(top: h * .06, bottom: h * .02),
                         height: h * .2,
                         decoration: const BoxDecoration(
-                            shape: BoxShape.circle, color: Colors.black38),
+                            shape: BoxShape.circle, color: Colors.white),
+                        child:
+                        ClipOval(
+                            child: Image.asset(imageLocation, fit: BoxFit.cover,)
+                        ),
                       ),
                       Text(
                         userData["name"],
@@ -270,9 +274,11 @@ class _UserProfileState extends State<UserProfile> {
                       margin: EdgeInsets.only(top: h * .06, bottom: h * .02),
                       height: h * .2,
                       decoration: const BoxDecoration(
-                          shape: BoxShape.circle, color: Colors.black38),
+                          shape: BoxShape.circle, color: Colors.white),
                       child:
-                          ClipOval(child: Image.asset(imageLocation)),
+                          ClipOval(
+                              child: Image.asset(imageLocation, fit: BoxFit.cover,)
+                          ),
                     ),
                     Text(
                       userData["name"],
@@ -350,7 +356,7 @@ class _UserProfileState extends State<UserProfile> {
                                                   onPressed: () {},
                                                   style: ButtonStyle(
                                                       backgroundColor:
-                                                          MaterialStateProperty
+                                                          WidgetStateProperty
                                                               .all(Colors
                                                                   .deepPurple
                                                                   .shade500)),
