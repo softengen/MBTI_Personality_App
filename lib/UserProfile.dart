@@ -76,7 +76,7 @@ class _UserProfileState extends State<UserProfile> {
                 String? personalityName = userData["personality"], imageLocation;
                 if(personalityName == null)
                 {
-                  imageLocation = "assets/images/user.png";
+                  imageLocation = "assets/images/8.jpeg";
                 }
                 else
                 {
@@ -113,17 +113,19 @@ class _UserProfileState extends State<UserProfile> {
                     if (newPass.text != "") {
                       // if current password match
                       if (newPass.text == newPass1.text) {
-                        String tempPass = newPass.text;
+                        userCollection
+                            .doc(user.uid)
+                            .update({"pass": newPass.text});
                         var cred = EmailAuthProvider.credential(
                             email: userData["email"], password: oldPass.text);
 
                         await user
                             .reauthenticateWithCredential(cred)
                             .then((value) {
-                          user.updatePassword(tempPass).then((value) => {
+                          user.updatePassword(newPass.text).then((value) => {
                                 userCollection
                                     .doc(user.uid)
-                                    .update({"pass": tempPass}),
+                                    .update({"pass": newPass.text}),
                                 log("PassWord updated Successfully"),
                               });
                         }).catchError((e) {
@@ -198,16 +200,8 @@ class _UserProfileState extends State<UserProfile> {
                       Container(
                         margin: EdgeInsets.only(top: h * .06, bottom: h * .02),
                         height: h * .2,
-                        decoration: BoxDecoration(
-                            boxShadow: [BoxShadow(spreadRadius: -10,blurRadius: 20)],
-                            shape: BoxShape.circle, color: Colors.deepPurple.shade100),
-                        child:
-                        ClipOval(
-                            child: SizedBox(
-                                height: h*.2,
-                                width: h*.2,
-                                child: Image.asset(imageLocation, fit: BoxFit.cover,))
-                        ),
+                        decoration: const BoxDecoration(
+                            shape: BoxShape.circle, color: Colors.black38),
                       ),
                       Text(
                         userData["name"],
@@ -277,16 +271,10 @@ class _UserProfileState extends State<UserProfile> {
                     Container(
                       margin: EdgeInsets.only(top: h * .06, bottom: h * .02),
                       height: h * .2,
-                      decoration: BoxDecoration(
-                          boxShadow: [BoxShadow(spreadRadius: -10,blurRadius: 20)],
-                          shape: BoxShape.circle, color: Colors.deepPurple.shade100),
+                      decoration: const BoxDecoration(
+                          shape: BoxShape.circle, color: Colors.black38),
                       child:
-                      ClipOval(
-                          child: SizedBox(
-                              height: h*.2,
-                              width: h*.2,
-                              child: Image.asset(imageLocation, fit: BoxFit.cover,))
-                      ),
+                          ClipOval(child: Image.asset(imageLocation)),
                     ),
                     Text(
                       userData["name"],
@@ -364,7 +352,7 @@ class _UserProfileState extends State<UserProfile> {
                                                   onPressed: () {},
                                                   style: ButtonStyle(
                                                       backgroundColor:
-                                                          WidgetStateProperty
+                                                          MaterialStateProperty
                                                               .all(Colors
                                                                   .deepPurple
                                                                   .shade500)),
