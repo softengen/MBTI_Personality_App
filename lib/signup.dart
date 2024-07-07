@@ -147,38 +147,38 @@ class _SignUpState extends State<SignUp> {
                       const SizedBox(height: 20),
 
                       // create account with google
-                      Container(
-                        height: h * .08,
-                        width: w * .8,
-                        child: ElevatedButton(
-                          onPressed: () async {
-                            try {
-                              await authServiceGoogle()
-                                  .signUpWithGoogle(context);
-                            } catch (e) {
-                              log('Error signing in with Google: $e');
-                            }
-                          },
-
-                          // design of elevated button
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.deepPurple,
-                            elevation: 0.7,
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(6)),
-                            // padding: EdgeInsets.all(1),
-                          ),
-                          child: Text(
-                            'CONTINUE WITH GOOGLE',
-                            style: TextStyle(
-                              fontSize: 19,
-                              fontWeight: FontWeight.bold,
-                              fontFamily: '',
-                              color: Colors.purple.shade50,
-                            ),
-                          ),
-                        ),
-                      ),
+                      // Container(
+                      //   height: h * .08,
+                      //   width: w * .8,
+                      //   child: ElevatedButton(
+                      //     onPressed: () async {
+                      //       try {
+                      //         await authServiceGoogle()
+                      //             .signUpWithGoogle(context);
+                      //       } catch (e) {
+                      //         log('Error signing in with Google: $e');
+                      //       }
+                      //     },
+                      //
+                      //     // design of elevated button
+                      //     style: ElevatedButton.styleFrom(
+                      //       backgroundColor: Colors.deepPurple,
+                      //       elevation: 0.7,
+                      //       shape: RoundedRectangleBorder(
+                      //           borderRadius: BorderRadius.circular(6)),
+                      //       // padding: EdgeInsets.all(1),
+                      //     ),
+                      //     child: Text(
+                      //       'CONTINUE WITH GOOGLE',
+                      //       style: TextStyle(
+                      //         fontSize: 19,
+                      //         fontWeight: FontWeight.bold,
+                      //         fontFamily: '',
+                      //         color: Colors.purple.shade50,
+                      //       ),
+                      //     ),
+                      //   ),
+                      // ),
                       const SizedBox(height: 20),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,

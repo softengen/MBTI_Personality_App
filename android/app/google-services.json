@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:690493485282:android:237e415917ac8755b4aebb",
         "android_client_info": {
-          "package_name": "com.example.mbti_app"
+          "package_name": "com.softengen.MBTIPersonality"
         }
       },
       "oauth_client": [
@@ -17,7 +17,7 @@
           "client_id": "690493485282-2ebadnc1jida17c8u06ava9vqrh9e6de.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.mbti_app",
+            "package_name": "com.softengen.MBTIPersonality",
             "certificate_hash": "b43f28a1177d6f8fbf10876e1114b483dc5f5a7d"
           }
         },
