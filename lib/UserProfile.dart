@@ -288,6 +288,7 @@ class _UserProfileState extends State<UserProfile> {
                               child: Image.asset(imageLocation, fit: BoxFit.cover,))
                       ),
                     ),
+
                     Text(
                       userData["name"],
                       style: const TextStyle(
