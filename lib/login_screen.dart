@@ -126,68 +126,72 @@ class _LoginPageState extends State<LoginPage> {
                   const SizedBox(height: 20),
 
                   // google login
-                  // Container(
-                  //   height: h * .08,
-                  //   width: w * .8,
-                  //   child: ElevatedButton(
-                  //     onPressed: () async {
-                  //       try {
-                  //         await authServiceGoogle().signInWithGoogle(context);
-                  //         // Sign in with Google
-                  //         final UserCredential userCredential =
-                  //             await authServiceGoogle().signUpWithGoogle();
-                  //
-                  //        // User successfully signed in
-                  //         final User? user = userCredential.user;
-                  //         if (user != null) {
-                  //           // Navigate to personality page
-                  //           Navigator.pushReplacement(
-                  //             context,
-                  //             MaterialPageRoute(
-                  //                 builder: (context) => personalityPage()),
-                  //           );
-                  //
-                  //           showTopSnackBar(
-                  //             Overlay.of(context),
-                  //             const CustomSnackBar.success(
-                  //               message: 'Welcome Back!',
-                  //             ),
-                  //           );
-                  //
-                  //         } else {
-                  //           // Handle error: user is null
-                  //           showTopSnackBar(
-                  //             Overlay.of(context),
-                  //             const CustomSnackBar.error(
-                  //               message: 'Create with google in Sign Up Page.',
-                  //             ),
-                  //           );
-                  //           log('User is null');
-                  //         }
-                  //       } catch (e) {
-                  //         log('Error signing in with Google: $e');
-                  //       }
-                  //     },
-                  //
-                  //     // design of elevated button
-                  //     style: ElevatedButton.styleFrom(
-                  //       backgroundColor: Colors.deepPurple,
-                  //       elevation: 0.7,
-                  //       shape: RoundedRectangleBorder(
-                  //           borderRadius: BorderRadius.circular(6)),
-                  //       // padding: EdgeInsets.all(1),
-                  //     ),
-                  //     child: Text(
-                  //       'CONTINUE WITH GOOGLE',
-                  //       style: TextStyle(
-                  //         fontSize: 19,
-                  //         fontWeight: FontWeight.bold,
-                  //         fontFamily: '',
-                  //         color: Colors.purple.shade50,
-                  //       ),
-                  //     ),
-                  //   ),
-                  // ),
+                  Container(
+                    height: h * .08,
+                    width: w * .8,
+                    child: ElevatedButton(
+                      onPressed: () async
+                      {
+                        await authServiceGoogle().signInWithGoogle(context);
+                      },
+                      //     () async {
+                      //   try {
+                      //     await authServiceGoogle().signInWithGoogle(context);
+                      //     // Sign in with Google
+                      //     final UserCredential userCredential =
+                      //         await authServiceGoogle().signUpWithGoogle();
+                      //
+                      //    // User successfully signed in
+                      //     final User? user = userCredential.user;
+                      //     if (user != null) {
+                      //       // Navigate to personality page
+                      //       Navigator.pushReplacement(
+                      //         context,
+                      //         MaterialPageRoute(
+                      //             builder: (context) => personalityPage()),
+                      //       );
+                      //
+                      //       showTopSnackBar(
+                      //         Overlay.of(context),
+                      //         const CustomSnackBar.success(
+                      //           message: 'Welcome Back!',
+                      //         ),
+                      //       );
+                      //
+                      //     } else {
+                      //       // Handle error: user is null
+                      //       showTopSnackBar(
+                      //         Overlay.of(context),
+                      //         const CustomSnackBar.error(
+                      //           message: 'Create with google in Sign Up Page.',
+                      //         ),
+                      //       );
+                      //       log('User is null');
+                      //     }
+                      //   } catch (e) {
+                      //     log('Error signing in with Google: $e');
+                      //   }
+                      // },
+
+                      // design of elevated button
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.deepPurple,
+                        elevation: 0.7,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(6)),
+                        // padding: EdgeInsets.all(1),
+                      ),
+                      child: Text(
+                        'CONTINUE WITH GOOGLE',
+                        style: TextStyle(
+                          fontSize: 19,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: '',
+                          color: Colors.purple.shade50,
+                        ),
+                      ),
+                    ),
+                  ),
 
                   // < -- sign up button section -- >
 

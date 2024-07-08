@@ -9,16 +9,16 @@
       "client_info": {
         "mobilesdk_app_id": "1:690493485282:android:237e415917ac8755b4aebb",
         "android_client_info": {
-          "package_name": "com.softengen.MBTIPersonality"
+          "package_name": "com.example.mbti_app"
         }
       },
       "oauth_client": [
         {
-          "client_id": "690493485282-2ebadnc1jida17c8u06ava9vqrh9e6de.apps.googleusercontent.com",
+          "client_id": "690493485282-rna6epur5a93obc5nrrlegop55ell117.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.softengen.MBTIPersonality",
-            "certificate_hash": "b43f28a1177d6f8fbf10876e1114b483dc5f5a7d"
+            "package_name": "com.example.mbti_app",
+            "certificate_hash": "e3bc3a6c90d90f7106a19b40dbd08f023f976f31"
           }
         },
         {
@@ -37,6 +37,57 @@
             {
               "client_id": "690493485282-p9jnda090scpgura3330531e7vil6m8j.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "690493485282-e9mu0bgb6c8kmj195rs68rn1co2nehir.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.mbtiApp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:690493485282:android:b6a713806e2bad72b4aebb",
+        "android_client_info": {
+          "package_name": "com.softengen.MBTIPersonality"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "690493485282-tior6avmqm9lubfudrr3a1a3o2nn89ve.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.softengen.MBTIPersonality",
+            "certificate_hash": "e3bc3a6c90d90f7106a19b40dbd08f023f976f31"
+          }
+        },
+        {
+          "client_id": "690493485282-p9jnda090scpgura3330531e7vil6m8j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBW7FTGxv9k0fK8thvo54ITMIDh1UaBsE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "690493485282-p9jnda090scpgura3330531e7vil6m8j.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "690493485282-e9mu0bgb6c8kmj195rs68rn1co2nehir.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.mbtiApp"
+              }
             }
           ]
         }
