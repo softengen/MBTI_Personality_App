@@ -76,7 +76,7 @@ class _UserProfileState extends State<UserProfile> {
                 String? personalityName = userData["personality"], imageLocation;
                 if(personalityName == null)
                 {
-                  imageLocation = "assets/images/8.jpeg";
+                  imageLocation = "assets/images/user.png";
                 }
                 else
                 {
