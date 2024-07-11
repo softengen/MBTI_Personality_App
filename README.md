@@ -1,5 +1,5 @@
 # MBTI Personality
-@authors: MdMuntasir && imransihab0
+@authors: **MdMuntasir** && **imransihab0**
 
 ## Getting Started
 Welcome to the ongoing evolution of the Softngen MBTI Personality app, where developers Imran Sihab and Md. Muntasir Hossain is crafting an innovative experience with Flutter and Dart. Stay tuned for continuous improvements as we guide you on a journey of self-discovery. Discover. Evolve. Thrive.
@@ -31,8 +31,6 @@ We may update this Privacy Policy from time to time. You are advised to review t
 
 ### Contact Us
 
-If you have any questions or concerns about this Privacy Policy, don't hesitate to get in touch with us at 
-
-### contact@softengen.com
+If you have any questions or concerns about this Privacy Policy, don't hesitate to get in touch with us at **contact@softengen.com**
 
 Web: https://softengen.com
