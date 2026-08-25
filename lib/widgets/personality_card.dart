@@ -11,8 +11,10 @@ class personality_card extends StatelessWidget {
     double w = MediaQuery.of(context).size.width;
     double h = MediaQuery.of(context).size.height;
 
-    Color gradientColor1 = Colors.deepPurple[800] ?? Colors.deepPurple; // Null check
-    Color gradientColor2 = Colors.deepPurpleAccent[200] ?? Colors.deepPurple; // Null check
+    Color gradientColor1 =
+        Colors.deepPurple[800] ?? Colors.deepPurple; // Null check
+    Color gradientColor2 =
+        Colors.deepPurpleAccent[200] ?? Colors.deepPurple; // Null check
 
     return Material(
       child: InkWell(
@@ -20,13 +22,13 @@ class personality_card extends StatelessWidget {
         child: Container(
           margin: const EdgeInsets.all(16),
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(12),
+            borderRadius: BorderRadius.circular(15),
             boxShadow: [
               BoxShadow(
-                color: Colors.black.withOpacity(0.5),
+                color: Colors.black.withOpacity(.5),
                 spreadRadius: 3,
                 blurRadius: 7,
-                offset: const Offset(0, 3),
+                offset: const Offset(2, 5),
               ),
             ],
             gradient: LinearGradient(
@@ -37,7 +39,7 @@ class personality_card extends StatelessWidget {
             ),
           ),
           width: w * 0.9,
-          height: 280,
+          height: 320,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
@@ -64,14 +66,14 @@ class personality_card extends StatelessWidget {
                   color: Colors.white70,
                 ),
               ),
-              const SizedBox(height: 40),
+              const SizedBox(height: 30),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: Text(
                   body[2] ?? '', // Null check for body[2]
                   style: const TextStyle(
                     fontFamily: 'UbuntuMono',
-                    fontSize: 19,
+                    fontSize: 18.5,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),

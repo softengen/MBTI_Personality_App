@@ -1,4 +1,4 @@
-package com.example.mbti_app
+package com.softengen.MBTIPersonality
 
 import io.flutter.embedding.android.FlutterActivity
 
